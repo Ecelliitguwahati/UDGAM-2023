@@ -25,7 +25,7 @@ import pmx from "./../icons/pmx.svg";
 import sparkle from "./../icons/sparkle.svg";
 import Vector3 from "./../icons/Vector3.svg";
 import workshops from "./../icons/workshops.svg";
-import "./MoreEvents.css";
+import "./moreEvents.css";
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 
