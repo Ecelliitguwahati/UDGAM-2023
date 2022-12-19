@@ -17,9 +17,9 @@ html{
     text-align: center;
     padding-top: 25.0rem;
     
-;padding-bottom: 3.0rem;
+padding-bottom: 3.0rem;
 color: #FFFFFF;
-text-shadow: 0.1rem 0.5rem rgba(252, 151, 217, 1) ;
+font-family: Founders Grotesk;
 }
 
 .getticket h3{
@@ -29,6 +29,7 @@ text-shadow: 0.1rem 0.5rem rgba(252, 151, 217, 1) ;
 color: rgba(252, 151, 217, 1);
   font-weight: 400;
   font-size: 3.2rem;
+  font-family: Founders Grotesk;
 }
 
 .buttoncenter{
@@ -38,10 +39,14 @@ color: rgba(252, 151, 217, 1);
 }
 
 .GetTkt{
+  font-family: Founders Grotesk;
   font-size: 24px;
   font-weight: 700;
 }
-
+.buttoncenter{
+  box-shadow: 
+  Founders Grotesk;
+}
 @media(max-width:600px){
 
 .getticket h1{

@@ -14,7 +14,7 @@
     font-weight: 700;
     font-size: 64px;
     line-height: 77px;
-    font-family: 'Space Grotesk' ;
+    font-family: Founders Grotesk ;
     margin-bottom: 68px;
     margin-left: 60px;
 }
@@ -303,15 +303,18 @@
 
 .small
 {
-    font-size: 9px;
+    font-size: 15px;
 }
 
 .big
 {
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 1.5px;
+     font-family: Action Sans;;
 }
-
+#register{
+    font-family: Action Sans;
+}
 @media (max-width: 600px){
     #eventmainContainer
     {
@@ -335,4 +338,28 @@
         margin: 0 0%;
     }
 }
-
+.lec{
+    font-family: Founders Grotesk;
+}
+.eventName{
+    font-family: Founders Grotesk ;
+}
+.headingM{
+    font-family: Founders Grotesk ;
+}
+.eventtext{
+    font-family: Action Sans;
+}
+.date{
+    font-family: Action Sans;
+}
+.dateText{
+    font-family: Action Sans;
+}
+.small{
+    font-family: Action Sans;
+    
+}
+span{
+    font-family: Action Sans;
+}
