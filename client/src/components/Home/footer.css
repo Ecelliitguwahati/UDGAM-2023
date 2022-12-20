@@ -1,4 +1,11 @@
-
+@font-face {
+    font-family: Founders Grotesk;
+    src: url(./../../fonts/FoundersGrotesk-Bold.otf);
+}
+@font-face {
+    font-family: Action Sans;
+    src: url(./../../fonts/ActionSans-Medium.otf);
+}
 .footer{
     margin-top: -20px;
 }
@@ -161,4 +168,10 @@ font-weight: 500;
 line-height: 24px;
 letter-spacing: -0.02em;
 text-align: left;
+}
+.dontmissmagic{
+    font-family: Action Sans;
+}
+.company__info_text{
+    font-family: Action Sans;
 }
