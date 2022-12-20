@@ -1,3 +1,11 @@
+@font-face {
+    font-family: Founders Grotesk;
+    src: url(./../../fonts/FoundersGrotesk-Bold.otf);
+}
+@font-face {
+    font-family: Action Sans;
+    src: url(./../../fonts/ActionSans-Medium.otf);
+}
 #containerevent{
     background-image: url(../../icons/eventsBG.png);
     display: flex;
@@ -29,9 +37,12 @@
     font-weight: 700;
     font-size: 64px;
     line-height: 100%;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: Founders Grotesk !important;
     
     height: fit-;
+}
+p{
+    font-family:Founders Grotesk ;
 }
 
 .topbutevent{
@@ -80,6 +91,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 60px;
+
 }
 
 .containerevent
@@ -125,7 +137,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Space grotesk';
+    font-family: Action Sans;
     margin: 24px 24px 28.5px 0;
 }
 
@@ -140,6 +152,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    font-family: Action Sans;
 }
 
 .reg img{
@@ -155,6 +168,7 @@
 }
 
 .live1{
+    font-family: Action Sans;
     background-color: #DDF140;
     width: 164px;
     height: 29px;
@@ -167,7 +181,7 @@
 .closed
 {
     background-color:#FC97D9;
-    ;
+    font-family: Action Sans;
     width: 164px;
     height: 29px;
     border: 0;
@@ -195,6 +209,7 @@
 
 .pass p
 {
+    font-family: Action Sans;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -216,7 +231,7 @@
 }
 
 .pdHeading
-{
+{   font-family: Action Sans;
     font-weight: 500;
     font-size: 16.8576px;
     line-height: 20px;
@@ -227,6 +242,7 @@
 }
 
 .price{
+    font-family: Action Sans;
     font-weight: 500;
     font-size: 44.9535px;
     line-height: 53px;
@@ -235,7 +251,7 @@
 }
 
 .date
-{
+{font-family: Action Sans;
     font-weight: 500;
     font-size: 28.0959px;
     line-height: 33px;
