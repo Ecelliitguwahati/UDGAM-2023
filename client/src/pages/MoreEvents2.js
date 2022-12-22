@@ -142,7 +142,7 @@ const MoreEvents2 = () => {
         },
             // 0 for ongoing
         // 1 for expired
-        // 2 for coming ComingSoon
+        // 2 for coming ComingSoon    
         {
             "tag": "encode",
             "id": "b8",
