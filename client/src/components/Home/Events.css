@@ -10,7 +10,7 @@
     background-image: url(../../icons/eventsBG.png);
     display: flex;
     flex-direction: column;
-    padding: 60px 120px;
+    padding: 60px 50px;
     
 
 }
@@ -25,7 +25,6 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 36px;
     height: fit-content;
 }
 
@@ -322,15 +321,15 @@ height: max-content;
     #up{
         flex-direction: column;
     }
+
     #heading
-{
-    color: #DDF140;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 100%;
-    font-family: 'Space Grotesk', sans-serif;
-    
-    height: fit-;
+    {
+        color: #DDF140;
+        font-weight: 700;
+        font-size: xxx-large;
+        line-height: 100%;
+        font-family: Founders Grotesk !important;
+ 
 }#udgamPass{
     width:100%;
 }

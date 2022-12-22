@@ -4,14 +4,26 @@ import './allspeaker.css'
 import speak from "../icons/speaker.png"
 import one from "../PhotosPng/Ankur-Warikoo.png"
 import Navbar from '../components/Navbar';
-import './ourteam.css';
+import './ourteam.css';import charlie from "../PhotosPng/charlie.png"
+import jimmy from "../PhotosPng/jimmy.png"
+import pulkit from "../PhotosPng/pulkit.png"
+import kevin from "../PhotosPng/kevin.png"
+import michael from "../PhotosPng/michael.png"
+import ankur from "../PhotosPng/ankur.png"
+import amit from "../PhotosPng/amit.png"
+import amod from "../PhotosPng/amod.png"
+import ankit from "../PhotosPng/ankit.png"
+import rohit from "../PhotosPng/rohit.png"
+import kaushik from "../PhotosPng/kaushik.png"
+import brijesh from "../PhotosPng/brijesh.png"
 import linkicon from "../icons/Frame 341665.png"
+import Footer from '../components/Home/footer';
 function AllSpeakers() {
     return (
         < body style={{ height: "max-content", background: "#09021C", overflowX: "hidden" }}>
             <Navbar />
 
-            <div className='currentspeak'>
+            {/* <div className='currentspeak'>
                 <div class="topallmembers">
                     <h1>SPEAKERS</h1>
                 </div>
@@ -97,90 +109,86 @@ function AllSpeakers() {
 
 
                 </div>
-            </div>
+            </div> */}
 
             <h1 className='pastspeakerstitle'>PAST SPEAKERS</h1>
 
             <div class="sliderspeak row">
 
                 <div className='row'>
-                    <div class="img col-lg-3 col-sm-12">
-                        <img src={one} alt="photo" width="273px" height="258px" />
-                        <h1>Samin Norsat</h1>
-                        <h3>Quora</h3>
-                        <p>Co-Founder</p>
-                    </div>
-                    <div class="img col-lg-3 col-sm-12">
-                        <img src={one} alt="photo" width="273px" height="258px" />
-                        <h1>Samin Norsat</h1>
-                        <h3>Quora</h3>
-                        <p>Co-Founder</p>
-                    </div>
-                    <div class="img col-lg-3 col-sm-12">
-                        <img src={one} alt="photo" width="273px" height="258px" />
-                        <h1>Samin Norsat</h1>
-                        <h3>Quora</h3>
-                        <p>Co-Founder</p>
-                    </div>
-                    <div class="img col-lg-3 col-sm-12">
-                        <img src={one} alt="photo" width="273px" height="258px" />
-                        <h1>Samin Norsat</h1>
-                        <h3>Quora</h3>
-                        <p>Co-Founder</p>
-                    </div>
-                    <div class="img col-lg-3 col-sm-12">
-                        <img src={one} alt="photo" width="273px" height="258px" />
-                        <h1>Samin Norsat</h1>
-                        <h3>Quora</h3>
-                        <p>Co-Founder</p>
-                    </div>
-                    <div class="img col-lg-3 col-sm-12">
-                        <img src={one} alt="photo" width="273px" height="258px" />
-                        <h1>Samin Norsat</h1>
-                        <h3>Quora</h3>
-                        <p>Co-Founder</p>
-                    </div>
-
-                    <div class="img col-lg-3 col-sm-12">
-                        <img src={one} alt="photo" width="273px" height="258px" />
-                        <h1>Samin Norsat</h1>
-                        <h3>Quora</h3>
-                        <p>Co-Founder</p>
-                    </div>
-                    <div class="img col-lg-3 col-sm-12">
-                        <img src={one} alt="photo" width="273px" height="258px" />
-                        <h1>Samin Norsat</h1>
-                        <h3>Quora</h3>
-                        <p>Co-Founder</p>
-                    </div>
-                    <div class="img col-lg-3 col-sm-12">
-                        <img src={one} alt="photo" width="273px" height="258px" />
-                        <h1>Samin Norsat</h1>
-                        <h3>Quora</h3>
-                        <p>Co-Founder</p>
-                    </div>
-                    <div class="img col-lg-3 col-sm-12">
-                        <img src={one} alt="photo" width="273px" height="258px" />
-                        <h1>Samin Norsat</h1>
-                        <h3>Quora</h3>
-                        <p>Co-Founder</p>
-                    </div>
-                    <div class="img col-lg-3 col-sm-12">
-                        <img src={one} alt="photo" width="273px" height="258px" />
-                        <h1>Samin Norsat</h1>
-                        <h3>Quora</h3>
-                        <p>Co-Founder</p>
-                    </div>
-                    <div class="img col-lg-3 col-sm-12">
-                        <img src={one} alt="photo" width="273px" height="258px" />
-                        <h1>Samin Norsat</h1>
-                        <h3>Quora</h3>
-                        <p>Co-Founder</p>
-                    </div>
+                <div className="img col-lg-3 col-sm-12">
+            <img src={charlie} alt="photo" width="273px" height="258px" />
+            <h1>Charlie Cheever</h1>
+            <h3>Quora</h3>
+            <p>Co-Founder</p>
+          </div>
+          <div className="img col-lg-3 col-sm-12">
+            <img src={jimmy} alt="photo" width="273px" height="258px" />
+            <h1>Jimmy Wales</h1>
+            <h3>Wikipedia</h3>
+            <p>Founder</p>
+          </div>
+          <div className="img col-lg-3 col-sm-12">
+            <img src={pulkit} alt="photo" width="273px" height="258px" />
+            <h1>Pulkit Jain</h1>
+            <h3>Vedantu</h3>
+            <p>Co-Founder</p>
+          </div>
+          <div className="img col-lg-3 col-sm-12">
+            <img src={kevin} alt="photo" width="273px" height="258px" />
+            <h1>Kevin Harrington</h1>
+            <h3>Shark Tank</h3>
+            <p>Original Shark</p>
+          </div>
+          <div className="img col-lg-3 col-sm-12">
+            <img src={michael} alt="photo" width="273px" height="258px" />
+            <h1>Michael Siebel</h1>
+            <h3>Y-Combinator</h3>
+            <p>CEO</p>
+          </div>
+          <div className="img col-lg-3 col-sm-12">
+            <img src={ankur} alt="photo" width="273px" height="258px" />
+            <h1>Ankur Warikoo</h1>
+            <h3>Nearbuy</h3>
+            <p>Founder</p>
+          </div>
+          <div className="img col-lg-3 col-sm-12">
+            <img src={amit} alt="photo" width="273px" height="258px" />
+            <h1>Amit Agarwal</h1>
+            <h3>No Broker</h3>
+            <p>CEO & Founder</p>
+          </div>
+          <div className="img col-lg-3 col-sm-12">
+            <img src={amod} alt="photo" width="273px" height="258px" />
+            <h1>Amod Malviya</h1>
+            <h3>Udaan</h3>
+            <p>Co-Founder</p>
+          </div><div className="img col-lg-3 col-sm-12">
+            <img src={ankit} alt="photo" width="273px" height="258px" />
+            <h1>Ankit Nagori</h1>
+            <h3>Cure.Fit</h3>
+            <p>Founder</p>
+          </div><div className="img col-lg-3 col-sm-12">
+            <img src={rohit} alt="photo" width="273px" height="258px" />
+            <h1>Rohit Kapoor</h1>
+            <h3>Swiggy</h3>
+            <p>CEO</p>
+          </div><div className="img col-lg-3 col-sm-12">
+            <img src={kaushik} alt="photo" width="273px" height="258px" />
+            <h1>Kaushik Mitra</h1>
+            <h3>Pepsico India</h3>
+            <p>CEO & VP</p>
+          </div><div className="img col-lg-3 col-sm-12">
+            <img src={brijesh} alt="photo" width="273px" height="258px" />
+            <h1>Brijesh Agarwal</h1>
+            <h3>Indiamart</h3>
+            <p>Co-Founder & Director</p>
+          </div>
 
                 </div>
 
             </div>
+            <Footer/>
         </body>
     );
 }

@@ -19,6 +19,7 @@ function Navbar() {
     document.getElementById("bignav2").style.display = "none";
     document.getElementById("bignav3").style.display = "none";
     document.getElementById("close_nav").style.display = "block";
+    document.body.style.overflow = 'hidden';
   }
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
@@ -26,13 +27,14 @@ function Navbar() {
     document.getElementById("close_nav").style.display = "none";
     document.getElementById("bignav1").style.display = "block";
     document.getElementById("bignav2").style.display = "block";
-    document.getElementById("bignav3").style.display = "block";
+    document.getElementById("bignav3").style.display = "block";document.body.style.overflow = 'unset';
   }
   return (
     <>
-      <div className='header'>
+      <div className='header' id="headernav">
         <section className='navbar'>
           <div className='image-container'>
+          <a href="/">
             <svg width="100" height="57" viewBox="0 0 100 57" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M81.0975 32.0131V7.12274C81.0975 6.64789 81.3626 6.41047 81.7603 6.41047H83.4838C84.2793 6.41047 84.2793 6.88531 84.2793 7.12274C84.2793 17.8464 84.1467 31.2533 84.1467 32.0131V37.9487C84.1467 38.1465 84.2262 38.5422 84.5444 38.5422C86.0911 38.5818 89.2641 38.6372 89.5823 38.5422C89.9004 38.4473 89.98 38.107 89.98 37.9487V32.0131V31.8532V7.12274C89.98 6.64789 90.2451 6.41047 90.6428 6.41047H92.3663C93.1618 6.41047 93.1618 6.88531 93.1618 7.12274C93.1618 17.8464 93.0292 31.2533 93.0292 32.0131V37.9487C93.0292 38.1465 93.1087 38.5422 93.4269 38.5422H98.7299C98.8625 38.5027 99.1276 38.3285 99.1276 37.9487V3.68008C99.1276 0.736018 96.7413 0 95.8133 0H90.3777C88.5217 0 87.8588 1.18712 87.3285 1.8994C86.6656 1.18712 86.0027 0 84.1467 0H77.9157C76.9435 0.079142 74.999 0.925957 74.999 3.68008V37.9487C74.999 38.1465 75.0786 38.5422 75.3967 38.5422H80.6997C80.8323 38.5027 81.0975 38.3285 81.0975 37.9487V32.0131Z" fill="#DDF140" />
               <path d="M0 51.2482V0.761105C0 -0.18924 0.509114 -0.00103598 0.790124 0.0483461C2.63375 0.372347 5.81132 1.93711 6.321 5.15645V46.6153C6.42635 47.3756 6.89164 47.5656 7.11112 47.5656H8.82306C9.34981 47.5656 9.56928 46.9321 9.61318 46.6153V5.15645C9.61318 4.05031 10.4364 1.20778 14.8384 0.045404C15.4968 0.0454049 15.4968 0.401784 15.4968 0.401784V51.2453C15.4968 54.2151 13.1687 56 11.1934 56H4.34568C1.84362 55.6436 0 52.9113 0 51.2482Z" fill="#DDF140" />
@@ -45,14 +47,14 @@ function Navbar() {
               <path d="M56.8027 4.05422C57.7309 0.623725 59.9851 0 61.4437 0H64.4272H67.5697C70.2217 0 71.6538 3.43049 71.6538 4.05422C71.6538 4.5532 71.1234 4.9898 70.8582 4.9898H57.7309C56.9353 4.9898 56.8027 4.36608 56.8027 4.05422Z" fill="#DDF140" />
               <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0098 1.1022V47.1203V47.1206C19.0098 47.7153 19.0099 48.4288 19.5373 48.4465H27.8467C31.0121 48.4465 33.2543 46.0674 33.2543 44.0451V5.26564C33.2543 1.1022 29.6932 0.031605 27.8467 0.0316048C27.1683 0.0316048 26.2306 0.025066 25.2083 0.0179368C23.2049 0.00396677 20.8764 -0.0122703 19.5373 0.0139837C19.1417 0.0536355 19.0098 0.340889 19.0098 1.1022ZM27.6916 10.2742L25.2311 19.2397L30.8854 20.6138L27.6916 10.2742ZM24.243 33.6904L30.8269 23.4611L26.8341 38.8404L24.243 33.6904ZM24.531 21.1932L24.2499 22.0435L24.0391 22.6815L23.8998 22.0128C23.7305 21.2001 23.5647 20.4048 23.3657 19.4515C22.4747 21.5002 21.6495 23.3961 20.8045 25.3372L25.8417 28.1989C25.3956 25.8138 24.9757 23.57 24.531 21.1932ZM25.3101 20.4821L30.7941 21.7871L26.7327 28.1628L26.179 25.1731L26.1637 25.0903C25.8814 23.5656 25.6011 22.052 25.3101 20.4821ZM23.7987 32.687L25.7931 29.5255L20.9942 26.8255C21.6044 28.0987 22.2146 29.3747 22.839 30.6803L22.8621 30.7286L22.9708 30.956C23.2435 31.5263 23.5191 32.1025 23.7987 32.687Z" fill="#DDF140" />
             </svg>
-
+            </a>
           </div>
 
           <div className='second-container'>
             <ul className='nav-links'>
               <li className='nav-item' id="bignav1"><a href='/events'>Events</a></li>
-              <li className='nav-item' id="bignav2"><a href='#schedule'>Schedule</a></li>
-              <li className='nav-item' id="bignav3"><a href='#merch'>Merch</a></li>
+              <li className='nav-item' id="bignav2"><a href='/'>Schedule</a></li>
+              <li className='nav-item' id="bignav3"><a href='/#merch'>Merch</a></li>
             </ul>
             <div className='hamburgerParent' >
               <a onClick={openNav} id="open_nav"><img className='hamburger' src={Hum} alt='menu' /></a>

@@ -140,7 +140,7 @@ function Events() {
 
                     </div>
                     <div className='buttonwrappass'>
-                    <Button
+                    {/* <Button
                             variant="primary"
                             kind="elevated"
                             size="big"
@@ -151,13 +151,13 @@ function Events() {
                                 console.log("I'm clicked");
                             }}
                         >
-                            <div className="GetTkt" style={{ color: "black" }}>COUNT ME IN</div>
-                        </Button>
+                            <div className="GetTkt" style={{ color: "black" }}>BUY PASS</div>
+                        </Button> */}
                     </div>
                     <div className="buyPass">
                         <div className="time">
                             <img src={live} alt="" />
-                            ends in 03:09:54
+                            COMING SOON
                         </div>
                     </div>
                     <div id="barcode">

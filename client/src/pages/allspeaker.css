@@ -150,6 +150,7 @@ background-color: #09021C;
        letter-spacing: -0.02em;
        color: #44C6B6;
        text-transform: uppercase;
+       padding-top: 50px;
    }
    
    .buttons {
@@ -212,9 +213,7 @@ background-color: #09021C;
    }
 
 @media(min-width: 470px) and (max-width: 600px){
-    .top h1{
-        font-size:larger;
-    }
+  
     .speakerOdd{
     width: 296px;
     height: 369px;}
@@ -327,9 +326,7 @@ background-color: #09021C;
    .speaker{
    }
    
-    .top h1{
-        font-size:medium;
-    }
+   
     .top button{
      
          width:114px;
@@ -433,7 +430,7 @@ background-color: #09021C;
             font-size: xx-large;
         }
         .pastspeakerstitle{
-            font-size: xx-large;
+            font-size: xxx-large;
             padding-left: 10%;
         }
         .main1{

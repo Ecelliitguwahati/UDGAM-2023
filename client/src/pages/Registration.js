@@ -9,6 +9,7 @@ import Navbar from '../components/Navbar';
 import './Registration.css';
 import axios from 'axios'
 import { useState } from 'react';
+import Footer from '../components/Home/footer';
 
 function Registration() {
   const [name, setName] = useState(null);
@@ -131,7 +132,7 @@ function Registration() {
 
         </div>
       </div>
-      
+      <Footer/>
   </body>
   )
 

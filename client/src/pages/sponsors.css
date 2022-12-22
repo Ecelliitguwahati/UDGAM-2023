@@ -2,8 +2,26 @@
 .sponsorpage{
     height: fit-content;
 }
-.sponsorbox{
+.getticketsponsor{
+    margin:0;
+    padding: 0 60px;
+  }
+
+.getticketsponsor h1{
+    margin: 0;
+    padding:0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 100%;
+    text-align: center;
+    
+padding-bottom: 3.0rem;
+color: #FFFFFF;
+font-family: Founders Grotesk;
+text-shadow: 0.1rem 0.5rem #fc97d9;
 }
+
 .sponsorbox h1{
     font-family: Founders Grotesk;
     color: #FC97D9;
@@ -146,6 +164,9 @@
 
 @media (max-width:600px)
 {
+    .getticketsponsor h1{
+        font-size: xxx-large;
+    }
     .sponsorbox h1{
      
         font-size: xxx-large;

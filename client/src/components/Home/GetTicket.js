@@ -1,5 +1,5 @@
 import React from 'react'
-import './GetTicket.css'
+import './GetTicket_Spomsor.css'
 import { Button } from '@cred/neopop-web/lib/components';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
@@ -18,8 +18,8 @@ function GetTicket() {
             colorConfig={{backgroundColor:"#F0E266",borderColor:"black",edgeColors:{right:"#736B1F",bottom:"#736B1F"}}}
             spacingConfig={{height:"80px"}}
             onClick={() => {
-              toast("COMING SOON !!");
-            }}
+              window.open('/registration', "_self");
+          }}
         >
             <div className="GetTkt" style={{color:"black"}}>GET MY TICKET</div>
     </Button></div>

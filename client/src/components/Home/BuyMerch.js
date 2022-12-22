@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 function BuyMerch() {
   return (
     <div className='merch' id='merch'  style={{backgroundColor:"#0c0227"}}>
-       <div class="top">
+       <div class="top buy-merch">
     <h1>BUY OUR MERCH</h1>
     <button className='topbut' >View All Merch<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0_27_4652)">

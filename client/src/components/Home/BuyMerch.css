@@ -4,22 +4,21 @@ body{
     height: 50rem;
 }
 .merch{
-    margin-top: -22px;
+    padding-top: 60px;
 }
 
 .top{
     display:flex; 
     align-items: center;
     justify-content:space-between;
-    margin: 24px;
-    padding:6px;
     
 }
 .top h1{
     color: #DDF140;
-    position: relative;
-    top: 0px;
-    left: 54px;
+
+}
+.buy-merch{
+    padding: 0 50px;
 }
 .topbut{
     display: flex;
@@ -99,11 +98,16 @@ line-height: 100%;
 
 
 
-@media(min-width: 538px) and (max-width: 695px){
+@media (max-width: 695px){
     .top h1{
-        font-size:161%;
+        font-size:xxx-large;
     }
-    
+    .top{
+        display:flex; 
+        align-items: center;
+        justify-content:space-between;
+        flex-direction: column;
+    }
     .topbut{
         /* top: 50px; */
         /* padding: 18px 04px; */
@@ -127,9 +131,7 @@ line-height: 100%;
    .top{
     margin-bottom: 27px;
    }
-    .top h1{
-        font-size:medium;
-    }
+ 
     .topbut{
      
          width:127px;

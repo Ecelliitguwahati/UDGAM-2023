@@ -140,9 +140,9 @@ function Footer() {
           </div>
           <div class="right_footer">
             <p class="dontmissmagic">Don't miss the Magic</p>
-             <p href="" class="signup">Sign up to receive Event notification and Updates</p>
-             <div><br /><input className="input_pass5" placeholder="Enter Your Mail..." /></div>
-           
+            <p href="" class="signup">Sign up to receive Event notification and Updates</p>
+            <div><br /><input className="input_pass5" placeholder="Enter Your Mail..." /></div>
+
           </div>
         </div>
 
