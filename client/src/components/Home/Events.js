@@ -41,7 +41,7 @@ function Events() {
                         </div>
                         <div className="content2">
                             <div className="heading">
-                                <p>INTERNFAIR</p>
+                                <p>LECTURE SERIES</p>
                                 <div className="check">
                                     <img src={check} alt="" />
                                 </div>
