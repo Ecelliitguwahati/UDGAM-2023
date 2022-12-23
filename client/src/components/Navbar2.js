@@ -74,8 +74,6 @@ function Navbar2() {
         }
 
       </div>
-
-      <span >open</span>
     </>
   )
 }
