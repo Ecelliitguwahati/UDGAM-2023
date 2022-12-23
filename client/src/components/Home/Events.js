@@ -41,7 +41,7 @@ function Events() {
                         </div>
                         <div className="content2">
                             <div className="heading">
-                                <p>LECTURE SERIES</p>
+                                <p>DISRUPT</p>
                                 <div className="check">
                                     <img src={check} alt="" />
                                 </div>
@@ -68,7 +68,7 @@ function Events() {
                         </div>
                         <div className="content2">
                             <div className="heading">
-                                <p>INTERNFAIR</p>
+                                <p>COSMIC CLASH</p>
                                 <div className="check">
                                     <img src={check} alt="" />
                                 </div>
@@ -95,7 +95,7 @@ function Events() {
                         </div>
                         <div className="content2">
                             <div className="heading">
-                                <p>INTERNFAIR</p>
+                                <p>ENCODE</p>
                                 <div className="check">
                                     <img src={check} alt="" />
                                 </div>
