@@ -64,7 +64,7 @@ function Events() {
                     </div>
                     <div className="containerevent">
                         <div className="count">
-                            <p>1</p>
+                            <p>2</p>
                         </div>
                         <div className="content2">
                             <div className="heading">
@@ -91,7 +91,7 @@ function Events() {
                     </div>
                     <div className="containerevent">
                         <div className="count">
-                            <p>1</p>
+                            <p>3</p>
                         </div>
                         <div className="content2">
                             <div className="heading">
