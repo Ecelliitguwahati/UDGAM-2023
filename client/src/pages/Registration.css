@@ -252,14 +252,17 @@
         }
         .udgam7{
             position: absolute;
-            left: 280px;
+            left: 250px;
         }
         .Pinfo{
             font-size: 30px;
         }
         .alpha{
             position: absolute;
-            left: 50px;
+            left: 38px;
+            top:21px;
         }
-    
+    .beta{
+        left:26px;
+    }
     }
