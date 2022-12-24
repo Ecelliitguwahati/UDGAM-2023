@@ -28,9 +28,9 @@ function App() {
       <Route exact path="/speakers" element={<AllSpeakers />} />
       <Route exact path="/sponsors" element={<Sponsors />} />
       <Route exact path="/events/" element={<MoreEvents2/>} />
-      {/* <Route path={MY_ROUTE(':userId')} /> */}
-      <Route exact path="/ourteam" element={<OurTeam/>} />
   
+      <Route exact path="/ourteam" element={<OurTeam/>} />
+      <Route exact path="*" element={<NotFound/>} />
       
     </Routes>
 

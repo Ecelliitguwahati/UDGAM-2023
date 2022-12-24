@@ -19,6 +19,7 @@ function Navbar2() {
     document.getElementById("bignav2").style.display = "none";
     document.getElementById("bignav3").style.display = "none";
     document.getElementById("close_nav").style.display = "block";
+    document.body.style.overflow = 'hidden';
   }
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
@@ -27,10 +28,12 @@ function Navbar2() {
     document.getElementById("bignav1").style.display = "block";
     document.getElementById("bignav2").style.display = "block";
     document.getElementById("bignav3").style.display = "block";
+    document.body.style.overflow = 'unset';
+    
   }
   return (
     <>
-      <div className='header'>
+      <div className='header' id="headernav2">
         <section className='navbar'>
           <div className='image-container'>
             <img src={Icon} alt='logo' />
@@ -38,9 +41,9 @@ function Navbar2() {
 
           <div className='second-container'>
             <ul className='nav-links'>
-              <li className='nav-item' id="bignav1"><a href='#container'>Events</a></li>
-              <li className='nav-item' id="bignav2"><a href='#schedule'>Schedule</a></li>
-              <li className='nav-item' id="bignav3"><a href='#merch'>Merch</a></li>
+              <li className='nav-item' id="bignav1"><a href='/events'>Events</a></li>
+              <li className='nav-item' id="bignav2"><a href='/'>Schedule</a></li>
+              <li className='nav-item' id="bignav3"><a href='/#merch'>Merch</a></li>
             </ul>
             <div className='hamburgerParent' >
               <a onClick={openNav} id="open_nav"><img className='hamburger' src={Hum} alt='menu' /></a>
@@ -71,8 +74,6 @@ function Navbar2() {
         }
 
       </div>
-
-      <span >open</span>
     </>
   )
 }

@@ -19,6 +19,7 @@ import bhoomika from '../PhotosPng/bhomika.svg';
 import umang from '../PhotosPng/umang.svg';
 import ved from '../PhotosPng/ved.svg';
 import soham from '../PhotosPng/soham.svg';
+import Footer from '../components/Home/footer';
 function OurTeam() {
     function myFunction() {
         console.log("Imrunning out");
@@ -39,8 +40,8 @@ function OurTeam() {
 
 
     return (
-        <><Navbar />
-            <div className='teampage'>
+        <>
+            <div className='teampage'><Navbar />
                 <div className="topallmembers">
                     <h1>OUR TEAM</h1>
                 </div>
@@ -278,7 +279,7 @@ function OurTeam() {
 
 
 
-
+<Footer/>
             </div>
 
 

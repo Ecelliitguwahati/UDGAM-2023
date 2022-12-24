@@ -12,7 +12,7 @@ const CountIn = () => {
              colorConfig={{backgroundColor:"#F0E266",borderColor:"black",edgeColors:{right:"#736B1F",bottom:"#736B1F"}}}
              spacingConfig={{height:"60px"}}
             onClick={() => {
-                toast("COMING SOON !!");
+                window.open('/registration', "_self");
             }}
         >
             <div className="GetTkt" style={{color:"black"}}>COUNT ME IN</div>

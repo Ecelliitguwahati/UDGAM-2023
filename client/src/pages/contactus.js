@@ -1,17 +1,18 @@
 import Navbar from "../components/Navbar";
 import "./contactus.css"
 import { Button } from '@cred/neopop-web/lib/components';
+import Footer from "../components/Home/footer";
 function Contactus() {
   return (
     <>
-      <Navbar />
+      
       {/* Anurag code */}
       <body className="contact_us">
-
+      <Navbar />
         <div className="row euro">
           <div className="col-lg-8 col-sm-12">
             <div className="container-fluid mt-3 boat">
-              <div className="hello">Contact Us </div>
+              <div className="hello">CONTACT US </div>
               <div className="names" >
                 <input type="text" className="first_name" placeholder="First name..." />
                 <input type="text" className="last_name" placeholder="Last name..." />
@@ -104,7 +105,7 @@ function Contactus() {
             </div>
           </div>
         </div>
-
+<Footer/>
       </body>
     </>
 

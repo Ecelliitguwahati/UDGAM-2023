@@ -41,7 +41,7 @@ function Events() {
                         </div>
                         <div className="content2">
                             <div className="heading">
-                                <p>INTERNFAIR</p>
+                                <p>DISRUPT</p>
                                 <div className="check">
                                     <img src={check} alt="" />
                                 </div>
@@ -64,11 +64,11 @@ function Events() {
                     </div>
                     <div className="containerevent">
                         <div className="count">
-                            <p>1</p>
+                            <p>2</p>
                         </div>
                         <div className="content2">
                             <div className="heading">
-                                <p>INTERNFAIR</p>
+                                <p>COSMIC CLASH</p>
                                 <div className="check">
                                     <img src={check} alt="" />
                                 </div>
@@ -91,11 +91,11 @@ function Events() {
                     </div>
                     <div className="containerevent">
                         <div className="count">
-                            <p>1</p>
+                            <p>3</p>
                         </div>
                         <div className="content2">
                             <div className="heading">
-                                <p>INTERNFAIR</p>
+                                <p>ENCODE</p>
                                 <div className="check">
                                     <img src={check} alt="" />
                                 </div>
@@ -140,7 +140,7 @@ function Events() {
 
                     </div>
                     <div className='buttonwrappass'>
-                    <Button
+                    {/* <Button
                             variant="primary"
                             kind="elevated"
                             size="big"
@@ -151,13 +151,13 @@ function Events() {
                                 console.log("I'm clicked");
                             }}
                         >
-                            <div className="GetTkt" style={{ color: "black" }}>COUNT ME IN</div>
-                        </Button>
+                            <div className="GetTkt" style={{ color: "black" }}>BUY PASS</div>
+                        </Button> */}
                     </div>
                     <div className="buyPass">
                         <div className="time">
                             <img src={live} alt="" />
-                            ends in 03:09:54
+                            COMING SOON
                         </div>
                     </div>
                     <div id="barcode">

@@ -3,6 +3,8 @@
 }
 .pastSpeaker{
     height:max-content;
+    padding:  60px 50px;
+    padding-bottom: 0;
 }
 .top{
     display:flex; 
@@ -15,7 +17,7 @@
 }
 .top h1{
     font-family: Founders Grotesk;
-    color: #FC97D9;
+    color: #DDF140;
     font-weight: 700;
     font-size: 64px;
     line-height: 100%;
@@ -179,6 +181,7 @@ background-color: #09021C;
     margin-left:10%;
     margin-right:10%;
     width:80%;
+    height: auto;
 }
    
    .img h1 {
@@ -188,7 +191,7 @@ background-color: #09021C;
        margin-left:10%;
        margin-right:10%;
        font-weight: 700;
-       font-size: 32px;
+       font-size: 24px;
        line-height: 110%;
        letter-spacing: -0.02em;
        color: #44C6B6;
@@ -225,7 +228,7 @@ background-color: #09021C;
 
 @media(min-width: 470px) and (max-width: 773px){
     .top h1{
-        font-size:larger;
+        font-size:xxx-large !important;
     }
     .speakerOdd{
     width: 296px;
@@ -337,9 +340,9 @@ background-color: #09021C;
     right: -31px;
    }
    
-    .top h1{
-        font-size:medium;
-    }
+   .top h1{
+    font-size:xxx-large !important;
+}
     .top button{
      
          width:114px;
@@ -432,7 +435,5 @@ background-color: #09021C;
             visibility: hidden;
         }
 }
-.pastSpeaker{
-    margin-top: -24px;
-}
+
 

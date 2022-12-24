@@ -7,7 +7,7 @@
     src: url(./../../fonts/ActionSans-Medium.otf);
 }
 .footer{
-    margin-top: -20px;
+    margin-top: 60px;
 }
 .footer_body {
     font-family: sans-serif;
@@ -25,9 +25,7 @@ i {
     color: white;
 }
 .footer__container {
-    max-width: 116rem;
-    margin: auto;
-    padding: 0 1.5rem;
+    padding: 0 50px;
 }
 .terms_conatiner{
     position: relative;

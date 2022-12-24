@@ -20,6 +20,7 @@ html{
 padding-bottom: 3.0rem;
 color: #FFFFFF;
 font-family: Founders Grotesk;
+text-shadow: 0.1rem 0.5rem #fc97d9;
 }
 
 .getticket h3{
@@ -39,7 +40,8 @@ color: rgba(252, 151, 217, 1);
 }
 
 .GetTkt{
-  font-family: Founders Grotesk;
+  /* font-family: Founders Grotesk; */
+  margin: auto 0;
   font-size: 24px;
   font-weight: 700;
 }
@@ -47,14 +49,27 @@ color: rgba(252, 151, 217, 1);
   box-shadow: 
   Founders Grotesk;
 }
+.sponsorhome h1{
+  padding: 0 50px; 
+}
+.sponsorhome{
+  padding: 60px 0px;
+}
+.sponsorhome img{
+  width: 100%;
+  height: auto;
+}
 @media(max-width:600px){
 
-.getticket h1{
-
-  font-size: 5rem;
+  .getticket h1 {
+    font-size: xxx-large;
 }
 .getticket h3{
 
   font-size: 1.4rem;
 }
+
+.sponsorhome img{
+}
+
 }

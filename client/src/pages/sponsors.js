@@ -16,6 +16,7 @@ import technalogy from '../sponsors/technalogy.svg';
 import UIV from '../sponsors/UIV.svg';
 import venture from '../sponsors/venture.svg';
 import whev from '../sponsors/whev.svg';
+import Footer from '../components/Home/footer';
 
 
 function Sponsors() {
@@ -107,11 +108,24 @@ function Sponsors() {
                     </div>
                 </div>
                 
-                <div class="text-button">
-                    <h1>want to become our sponsor?</h1>
-                    <button>Connect With Us</button>
+                <div class="getticketsponsor">
+                    <h1>WANT TO BECOME OUR SPONSOR?</h1>
+                    <div class="buttoncenter">       <Button
+            variant="primary"
+            kind="elevated"
+            size="big"
+            colorMode="light"
+            colorConfig={{backgroundColor:"#F0E266",borderColor:"black",edgeColors:{right:"#736B1F",bottom:"#736B1F"}}}
+            spacingConfig={{height:"80px"}}
+            onClick={() => {
+                window.open('/contactus', '_blank');
+            }}
+        >
+            <div className="GetTkt" style={{color:"black"}}>CONTACT US</div>
+    </Button></div>
                 </div>
             </div>
+            <Footer/>
         </body>
     );
 }
