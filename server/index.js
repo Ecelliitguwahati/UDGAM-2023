@@ -45,7 +45,7 @@ const OrderSchema = new mongoose.Schema({
         paymentId: String,
         signature: String
      },
-   });
+   }); 
 
 const Order = mongoose.model('Order', OrderSchema);
 
