@@ -6,48 +6,120 @@ import Vector2 from '../icons/arrow.svg'
 import Checkout from '../components/Checkout';
 import Vector3 from '../icons/udgam.svg';
 import Navbar from '../components/Navbar';
+import { useNavigate } from 'react-router-dom';
 import './Registration.css';
 import axios from 'axios'
 import { useState } from 'react';
 import Footer from '../components/Home/footer';
 
 function Registration() {
-  const [name, setName] = useState(null);
-  const [lastName, setLastName] = useState(null);
-  const [email, setEmail] = useState(null);
-  const [outlook, setOutlook] = useState(null);
-  const [rollNo, setRollNo] = useState(null);
-  const [password, setPassword] = useState(null);
-  const [confirmPassword, setConfirmPassword] = useState(null);
+  const orderAmount = 199;
+  const navigate = useNavigate();
+  const [resitered, setRegistered] = useState(false);
+  const [paid,setPaid] = useState(false);
+  const [user, setUser] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    outlook: "",
+    rollNo: "",
+    password: "",
+    confirmPassword: "",
+  });
+  console.log(user.firstName, user.lastName, user.email, user.outlook, user.rollNo, user.password, user.confirmPassword);
+ 
+  function loadRazorpay() {
+    const script = document.createElement('script');
+    script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+    script.onerror = () => {
+      alert('Razorpay SDK failed to load. Are you online?');
+    };
+    script.onload = async () => {
+      try {
+       
+        const result = await axios.post('/create-order', {
+          amount: orderAmount + '00',
+        });
+        const { amount, id: order_id, currency } = result.data;
+        const {
+          data: { key: razorpayKey },
+        } = await axios.get('/get-razorpay-key');
+
+        const options = {
+          key: razorpayKey,
+          amount: amount.toString(),
+          currency: currency,
+          name: 'example name',
+          description: 'example transaction',
+          order_id: order_id,
+          handler: async function (response) {
+            const result = await axios.post('/pay-order', {
+              amount: amount,
+              razorpayPaymentId: response.razorpay_payment_id,
+              razorpayOrderId: response.razorpay_order_id,
+              razorpaySignature: response.razorpay_signature,
+            });
+            //alert(result.data.msg);
+            setPaid(true);
+          },
+          prefill: {
+            name: 'example name',
+            email: 'email@example.com',
+            contact: '111111',
+          },
+          notes: {
+            address: 'example address',
+          },
+          theme: {
+            color: '#80c0f0',
+          },
+        };
+
+        
+        const paymentObject = new window.Razorpay(options);
+        paymentObject.open();
+      } catch (err) {
+        alert(err);
+      }
+    };
+    document.body.appendChild(script);
+  }
 
 
-  const handleSubmit = async (e) => {
+  const handleChange = (e) => 
+    setUser(prevState => ({...prevState, [e.target.name]: e.target.value}))
+
+  async function handleSubmit(e) {
     e.preventDefault();
 
     try {
-      if (password !== confirmPassword) {
+      if (user.password !== user.confirmPassword) {
         console.log('passwords do not match');
-        return
+        return;
       }
-
-      const response = await axios.post('http://localhost:8000/register', { name, lastName, email, outlook, rollNo, password, confirmPassword });
-      {/* will have to add cookies here later */ }
+       let firstName = user.firstName; let lastName = user.lastName; let email = user.email; let outlook = user.outlook;let rollNo = user.rollNo; let password = user.password; let confirmPassword = user.confirmPassword;
+      const response = await axios.post('http://localhost:8000/register', { firstName, lastName, email, outlook, rollNo, password, confirmPassword });
+      { /* will have to add cookies here later */ }
 
       const success = response.status === 201;
-      if (success) { }
-      {/* i will write some logic to navigate to some other page depending upon the flow of the site */ }
+      if (success) {
+        setRegistered(true);
+       }
+      { /* i will write some logic to navigate to some other page depending upon the flow of the site */ }
     }
-
     catch (error) {
       console.log(error);
     }
+  }
 
+  if (resitered && paid) {
+    navigate('/registration/success');
   }
   return (
       <body style={{ height: "150vh" }}>
       <Navbar />
       <div className='register_entire_page'>
-
+       <form onSubmit={handleSubmit}>
         <div className="register_dabba">
           <div className='register-progressbar'>
             <div className='c1_reg'>
@@ -59,36 +131,36 @@ function Registration() {
 
 
           </div>
-          <form className="registerform" onSubmit={handleSubmit}>
+          <div className="registerform" >
             <h1 className="Pinfo">PERSONAL INFORMATION</h1>
             <p className="H21 info_reg_txt">
               * Indicates required field
             </p>
             <div className='registerform_div'>
               <div className="first_last_flex">
-                <input className='wid_text_Field_100' type="text" name="firstname" required={true} placeholder="First name..."
-                  onChange={(e) => setName(e.target.value)} />
-                <input className='wid_text_Field_100' type="text" name="lastname" placeholder="Last name..." onChange={(e) => setLastName(e.target.value)} />
+                <input className='wid_text_Field_100' type="text" name="firstName" required={true} placeholder="First name..."
+                  onChange={handleChange} />
+                <input className='wid_text_Field_100' type="text" name="lastName" placeholder="Last name..." onChange={handleChange} />
               </div>
               <br /><br />
               <div className="first_last_flex">
 
-                <input className='wid_text_Field_100' type="email" id='email' name="email" required={true} placeholder="Type your Email..." onchange={(e) => setEmail(e.target.value)} />
+                <input className='wid_text_Field_100' type="email" id='email' name="email" required={true} placeholder="Type your Email..." onChange={handleChange} />
               </div>
               <br></br>
               <p className="H21 info_reg_txt">Only for IIT Guwahati Students</p>
               <div className="first_last_flex">
-                <input className='wid_text_Field_100' type="email" name="Outlook" id='outlookid' placeholder="Outlook mail id..." onchange={(e) => setOutlook(e.target.value)} />
-                <input className='wid_text_Field_100' type="text" name="RollNo" id='rollno' placeholder="Roll no..." onchange={(e) => setRollNo(e.target.value)} />
+                <input className='wid_text_Field_100' type="email" name="outlook" id='outlookid' placeholder="Outlook mail id..." onChange={handleChange} />
+                <input className='wid_text_Field_100' type="text" name="rollNo" id='rollno' placeholder="Roll no..." onChange={handleChange} />
               </div>
               <br></br>
               <p className="H21 info_reg_txt">Password shoud have at least 8 characters</p>
               <div className="first_last_flex last_field_regg">
-                <input className='wid_text_Field_100' type="password" name="CreatePass" placeholder="Create Password" onchange={(e) => setPassword(e.target.value)} />
-                <input className='wid_text_Field_100' type="password" name="ConfirmPassword" placeholder="Confirm Password" onchange={(e) => setConfirmPassword(e.target.value)} />
+                <input className='wid_text_Field_100' type="password" name="CreatePass" placeholder="Create Password" onChange={handleChange} />
+                <input className='wid_text_Field_100' type="password" name="ConfirmPassword" placeholder="Confirm Password" onChange={handleChange} />
               </div>
             </div>
-          </form >
+          </div>
         </div>
         <div className="pass_Card_register">
           {/* the submission design of the form has not decided yet , once it is complete i will continue from it */}
@@ -118,7 +190,7 @@ function Registration() {
             <p className="gamma">$199</p>
             <p className="gamma1">$199</p>
             <p className="gamma1 gamma2">$199</p>
-            <div className="Checkout"><Checkout title="CHECK OUT →" /></div>
+            <div className="Checkout" type="submit" onClick={loadRazorpay}><Checkout title="CHECK OUT →" /></div>
           </div>
 
           {/* <div className="vector">
@@ -131,6 +203,7 @@ function Registration() {
         <div className='Merch'><Merch icon={Vector1} title=" Merch kit addon" /></div> */}
 
         </div>
+        </form>
       </div>
       <Footer/>
   </body>
