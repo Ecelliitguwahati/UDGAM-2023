@@ -18,22 +18,22 @@ function Hamburgerph() {
                     <a href="/events">Events</a>
                 </div>
                 <div className='navbarphone'>
-                    <a href="/events">Schedule</a>
+                    <a href="/">Schedule</a>
                 </div>
                 <div className='navbarphone'>
-                    <a href="/events">Merch</a>
+                    <a href="/#merch">Merch</a>
                 </div>
                 <div className='navbarphone'>
-                    <a href="/events">Contact us</a>
+                    <a href="/contactus">Contact us</a>
                 </div>
                 <div className='navbarphone'>
-                    <a href="/events">Our team</a>
+                    <a href="/ourteam">Our team</a>
                 </div>
                 <div className='navbarphone'>
-                    <a href="/events">Sponsors</a>
+                    <a href="/sponsors">Sponsors</a>
                 </div>
                 <div className='navbarphone'>
-                    <a href="/events">About us</a>
+                    <a href="https://www.ecelliitg.in">About us</a>
                 </div>
             </body>
         </>

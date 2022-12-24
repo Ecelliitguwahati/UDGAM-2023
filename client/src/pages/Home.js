@@ -6,6 +6,7 @@ import BuyMerch from '../components/Home/BuyMerch';
 import GetTicket from '../components/Home/GetTicket';
 import Footer from '../components/Home/footer';
 import ComingSoon from '../components/Home/ComingSoon';
+import Sponsor from '../components/Home/sponsors';
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       {/* Past Speakers*/}
       <PastSpeakers />
       {/* <ComingSoon/> */}
+      <Sponsor/>
       {/* Merch*/}
       <BuyMerch />
       {/* Get Ticket*/}

@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import './Registration.css';
 import axios from 'axios'
 import { useState } from 'react';
+import Footer from '../components/Home/footer';
 
 function Registration() {
   const orderAmount = 199;
@@ -204,7 +205,7 @@ function Registration() {
         </div>
         </form>
       </div>
-      
+      <Footer/>
   </body>
   )
 
