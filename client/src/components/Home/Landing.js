@@ -5,6 +5,10 @@ import landingSponsors from '../../icons/lands.png'
 import CountIn from './LAnding_CountIn'
 import Navbar2 from '../Navbar2'
 import Loading from './loading'
+import idfc from '../../icons/idfcbank.svg'
+import havells from '../../icons/havells.svg'
+import zaloni from '../../icons/zaloni.svg'
+import Line from '../../icons/Line.svg'
 
 function Landing() {
   return (
@@ -30,6 +34,21 @@ function Landing() {
 </a>
 </div>
 <h3 className='taglineu'>VORTEX OF VENTURES</h3>
+<p className='font-face-asl'><p className="pr">Co-presented by</p></p>
+
+<div className="Footer">
+    <div >
+      <img src={idfc} />
+    </div>
+       <img src={Line} alt="" />
+    <div >
+      <img src={havells}/>
+    </div>
+      <img src={Line} alt="" />
+    <div>
+      <img src={zaloni}/>
+  </div>
+</div>      
        <CountIn/>
     </div>
   )
