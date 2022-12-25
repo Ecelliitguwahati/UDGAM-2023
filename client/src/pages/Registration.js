@@ -187,9 +187,9 @@ function Registration() {
 
             <p className="beta beta4 beta5"><br />Coupons</p>
 
-            <p className="gamma">$199</p>
-            <p className="gamma1">$199</p>
-            <p className="gamma1 gamma2">$199</p>
+            <p className="gamma">₹199</p>
+            <p className="gamma1">₹199</p>
+            <p className="gamma1 gamma2">₹199</p>
             <div className="Checkout" type="submit" onClick={loadRazorpay}><Checkout title="CHECK OUT →" /></div>
           </div>
 
