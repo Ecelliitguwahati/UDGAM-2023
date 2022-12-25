@@ -21,7 +21,9 @@ function Loading(){
         transition={{duration:4}}
         id="bg" >
             
-            <div id="container">
+            <motion.div 
+            animate={{zIndex:[1000,1]}}
+            transition={{duration:5}} id="container">
             <motion.img 
             initial={{x:7,y:70,opacity:0.4}}
             animate={{x:[7,-2], y:[70,112],opacity:[0.4,0.6,0.8,1,5]}} 
@@ -64,11 +66,11 @@ function Loading(){
             animate={{x:[-10,30],y:[20,-40],opacity:[0.4,0.6,0.8,1,5]}}
             transition={{duration:1,ease:'easeOut'}}
             src={rocket} id="rocket"className='animation' alt=""/>
-            </div>
+            </motion.div>
             <motion.div
             initial={{opacity:4}}
             animate={{opacity:[3,2,1,0,0]}}
-            transition={{duration:4, ease:'easeOut'}}>
+            transition={{duration:5, ease:'easeOut'}}>
             <div id="text">
             <img src={udgam} id="udgam" alt=""/>
             <p id="one">Well, I will not be blackmailed by some ineffectual, privileged, effete, soft-penised, debutante. </p>

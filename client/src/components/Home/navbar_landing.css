@@ -1,14 +1,26 @@
 /* navbar*/
 
 @font-face {
-    font-family: Founders Grotesk;
-    src: url(./../../fonts/FoundersGrotesk-Bold.otf);
+    font-family: 'Founders Grotesk';
+    src: local('Founders Grotesk'),url(./../../fonts/FoundersGrotesk-Bold.otf);
 }
 @font-face {
-    font-family: Action Sans;
-    src: url(./../../fonts/ActionSans-Medium.otf);
+    font-family: 'Action Sans';
+    src: local('Action Sans'), url(./../../fonts/ActionSans-Medium.otf);
 }
-
+.Footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:15px 0;
+    height:fit-content;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    font-family: 'Action Sans';
+}
 body{
     background-color: #0e0425eb;
     height : 108.51px;
@@ -53,7 +65,7 @@ body{
 }
   
 .nav-item a {
-    font-family: Action Sans !important ;
+    font-family: 'Action Sans';
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
@@ -61,7 +73,6 @@ body{
     font-weight:700px;
     font-weight:bold;
     color: white;
-    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -70,7 +81,7 @@ body{
     flex-direction:row;
 }
 .yellow-button{
-    font-family: Action Sans;
+    font-family:'Action Sans';
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
@@ -92,7 +103,7 @@ body{
     margin-top: 17px;
     width: 87px;
     height:18px;
-    font-family: Action Sans;
+    font-family: 'Action Sans';
 
 }
 .yellow-button img{
@@ -126,39 +137,29 @@ body{
     background-image: url("./landingpage.svg");
     background-color: #0e0425eb;
     width: 100%;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 .Tata{
-    margin-top: 70px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     
 }
 .udgamland{
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
     width: 30%;
 }
 .taglineu{
-    font-family: Action Sans;
+    font-family: 'Action Sans';
     font-size: 24px;
     font-weight: 500;
-    line-height: 33px;
+    height:fit-content;
     letter-spacing: 0.4em;
     text-align: center;
-    color:#DDF140;
-    padding-bottom: 40px;
-    
+    color:#DDF140; 
 }
-.udgamShapping{
-    width:419px;
-    height:293.64px;
-    margin-top:45px;
-}
-.landingSpons{
-    margin-top:45px;
-    filter: brightness(100%);
-    margin-bottom: 24px;
-}
+
+
 /*events*/
 
 
@@ -206,4 +207,11 @@ body{
     color:white;
     font-size: 24px;
     text-align: center;
+    height:fit-content;
+    margin:0px;
+}
+
+.Footer img{
+    margin:0 10px;
+    height:40px;
 }
