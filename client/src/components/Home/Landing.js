@@ -4,12 +4,15 @@ import UdgamShapping from '../../icons/udgam-spring.png'
 import landingSponsors from '../../icons/lands.png'
 import CountIn from './LAnding_CountIn'
 import Navbar2 from '../Navbar2'
+import Loading from './loading'
 
 function Landing() {
   return (
     <div className='landing'>
+      <Loading/>
        <Navbar2 />
        <img className='Tata' src={Bosch} alt=''/> 
+       <p className='font-face-asl'><p className="pr">presents</p></p>
        <div className='udgamland'>
         <a href="/">
        <svg width="100%" height="auto" viewBox="0 0 420 238" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +29,7 @@ function Landing() {
 </svg>
 </a>
 </div>
-<h3 className='taglineu'>Vortex of ventures</h3>
+<h3 className='taglineu'>VORTEX OF VENTURES</h3>
        <CountIn/>
     </div>
   )
