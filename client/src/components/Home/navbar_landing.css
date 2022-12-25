@@ -23,7 +23,7 @@ body{
     top: 0;
     left:0;
     padding:5px;
-    z-index: 899;
+    z-index: 100;
     position: relative;
 }
 .navbar {
@@ -129,21 +129,23 @@ body{
     padding-bottom: 60px;
 }
 .Tata{
-    margin-top: 100px;
+    margin-top: 70px;
+    margin-bottom: 15px;
     
 }
 .udgamland{
-    padding-top: 50px;
+    padding-top: 15px;
     padding-bottom: 20px;
     width: 30%;
 }
 .taglineu{
     font-family: Action Sans;
-    font-size: 35px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 33px;
-    letter-spacing: -0.02em;
-    text-align: left;color: white;
+    letter-spacing: 0.4em;
+    text-align: center;
+    color:#DDF140;
     padding-bottom: 40px;
     
 }
@@ -184,7 +186,7 @@ body{
 .udgamland{
     width: 80%;
 }.taglineu{
-    font-size: xx-large;
+    font-size: 21px;
 }
 .landing button{
     margin-bottom: 180px;
@@ -192,4 +194,16 @@ body{
 .landing{
     padding-bottom: 0;
 }
+}
+@font-face {
+    font-family: 'ActionSans-Light';
+    src: local('ActionSans-Light'),url("./../../fonts/ActionSans-Light.otf") format("truetype");
+}
+.font-face-asl {
+    font-family: 'ActionSans-Light';
+}
+.pr{
+    color:white;
+    font-size: 24px;
+    text-align: center;
 }

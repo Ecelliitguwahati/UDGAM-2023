@@ -1,8 +1,10 @@
 .gon{
     height: 324px;
     width: 414px;    
-    font-family: 'Sans';
-    font-style: normal;
+    font-family: 'ActionSans-Bold';
+    src: local('ActionSans-Bold'),
+    url("./../fonts/ActionSans-Bold.otf") format("truetype");
+    font-weight: bold;
     font-weight: 700;
     font-size: 96px;
     letter-spacing: -0.02em;
@@ -80,8 +82,14 @@
     color: #FFFFFF;
     margin-top: 45px;
     }
+@font-face {
+    font-family: 'ActionSans-Light';
+    src: local('ActionSans-Light'),url("./../fonts/ActionSans-Light.otf") format("truetype");
+}
+.font-face-asl {
+    font-family: 'ActionSans-Light';
+}
 .CoC{
-    font-family: 'Action Sans';
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -108,7 +116,7 @@
     height: 0%;
     width: 100%;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 3; /* Sit on top */
     left: 0;
     top: 0;
     background-color: rgb(0,0,0); /* Black fallback color */
@@ -166,5 +174,10 @@
     text-align: center;
     color:white;
     color: #b2b2b2;
+}
+
+.si
+{
+    margin-left: 10px;
 }
 

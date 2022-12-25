@@ -4,6 +4,9 @@ import { Button } from '@cred/neopop-web/lib/components';
 import "./Home/navbar_landing.css";
 import Icon from "../icons/icon.png"
 import Buy from "../icons/Ticket.png"
+import contact from "./../icons/contact.svg";
+import aboutUs from "./../icons/aboutUs.svg";
+
 
 import Navbar from './Navbar';
 function Hamburger() {
@@ -17,21 +20,21 @@ function Hamburger() {
                         <div className="gon">
                         <div> <a href="/events" className="nav-item humnav">Events </a></div>
                             <div> <a href="/events" className="nav-item humnav">Schedule </a></div>
-                            <div><a href="/#merch" className="nav-item humnav">merch </a></div>
+                            <div><a href="/#merch" className="nav-item humnav">Merch </a></div>
                         </div>
-                        <div className="CoC">Lost the pass you bought? We got you covered.</div>
+                        <div className="CoC"><p className='font-face-asl'>Lost the pass you bought? We got you covered.</p></div>
                         <div><br /><input className="input_pass" placeholder="Enter Your Mail..." /></div>
                     </div>
                     <div className="col-lg-6 col-sm-12">
                         <div className="mr-3 nav-right">
                             <div className="netero" >
-                                <p className="killus humnav"><a href="/contactus" className='humnav' >Contact Us</a></p>
-                                <p className="hisoka humnav"  ><a href="/speakers" className='humnav'>Speakers</a></p>
-                                <p className="kurapika humnav" ><a href="/ourteam" className='humnav'>Our Team</a></p>
-                                <p className="leo humnav"><a href="/sponsors" className='humnav' >Sponsors</a></p>
+                                <p className="killus humnav"><a href="/contactus" className='humnav' ><p className='font-face-asl'>Contact Us <img src={contact} className="si"/></p></a></p>
+                                <p className="hisoka humnav"  ><a href="/speakers" className='humnav'><p className='font-face-asl'>Speakers</p></a></p>
+                                <p className="kurapika humnav" ><a href="/ourteam" className='humnav'><p className='font-face-asl'>Our Team</p></a></p>
+                                <p className="leo humnav"><a href="/sponsors" className='humnav' ><p className='font-face-asl'>Sponsors</p></a></p>
                             </div>
-                            <a href="https://www.ecelliitg.in">  <p className="Among_Us humnav">
-                                About Us
+                            <a href="https://www.ecelliitg.in" style={{textDecoration:`none`}}>  <p className="Among_Us humnav">
+                            <p className='font-face-asl'>About Us<img src={aboutUs} className="si"/></p>
                             </p></a>
                             <div className="brrr">
                             <div><Button

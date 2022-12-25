@@ -47,7 +47,7 @@ const MoreEvents2 = () => {
             "eventName": "LECTURE SERIES",
             "payment":"Paid",
             "link":"https://www.fb.com",
-            "eventDesc": "UDGAM' 23 presents the most awaited event Lecture Series, providing you the best opportunities to explore the entrepreneurial world, bringing industry experts and successful entrepreneurs to inspire and educate you about entrepreneurship. "
+            "eventDesc": " “A person who has experienced something is almost always far more expert than the experts. “<br> <br>Lecture Series brings to you the words of the experienced, their wisdom, and their insights on entrepreneurship and the journey of building a startup from a mere idea to success. We aim to bring the greatest of the professionals to spark your minds and motivate your entrepreneurial self.<br><br>Some of our past speakers:<br><br>•Charlie Cheever - Cofounder, Quora<br>•Jimmy Wales - Founder, Wikipedia<br>•Pulkit Jain - Cofounder, Vedantu<br>•Kevin Harrington - Original Shark, SharkTank<br>•Amod Malviya - Cofounder, Udaan<br>and many more…<br>"
 
         },
         // 0 for ongoing
@@ -63,7 +63,7 @@ const MoreEvents2 = () => {
             "prize":"Internship",
             "eventName": "INTERNFAIR",
             "payment":"Paid",    "link":"https://www.fb.com",
-            "eventDesc": "In today’s world, where the jobs are limited and the number of applicants is increasing at a blisteringly fast rate, it is necessary to have an edge over your peers. UDGAM 2023 brings to you INTERN FAIR, a golden opportunity to stand out in this competitive world. So 1st and 2nd-years just grab this opportunity and become familiar with the corporate world by interning in a startup. Intern Fair provides you with a plethora of profiles to work for, ranging from Artificial Intelligence to Marketing. "
+            "eventDesc": "An exclusive event for IIT Guwahati peeps, InternFair brings internship opportunities to students in various profiles like Software Development, Analytics, Product Management, and many more. This is a top-notch opportunity for the students to gain industry experience and also prepares them for the upcoming internship and placement processes."
         },
         // 0 for ongoing
         // 1 for expired
@@ -78,7 +78,7 @@ const MoreEvents2 = () => {
             "prize":"100K+",
             "eventName": "PMx",
             "payment":"Free",    "link":"https://www.fb.com",
-            "eventDesc": "UDGAM 2023, presents to you PMx — Product Management Expedition, a Product Case Study competition to encompass the art and the science of shepherding a product. PMx provides this opportunity for young visionaries, thinkers, and problem-solvers like you to showcase your killer strategy, an eye for the details, and legit problem-solving skills. "
+            "eventDesc": "PMx is India’s largest* product case study competition. One has to bring out his observational, analytical, and researcher instinct and pour them out on the problem statement we provide. It is an item contextual analysis rivalry where you will encounter the adventure of chipping away at an item, rowing the product cycle, and making an incredible product that your clients will adore.            "
         },
         // 0 for ongoing
         // 1 for expired
@@ -93,7 +93,7 @@ const MoreEvents2 = () => {
             "prize":"10 Lakhs+",
             "eventName": "DISRUPT",
             "payment":"Free",    "link":"https://rebrand.ly/Disrupt_Registration",
-            "eventDesc": "Disrupt is here to provide you with all the opportunities, and honour entrepreneurs & their lofty aspirations of bringing about social change and creating a better future for everyone. To promote, motivate, and assist entrepreneurs, UDGAM 2023, IIT Guwahati, presents Disrupt, the largest B-Plan competition in North-East India. Disrupt offers a fantastic platform for ambitious student entrepreneurs and start-ups to pitch their ideas in front of distinguished judges and build a comprehensive network with investors. We give a forum for you to attract and amaze India's most brilliant business brains, who can convert your intriguing idea into a dreamlike certainty. We offer you 10 minutes in the limelight and the undivided attention of the whole panel, which includes Angel Investors and Venture Capitalists, to demonstrate yourself and your company concept. Disrupt seeks to acknowledge those with a desire to learn, explore and inspire aspiring entrepreneurs, those who believe in contributing to the Indian Economy!"
+            "eventDesc": "Disrupt is North East India’s Largest Pitching Battle where startups get a platform to pitch their idea to investors, Angel investors, and Venture Capitalists. In our previous editions, we had Michael Sibel, CEO of Y-Combinator as one of the panelists. Top finalists are provided with mentorship, incubation, and business tools alongside prizes and investment opportunities for winners."
         },
         // 0 for ongoing
         // 1 for expired
@@ -108,7 +108,7 @@ const MoreEvents2 = () => {
             "image": need,
             "eventName": "NEED",
             "payment":"Free",    "link":"https://www.fb.com",
-            "eventDesc": "E-Cell, IIT Guwahati brings to you NEED-North East Entrepreneurship Drive, a 4-week cohort to build your college’s own E-Cell. Building your own E-Cell might be one hell of a task, but we are here to mentor you. With lectures, workshops and challenges lined up, participate as a team, build your own E-Cell and win prizes worth INR 100000.  "
+            "eventDesc": "Introducing our brand new event, North East Entrepreneurship Drive aka NEED where we aim to promote the entrepreneur environment and startup urge by helping institutes of North East India set up their own Entrepreneurship Cells in their institutes.  "
         },
         // 0 for ongoing
         // 1 for expired
@@ -123,7 +123,7 @@ const MoreEvents2 = () => {
             "image": cosmicClash,
             "eventName": "COSMIC CLASH",
             "payment":"Paid",    "link":"https://linktr.ee/cosmic_clash",
-            "eventDesc": "Amidst all the chaos of campus tension of exams, are your gaming skills crying in the corner? Are you waiting for a perfect time to showcase your gaming strategies? Along with the eSports and Game Dev Club, UDGAM'23 presents you with the most awaited gaming platform, the COSMIC CLASH. Get ready to make your teams and the right plan to confront your opposition. With exciting games like VALORANT, ROCKET LEAGUE, and BLITZ CHESS and a chance to win exciting prizes, what are you all waiting for? Register today to participate and experience a mind-blowing gaming completion!"
+            "eventDesc": "Introducing our brand new event, North East Entrepreneurship Drive aka NEED where we aim to promote the entrepreneur environment and startup urge by helping institutes of North East India set up their own Entrepreneurship Cells in their institutes. "
         },
                 // 0 for ongoing
         // 1 for expired
@@ -138,7 +138,7 @@ const MoreEvents2 = () => {
             "image": Dframe,
             "eventName": "D-FRAME",
             "payment":"Free",    "link":"https://unstop.com/competition/dframe-creative-branding-challenge-udgam-2023-indian-institute-of-technology-iit-guwahati-566698",
-            "eventDesc": "Consider your favorite app: It's easy on the eye and simple to use? When you first installed it, you could easily understand how to go from A to B. To build these user-friendly, intuitive interfaces, the role of a UI designer is pivotal. Not only the UI designer is a creative creatures they put themselves in the user's shoes and design visuals and interactive elements in such a way that it feels natural to the user. Udgam, the annual e-summit of IIT Guwahati in partnership with White Space, the design club presents DFrame, a UI/UX Challenge. DFrame is a perfect blend of creativity and business relevance. We believe it will frame and develop the designer's innovative quotient by flexing their design muscle to find technical solutions whilst staying true to the human-centric approach. "
+            "eventDesc": "DFrame is a one of its kind UI/UX competition. Aimed to inculcate and enhance one's creativity with the business need of companies, DFrame tests the designer's innovative quotient by flexing their design muscle to find technical solutions while staying true to the human-centric approach."
         },
             // 0 for ongoing
         // 1 for expired
@@ -153,7 +153,7 @@ const MoreEvents2 = () => {
             "image": encode,
             "eventName": "ENCODE",
             "payment":"Free",    "link":"https://www.fb.com",
-            "eventDesc": "Are you a coder who wants to change the world? or Are you an innovator who can create for the future? EnCode is here to provide you with a great opportunity! To encourage, inspire and aid innovators, UDGAM 2023, IIT Guwahati, and Coding Club IIT Guwahati, bring you its first-ever development hackathon, “EnCode”. In EnCode, participants will be provided with a real-life problem statement, and they have to come up with a feasible solution to tackle the problem and provide the working prototype for the same. Be a part of “EnCode”, which offers you cash prizes of Rs 60,000, UDGAM merchandise, Incentives, and much more."
+            "eventDesc": "An entrepreneur’s task is to solve real-life real-world problems by developing a feasible solution that caters to everyone's needs be it the users or the market. Focussing on this, Encode is a development hackathon where you will be provided with a real-life problem and you have to devise a solution for it."
         },
                 // 0 for ongoing
         // 1 for expired
@@ -168,7 +168,7 @@ const MoreEvents2 = () => {
             "image": funEvents,
             "eventName": "FUN EVENTS",
             "payment":"Paid",    "link":"https://www.fb.com",
-            "eventDesc": "Bored of the same memes on your IG feed, waiting for a new reel trend? Wanna try something exciting? Brace to surprise yourself with the most exciting events starting from the 19th to 22nd of January. Participate in the various fun events and get a chance to win prizes worth 5k. "
+            "eventDesc": "UDGAM is not only about boring learning and teaching. We also organize various fun events such as Stonks 11, IPL Auction, Speed Dating, etc."
         },
 
         // 0 for ongoing
@@ -184,7 +184,7 @@ const MoreEvents2 = () => {
             "image": sparkle,
             "eventName": "SPARKLE",
             "payment":"Free",    "link":"https://www.fb.com",
-            "eventDesc": "Most of us come up with ideas for various problems surrounding us and in the blink of an eye, we toggle that thought thinking that it won't be viable. Lack of exposure is the biggest barrier between your idea just being an idea and that idea converting into a successful startup. Don't worry! We are here with how you can overcome that barrier. To incite the spark of entrepreneurship, motivate and support the young brains of this generation, UDGAM 2023, IIT Guwahati proudly presents it one of kind ideation, “Sparkle”. We are pleased to provide the young aspiring entrepreneurs with a platform to present their innovative ideas in front of industry leaders and a chance to achieve their dreams."
+            "eventDesc": "Minutes of the spotlight to showcase your entrepreneurship and pitching skills exclusive for young teenagers. Sparkle is a pitching ground for school students and an opportunity to show themselves under the unwavering attention of the whole panel, including various Angel Investors and Venture Capitalists, to put their startup idea. "
         },
         // 0 for ongoing
         // 1 for expired
@@ -284,7 +284,7 @@ const MoreEvents2 = () => {
                                 </Link>
                             </div>
                             <div className="content">
-                                <p>Internship. Internship. Internship.</p>
+                                <p>Inspiring sessions with accomplished personalities.</p>
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
@@ -299,7 +299,7 @@ const MoreEvents2 = () => {
                                 </Link>
                             </div>
                             <div className="content">
-                                <p>Internship. Internship. Internship.</p>
+                                <p>A platform for Start-ups to hire talented interns</p>
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
@@ -314,7 +314,7 @@ const MoreEvents2 = () => {
                                 </Link>
                             </div>
                             <div className="content">
-                                <p>Internship. Internship. Internship.</p>
+                                <p>The Product Management Expedition</p>
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
@@ -329,7 +329,7 @@ const MoreEvents2 = () => {
                                 </Link>
                             </div>
                             <div className="content">
-                                <p>Internship. Internship. Internship.</p>
+                                <p>North-East India's largest pitching battle</p>
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
@@ -344,7 +344,7 @@ const MoreEvents2 = () => {
                                 </Link>
                             </div>
                             <div className="content">
-                                <p>Internship. Internship. Internship.</p>
+                                <p>Noth-East Entrepreneurship Drive</p>
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
@@ -359,7 +359,7 @@ const MoreEvents2 = () => {
                                 </Link>
                             </div>
                             <div className="content">
-                                <p>Internship. Internship. Internship.</p>
+                                <p>The E-Sports Arena</p>
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
@@ -442,7 +442,7 @@ const MoreEvents2 = () => {
 
                             </div>
                             <div className="content contentright">
-                                <p>Internship. Internship. Internship.</p>
+                                <p>A UI/UX challenge blending creativity and coherence</p>
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
@@ -458,7 +458,7 @@ const MoreEvents2 = () => {
 
                             </div>
                             <div className="content contentright">
-                                <p>Internship. Internship. Internship.</p>
+                                <p>Code to Innovate</p>
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
@@ -474,7 +474,7 @@ const MoreEvents2 = () => {
 
                             </div>
                             <div className="content contentright">
-                                <p>Internship. Internship. Internship.</p>
+                                <p>Entertaining the Entrepreneur in you</p>
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
@@ -490,7 +490,7 @@ const MoreEvents2 = () => {
 
                             </div>
                             <div className="content contentright">
-                                <p>Internship. Internship. Internship.</p>
+                                <p>A pitching platform for young aspiring entrepreneurs</p>
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />

@@ -1,0 +1,176 @@
+#bg
+{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 1000;
+    position:absolute;
+    top:0;
+    
+}
+
+#bgImg
+{
+    background-image: url(./../../icons/loadingPage/loadingBG.png);
+    background-size: cover;
+    z-index: 1000;
+    position:fixed;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 1000;
+    position: relative;
+    top:0;
+}
+
+
+
+.animation
+{
+    position:absolute;
+    z-index: 1005;
+    opacity:0.4;
+}
+
+#star
+{
+    width: 108px;
+    height: 103px;
+    left: 10px;
+    top: 79.22px;
+    transform: rotate(-28.31deg);
+}
+
+#div
+{
+    width: 77.01px;
+    height: 90.67px;
+    left: 597px;
+    top: 100.51px;
+    transform: rotate(-31.74deg);
+}
+
+#note
+{
+    width: 111.92px;
+height: 134.15px;
+right:342px;
+top: 193.82px;
+transform: rotate(35.03deg);
+}
+
+#star8
+{
+    width: 133px;
+height: 127px;
+right:-2px;
+top: 286px;
+border-radius: 4px;
+}
+
+#udgam
+{
+    width: 28.75px;
+    height: 81.49px;
+z-index: 110;
+}
+
+#bulb
+{
+    width: 71.59px;
+height: 127.27px;
+left: 235px;
+top: 323.06px;
+transform: rotate(-55deg);
+}
+
+#suitcase
+{
+    width: 121.49px;
+height: 97.41px;
+left: 59.88px;
+top: 610px;
+transform: rotate(+34.2deg);
+}
+
+#arrow
+{
+    width: 107.11px;
+height: 106.57px;
+right:-3px;
+top: 577.5px;
+transform: rotate(-63.07deg);
+}
+
+#rocket
+{
+    width: 61.05px;
+height: 157.95px;
+right:395px;
+top: 590.36px;
+transform: rotate(-10.72deg);
+}
+
+#text
+{
+    font-family: sans-serif;
+    width:100%;
+top: 318.5px;
+display: flex;
+flex-direction: column;
+text-align: center;
+color: #CDCCD0;
+position: absolute;
+z-index: 1100;
+
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+#aniText
+{
+    z-index: 1100;
+    height:fit-content;
+}
+
+#one
+{
+    font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+max-width: 510px;
+
+}
+
+#two
+{
+    font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+margin-top: 24px;
+}
+
+#loading
+{
+    color: #D4F34A;
+    top: 548px;
+    font-weight: 700;
+font-size: 64px;
+line-height: 100%;
+font-family: sans-serif;
+position: absolute;
+z-index: 1100;
+display:flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
