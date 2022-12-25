@@ -11,6 +11,7 @@ const CountIn = () => {
             colorMode="light"
              colorConfig={{backgroundColor:"#F0E266",borderColor:"black",edgeColors:{right:"#736B1F",bottom:"#736B1F"}}}
              spacingConfig={{height:"60px"}}
+             
             onClick={() => {
                 window.open('/registration', "_self");
             }}

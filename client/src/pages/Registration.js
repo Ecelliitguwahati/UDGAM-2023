@@ -119,7 +119,7 @@ function Registration() {
       <body style={{ height: "150vh" }}>
       <Navbar />
       <div className='register_entire_page'>
-       <form onSubmit={handleSubmit}>
+       <form className='register_entire_page' onSubmit={handleSubmit}>
         <div className="register_dabba">
           <div className='register-progressbar'>
             <div className='c1_reg'>
