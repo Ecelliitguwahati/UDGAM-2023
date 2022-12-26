@@ -41,12 +41,12 @@ const MoreEvents2 = () => {
             "id": "b1",
             "ori": "left",
             "date": "Jan 20, 2023 16:37:25",
-            "info":2,
+            "info": 2,
             "image": ls,
-            "prize":"NILL",
+            "prize": "NILL",
             "eventName": "LECTURE SERIES",
-            "payment":"Paid",
-            "link":"https://www.fb.com",
+            "payment": "Paid",
+            "link": "https://www.fb.com",
             "eventDesc": " “A person who has experienced something is almost always far more expert than the experts. “<br> <br>Lecture Series brings to you the words of the experienced, their wisdom, and their insights on entrepreneurship and the journey of building a startup from a mere idea to success. We aim to bring the greatest of the professionals to spark your minds and motivate your entrepreneurial self.<br><br>Some of our past speakers:<br><br>•Charlie Cheever - Cofounder, Quora<br>•Jimmy Wales - Founder, Wikipedia<br>•Pulkit Jain - Cofounder, Vedantu<br>•Kevin Harrington - Original Shark, SharkTank<br>•Amod Malviya - Cofounder, Udaan<br>and many more…<br>"
 
         },
@@ -59,10 +59,10 @@ const MoreEvents2 = () => {
             "ori": "left",
             "date": "Jan 20, 2023 16:37:25",
             "image": internfair,
-            "info":2,
-            "prize":"Internship",
+            "info": 2,
+            "prize": "Internship",
             "eventName": "INTERNFAIR",
-            "payment":"Paid",    "link":"https://www.fb.com",
+            "payment": "Paid", "link": "https://www.fb.com",
             "eventDesc": "An exclusive event for IIT Guwahati peeps, InternFair brings internship opportunities to students in various profiles like Software Development, Analytics, Product Management, and many more. This is a top-notch opportunity for the students to gain industry experience and also prepares them for the upcoming internship and placement processes."
         },
         // 0 for ongoing
@@ -74,10 +74,10 @@ const MoreEvents2 = () => {
             "ori": "left",
             "date": "Dec 20, 2022 16:37:25",
             "image": pmx,
-            "info":1,
-            "prize":"100K+",
+            "info": 1,
+            "prize": "100K+",
             "eventName": "PMx",
-            "payment":"Free",    "link":"https://www.fb.com",
+            "payment": "Free", "link": "https://www.fb.com",
             "eventDesc": "PMx is India’s largest* product case study competition. One has to bring out his observational, analytical, and researcher instinct and pour them out on the problem statement we provide. It is an item contextual analysis rivalry where you will encounter the adventure of chipping away at an item, rowing the product cycle, and making an incredible product that your clients will adore.            "
         },
         // 0 for ongoing
@@ -87,12 +87,12 @@ const MoreEvents2 = () => {
             "tag": "disrupt",
             "id": "b4",
             "ori": "left",
-            "date": "Jan 25, 2022 23:59:59",
+            "date": "Dec 30, 2022 23:59:59",
             "image": disrupt,
-            "info":0,
-            "prize":"10 Lakhs+",
+            "info": 0,
+            "prize": "10 Lakhs+",
             "eventName": "DISRUPT",
-            "payment":"Free",    "link":"https://rebrand.ly/Disrupt_Registration",
+            "payment": "Free", "link": "https://rebrand.ly/Disrupt_Registration",
             "eventDesc": "Disrupt is North East India’s Largest Pitching Battle where startups get a platform to pitch their idea to investors, Angel investors, and Venture Capitalists. In our previous editions, we had Michael Sibel, CEO of Y-Combinator as one of the panelists. Top finalists are provided with mentorship, incubation, and business tools alongside prizes and investment opportunities for winners."
         },
         // 0 for ongoing
@@ -103,11 +103,11 @@ const MoreEvents2 = () => {
             "id": "b5",
             "ori": "left",
             "date": "Jan 20, 2022 16:37:25",
-            "prize":"1 Lakhs+",
-            "info":1,
+            "prize": "1 Lakhs+",
+            "info": 1,
             "image": need,
             "eventName": "NEED",
-            "payment":"Free",    "link":"https://www.fb.com",
+            "payment": "Free", "link": "https://www.fb.com",
             "eventDesc": "Introducing our brand new event, North East Entrepreneurship Drive aka NEED where we aim to promote the entrepreneur environment and startup urge by helping institutes of North East India set up their own Entrepreneurship Cells in their institutes.  "
         },
         // 0 for ongoing
@@ -117,15 +117,15 @@ const MoreEvents2 = () => {
             "tag": "cosmicclash",
             "id": "b6",
             "ori": "left",
-            "date": "Dec 25, 2022 23:59:59",
-            "prize":"10 Lakhs+",
-            "info":0,
+            "date": "Jan 10, 2023 23:59:59",
+            "prize": "10 Lakhs+",
+            "info": 0,
             "image": cosmicClash,
             "eventName": "COSMIC CLASH",
-            "payment":"Paid",    "link":"https://linktr.ee/cosmic_clash",
+            "payment": "Paid", "link": "https://linktr.ee/cosmic_clash",
             "eventDesc": "Introducing our brand new event, North East Entrepreneurship Drive aka NEED where we aim to promote the entrepreneur environment and startup urge by helping institutes of North East India set up their own Entrepreneurship Cells in their institutes. "
         },
-                // 0 for ongoing
+        // 0 for ongoing
         // 1 for expired
         // 2 for coming ComingSoon
         {
@@ -133,29 +133,29 @@ const MoreEvents2 = () => {
             "id": "b7",
             "ori": "right",
             "date": "Jan 9, 2023 23:59:59",
-            "info":0,
-            "prize":"25 K+",
+            "info": 0,
+            "prize": "25 K+",
             "image": Dframe,
             "eventName": "D-FRAME",
-            "payment":"Free",    "link":"https://unstop.com/competition/dframe-creative-branding-challenge-udgam-2023-indian-institute-of-technology-iit-guwahati-566698",
+            "payment": "Free", "link": "https://unstop.com/competition/dframe-creative-branding-challenge-udgam-2023-indian-institute-of-technology-iit-guwahati-566698",
             "eventDesc": "DFrame is a one of its kind UI/UX competition. Aimed to inculcate and enhance one's creativity with the business need of companies, DFrame tests the designer's innovative quotient by flexing their design muscle to find technical solutions while staying true to the human-centric approach."
         },
-            // 0 for ongoing
+        // 0 for ongoing
         // 1 for expired
         // 2 for coming ComingSoon    
         {
             "tag": "encode",
             "id": "b8",
             "ori": "right",
-            "date": "Jan 20, 2023 16:37:25",
-            "info":2,
-            "prize":"60K+",
+            "date": "Jan 2, 2023 16:37:25",
+            "info": 0,
+            "prize": "1.2 Lakhs+",
             "image": encode,
             "eventName": "ENCODE",
-            "payment":"Free",    "link":"https://www.fb.com",
+            "payment": "Free", "link": "https://rebrand.ly/EnCode23",
             "eventDesc": "An entrepreneur’s task is to solve real-life real-world problems by developing a feasible solution that caters to everyone's needs be it the users or the market. Focussing on this, Encode is a development hackathon where you will be provided with a real-life problem and you have to devise a solution for it."
         },
-                // 0 for ongoing
+        // 0 for ongoing
         // 1 for expired
         // 2 for coming ComingSoon
         {
@@ -163,11 +163,11 @@ const MoreEvents2 = () => {
             "id": "b9",
             "ori": "right",
             "date": "Jan 20, 2023 16:37:25",
-            "info":2,
-            "prize":"5K+",
+            "info": 2,
+            "prize": "5K+",
             "image": funEvents,
             "eventName": "FUN EVENTS",
-            "payment":"Paid",    "link":"https://www.fb.com",
+            "payment": "Paid", "link": "https://www.fb.com",
             "eventDesc": "UDGAM is not only about boring learning and teaching. We also organize various fun events such as Stonks 11, IPL Auction, Speed Dating, etc."
         },
 
@@ -178,12 +178,12 @@ const MoreEvents2 = () => {
             "tag": "sparkle",
             "id": "b10",
             "ori": "right",
-            "info":2,
-            "prize":"NILL",
+            "info": 2,
+            "prize": "NILL",
             "date": "Jan 20, 2023 16:37:25",
             "image": sparkle,
             "eventName": "SPARKLE",
-            "payment":"Free",    "link":"https://www.fb.com",
+            "payment": "Free", "link": "https://www.fb.com",
             "eventDesc": "Minutes of the spotlight to showcase your entrepreneurship and pitching skills exclusive for young teenagers. Sparkle is a pitching ground for school students and an opportunity to show themselves under the unwavering attention of the whole panel, including various Angel Investors and Venture Capitalists, to put their startup idea. "
         },
         // 0 for ongoing
@@ -193,12 +193,12 @@ const MoreEvents2 = () => {
             "tag": "workshops",
             "id": "b11",
             "ori": "right",
-            "info":2,
-            "prize":"NILL",
+            "info": 2,
+            "prize": "NILL",
             "date": "Jan 20, 2023 16:37:25",
             "image": workshops,
             "eventName": "WORKSHOPS",
-            "payment":"Paid",    "link":"https://www.fb.com",
+            "payment": "Paid", "link": "https://www.fb.com",
             "eventDesc": "The Start-up World is saturated with intricate concepts, all of which combined have near-infinite applications. This workshop series, endeavors to break these concepts down into a digestible yet comprehensive guide, via industry experts, and Q&A sessions on these interesting topics. "
         }
 
@@ -222,28 +222,28 @@ const MoreEvents2 = () => {
         document.getElementById("dateevent").innerHTML = event.date;
 
         //ONGOING
-        if(event.info==0){
+        if (event.info == 0) {
             document.getElementById("dateevent").innerHTML = event.date;
-            document.getElementById("prizeevent").innerHTML =event.prize;
+            document.getElementById("prizeevent").innerHTML = event.prize;
             document.getElementById("paidevent").innerHTML = event.payment;
-            document.getElementById("register").style.display="block";
-            document.getElementById("register").onclick=()=>window.open(event.link,"_self");
+            document.getElementById("register").style.display = "block";
+            document.getElementById("register").onclick = () => window.open(event.link, "_self");
         }
         //EXPIRED
-        if(event.info==1){
+        if (event.info == 1) {
             document.getElementById("dateevent").innerHTML = "EXPIRED";
             document.getElementById("prizeevent").innerHTML = event.prize;
             document.getElementById("paidevent").innerHTML = event.payment;
-            document.getElementById("register").style.display="none";
+            document.getElementById("register").style.display = "none";
         }
         //UPCOMING
-        if(event.info==2){
+        if (event.info == 2) {
             document.getElementById("dateevent").innerHTML = "COMING SOON";
             document.getElementById("prizeevent").innerHTML = "COMING SOON";
             document.getElementById("paidevent").innerHTML = "COMING SOON";
-            document.getElementById("register").style.display="none";
+            document.getElementById("register").style.display = "none";
         }
-     
+
         if (event.ori == "left") {
             document.getElementById("boxevent").className = "box olbg"
         }
@@ -252,21 +252,21 @@ const MoreEvents2 = () => {
         }
         document.getElementById(event.tag).className = "containerMhigh"
         var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
-        
+
     });
 
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
         if (completed) {
-          // Render a completed state
-          return <span>Registration closed</span>;
+            // Render a completed state
+            return <span>EXPIRED</span>;
         } else {
-          // Render a countdown
-          return <span>{days} days: {hours} hr: {minutes} min</span>;
+            // Render a countdown
+            return <span>{days} days: {hours} hr: {minutes} min</span>;
         }
-      };
+    };
 
- 
-    
+
+
     return (
         <div className="moreEvents">
             <Navbar />
@@ -288,7 +288,7 @@ const MoreEvents2 = () => {
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
-                                <p><Countdown date={new Date(eventsdata[0].date).getTime()} renderer={renderer}/></p>
+                                <p>{eventsdata[0].info == 0 ? <Countdown date={new Date(eventsdata[0].date).getTime()} renderer={renderer} /> : eventsdata[0].info == 1 ?"EXPIRED":"COMING SOON"}</p>
                             </div>
                         </div>
                         <div id="internfair" className="containerM">
@@ -303,10 +303,11 @@ const MoreEvents2 = () => {
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
-                                <p><Countdown date={new Date(eventsdata[1].date).getTime()} renderer={renderer}/></p>
+                               <p> {eventsdata[1].info == 0 ? <Countdown date={new Date(eventsdata[1].date).getTime()} renderer={renderer} /> : eventsdata[1].info == 1 ?"EXPIRED":"COMING SOON"}
+                               </p>
                             </div>
                         </div>
-                        <div id="pmx"className="containerM">
+                        <div id="pmx" className="containerM">
                             <div className="headingM">
                                 <p>PMx</p>
                                 <Link to={"/events?event=pmx"}>
@@ -318,10 +319,11 @@ const MoreEvents2 = () => {
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
-                                <p><Countdown date={new Date(eventsdata[2].date).getTime()} renderer={renderer}/></p>
+                               <p> {eventsdata[2].info == 0 ? <Countdown date={new Date(eventsdata[2].date).getTime()} renderer={renderer} /> : eventsdata[2].info == 1 ?"EXPIRED":"COMING SOON"}
+                               </p>
                             </div>
                         </div>
-                        <div id="disrupt"className="containerM">
+                        <div id="disrupt" className="containerM">
                             <div className="headingM">
                                 <p>DISRUPT</p>
                                 <Link to={"/events?event=disrupt"} >
@@ -333,7 +335,8 @@ const MoreEvents2 = () => {
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
-                                <p><Countdown date={new Date(eventsdata[3].date).getTime()} renderer={renderer}/></p>
+                               <p> {eventsdata[3].info == 0 ? <Countdown date={new Date(eventsdata[3].date).getTime()} renderer={renderer} /> : eventsdata[3].info == 1 ?"EXPIRED":"COMING SOON"}
+                               </p>
                             </div>
                         </div>
                         <div id="need" className="containerM">
@@ -348,7 +351,8 @@ const MoreEvents2 = () => {
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
-                                <p><Countdown date={new Date(eventsdata[4].date).getTime()} renderer={renderer}/></p>
+                               <p>{eventsdata[4].info == 0 ? <Countdown date={new Date(eventsdata[4].date).getTime()} renderer={renderer} /> : eventsdata[4].info == 1 ?"EXPIRED":"COMING SOON"}
+                               </p> 
                             </div>
                         </div>
                         <div id="cosmicclash" className="containerM">
@@ -363,7 +367,8 @@ const MoreEvents2 = () => {
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
-                                <p><Countdown date={new Date(eventsdata[5].date).getTime()} renderer={renderer}/></p>
+                               <p>{eventsdata[5].info == 0 ? <Countdown date={new Date(eventsdata[5].date).getTime()} renderer={renderer} /> : eventsdata[5].info == 1 ?"EXPIRED":"COMING SOON"}
+                               </p> 
                             </div>
                         </div>
 
@@ -446,7 +451,8 @@ const MoreEvents2 = () => {
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
-                                <p><Countdown date={new Date(eventsdata[6].date).getTime()} renderer={renderer}/></p>
+                               <p>{eventsdata[6].info == 0 ? <Countdown date={new Date(eventsdata[6].date).getTime()} renderer={renderer} /> : eventsdata[6].info == 1 ?"EXPIRED":"COMING SOON"}
+                               </p> 
                             </div>
                         </div>
                         <div id="encode" className="containerM">
@@ -462,7 +468,8 @@ const MoreEvents2 = () => {
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
-                                <p><Countdown date={new Date(eventsdata[7].date).getTime()} renderer={renderer}/></p>
+                                <p>{eventsdata[7].info == 0 ? <Countdown date={new Date(eventsdata[7].date).getTime()} renderer={renderer} /> : eventsdata[7].info == 1 ?"EXPIRED":"COMING SOON"}
+                                </p>
                             </div>
                         </div>
                         <div id="funevents" className="containerM">
@@ -478,7 +485,8 @@ const MoreEvents2 = () => {
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
-                                <p><Countdown date={new Date(eventsdata[8].date).getTime()} renderer={renderer}/></p>
+                               <p> {eventsdata[8].info == 0 ? <Countdown date={new Date(eventsdata[8].date).getTime()} renderer={renderer} /> : eventsdata[8].info == 1 ?"EXPIRED":"COMING SOON"}
+                               </p>
                             </div>
                         </div>
                         <div id="sparkle" className="containerM">
@@ -494,10 +502,11 @@ const MoreEvents2 = () => {
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
-                                <p><Countdown date={new Date(eventsdata[9].date).getTime()} renderer={renderer}/></p>
+                               <p> {eventsdata[9].info == 0 ? <Countdown date={new Date(eventsdata[9].date).getTime()} renderer={renderer} /> : eventsdata[9].info == 1 ?"EXPIRED":"COMING SOON"}
+                               </p>
                             </div>
                         </div>
-                        <div  id="workshops" className="containerM">
+                        <div id="workshops" className="containerM">
                             <div className="headingM">
                                 <Link to={"/events?event=workshops"} >
                                     <img src={arrowL} alt="" id="b1" />
@@ -506,17 +515,21 @@ const MoreEvents2 = () => {
 
                             </div>
                             <div className="content contentright">
-                                <p>Internship. Internship. Internship.</p>
+                                <p>Comprehensive guide with industry experts</p>
                             </div>
                             <div className="live2">
                                 <img src={live} alt="" />
-                                <p><Countdown date={new Date(eventsdata[10].date).getTime()} renderer={renderer}/></p>
+                                <p>
+
+                                    {eventsdata[10].info == 0 ? <Countdown date={new Date(eventsdata[10].date).getTime()} renderer={renderer} /> : eventsdata[10].info == 1 ?"EXPIRED":"COMING SOON"}
+
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-<Footer/>
+            <Footer />
         </div>
     );
 }
