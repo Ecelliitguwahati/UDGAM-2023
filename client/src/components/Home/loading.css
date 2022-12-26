@@ -119,7 +119,7 @@ transform: rotate(-10.72deg);
 
 #text
 {
-    font-family: sans-serif;
+    font-family: 'FoundersGrotesk-Bold';
     width:100%;
 top: 318.5px;
 display: flex;
@@ -143,6 +143,7 @@ justify-content: center;
 
 #one
 {
+    font-family: Action Sans;
     font-weight: 400;
 font-size: 20px;
 line-height: 20px;
@@ -152,6 +153,7 @@ max-width: 510px;
 
 #two
 {
+    font-family: Action Sans;
     font-weight: 400;
 font-size: 20px;
 line-height: 20px;
@@ -165,7 +167,7 @@ margin-top: 24px;
     font-weight: 700;
 font-size: 64px;
 line-height: 100%;
-font-family: sans-serif;
+
 position: absolute;
 z-index: 1100;
 display:flex;
@@ -173,3 +175,4 @@ flex-direction: column;
 align-items: center;
 width: 100%;
 }
+

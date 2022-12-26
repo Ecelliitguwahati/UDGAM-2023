@@ -20,10 +20,8 @@ body {
 background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
 input,textarea,select{
   font-size:15px!important;
 }
+
