@@ -2,8 +2,16 @@
 
     padding-top: 12.5rem;
 }
+
+@font-face {
+    font-family: 'as';
+    src: local('as'),url("./../fonts/ActionSans-Regular.otf");
+}
+.as{
+    font-family: 'as';
+}
 .euro{
-    padding: 60px 50px;
+    padding: 60px 120px;
 }
 .submit_contactus{
     padding-top: 1rem;
@@ -144,3 +152,9 @@ select {
     margin-bottom: 10px;
     margin-top: 10px;
   }
+
+.submit_contactus button div{
+    font-size: 24px;
+    /* margin: 28px 48px; */
+}
+

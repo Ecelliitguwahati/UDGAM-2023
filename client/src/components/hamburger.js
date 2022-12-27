@@ -9,35 +9,37 @@ import aboutUs from "./../icons/aboutUs.svg";
 
 
 import Navbar from './Navbar';
-function Hamburger() {
+function Hamburger(){
     return (
         <>
 
             <body className="humburg">
-
-                <div className="row biro">
-                    <div className="col-lg-6 col-sm-12">
+                <div className="biro">
+                    <div className="row1">
                         <div className="gon">
-                        <div> <a href="/events" className="nav-item humnav">Events </a></div>
-                            <div> <a href="/events" className="nav-item humnav">Schedule </a></div>
-                            <div><a href="/#merch" className="nav-item humnav">Merch </a></div>
+                            <div> <a href="/events" className="humnav" >Events</a></div>
+                            <div> <a href="/events" className="humnav">Schedule </a></div>
+                            <div><a href="/#merch" className="humnav">Merch </a></div>
                         </div>
-                        <div className="CoC"><p className='font-face-asl'>Lost the pass you bought? We got you covered.</p></div>
-                        <div><br /><input className="input_pass" placeholder="Enter Your Mail..." /></div>
-                    </div>
-                    <div className="col-lg-6 col-sm-12">
-                        <div className="mr-3 nav-right">
-                            <div className="netero" >
+                        <div className="netero" >
                                 <p className="killus humnav"><a href="/contactus" className='humnav' ><p className='font-face-asl'>Contact Us <img src={contact} className="si"/></p></a></p>
                                 <p className="hisoka humnav"  ><a href="/speakers" className='humnav'><p className='font-face-asl'>Speakers</p></a></p>
                                 <p className="kurapika humnav" ><a href="/ourteam" className='humnav'><p className='font-face-asl'>Our Team</p></a></p>
                                 <p className="leo humnav"><a href="/sponsors" className='humnav' ><p className='font-face-asl'>Sponsors</p></a></p>
-                            </div>
-                            <a href="https://www.ecelliitg.in" style={{textDecoration:`none`}}>  <p className="Among_Us humnav">
+                                <a href="https://www.ecelliitg.in" style={{textDecoration:`none`}}>  <p className="Among_Us humnav">
                             <p className='font-face-asl'>About Us<img src={aboutUs} className="si"/></p>
                             </p></a>
+                            </div>
+                    </div>
+                    <div className="row2">
+                            <div>
+                              <div className="CoC"><p className='font-face-asl'>Lost the pass you bought? We got you covered.</p></div>
+                              <div><br /><input className="input_pass" placeholder="Enter Your Mail..." /></div>
+                            </div>
+                        <div className="mr-3 nav-right">
+                            
                             <div className="brrr">
-                            <div><Button
+                          <div><Button
                 variant="primary"
                 kind="elevated"
                 size="big"
@@ -142,7 +144,7 @@ function Hamburger() {
               </Button>
             </div>
             </div>
-                        </div>
+                      </div>
                     </div>
                 </div>
             </body>
