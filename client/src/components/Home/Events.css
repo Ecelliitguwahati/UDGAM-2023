@@ -62,13 +62,7 @@
     flex-direction: row;
     text-decoration: none;
 }
-.topbutevent:hover{
-    
-        color: #09021C;
-        background-color:#D4F34A ;
-          
-    
-}
+
 .link
 {
     text-decoration: none;
@@ -150,8 +144,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-family: Action Sans;
+    font-family: 'ActionSans-Medium';
+    text-decoration: none;
+
 }
+
+
 
 .reg img{
     margin-left: 12px;
@@ -164,10 +162,11 @@
     justify-content: space-between;
     margin-right:24px ;
     margin-bottom:36px;
+    text-decoration: none;
 }
 
 .live1{
-    font-family: Action Sans;
+    font-family: 'ActionSans-Medium';
     background-color: #DDF140;
     width: 164px;
     height: 29px;
@@ -180,7 +179,7 @@
 .closed
 {
     background-color:#FC97D9;
-    font-family: Action Sans;
+    font-family: 'ActionSans-Medium';
     width: 164px;
     height: 29px;
     border: 0;
@@ -208,7 +207,7 @@
 
 .pass p
 {
-    font-family: Action Sans;
+    font-family: 'ActionSans-Medium';
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -230,7 +229,7 @@
 }
 
 .pdHeading
-{   font-family: Action Sans;
+{   font-family: 'ActionSans-Medium';
     font-weight: 500;
     font-size: 16.8576px;
     line-height: 20px;
@@ -241,7 +240,7 @@
 }
 
 .price{
-    font-family: Action Sans;
+    font-family: 'ActionSans-Medium';
     font-weight: 500;
     font-size: 44.9535px;
     line-height: 53px;
@@ -250,7 +249,7 @@
 }
 
 .date
-{font-family: Action Sans;
+{font-family: 'ActionSans-Medium';
     font-weight: 500;
     font-size: 28.0959px;
     line-height: 33px;
