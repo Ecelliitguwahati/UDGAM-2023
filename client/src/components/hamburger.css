@@ -31,8 +31,14 @@
     cursor: pointer;
     text-align: left;
     font-family: 'Action Sans';
+    height:fit-content;
     
 }
+
+.humnav a{
+    height: fit-content;
+}
+
 .humnav:hover{
     
     text-decoration: none;

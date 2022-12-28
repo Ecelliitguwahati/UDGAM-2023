@@ -9,6 +9,7 @@ import idfc from '../../icons/idfcbank.svg'
 import havells from '../../icons/havells.svg'
 import zaloni from '../../icons/zaloni.svg'
 import Line from '../../icons/Line.svg'
+import {motion} from 'framer-motion';
 
 function Landing() {
   useEffect(() => {
@@ -20,7 +21,13 @@ function Landing() {
   
     <div className='landing'>
       <Loading/>
+      <motion.div
+      initial={{opacity:0}}
+      animate={{opacity:[0,0,1]}}
+      transition={{duration:8, ease:'easeOut'}}
+      style={{width:`100%`, zIndex:`10000`}}>
        <Navbar2 />
+       </motion.div>
        <div className='titlesponsor'>
        <img className='Tata' src={Bosch} alt=''/> 
        <p className="pr pr1">presents</p>
