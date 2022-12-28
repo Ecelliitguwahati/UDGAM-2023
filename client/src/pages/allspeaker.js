@@ -117,74 +117,73 @@ function AllSpeakers() {
 
                 <div className='row'>
                 <div className="img col-lg-3 col-sm-12">
-            <img src={charlie} alt="photo" width="273px" height="258px" />
+            <a href="https://www.linkedin.com/in/ccheever/"><img src={charlie} alt="photo" /></a>
             <h1>Charlie Cheever</h1>
             <h3>Quora</h3>
             <p>Co-Founder</p>
           </div>
           <div className="img col-lg-3 col-sm-12">
-            <img src={jimmy} alt="photo" width="273px" height="258px" />
+          <a href="https://www.linkedin.com/in/jimmy-wales-919a8b/"><img src={jimmy} alt="photo"  /></a>
             <h1>Jimmy Wales</h1>
             <h3>Wikipedia</h3>
             <p>Founder</p>
           </div>
           <div className="img col-lg-3 col-sm-12">
-            <img src={pulkit} alt="photo" width="273px" height="258px" />
+          <a href="https://www.linkedin.com/in/jainpulkit/"><img src={pulkit} alt="photo" /></a>
             <h1>Pulkit Jain</h1>
             <h3>Vedantu</h3>
             <p>Co-Founder</p>
           </div>
           <div className="img col-lg-3 col-sm-12">
-            <img src={kevin} alt="photo" width="273px" height="258px" />
+          <a href="https://www.linkedin.com/in/thekevinharrington/"><img src={kevin} alt="photo" /></a>
             <h1>Kevin Harrington</h1>
             <h3>Shark Tank</h3>
             <p>Original Shark</p>
           </div>
           <div className="img col-lg-3 col-sm-12">
-            <img src={michael} alt="photo" width="273px" height="258px" />
+          <a href="https://www.linkedin.com/in/mwseibel/"><img src={michael} alt="photo"/></a>
             <h1>Michael Siebel</h1>
             <h3>Y-Combinator</h3>
             <p>CEO</p>
           </div>
           <div className="img col-lg-3 col-sm-12">
-            <img src={ankur} alt="photo" width="273px" height="258px" />
+          <a href="https://www.linkedin.com/in/warikoo/"><img src={ankur} alt="photo"/></a>
             <h1>Ankur Warikoo</h1>
             <h3>Nearbuy</h3>
             <p>Founder</p>
           </div>
           <div className="img col-lg-3 col-sm-12">
-            <img src={amit} alt="photo" width="273px" height="258px" />
+          <a href="https://www.linkedin.com/in/amit-kumar-agarwal-5b30301/"><img src={amit} alt="photo"/></a>
             <h1>Amit Agarwal</h1>
             <h3>No Broker</h3>
             <p>CEO & Founder</p>
           </div>
           <div className="img col-lg-3 col-sm-12">
-            <img src={amod} alt="photo" width="273px" height="258px" />
+          <a href="https://www.linkedin.com/in/amodm/"><img src={amod} alt="photo" /></a>
             <h1>Amod Malviya</h1>
             <h3>Udaan</h3>
             <p>Co-Founder</p>
           </div><div className="img col-lg-3 col-sm-12">
-            <img src={ankit} alt="photo" width="273px" height="258px" />
+          <a href="https://www.linkedin.com/in/ankitnagori/"> <img src={ankit} alt="photo" /></a>
             <h1>Ankit Nagori</h1>
             <h3>Cure.Fit</h3>
             <p>Founder</p>
           </div><div className="img col-lg-3 col-sm-12">
-            <img src={rohit} alt="photo" width="273px" height="258px" />
+          <a href="https://in.linkedin.com/in/rohit-kapoor-99a30436"><img src={rohit} alt="photo"/></a>
             <h1>Rohit Kapoor</h1>
             <h3>Swiggy</h3>
             <p>CEO</p>
           </div><div className="img col-lg-3 col-sm-12">
-            <img src={kaushik} alt="photo" width="273px" height="258px" />
+          <a href="https://in.linkedin.com/in/kmitra"><img src={kaushik} alt="photo"/></a>
             <h1>Kaushik Mitra</h1>
             <h3>Pepsico India</h3>
             <p>CEO & VP</p>
           </div><div className="img col-lg-3 col-sm-12">
-            <img src={brijesh} alt="photo" width="273px" height="258px" />
+          <a href="https://www.linkedin.com/in/brijeshagrawal"><img src={brijesh} alt="photo"  /></a>
             <h1>Brijesh Agarwal</h1>
             <h3>Indiamart</h3>
             <p>Co-Founder & Director</p>
           </div>
-
                 </div>
 
             </div>

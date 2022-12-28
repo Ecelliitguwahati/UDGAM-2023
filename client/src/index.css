@@ -7,8 +7,8 @@
   src: url(./fonts/ActionSans-Medium.otf);
 }
 
-body {
 
+body {
   margin: 0;
   font-family: Action Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -20,10 +20,8 @@ body {
 background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
 input,textarea,select{
   font-size:15px!important;
 }
+

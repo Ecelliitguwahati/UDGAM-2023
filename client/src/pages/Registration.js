@@ -118,8 +118,8 @@ function Registration() {
   return (
       <body style={{ height: "150vh" }}>
       <Navbar />
-      <div className='register_entire_page'>
-       <form onSubmit={handleSubmit}>
+      <div>
+       <form className='register_entire_page' onSubmit={handleSubmit}>
         <div className="register_dabba">
           <div className='register-progressbar'>
             <div className='c1_reg'>
@@ -187,9 +187,9 @@ function Registration() {
 
             <p className="beta beta4 beta5"><br />Coupons</p>
 
-            <p className="gamma">$199</p>
-            <p className="gamma1">$199</p>
-            <p className="gamma1 gamma2">$199</p>
+            <p className="gamma">₹199</p>
+            <p className="gamma1">₹199</p>
+            <p className="gamma1 gamma2">₹199</p>
             <div className="Checkout" type="submit" onClick={loadRazorpay}><Checkout title="CHECK OUT →" /></div>
           </div>
 

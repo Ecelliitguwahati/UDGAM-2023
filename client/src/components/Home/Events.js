@@ -1,24 +1,76 @@
 import React from 'react';
 import udgamLogoPink from "../../icons/udgamLogoPink.svg";
-import Vector from "../../icons/Vector.svg";
 import Vector2 from "../../icons/Vector2.png";
 import check from "../../icons/check.png";
 import live from "../../icons/live.png";
-import view from "../../icons/view.png";
 import barcode from "../../icons/barcode.svg";
-import Vector3 from "../../icons/Vector3.svg";
 import "./Events.css"; import { Link } from 'react-router-dom';
 import { Button } from '@cred/neopop-web/lib/components';
+import './../../fonts/ActionSans-Light.otf';
+import Countdown from "react-countdown";
+import disrupt from "../../icons/disrupt.svg";
+import encode from "../../icons/encode.svg";
+import need from "../../icons/need.svg";
 function Events() {
+    const eventsdata = [
+
+        {
+            "tag": "disrupt",
+            "id": "b4",
+            "ori": "left",
+            "date": "Dec 30, 2022 23:59:59",
+            "image": disrupt,
+            "info": 0,
+            "prize": "10 Lakhs+",
+            "eventName": "DISRUPT",
+            "payment": "Free", "link": "https://rebrand.ly/Disrupt_Registration",
+            "eventDesc": "Disrupt is North East India’s Largest Pitching Battle where startups get a platform to pitch their idea to investors, Angel investors, and Venture Capitalists. In our previous editions, we had Michael Sibel, CEO of Y-Combinator as one of the panelists. Top finalists are provided with mentorship, incubation, and business tools alongside prizes and investment opportunities for winners."
+        },
+        // 0 for ongoing
+        // 1 for expired
+        // 2 for coming ComingSoon
+        {
+            "tag": "need",
+            "id": "b5",
+            "ori": "left",
+            "date": "Jan 20, 2022 16:37:25",
+            "prize": "1 Lakhs+",
+            "info": 1,
+            "image": need,
+            "eventName": "NEED",
+            "payment": "Free", "link": "https://www.fb.com",
+            "eventDesc": "Introducing our brand new event, North East Entrepreneurship Drive aka NEED where we aim to promote the entrepreneur environment and startup urge by helping institutes of North East India set up their own Entrepreneurship Cells in their institutes.  "
+        },
+        // 0 for ongoing
+        // 1 for expired
+        // 2 for coming ComingSoon
+
+
+        {
+            "tag": "encode",
+            "id": "b8",
+            "ori": "right",
+            "date": "Jan 2, 2023 16:37:25",
+            "info": 0,
+            "prize": "1.2 Lakhs+",
+            "image": encode,
+            "eventName": "ENCODE",
+            "payment": "Free", "link": "https://rebrand.ly/EnCode23",
+            "eventDesc": "An entrepreneur’s task is to solve real-life real-world problems by developing a feasible solution that caters to everyone's needs be it the users or the market. Focussing on this, Encode is a development hackathon where you will be provided with a real-life problem and you have to devise a solution for it."
+        }
+
+
+    ]
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
         if (completed) {
-          // Render a completed state
-          return <span>Registration closed</span>;
+            // Render a completed state
+            return <span>Registration closed</span>;
+            
         } else {
-          // Render a countdown
-          return <span>{days} days: {hours} hr: {minutes} min</span>;
+            // Render a countdown
+            return <span>{days} days: {hours} hr: {minutes} min</span>;
         }
-      };
+    };
     return (
 
         <div id="containerevent" >
@@ -27,7 +79,7 @@ function Events() {
                     <p>WHY AM I HERE?</p>
                 </div>
                 <div id="moreEvents">
-                    <Link to={"/events"} params={{ event: 1 }}>
+                    <Link to={"/events"} params={{ event: 1 }} className="link">
                         <button className='topbutevent' >More Events</button>
                     </Link>
 
@@ -47,16 +99,17 @@ function Events() {
                                 </div>
                             </div>
                             <div className="text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facere, sequi ut suscipit officia, corporis culpa nam animi repellat quia doloribus ipsa consequuntur nesciunt iusto ipsam inventore dolorum numquam aspernatur.
+                            Disrupt is North East India’s Largest Pitching Battle where startups get a platform to pitch their idea to investors, Angel investors, and Venture Capitalists. In our previous editions, we had Michael Sibel, CEO of Y-Combinator as one of the panelists. Top finalists are provided with mentorship, incubation, and business tools alongside prizes and investment opportunities for winners.
                             </div>
                             <div className="register">
-                                <button className="reg">
+                            <a href={eventsdata[0].link}><button className="reg">
                                     Register
-                                    <img src={Vector2} alt="" />
+                                    <img src={Vector2} alt="" color="#3A10AD" />
                                 </button>
+                                </a>
                                 <button className="live1">
                                     <img src={live} alt="" />
-                                    ends in 03:09:54
+                                    <Countdown date={new Date(eventsdata[0].date).getTime()} renderer={renderer} />
                                 </button>
                             </div>
 
@@ -68,23 +121,23 @@ function Events() {
                         </div>
                         <div className="content2">
                             <div className="heading">
-                                <p>COSMIC CLASH</p>
+                                <p>NEED</p>
                                 <div className="check">
                                     <img src={check} alt="" />
                                 </div>
                             </div>
                             <div className="text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facere, sequi ut suscipit officia, corporis culpa nam animi repellat quia doloribus ipsa consequuntur nesciunt iusto ipsam inventore dolorum numquam aspernatur.
+                            Introducing our brand new event, North East Entrepreneurship Drive aka NEED where we aim to promote the entrepreneur environment and startup urge by helping institutes of North East India set up their own Entrepreneurship Cells in their institutes.
                             </div>
                             <div className="register">
                                 <button className="reg">
-                                    Register
-                                    <img src={Vector2} alt="" color="#3A10AD" />
+                                    {/* Register
+                                    <img src={Vector2} alt="" color="#3A10AD" /> */}
                                 </button>
-                                <button className="live1">
-                                    <img src={live} alt="" />
-                                    ends in 03:09:54
+                                <button className="closed">
+                                    Registration closed
                                 </button>
+                                
                             </div>
 
                         </div>
@@ -101,15 +154,21 @@ function Events() {
                                 </div>
                             </div>
                             <div className="text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facere, sequi ut suscipit officia, corporis culpa nam animi repellat quia doloribus ipsa consequuntur nesciunt iusto ipsam inventore dolorum numquam aspernatur.
+                            An entrepreneur’s task is to solve real-life real-world problems by developing a feasible solution that caters to everyone's needs be it the users or the market. Focussing on this, Encode is a development hackathon where you will be provided with a real-life problem and you have to devise a solution for it.
                             </div>
                             <div className="register">
-                                <button className="reg">
-                                    View Results
-                                    <img src={view} alt="" />
+                                <a href={eventsdata[2].link}><button className="reg">
+                                    Register
+                                    <img src={Vector2} alt="" color="#3A10AD" />
                                 </button>
-                                <button className="closed">
-                                    Registration closed
+                                </a>
+                                {/* <button className="reg">
+                                    Register
+                                    <img src={view} alt="" />
+                                </button> */}
+                                <button className="live1">
+                                    <img src={live} alt="" />
+                                    <Countdown date={new Date(eventsdata[2].date).getTime()} renderer={renderer} />
                                 </button>
                             </div>
 

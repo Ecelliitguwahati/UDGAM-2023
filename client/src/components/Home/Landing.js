@@ -1,15 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Bosch from '../../sponsors/tataland.svg'
 import UdgamShapping from '../../icons/udgam-spring.png'
 import landingSponsors from '../../icons/lands.png'
 import CountIn from './LAnding_CountIn'
 import Navbar2 from '../Navbar2'
+import Loading from './loading'
+import idfc from '../../icons/idfcbank.svg'
+import havells from '../../icons/havells.svg'
+import zaloni from '../../icons/zaloni.svg'
+import Line from '../../icons/Line.svg'
 
 function Landing() {
+  useEffect(() => {
+    setTimeout(()=>{
+      document.getElementById("countinbuttondiv").style.display="block"
+     }, 3000)
+    }, [])
   return (
+  
     <div className='landing'>
+      <Loading/>
        <Navbar2 />
+       <div className='titlesponsor'>
        <img className='Tata' src={Bosch} alt=''/> 
+       <p className="pr pr1">presents</p>
+       </div>
        <div className='udgamland'>
         <a href="/">
        <svg width="100%" height="auto" viewBox="0 0 420 238" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,8 +41,26 @@ function Landing() {
 </svg>
 </a>
 </div>
-<h3 className='taglineu'>Vortex of ventures</h3>
-       <CountIn/>
+<h3 className='taglineu'>VORTEX OF VENTURES</h3>
+<p className='font-face-asl'><p className="pr">Co-presented by</p></p>
+
+<div className="Footerland">
+    <div >
+      <img className='imgfoot' src={idfc} />
+    </div>
+       <img src={Line} alt="" />
+    <div >
+      <img className='imgfoot' src={havells}/>
+    </div>
+      <img src={Line} alt="" />
+    <div>
+      <img className='imgfoot' src={zaloni}/>
+  </div>
+</div>    
+<div 
+        id='countinbuttondiv'
+        ><CountIn/></div>  
+       
     </div>
   )
 }
