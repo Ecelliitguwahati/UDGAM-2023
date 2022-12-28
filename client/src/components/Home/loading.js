@@ -16,8 +16,8 @@ function Loading() {
     return (
 
         <motion.div
-            initial={{ zIndex: 1000 }}
-            animate={{ zIndex: [10, 10, 10, 2] }}
+            initial={{ zIndex: 100000 }}
+            animate={{ zIndex: [100000, 1000000, 10000, 2] }}
             transition={{ duration: 3 }}
             id="bg" >
 
@@ -68,13 +68,13 @@ function Loading() {
                     src={rocket} id="rocket" className='animation' alt="" />
             </motion.div>
             <motion.div
-                initial={{ opacity: 4 }}
-                animate={{ opacity: [3, 2, 1, 0, 0] }}
+                initial={{ opacity: 4,zIndex: 100000  }}
+                animate={{ opacity: [3, 2, 1, 0, 0], zIndex: [100000, 1000000, 100000, 2]  }}
                 transition={{ duration: 8, ease: 'easeOut' }}>
                 <div id="text">
                     <img src={udgam} id="udgam" alt="" />
-                    <p id="one">Well, I will not be blackmailed by some ineffectual, privileged, effete, soft-penised, debutante. </p>
-                    <p id="two">-Vedprakash Sirji</p>
+                    <p id="one">Entrepreneur banne ke liye spelling nahi, spirit chahiye</p>
+                    <p id="two">-TVF Pitchers</p>
                 </div>
                 <div id="loading">
                     LOADING...
