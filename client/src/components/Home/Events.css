@@ -73,6 +73,10 @@
 {
     text-decoration: none;
 }
+.link:hover
+{
+    text-decoration: none;
+}
 #down{
     display:flex;
     flex-direction: row;

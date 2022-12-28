@@ -17,6 +17,7 @@ body{
     color: #DDF140;
 
 }
+
 .buy-merch{
     padding: 0 120px;
 }
@@ -41,7 +42,13 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
 }
-.topbut:hover{
+.topbut a{
+    text-decoration: none;
+    color: #D4F34A;
+}
+
+
+.topbut:hover, .topbut a:hover{
     
         color: #09021C;
         background-color:#D4F34A ;

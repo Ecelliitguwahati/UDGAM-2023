@@ -42,14 +42,14 @@ body {
     top: 0;
     left: 0;
     padding: 5px;
-    z-index: 100;
+    z-index: 100000;
     position: relative;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 44px;
     margin-left: 120px;
     margin-right: 120px;
 }
@@ -147,6 +147,7 @@ body {
 
 .landing {
     margin-top: -20px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,6 +166,7 @@ body {
 
 #countinbutton {
     position: relative;
+    margin-bottom:60px;
 }
 
 .udgamland {
@@ -192,13 +194,14 @@ body {
     z-index: 5000;
     display: none;
     transition: all 0.3s ease;
+    margin-bottom: 60px;
 }
 
 .titlesponsor {
     display: flex;
     justify-content: center;
     align-self: center;
-    padding-top: 50px;
+    padding-top: 2px;
 }
 
 .pr {

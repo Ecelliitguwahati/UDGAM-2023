@@ -29,34 +29,34 @@ function Sponsors() {
             <div class="containersponsorbox">
                 <div class="title-sponsor">
                     
-                    <img src={Tata} className="tatalogo"></img>
+                    <a href='https://www.tataprojects.com/' ><img src={Tata} className="tatalogo"></img></a>
                     <h3>Title Sponsor</h3>
                 </div>
 
                 <div class="associate-title">
                     <div class="individual-associate">
-                        <img src={lt}></img>
+                        <a href='https://learningwhiletravelling.com/home'><img src={lt}></img></a>
                         <h3>Ecosystem Partner</h3>
                     </div>
 
                     <div class="individual-associate">
-                        <img src={startuplab}></img>
+                        <a href='https://thestartuplab.in/'><img src={startuplab}></img></a>
                         <h3>Events Partner</h3>
                     </div>
 
                     <div class="individual-associate">
-                        <img src={gfg}></img>
+                        <a href='https://www.geeksforgeeks.org/'><img src={gfg}></img></a>
                         <h3>Campus Ambassador Partner</h3>
                     </div>
 
                 </div>
                 <div class="associate-title">
                     <div class="individual-associate">
-                        <img src={INA}></img>
+                        <a href='https://www.indiaaccelerator.co/'><img src={INA}></img></a>
                         <h3>Accelerator Partner</h3>
                     </div>
                     <div class="individual-associate">
-                        <img src={UIV}></img>
+                        <a href='https://www.unicornivc.com/'><img src={UIV}></img></a>
                         <h3>Mentorship Partner</h3>
                     </div>
                 </div>
@@ -65,11 +65,11 @@ function Sponsors() {
                     <h3>CAP Partners</h3>
                     <div class="associate-title">
                         <div class="individual-associate">
-                            <img src={INB}></img>
+                        <a href='https://interviewbuddy.in/'><img src={INB}></img></a>
                             <h3 className='partners-subtitle'>Learning Partner <br/>CAP</h3>
                         </div>
                         <div class="individual-associate">
-                            <img src={technalogy}></img>
+                        <a href='https://techanalogy.org/'><img src={technalogy}></img></a>
                             <h3  className='partners-subtitle'>Knowledge Partner <br/>CAP</h3>
                         </div>
 
@@ -80,15 +80,15 @@ function Sponsors() {
                     <h3>Disrupt Partners</h3>
                     <div class="associate-title">
                         <div class="individual-associate">
-                            <img src={whev}></img>
+                        <a href='https://www.wehventures.com/'><img src={whev}></img></a>
                             <h3  className='partners-subtitle'>Title Sponsor</h3>
                         </div>
                         <div class="individual-associate">
-                            <img src={jordan}></img>
+                        <a href='https://www.jordensky.com/'><img src={jordan}></img></a>
                             <h3  className='partners-subtitle'>Law Partner</h3>
                         </div>
                         <div class="individual-associate">
-                            <img src={venture}></img>
+                        <a href='https://www.ventureast.net/'><img src={venture}></img></a>
                             <h3  className='partners-subtitle'>Mentorship Partner</h3>
                         </div>
                     </div>
@@ -98,11 +98,11 @@ function Sponsors() {
                     <h3>Media Partners</h3>
                     <div class="associate-title">
                         <div class="individual-associate">
-                            <img src={ghaskhabar} className="lastsponsor"></img>
+                        <a href='https://www.khaskhabar.com/'><img src={ghaskhabar}></img></a>
                            
                         </div>
                         <div class="individual-associate">
-                            <img src={kota}  className="lastsponsor"></img>
+                        <a href='https://www.ihoik.com/'><img src={kota}></img></a>
                         </div>
 
                     </div>

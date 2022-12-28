@@ -6,6 +6,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__top">
+          <div className='c2'>
           <div className="company__info">
             <h2 className="company__logo" >
               <svg width="333" height="189" viewBox="0 0 333 189" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -135,6 +136,7 @@ function Footer() {
 
               </Button>
               </div>
+            </div>
             </div>
 
           </div>
