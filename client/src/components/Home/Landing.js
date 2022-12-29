@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import Bosch from '../../sponsors/tataland.svg'
-import UdgamShapping from '../../icons/udgam-spring.png'
-import landingSponsors from '../../icons/lands.png'
-import CountIn from './LAnding_CountIn'
+import CountIn from './LandingCount'
 import Navbar2 from '../Navbar2'
 import Loading from './loading'
 import idfc from '../../icons/idfcbank.svg'
@@ -27,9 +25,10 @@ function Landing() {
       transition={{duration:8, ease:'easeOut'}}
       style={{width:`100%`, zIndex:`10000`}}>
        <Navbar2 />
-       </motion.div>   
+       </motion.div>
        <div className='titlesponsor'>
-       <img className='Tata' height="90px" width="450px" src={Bosch} alt=''/> 
+       <img className='Tata' src={Bosch} alt=''/> 
+       <p className="pr pr1">presents</p>
        </div>
        <div className='udgamland'>
         <a href="/">
@@ -48,18 +47,19 @@ function Landing() {
 </a>
 </div>
 <h3 className='taglineu'>VORTEX OF VENTURES</h3>
+<p className='font-face-asl'><p className="pr">Co-presented by</p></p>
 
 <div className="Footerland">
     <div >
-      <img className='imgfoot' height="53px" width="150px" src={idfc} />
+      <img className='imgfoot' alt='' src={idfc} />
     </div>
-       <img className="line" src={Line} alt="" />
+       <img src={Line} alt="" />
     <div >
-      <img className='imgfoot' height="53px" width="140px"src={havells}/>
+      <img className='imgfoot' alt='' src={havells}/>
     </div>
-      <img  className="line" src={Line} alt="" />
+      <img src={Line} alt="" />
     <div>
-      <img className='imgfoot' height="53px" width="150px" src={zaloni}/>
+      <img className='imgfoot' alt='' src={zaloni}/>
   </div>
 </div>    
 <div 
