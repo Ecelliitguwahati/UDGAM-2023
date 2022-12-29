@@ -1,6 +1,7 @@
 import React from 'react'
 import './GetTicket_Spomsor.css'
-import { Button } from '@cred/neopop-web/lib/components';
+// import { Button } from '@cred/neopop-web/lib/components';
+import GetTicketB from './GetTicketButton';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
   import Toast3rd from '../toast';
@@ -10,19 +11,9 @@ function GetTicket() {
 <div className='getticket'>
     <h1>SEE YOU AT<br></br>UDGAM 2023</h1>
     <h3>Save the date and secure your seat at the summit.</h3>
-    <div class="buttoncenter">        <Button
-            variant="primary"
-            kind="elevated"
-            size="big"
-            colorMode="light"
-            colorConfig={{backgroundColor:"#F0E266",borderColor:"black",edgeColors:{right:"#736B1F",bottom:"#736B1F"}}}
-            spacingConfig={{height:"80px"}}
-            onClick={() => {
-              window.open('/registration', "_self");
-          }}
-        >
-            <div className="GetTkt" style={{color:"black"}}>GET MY TICKET</div>
-    </Button></div>
+    <div class="buttoncenter">
+       <GetTicketB/>        
+      </div>
 
 </div>
   )

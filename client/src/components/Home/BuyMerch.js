@@ -1,6 +1,8 @@
 import React from 'react'
 import "./BuyMerch.css";
-import { Button } from '@cred/neopop-web/lib/components';
+// import { Button } from '@cred/neopop-web/lib/components';
+import BuyM from "./BuyMerchButton";
+
 
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
@@ -25,20 +27,9 @@ function BuyMerch() {
     </div>
     <div class="backimg">
       
-      <div class="but_merch">        
-      <Button
-            variant="primary"
-            kind="elevated"
-            size="big"
-            colorMode="light"
-            colorConfig={{backgroundColor:"#F0E266",borderColor:"black",edgeColors:{right:"#736B1F",bottom:"#736B1F"}}}
-             spacingConfig={{height:"70px"}}
-            onClick={() => {
-              toast("COMING SOON !!");
-            }}
-        >
-            <div className="GetTkt" style={{color:"black"}}>BUY MERCH</div>
-    </Button></div>
+      <div class="but_merch"> 
+       <BuyM/>    
+      </div>
     </div>
     </div>
     

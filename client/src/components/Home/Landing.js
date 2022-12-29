@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import Bosch from '../../sponsors/tataland.svg'
-import UdgamShapping from '../../icons/udgam-spring.png'
-import landingSponsors from '../../icons/lands.png'
-import CountIn from './LAnding_CountIn'
+import CountIn from './LandingCount'
 import Navbar2 from '../Navbar2'
 import Loading from './loading'
 import idfc from '../../icons/idfcbank.svg'
@@ -46,15 +44,15 @@ function Landing() {
 
 <div className="Footerland">
     <div >
-      <img className='imgfoot' src={idfc} />
+      <img className='imgfoot' alt='' src={idfc} />
     </div>
        <img src={Line} alt="" />
     <div >
-      <img className='imgfoot' src={havells}/>
+      <img className='imgfoot' alt='' src={havells}/>
     </div>
       <img src={Line} alt="" />
     <div>
-      <img className='imgfoot' src={zaloni}/>
+      <img className='imgfoot' alt='' src={zaloni}/>
   </div>
 </div>    
 <div 
