@@ -16,8 +16,8 @@ function Loading() {
     return (
 
         <motion.div
-            initial={{ zIndex: 100000 }}
-            animate={{ zIndex: [100000, 1000000, 10000, 2] }}
+            initial={{ zIndex: 1000 }}
+            animate={{ zIndex: [100,100,1000,100,100,100,100,0] }}
             transition={{ duration: 3 }}
             id="bg" >
 
@@ -69,7 +69,7 @@ function Loading() {
             </motion.div>
             <motion.div
                 initial={{ opacity: 4,zIndex: 100000  }}
-                animate={{ opacity: [3, 2, 1, 0, 0], zIndex: [100000, 1000000, 100000, 2]  }}
+                animate={{ opacity: [3, 2, 1, 0, 0], zIndex: [100000, 1000000, 100000,1000,1000,1000, 2]  }}
                 transition={{ duration: 8, ease: 'easeOut' }}>
                 <div id="text">
                     <img src={udgam} id="udgam" alt="" />
