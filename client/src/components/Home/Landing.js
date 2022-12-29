@@ -27,10 +27,9 @@ function Landing() {
       transition={{duration:8, ease:'easeOut'}}
       style={{width:`100%`, zIndex:`10000`}}>
        <Navbar2 />
-       </motion.div>
+       </motion.div>   
        <div className='titlesponsor'>
-       <img className='Tata' src={Bosch} alt=''/> 
-       <p className="pr pr1">presents</p>
+       <img className='Tata' height="90px" width="450px" src={Bosch} alt=''/> 
        </div>
        <div className='udgamland'>
         <a href="/">
@@ -49,19 +48,18 @@ function Landing() {
 </a>
 </div>
 <h3 className='taglineu'>VORTEX OF VENTURES</h3>
-<p className='font-face-asl'><p className="pr">Co-presented by</p></p>
 
 <div className="Footerland">
     <div >
-      <img className='imgfoot' src={idfc} />
+      <img className='imgfoot' height="53px" width="150px" src={idfc} />
     </div>
-       <img src={Line} alt="" />
+       <img className="line" src={Line} alt="" />
     <div >
-      <img className='imgfoot' src={havells}/>
+      <img className='imgfoot' height="53px" width="140px"src={havells}/>
     </div>
-      <img src={Line} alt="" />
+      <img  className="line" src={Line} alt="" />
     <div>
-      <img className='imgfoot' src={zaloni}/>
+      <img className='imgfoot' height="53px" width="150px" src={zaloni}/>
   </div>
 </div>    
 <div 

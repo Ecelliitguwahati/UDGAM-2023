@@ -11,6 +11,7 @@ body{
     display:flex; 
     align-items: center;
     justify-content:space-between;
+    margin-bottom:
     
 }
 .top h1{
@@ -47,14 +48,12 @@ body{
     color: #D4F34A;
 }
 
-
-.topbut:hover, .topbut a:hover{
-    
-        color: #09021C;
-        background-color:#D4F34A ;
-          
-    
+.topbut a:hover{
+    text-decoration: none;
+    color: #D4F34A;
 }
+
+
 
 .backimg{
     background-image: url("../../icons/backimg.png");
