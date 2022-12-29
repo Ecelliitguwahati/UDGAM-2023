@@ -6,10 +6,14 @@ import Icon from "../icons/icon.png"
 import Buy from "../icons/Ticket.png"
 import contact from "./../icons/contact.svg";
 import aboutUs from "./../icons/aboutUs.svg";
-
+import {useState} from 'react';
 
 import Navbar from './Navbar';
 function Hamburger(){
+  const [s, sets] = useState('hidden');
+    const [s1, sets1] = useState('hidden');
+    const [s2, sets2] = useState('hidden');
+    const [s3, sets3] = useState('hidden');
     return (
         <>
 
@@ -22,10 +26,38 @@ function Hamburger(){
                             <div><a href="/#merch" className="humnav">Merch </a></div>
                         </div>
                         <div className="netero" >
-                                <p className="killus humnav"><a href="/contactus" className='humnav' ><p className='font-face-asl'>Contact Us <img src={contact} className="si"/></p></a></p>
-                                <p className="hisoka humnav"  ><a href="/speakers" className='humnav'><p className='font-face-asl'>Speakers</p></a></p>
-                                <p className="kurapika humnav" ><a href="/ourteam" className='humnav'><p className='font-face-asl'>Our Team</p></a></p>
-                                <p className="leo humnav"><a href="/sponsors" className='humnav' ><p className='font-face-asl'>Sponsors</p></a></p>
+                        <p className="killus humnav"><a href="/contactus" className='humnav' ><p className='font-face-asl'
+                                onMouseEnter={()=>{
+                                  sets('visible');
+                              }}
+                              onMouseLeave={()=>{
+                                  sets('hidden');
+                              }}
+                                >Contact Us <img src={contact} className="si" style={{visibility:`${s}`}}/></p></a></p>
+                                <p className="hisoka humnav"  ><a href="/speakers" className='humnav'><p className='font-face-asl'
+                                onMouseEnter={()=>{
+                                  sets1('visible');
+                              }}
+                              onMouseLeave={()=>{
+                                  sets1('hidden');
+                              }}
+                                >Speakers <img src={contact} className="si" style={{visibility:`${s1}`}}/></p></a></p>
+                                <p className="kurapika humnav" ><a href="/ourteam" className='humnav'><p className='font-face-asl'
+                                onMouseEnter={()=>{
+                                  sets2('visible');
+                              }}
+                              onMouseLeave={()=>{
+                                  sets2('hidden');
+                              }}
+                                >Our Team <img src={contact} className="si" style={{visibility:`${s2}`}}/></p></a></p>
+                                <p className="leo humnav"><a href="/sponsors" className='humnav' ><p className='font-face-asl'
+                                onMouseEnter={()=>{
+                                  sets3('visible');
+                              }}
+                              onMouseLeave={()=>{
+                                  sets3('hidden');
+                              }}
+                                >Sponsors<img src={contact} className="si" style={{visibility:`${s3}`}}/></p> </a></p>
                                 <a href="https://www.ecelliitg.in" style={{textDecoration:`none`}}>  <p className="Among_Us humnav">
                             <p className='font-face-asl'>About Us<img src={aboutUs} className="si"/></p>
                             </p></a>
@@ -36,7 +68,6 @@ function Hamburger(){
                               <div className="CoC"><p className='font-face-asl'>Lost the pass you bought? We got you covered.</p></div>
                               <div><br /><input className="input_pass" placeholder="Enter Your Mail..." /></div>
                             </div>
-                        <div className="mr-3 nav-right">
                             
                             <div className="brrr">
                           <div><Button
@@ -144,7 +175,7 @@ function Hamburger(){
               </Button>
             </div>
             </div>
-                      </div>
+                      
                     </div>
                 </div>
             </body>

@@ -2,6 +2,27 @@ html{
 
   font-size: 62.5%;
 }
+@font-face {
+  font-family: 'As';
+  src: llocal('As'),url("./../../fonts/ActionSans-Regular.otf");
+}
+
+.va{
+  text-decoration: none;
+
+}
+
+.va:hover{
+  text-decoration: none;
+
+}
+
+.va p{
+  color:#fc97d9;
+  font-size:16px;
+  font-family: 'As';
+  margin-left:20px;
+}
 .getticket{
     background-color: black;
     margin:0;
@@ -54,7 +75,14 @@ color: rgba(252, 151, 217, 1);
   Founders Grotesk;
 }
 .sponsorhome h1{
-  padding: 0 100px; 
+  padding-left:100px; 
+}
+
+.t{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  align-items: baseline;
 }
 
 .sponsorhome button{
@@ -63,7 +91,7 @@ color: rgba(252, 151, 217, 1);
 .sponsorhome{
   padding: 60px 0px;
 }
-.sponsorhome img{
+.sa img{
   width: 100%;
   height: auto;
 }
@@ -76,8 +104,4 @@ color: rgba(252, 151, 217, 1);
 
   font-size: 1.4rem;
 }
-
-.sponsorhome img{
-}
-
 }
