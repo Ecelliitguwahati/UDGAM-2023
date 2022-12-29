@@ -1,8 +1,6 @@
 import React from 'react'
 import { Button } from '@cred/neopop-web/lib/components';
 import './allspeaker.css'
-import speak from "../icons/speaker.png"
-import one from "../PhotosPng/Ankur-Warikoo.png"
 import Navbar from '../components/Navbar';
 import './ourteam.css';import charlie from "../PhotosPng/charlie.png"
 import jimmy from "../PhotosPng/jimmy.png"
