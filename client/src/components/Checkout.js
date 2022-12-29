@@ -12,9 +12,7 @@ const Checkout = (props) => {
             colorMode="light"
             
             colorConfig={{backgroundColor:"#D4F34A",borderColor:"#000000",edgeColors:{right:"#FC97D9",bottom:"#FC97D9"}}}
-            onClick={() => {
-                toast("COMING SOON !!");
-              }}
+           
             icon={props.icon}
         >
             <div style={{color:"rgba(0, 0, 0, 0.36)",}}>{props.title}</div>
