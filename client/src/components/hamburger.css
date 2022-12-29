@@ -1,5 +1,5 @@
 .gon{
-    height:fit-content; 
+    height:324px;
     font-family: 'ActionSans-Bold';
     src: local('ActionSans-Bold'),
     url("./../fonts/ActionSans-Bold.otf") format("truetype");
@@ -7,22 +7,41 @@
     font-size: 96px;
     letter-spacing: -0.02em;
     color: #FFFFFF;
-    margin-left: 25px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 80px;
 }
 .gon div, .gob div a p{
     height:fit-content;
+    margin:-20px 0;
+
+}
+
+a :hover, Link:hover{
+    text-decoration: none;
+    color: #DDF140;
+
 }
 
 
-.row1, .row2
+.row1
 {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.row2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end; 
+    margin-top: 80px;
+    flex-wrap: wrap;
 }
 
 .humnav{
@@ -71,8 +90,17 @@
     letter-spacing: -0.02em;
     color: #FFFFFF;
     justify-content: space-between;
+    width:fit-content;
+    margin-top: 100px;
+    height: fit-content;
+
 
 }
+.netero p, .netero a{
+    width:fit-content;
+    height: fit-content;
+}
+
 
 /* .Kite{
     font-family:  sans-serif;
@@ -104,6 +132,7 @@
 }
 .font-face-asl {
     font-family: 'ActionSans-Light';
+    width:fit-content;
 }
 .CoC{
     font-style: normal;
@@ -193,6 +222,10 @@
 
 .si
 {
-    margin-left: 10px;
+    margin:auto auto auto 10px;
+}
+
+.brrr{
+    height: fit-content;
 }
 

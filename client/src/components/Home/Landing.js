@@ -27,8 +27,7 @@ function Landing() {
        <Navbar2 />
        </motion.div>
        <div className='titlesponsor'>
-       <img className='Tata' src={Bosch} alt=''/> 
-       <p className="pr pr1">presents</p>
+       <img className='Tata' height="90px" width="450px" src={Bosch} alt=''/> 
        </div>
        <div className='udgamland'>
         <a href="/">
@@ -47,19 +46,19 @@ function Landing() {
 </a>
 </div>
 <h3 className='taglineu'>VORTEX OF VENTURES</h3>
-<p className='font-face-asl'><p className="pr">Co-presented by</p></p>
+
 
 <div className="Footerland">
     <div >
-      <img className='imgfoot' alt='' src={idfc} />
+    <img className='imgfoot' height="53px" width="150px" src={idfc} />
     </div>
-       <img src={Line} alt="" />
+       <img src={Line} className="line" alt="" />
     <div >
-      <img className='imgfoot' alt='' src={havells}/>
+    <img className='imgfoot' height="53px" width="140px"src={havells}/>
     </div>
-      <img src={Line} alt="" />
+      <img src={Line} className="line"  alt="" />
     <div>
-      <img className='imgfoot' alt='' src={zaloni}/>
+      <img className='imgfoot' height="53px" width="150px" alt='' src={zaloni}/>
   </div>
 </div>    
 <div 
