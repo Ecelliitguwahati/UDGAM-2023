@@ -26,11 +26,11 @@ function Registration() {
     contact:"",
     outlook: "",
     department:"",
-    rollNo: "",
+    rollno: "",
     password: "",
     confirmPassword: "",
   });
-  //console.log(user.firstName, user.lastName, user.email, user.outlook, user.rollNo, user.password, user.confirmPassword);
+  //console.log(user.firstName, user.lastName, user.email, user.outlook, user.rollno, user.password, user.confirmPassword);
 
   const handleChange = (e) =>
     setUser(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
@@ -46,7 +46,7 @@ function Registration() {
         return;
       }
       else {
-        let firstName = user.firstName; let lastName = user.lastName; let email = user.email; let outlook = user.outlook; let contact=user.contact; let department=user.department; let rollNo = user.rollNo; let password = user.password; let confirmPassword = user.confirmPassword;
+        let firstName = user.firstName; let lastName = user.lastName; let email = user.email; let outlook = user.outlook; let contact=user.contact; let department=user.department; let rollno = user.rollno; let password = user.password; let confirmPassword = user.confirmPassword;
         // First check if he purchased pass
         
         await axios.post('/checkifpurchased', { email }).then(
@@ -72,7 +72,7 @@ function Registration() {
         }
         // If he hasn't purchased, then check if iitg credentials match
 
-        await axios.post('/checkoutlook', { outlook, rollNo }).then(
+        await axios.post('/checkoutlook', { outlook, rollno }).then(
           (res) => {
             console.log(msg)
             msg = res.data.message;
@@ -133,7 +133,7 @@ function Registration() {
                   });
                   // Now Payment is completed
                   setPaid(true);
-                  await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollNo, password, confirmPassword }).then(
+                  await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword }).then(
                     (res) => {
                       const success = res.status === 201;
                       if (success) {
@@ -241,7 +241,7 @@ function Registration() {
                 </div>
                 <br />
                 <div className="first_last_flex">
-                  <input className='wid_text_Field_100' type="text" name="rollNo" id='rollno' placeholder="Roll no..." onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="text" name="rollno" id='rollno' placeholder="Roll no..." onChange={handleChange} />
                 </div>
                 <br></br>
                 <p className="H21 info_reg_txt">Password shoud have at least 8 characters</p>
