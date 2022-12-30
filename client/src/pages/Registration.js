@@ -232,10 +232,19 @@ function Registration() {
 
 
                   <select className='wid_text_Field_100' id="department" name="department" placeholder="Department" onChange={handleChange}>
-                    <option value="Computer Science Engineering">Computer Science Engineering</option>
+                    <option value="Biological and Bioscience Engineering">Biological and Bioscience Engineering</option>
                     <option value="Chemical Engineering">Chemical Engineering</option>
-                    <option value="mercedes">Mercedes SLK</option>
-                    <option value="audi">Audi TT</option>
+                    <option value="Chemical Science and Technology">Chemical Science and Technology</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Computer Science Engineering">Computer Science Engineering</option>
+                    <option value="Data Science and AI">Data Science and AI</option>
+                    <option value="Design">Design</option>
+                    <option value="Electronics and Communications Engineering">Electronics and Communications Engineering</option>
+                    <option value="Engineering Physics">Engineering Physics</option>
+                    <option value="Energy Engineering">Energy Engineering</option>
+                    <option value="Electronics and Electrical Engineering">Electronics and Electrical Engineering</option>
+                    <option value="Mathematics and Computing">Mathematics and Computing</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
                   </select>
 
                 </div>
