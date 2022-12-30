@@ -8,7 +8,7 @@ import Vector3 from '../icons/udgam.svg';
 import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 import './Registration.css';
-import axios from '../axios'
+import axios from '../axios';
 import { useState } from 'react';
 import Footer from '../components/Home/footer';
 import { toast } from 'react-toastify';
@@ -17,12 +17,15 @@ function Registration() {
   const orderAmount = 199;
   const navigate = useNavigate();
   const [resitered, setRegistered] = useState(false);
+  const [paymentID, setpaymentID] = useState("");
   const [paid, setPaid] = useState(false);
   const [user, setUser] = useState({
     firstName: "",
     lastName: "",
     email: "",
+    contact:"",
     outlook: "",
+    department:"",
     rollNo: "",
     password: "",
     confirmPassword: "",
@@ -36,30 +39,62 @@ function Registration() {
     var msg;
     e.preventDefault();
     try {
-      
+
       if (user.password !== user.confirmPassword) {
-      
+
         toast('Passwords do not match');
         return;
       }
       else {
-        let firstName = user.firstName; let lastName = user.lastName; let email = user.email; let outlook = user.outlook; let rollNo = user.rollNo; let password = user.password; let confirmPassword = user.confirmPassword;
+        let firstName = user.firstName; let lastName = user.lastName; let email = user.email; let outlook = user.outlook; let contact=user.contact; let department=user.department; let rollNo = user.rollNo; let password = user.password; let confirmPassword = user.confirmPassword;
         // First check if he purchased pass
+        
         await axios.post('/checkifpurchased', { email }).then(
           (res) => {
+            console.log(msg)
             msg = res.data.message;
           }).catch(function (error) {
-            //console.log(error.toJSON());
+           console.log(error.toJSON());
             toast(error.message);
             return;
           });
         // If he has purchased pass, we send him mail again
-        if (msg=="YES"){
-          toast("You had already purchased the UDGAM Pass. However we will still mail you.");
+
+        if (msg == "YES") {
+          toast("You had already purchased the UDGAM Pass. However we will still mail you the credentials");
           await mailpass(user.email);
+          navigate({
+            pathname: '/registration/success',
+            search: `?payId=ABCD&text=DUPLICATE&name=${user.firstName+" "+user.lastName}&email=${user.email}`,
+          
+          });
+          return;
         }
-        // If he hasn't purchased, then
+        // If he hasn't purchased, then check if iitg credentials match
+
+        await axios.post('/checkoutlook', { outlook, rollNo }).then(
+          (res) => {
+            console.log(msg)
+            msg = res.data.message;
+          }).catch(function (error) {
+           console.log(error.toJSON());
+            toast(error.message);
+            return;
+          });
+
+        // IF they match return
+        if(msg=="ROLLNOSAME"){
+          toast("Roll no. already exists. Recheck")
+          return;
+        }
+        if(msg=="OUTLOOKSAME"){
+          toast("Outlook already exists. Recheck")
+          return;
+        }
+
+        //If they don't then start razorpay
         if (msg == "NO") {
+          console.log("RAZOR START")
           //Open Razorpay
           const script = document.createElement('script');
           script.src = 'https://checkout.razorpay.com/v1/checkout.js';
@@ -71,10 +106,11 @@ function Registration() {
             try {
               //Create order API called.
               const result = await axios.post('/create-order', {
-                amount: orderAmount,
+                amount: orderAmount + '00',
               }).catch(function (error) {
                 //console.log(error.toJSON());
                 toast(error.message);
+                return;
               });
               const { amount, id: order_id, currency } = result.data;
               const {
@@ -84,10 +120,11 @@ function Registration() {
                 key: razorpayKey,
                 amount: amount.toString(),
                 currency: currency,
-                name: user.firstName + " "+ user.lastName,
+                name: user.firstName + " " + user.lastName,
                 description: 'UDGAM 2023 transaction',
                 order_id: order_id,
                 handler: async function (response) {
+                  setpaymentID( response.razorpay_payment_id);
                   const result = await axios.post('/pay-order', {
                     amount: amount,
                     razorpayPaymentId: response.razorpay_payment_id,
@@ -96,7 +133,7 @@ function Registration() {
                   });
                   // Now Payment is completed
                   setPaid(true);
-                  await axios.post('/registersave', { firstName, lastName, email, outlook, rollNo, password, confirmPassword }).then(
+                  await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollNo, password, confirmPassword }).then(
                     (res) => {
                       const success = res.status === 201;
                       if (success) {
@@ -108,9 +145,9 @@ function Registration() {
                     });
                 },
                 prefill: {
-                  name: user.firstName + " "+ user.lastName,
+                  name: user.firstName + " " + user.lastName,
                   email: user.email,
-                  contact: '+919xxxxxxxxx',
+                  contact: user.contact,
                 },
                 notes: {
                   address: 'example address',
@@ -123,6 +160,7 @@ function Registration() {
               paymentObject.open();
             } catch (err) {
               toast(err);
+              return;
             }
           };
           document.body.appendChild(script);
@@ -137,12 +175,16 @@ function Registration() {
 
   if (resitered && paid) {
     mailpass(user.email);
-    navigate('/registration/success');
+    navigate({
+      pathname: '/registration/success',
+      search: `?payId=${paymentID}&text=SUCCESS&name=${user.firstName+" "+user.lastName}&email=${user.email}`,
+   
+    });
   }
   // else{
   //   navigate('/registration/failure');
   // }
-  async function mailpass(email){
+  async function mailpass(email) {
     await axios.post('/mailpass', { email })
       .catch(function (error) {
         //console.log(error.toJSON());
@@ -173,26 +215,39 @@ function Registration() {
               </p>
               <div className='registerform_div'>
                 <div className="first_last_flex">
-                  <input className='wid_text_Field_100' type="text" name="firstName" required={true} placeholder="First name..."
+                  <input className='wid_text_Field_100' type="text" name="firstName" required={true} placeholder="First name... *"
                     onChange={handleChange} />
-                  <input className='wid_text_Field_100' type="text" name="lastName" placeholder="Last name..." onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="text" name="lastName"  required={true} placeholder="Last name... *" onChange={handleChange} />
                 </div>
-                <br /><br />
+                <br />
                 <div className="first_last_flex">
-
-                  <input className='wid_text_Field_100' type="email" id='email' name="email" required={true} placeholder="Type your Email..." onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="number" name="contact" pattern="[0-9]{10}" required={true} placeholder="Contact number... *" onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="email" id='email' name="email" required={true} placeholder="Type your Email... *" onChange={handleChange} />
                 </div>
                 <br></br>
-                <p className="H21 info_reg_txt">Only for IIT Guwahati Students</p>
+                <p className="H21 info_reg_txt">Only for IIT Guwahati Students (Important for Intern Fair)</p>
                 <div className="first_last_flex">
                   <input className='wid_text_Field_100' type="email" name="outlook" id='outlookid' placeholder="Outlook mail id..." onChange={handleChange} />
+
+
+
+                  <select className='wid_text_Field_100' id="department" name="department" placeholder="Department" onChange={handleChange}>
+                    <option value="Computer Science Engineering">Computer Science Engineering</option>
+                    <option value="Chemical Engineering">Chemical Engineering</option>
+                    <option value="mercedes">Mercedes SLK</option>
+                    <option value="audi">Audi TT</option>
+                  </select>
+
+                </div>
+                <br />
+                <div className="first_last_flex">
                   <input className='wid_text_Field_100' type="text" name="rollNo" id='rollno' placeholder="Roll no..." onChange={handleChange} />
                 </div>
                 <br></br>
                 <p className="H21 info_reg_txt">Password shoud have at least 8 characters</p>
                 <div className="first_last_flex last_field_regg">
-                  <input className='wid_text_Field_100' type="password" name="password" required={true}  placeholder="Create Password" onChange={handleChange} />
-                  <input className='wid_text_Field_100' type="password" name="confirmPassword" required={true} placeholder="Confirm Password" onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="password" name="password" required={true} placeholder="Create Password... *" onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="password" name="confirmPassword" required={true} placeholder="Confirm Password... *" onChange={handleChange} />
                 </div>
               </div>
             </div>

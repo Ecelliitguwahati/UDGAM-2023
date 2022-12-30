@@ -3,35 +3,61 @@
 import './Registration_success.css'
 import dummyQR from "../icons/dummyQR.png"
 import final1 from "../icons/final1.png"
-import Navbar from '../components/Navbar';
-function RegSuc() {
+import Navbar from '../components/Navbar';import React, { useEffect } from 'react'
+import { toast } from 'react-toastify';
+import axios from '../axios';
+function RegSuc(props) {
+  const queryParameters = new URLSearchParams(window.location.search)
+  const text = queryParameters.get("text")
+  const payId = queryParameters.get("payId")
+  const name = queryParameters.get("name")
+  const email = queryParameters.get("email")
+  useEffect(() => {
+  console.log(props)
+    }, []);
+    async function sendmailagain(){
+      await axios.post('/mailpass', { email }).then((res)=>toast("Mail sent. Please check spam folder"))
+      .catch(function (error) {
+        //console.log(error.toJSON());
+        toast(error.message);
+        return;
+      });
+    }
+    function merch(){
+      toast("COMING SOON")
+    }
   return (
-    <body style={{ height: "150vh" }}>
+    
+    <body style={{ height: "max-content" }}>
        <Navbar />
       <div className="mainbtnsuccess">
         <div className="col1btnsuccess">
           <div className="passbtnsuccess">
-            <p className="para1btnsuccess">Your Udgam Pass is Ready, You will recieve a mail confirming the payment and your
-              tickets will be attached along !</p>
+            <p className="para1btnsuccess">
+              {text=="SUCCESS"?"Your Udgam Pass is Ready, You will recieve a mail confirming the payment and your tickets will be attached along !":text=="DUPLICATE"?"You had already purchased the pass. However, we still mailed you incase you lost the crdentials":"UNAUTHORIZED"}
+            
+              <br/>
+            <p className='transactionidtext'>{text=="SUCCESS"?`Your Transaction ID is ${payId}. Please store it for further references`:""}</p>
+            </p>
             <div className="secondbtnsuccess">
-              <button className="fstbtnsuccess">
+              <button className="fstbtnsuccess" onClick={merch}>
                 Buy our cool Merch
               </button>
-              <button className="scndbtnsuccess">
+              <button className="scndbtnsuccess" onClick={sendmailagain}>
                 Didn't recive any mail?
               </button>
 
 
             </div>
-            <button className="thrdbtnsuccess">
-              Face other issue
+            <a href="/contactus" className="thrdbtnsuccess"><button className="thrdbtnsuccess">
+              Face other issue, then contact us
               <svg width="30" height="10" viewBox="0 0 30 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M13.4375 4.49997L12.9375 4.49997L12.9375 5.49997L13.4375 5.49997L13.4375 4.49997ZM13.4375 5.49997L28.6375 5.49997L28.6375 4.49997L13.4375 4.49997L13.4375 5.49997ZM25.8407 2C25.8407 3.94784 27.4661 5.5 29.4375 5.5L29.4375 4.5C27.9883 4.5 26.8407 3.36587 26.8407 2L25.8407 2ZM29.4375 4.5C27.4662 4.5 25.8407 6.05214 25.8407 8H26.8407C26.8407 6.63415 27.9882 5.5 29.4375 5.5V4.5Z"
                   fill="white" />
               </svg>
 
-            </button>
+            </button></a>
             <div className='mailbtnsuccessParent'>
               <div className="mailbtnsuccess">
                 <svg width="210" height="68" viewBox="0 0 210 68" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,8 +103,8 @@ function RegSuc() {
 
         <div className="col2btnsuccess">
           <img src={final1} ALT="ll" style={{ width: "100%" }} />
-          <div className="name_passsuccess">Divyesh Vankar</div>
-          <div className="mailId_passsuccess">divyeshvankar.com</div>
+          <div className="name_passsuccess">{name?? "Name"}</div>
+          <div className="mailId_passsuccess">{email?? "Email"}</div>
           <img className="qr_passsuccess" src={dummyQR} alt="" />
 
 

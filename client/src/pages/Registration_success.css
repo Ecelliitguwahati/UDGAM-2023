@@ -55,8 +55,9 @@
     cursor: pointer;
     outline: inherit;
     color: white;
+    font-size: 18px;
     text-align: center;
-    margin: 50px 0;
+    margin: 10px 0;
 }
 
 .passbtnsuccess {
@@ -78,7 +79,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 200px;
+  
     /* background-image: url("/Vector.png"); */
 
 }
@@ -102,7 +103,10 @@
 
 }
 
-
+.transactionidtext{
+    font-size: 18px;
+    color: #fff;
+}
 .name_passsuccess {
     width: 265px;
     height: 38px;
@@ -179,6 +183,7 @@
     right:69px;
     top: 120px;
     text-align: center;
+    font-size: 18px;
     color: #fff;
 }
 
@@ -207,7 +212,18 @@
         position: relative;
         background: #1C1C1C;
     }
-   
+    .col1btnsuccess{
+        width: 80%;
+    }
+    .thrdbtnsuccess{
+padding: 20px 0;
+    }
+   .secondbtnsuccess{
+    flex-direction: column;
+   }
+   .qr_passsuccess {
+    width: 100%;
+}
 }
 /* @media only screen and (max-width: 600px){
 	/*Big smartphones [426px -> 600px]*/
