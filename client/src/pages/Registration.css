@@ -1,4 +1,7 @@
 
+.RESETPWD{
+    text-align: center;
+}
 .first_last_flex {
     display: flex;
     width: 100%;

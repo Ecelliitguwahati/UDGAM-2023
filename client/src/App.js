@@ -13,6 +13,8 @@ import AllSpeakers from './pages/allspeaker';
 import MoreEvents2 from './pages/MoreEvents2';
 import Sponsors from './pages/sponsors';
 import OurTeam from './pages/ourteam';
+import ResetPass from './pages/resetpass';
+import ResetPassDo from './pages/resetpassdo';
 import Toast3rd from './components/toast';
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
       <Route exact path="/events/" element={<MoreEvents2/>} />
   
       <Route exact path="/ourteam" element={<OurTeam/>} />
+      <Route exact path="/resetpass" element={<ResetPass/>} />
+      <Route exact path="/resetpass/do" element={<ResetPassDo/>} />
       <Route exact path="*" element={<NotFound/>} />
       
     </Routes>
