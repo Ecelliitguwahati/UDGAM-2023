@@ -232,6 +232,7 @@ function Registration() {
 
 
                   <select className='wid_text_Field_100' id="department" name="department" placeholder="Department" onChange={handleChange}>
+                  <option value="" disabled selected>Your branch...</option>
                     <option value="Biological and Bioscience Engineering">Biological and Bioscience Engineering</option>
                     <option value="Chemical Engineering">Chemical Engineering</option>
                     <option value="Chemical Science and Technology">Chemical Science and Technology</option>
