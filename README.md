@@ -3,7 +3,6 @@
 to tun frontend do <b>cd client </b> and then
 <b> npm run start:frontend </b>
 
-to tun backend do <b>cd server</b> and then
-<b> npm run start:backend </b>
+## for backend check the other repo, so currently don't push anything in backend
 
 y
