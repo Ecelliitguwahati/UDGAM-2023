@@ -11,6 +11,7 @@ body{
     display:flex; 
     align-items: center;
     justify-content:space-between;
+    margin: 60px 0;
     
 }
 .top h1{
@@ -29,8 +30,7 @@ body{
     height: 20px;
     color: #D4F34A;
     justify-content: space-evenly;
-    width: 222px;
-    height: 44px;
+    height: fit-content;
     border: 1.31218px solid #D4F34A;
     font-family: Action Sans;
     font-style: normal;
@@ -41,6 +41,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
+    padding: 15px 36px;
 }
 .topbut a{
     text-decoration: none;
@@ -113,19 +114,17 @@ line-height: 100%;
         flex-direction: column;
     }
     .topbut{
-        /* top: 50px; */
-        /* padding: 18px 04px; */
         background-color: #09021C;
-        height:20px ;
+        height:fit-content;
         color: #D4F34A;
-         width:160px;
-         height: 42px;
+        width:fit-content;
          border: 1.31218px solid #D4F34A;
          font-family: 'Action Sans';
          font-style: normal;
          font-weight: 700;
          font-size: 16px;
          line-height: 14px;
+         padding: 5px;
     }
     
         
@@ -139,7 +138,8 @@ line-height: 100%;
     .topbut{
      
          width:127px;
-         height: 40px;
+         height: fit-content;
+         padding: 5px 16px;
          
     }
     .top svg{

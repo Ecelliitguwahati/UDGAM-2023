@@ -82,7 +82,10 @@ color: rgba(252, 151, 217, 1);
   display: flex;
   flex-direction: row;
   width: fit-content;
+  height: fit-content;
   align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .sponsorhome button{

@@ -50,15 +50,15 @@ function Landing() {
 
 <div className="Footerland">
     <div >
-    <img className='imgfoot' height="53px" width="150px" src={idfc} />
+    <img className='imgfoot' height="53px" width="160px" src={idfc} />
     </div>
        <img src={Line} className="line" alt="" />
     <div >
-    <img className='imgfoot' height="53px" width="140px"src={havells}/>
+    <img className='imgfoot' height="53px" width="160px" style={{margin:`0 -12px`}} src={havells}/>
     </div>
       <img src={Line} className="line"  alt="" />
     <div>
-      <img className='imgfoot' height="53px" width="150px" alt='' src={zaloni}/>
+      <img className='imgfoot' height="53px" width="160px" alt='' src={zaloni}/>
   </div>
 </div>    
 <div 
