@@ -297,13 +297,25 @@ background-color: #09021C;
     .speaker{
         right: -22px;
        }
+
+    .top{
+        padding: 0 10%;
+    }
+
+    .pastSpeaker{
+        padding: 60px 0;
+    }
+
+    .car{
+        padding: 10%;
+    }
     
 }
 
 
 @media (max-width:470px) {
    .top{
-    margin-bottom: 27px;
+    margin-bottom: 0 0 27px 0;
    }
    .speaker{
     right: -31px;
@@ -403,6 +415,18 @@ background-color: #09021C;
         }
         .button2 {
             visibility: hidden;
+        }
+
+        .top{
+            padding: 0 10%;
+        }
+    
+        .pastSpeaker{
+            padding: 60px 0;
+        }
+    
+        .car{
+            padding: 10%;
         }
 }
 
