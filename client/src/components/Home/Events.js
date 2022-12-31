@@ -103,7 +103,7 @@ function Events() {
             </div>
             <div id="down">
                 <div id="events">
-                    <div className="containerevent">
+                    <div className="containerevent" id='card_1'>
                         <div className="count">
                             <p>1</p>
                         </div>
@@ -137,7 +137,7 @@ function Events() {
 
                         </div>
                     </div>
-                    <div className="containerevent">
+                    <div className="containerevent" id='card_2'>
                         <div className="count">
                             <p>2</p>
                         </div>
@@ -164,7 +164,7 @@ function Events() {
 
                         </div>
                     </div>
-                    <div className="containerevent">
+                    <div className="containerevent" id='card_3'>
                         <div className="count">
                             <p>3</p>
                         </div>
