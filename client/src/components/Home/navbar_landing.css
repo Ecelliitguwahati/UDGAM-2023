@@ -85,7 +85,7 @@ body {
 }
 
 .line{
-    margin:0 8px;
+    margin:0 5px;
 }
 .second-container a:hover{
     color:#DDF140;
@@ -178,9 +178,6 @@ body {
     padding-bottom: 10px;
     width: 30%;
 }
-.imgfoot{
-    width: 75%;
-}
 
 
 .taglineu {
@@ -202,7 +199,7 @@ body {
     z-index: 5000;
     display: none;
     transition: all 0.3s ease;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .titlesponsor {
@@ -235,7 +232,7 @@ body {
     }
 
     .imgfoot {
-        padding: 0 5px;
+        padding: 0 4px;
     }
 
     .nav-links {

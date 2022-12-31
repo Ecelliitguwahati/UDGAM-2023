@@ -21,8 +21,8 @@ const Box =(props)=>{
                 <img src={props.img} alt="" style={{height:`300px`,width:`273px`,scale:`${sc}`,transition:`0.5s` , marginTop:``}}/>
             </div>
             <div className='textContainer' style={{display:`flex`,flexDirection:`column`,justifyContent:`space-between`,fontFamily:'sans-serif',alignItems:`flex-start`}} >
-                <p style={{fontSize:`32px`, color:`#44C6B6`, marginTop:`23px`}}>{props.name}</p>
-                <p style={{fontSize:`24px`, color:`#CDCCD0`}}>{props.comp}</p>
+                <p style={{fontSize:`32px`, color:`#44C6B6`, margin:`23px 0 -5px 0`}}>{props.name}</p>
+                <p style={{fontSize:`24px`, color:`#CDCCD0`, margin:`-1px 0`}}>{props.comp}</p>
                 <p style={{fontSize:`16px`, color:`#6A6771`}}>{props.desg}</p>
             </div>
         </div>

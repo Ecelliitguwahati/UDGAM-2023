@@ -139,6 +139,10 @@ background-color: #09021C;
        font-family: Action Sans;
        src: url(Fonts/ActionSans-Medium.otf);
    } */
+
+   .pasts{
+    margin:0 120px;
+   }
    
    .pastspeakerstitle {
        font-family: Founders Grotesk;
@@ -146,7 +150,6 @@ background-color: #09021C;
        font-weight: 700;
        font-size: 64px;
        line-height: 100%;
-       padding-left: 80px;
        letter-spacing: -0.02em;
        color: #44C6B6;
        text-transform: uppercase;

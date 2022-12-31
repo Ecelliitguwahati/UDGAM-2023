@@ -210,14 +210,15 @@ background-color: #09021C;
         background-color: #09021C;
         height:20px ;
         color: #D4F34A;
-         width: 160px;
-         height: 42px;
-         border: 1.31218px solid #D4F34A;
-         font-family: 'Action Sans';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 16px;
-         line-height: 14px;
+        width: 160px;
+        height: fit-content;
+        padding: 5px 16px;
+        border: 1.31218px solid #D4F34A;
+        font-family: 'Action Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 14px;
     }
     .speaker svg{
         height: 250px;
@@ -313,8 +314,9 @@ background-color: #09021C;
 }
     .top button{
      
-         width:114px;
-         height: 40px;
+         width:fit-content;
+         height: fit-content;
+         padding: 15px 36px;
          
     }
     .main1 ,.main2{
