@@ -107,4 +107,14 @@ color: rgba(252, 151, 217, 1);
 
   font-size: 1.4rem;
 }
+.top{
+  align-items: flex-start;
+}
+.top h1{
+  padding: 0;
+}
+.sponsorhome button{
+  margin: 0;
+}
+
 }
