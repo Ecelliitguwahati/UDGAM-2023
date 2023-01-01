@@ -74,7 +74,7 @@ const MoreEvents2 = () => {
             "ori": "left",
             "date": "Dec 20, 2022 16:37:25",
             "image": pmx,
-            "info": 1,
+            "info": 2,
             "prize": "100K+",
             "eventName": "PMx",
             "payment": "Free", "link": "https://www.fb.com",
@@ -89,7 +89,7 @@ const MoreEvents2 = () => {
             "ori": "left",
             "date": "Jan 4, 2023 23:59:59",
             "image": disrupt,
-            "info": 0,
+            "info": 2,
             "prize": "10 Lakhs+",
             "eventName": "DISRUPT",
             "payment": "Free", "link": "https://rebrand.ly/Disrupt_Registration",
@@ -104,7 +104,7 @@ const MoreEvents2 = () => {
             "ori": "left",
             "date": "Jan 20, 2022 16:37:25",
             "prize": "1 Lakhs+",
-            "info": 1,
+            "info": 2,
             "image": need,
             "eventName": "NEED",
             "payment": "Free", "link": "https://www.fb.com",
@@ -119,7 +119,7 @@ const MoreEvents2 = () => {
             "ori": "left",
             "date": "Jan 10, 2023 23:59:59",
             "prize": "10 Lakhs+",
-            "info": 0,
+            "info": 2,
             "image": cosmicClash,
             "eventName": "COSMIC CLASH",
             "payment": "Paid", "link": "https://linktr.ee/cosmic_clash",
@@ -133,7 +133,7 @@ const MoreEvents2 = () => {
             "id": "b7",
             "ori": "right",
             "date": "Jan 9, 2023 23:59:59",
-            "info": 0,
+            "info": 2,
             "prize": "25 K+",
             "image": Dframe,
             "eventName": "D-FRAME",
@@ -148,7 +148,7 @@ const MoreEvents2 = () => {
             "id": "b8",
             "ori": "right",
             "date": "Jan 2, 2023 16:37:25",
-            "info": 0,
+            "info": 2,
             "prize": "1.2 Lakhs+",
             "image": encode,
             "eventName": "ENCODE",
@@ -178,7 +178,7 @@ const MoreEvents2 = () => {
             "tag": "sparkle",
             "id": "b10",
             "ori": "right",
-            "info": 0,
+            "info": 2,
             "prize": "40K+",
             "date": "Jan 7, 2023 23:59:59",
             "image": sparkle,
@@ -206,9 +206,12 @@ const MoreEvents2 = () => {
 
     const search = useLocation().search;
     useEffect(() => {
+        var i = 0;
         eventsdata.forEach((eventsda) => {
             document.getElementById(eventsda.tag).className = "containerM"
-            // document.getElementById(eventsda.tag).className = "content"     
+            // document.getElementById(eventsda.tag).className = "content"
+            document.getElementsByClassName("containerM")[i].style.backgroundColor = '#FAF9FF'; 
+            i+=1;   
         });
         const eventname = new URLSearchParams(search).get('event');
 
@@ -219,6 +222,16 @@ const MoreEvents2 = () => {
         document.getElementsByClassName("eventName")[0].innerHTML = event.eventName;
         document.getElementsByClassName("eventtext")[0].innerHTML = event.eventDesc;
         document.getElementsByClassName("imgevent")[0].src = event.image;
+        if(parseInt(event.id.slice(1))%2===0)
+            {
+                document.getElementsByClassName("description")[0].style.backgroundColor = '#192558';
+            }
+            else
+            {
+                document.getElementsByClassName("description")[0].style.backgroundColor = '#2D1373';
+
+            }
+        
         document.getElementById("dateevent").innerHTML = event.date;
 
         //ONGOING
@@ -245,12 +258,38 @@ const MoreEvents2 = () => {
         }
 
         if (event.ori == "left") {
-            document.getElementById("boxevent").className = "box olbg"
+            console.log(event.id.slice(1));
+            if(parseInt(event.id.slice(1))%2===0)
+            {
+                document.getElementById("boxevent").className = "box elbg"
+            }
+            else
+            {
+                document.getElementById("boxevent").className = "box olbg"
+            }
+            
         }
         if (event.ori == "right") {
-            document.getElementById("boxevent").className = "box orbg"
+            if(parseInt(event.id.slice(1))%2===0)
+            {
+                document.getElementById("boxevent").className = "box erbg"
+            }
+            else
+            {
+                document.getElementById("boxevent").className = "box orbg"
+            }
         }
         document.getElementById(event.tag).className = "containerMhigh"
+        if(parseInt(event.id.slice(1))%2===0)
+            {
+                document.getElementsByClassName("containerMhigh")[0].style.backgroundColor = '#192558';
+            }
+            else
+            {
+                document.getElementsByClassName("containerMhigh")[0].style.backgroundColor = '#2D1373';
+
+            }
+
         var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
 
     });
@@ -377,7 +416,7 @@ const MoreEvents2 = () => {
                         {/* SINGLE EVENT */}
                         <div className="two">
                             <div className="box erbg" id="boxevent">
-                                <img src={ls} alt="" className="imgevent" />
+                                <div className='imgC'><img src={ls} alt="" className="imgevent" /></div>
                                 <div className="boxHeading">
                                     <div className="icon"><img src={Logo} alt="" /></div>
                                     <div className="headingText">
