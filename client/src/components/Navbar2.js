@@ -49,14 +49,14 @@ function Navbar2() {
               <a onClick={openNav} id="open_nav"><img className='hamburger' src={Hum} alt='menu' /></a>
               <a onClick={closeNav} id="close_nav"><img className='hamburger' src={Humcross} alt='menu' /></a>
             </div>
-
-            <div className='yellowButtonParent' >
+                
+            <a className='yellowButtonParent' >
               <div className='yellow-button'>
                 <img src={Buy} alt='buy-ticket' />
                 <a href='#'>BUY NOW</a>
 
               </div>
-            </div>
+            </a>
 
           </div>
 
