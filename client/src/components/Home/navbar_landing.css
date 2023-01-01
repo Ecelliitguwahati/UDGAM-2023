@@ -108,7 +108,7 @@ body {
 
 }
 
-.yellow-button a {
+.yellow-button p {
     text-decoration: none;
     color: black;
     margin-left: -15px;
@@ -121,9 +121,13 @@ body {
     width: 87px;
     height: 18px;
     font-family: 'Action Sans';
-
+    
 }
-
+.yellow-button a :hover{
+    color: black;
+ 
+    text-decoration: none;
+}
 .yellow-button img {
     width: 23px;
     height: 28px;
@@ -146,6 +150,13 @@ body {
     justify-content: center;
 }
 
+.yellowButtonlink:link:hover{
+    color:black;
+}
+.yellobuttonlink{
+    color:black;
+    text-decoration: none;
+}
 /*landing page */
 
 .landing {

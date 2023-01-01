@@ -28,7 +28,7 @@ function Events() {
             "tag": "disrupt",
             "id": "b4",
             "ori": "left",
-            "date": "Jan 4, 20223 23:59:59",
+            "date": "Jan 4, 2023 23:59:59",
             "image": disrupt,
             "info": 0,
             "prize": "10 Lakhs+",

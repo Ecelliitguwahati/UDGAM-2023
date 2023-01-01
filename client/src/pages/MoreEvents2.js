@@ -178,12 +178,12 @@ const MoreEvents2 = () => {
             "tag": "sparkle",
             "id": "b10",
             "ori": "right",
-            "info": 2,
-            "prize": "NILL",
-            "date": "Jan 20, 2023 16:37:25",
+            "info": 0,
+            "prize": "40K+",
+            "date": "Jan 7, 2023 23:59:59",
             "image": sparkle,
             "eventName": "SPARKLE",
-            "payment": "Free", "link": "https://www.fb.com",
+            "payment": "Free", "link": "https://docs.google.com/forms/d/e/1FAIpQLSeMH92AxnP5V8EEHzbGmTXl0VZS9BtBQRPh4xPqU77tWsdYKw/viewform",
             "eventDesc": "Minutes of the spotlight to showcase your entrepreneurship and pitching skills exclusive for young teenagers. Sparkle is a pitching ground for school students and an opportunity to show themselves under the unwavering attention of the whole panel, including various Angel Investors and Venture Capitalists, to put their startup idea. "
         },
         // 0 for ongoing
