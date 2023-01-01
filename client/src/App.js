@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-
+import Schedule from './pages/schedule';
 import Contactus from './pages/contactus';
 import Registration from './pages/Registration';
 import RegSuc from './pages/Registration_success';
@@ -29,8 +29,8 @@ function App() {
       <Route exact path="/contactus" element={<Contactus />} />
       <Route exact path="/speakers" element={<AllSpeakers />} />
       <Route exact path="/sponsors" element={<Sponsors />} />
+      <Route exact path="/comingsoon" element={<Schedule/>} />
       <Route exact path="/events/" element={<MoreEvents2/>} />
-  
       <Route exact path="/ourteam" element={<OurTeam/>} />
       <Route exact path="/resetpass" element={<ResetPass/>} />
       <Route exact path="/resetpass/do" element={<ResetPassDo/>} />

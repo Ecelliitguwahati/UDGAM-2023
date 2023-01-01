@@ -5,18 +5,18 @@ import './Speakers.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import charlie from "../../PhotosPng/charlie.svg"
-import jimmy from "../../PhotosPng/jimmy.svg"
-import pulkit from "../../PhotosPng/pulkit.svg"
-import kevin from "../../PhotosPng/kevin.svg"
-import michael from "../../PhotosPng/michael.svg"
-import ankur from "../../PhotosPng/ankur.svg"
-import amit from "../../PhotosPng/amit.svg"
-import amod from "../../PhotosPng/amod.svg"
-import ankit from "../../PhotosPng/ankit.svg"
-import rohit from "../../PhotosPng/rohit.svg"
-import kaushik from "../../PhotosPng/kaushik.svg"
-import brijesh from "../../PhotosPng/brijesh.svg"
+import charlie from "../../PhotosPng/charlie.png"
+import jimmy from "../../PhotosPng/jimmy.png"
+import pulkit from "../../PhotosPng/pulkit.png"
+import kevin from "../../PhotosPng/kevin.png"
+import michael from "../../PhotosPng/michael.png"
+import ankur from "../../PhotosPng/ankur.png"
+import amit from "../../PhotosPng/amit.png"
+import amod from "../../PhotosPng/amod.png"
+import ankit from "../../PhotosPng/ankit.png"
+import rohit from "../../PhotosPng/rohit.png"
+import kaushik from "../../PhotosPng/kaushik.png"
+import brijesh from "../../PhotosPng/brijesh.png"
 import bgy from "../../photos/bgy.svg";
 import bgg from "../../photos/bgg.svg";
 import iny from "../../icons/inY.svg";

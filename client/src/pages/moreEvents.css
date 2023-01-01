@@ -3,6 +3,15 @@
     background-image: url(../icons/moreEventsBg.png);
 }
 
+#realevents{
+    display: none;
+}
+#eventsdummy{
+    width: 100%;
+}
+#eventsdummy img{
+    width: 100%;
+}
 
 
 #eventsListHeading{

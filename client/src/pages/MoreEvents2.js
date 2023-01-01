@@ -30,7 +30,7 @@ import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Home/footer';
 import ComingSoon from '../components/Home/ComingSoon';
-
+import eventsdummy from "./../PhotosPng/eventsdummy.svg";
 const MoreEvents2 = () => {
     const eventsdata = [
         // 0 for ongoing
@@ -217,8 +217,15 @@ const MoreEvents2 = () => {
 
         var event = eventsdata.find(o => o.tag === eventname);
         if (event == null) {
-            event = eventsdata[0]
+            document.getElementById("eventsdummy").style.display="block";
+            document.getElementById("realevents").style.display="none";
+
         }
+        else{
+            document.getElementById("eventsdummy").style.display="none";
+            document.getElementById("realevents").style.display="block";
+
+        
         document.getElementsByClassName("eventName")[0].innerHTML = event.eventName;
         document.getElementsByClassName("eventtext")[0].innerHTML = event.eventDesc;
         document.getElementsByClassName("imgevent")[0].src = event.image;
@@ -291,7 +298,7 @@ const MoreEvents2 = () => {
             }
 
         var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
-
+    }
     });
 
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -315,12 +322,13 @@ const MoreEvents2 = () => {
                 </div>
                 <div id="eventmainContainer">
                     <div className="one">
+                        <Link to={"/events?event=ls"} params={{ event: 1 }}>
                         <div id="ls" className="containerMhigh">
                             <div className="headingM">
                                 <p className='lec'>LECTURE SERIES</p>
-                                <Link to={"/events?event=ls"} params={{ event: 1 }}>
+                                
                                     <img src={arrowR} alt="" id="b1" />
-                                </Link>
+                               
                             </div>
                             <div className="content">
                                 <p>Inspiring sessions with accomplished personalities.</p>
@@ -330,12 +338,14 @@ const MoreEvents2 = () => {
                                 <p>{eventsdata[0].info == 0 ? <Countdown date={new Date(eventsdata[0].date).getTime()} renderer={renderer} /> : eventsdata[0].info == 1 ?"EXPIRED":"COMING SOON"}</p>
                             </div>
                         </div>
+                        </Link>
+                        <Link to={"/events?event=internfair"} >
                         <div id="internfair" className="containerM">
                             <div className="headingM">
                                 <p>INTERN<br></br>FAIR</p>
-                                <Link to={"/events?event=internfair"} >
+                               
                                     <img src={arrowR} alt="" id="b1" />
-                                </Link>
+                                
                             </div>
                             <div className="content">
                                 <p>A platform for Start-ups to hire talented interns</p>
@@ -346,12 +356,14 @@ const MoreEvents2 = () => {
                                </p>
                             </div>
                         </div>
+                        </Link>
+                        <Link to={"/events?event=pmx"}>
                         <div id="pmx" className="containerM">
                             <div className="headingM">
                                 <p>PMx</p>
-                                <Link to={"/events?event=pmx"}>
+                                
                                     <img src={arrowR} alt="" id="b3" />
-                                </Link>
+                                
                             </div>
                             <div className="content">
                                 <p>The Product Management Expedition</p>
@@ -362,12 +374,14 @@ const MoreEvents2 = () => {
                                </p>
                             </div>
                         </div>
+                        </Link>
+                        <Link to={"/events?event=disrupt"} >
                         <div id="disrupt" className="containerM">
                             <div className="headingM">
                                 <p>DISRUPT</p>
-                                <Link to={"/events?event=disrupt"} >
+                               
                                     <img src={arrowR} alt="" id="b1" />
-                                </Link>
+                                
                             </div>
                             <div className="content">
                                 <p>North-East India's largest pitching battle</p>
@@ -378,12 +392,14 @@ const MoreEvents2 = () => {
                                </p>
                             </div>
                         </div>
+                        </Link>
+                        <Link to={"/events?event=need"} >
                         <div id="need" className="containerM">
                             <div className="headingM">
                                 <p>NEED</p>
-                                <Link to={"/events?event=need"} >
+                                
                                     <img src={arrowR} alt="" id="b1" />
-                                </Link>
+                                
                             </div>
                             <div className="content">
                                 <p>Noth-East Entrepreneurship Drive</p>
@@ -394,12 +410,14 @@ const MoreEvents2 = () => {
                                </p> 
                             </div>
                         </div>
+                        </Link>
+                        <Link to={"/events?event=cosmicclash"} >
                         <div id="cosmicclash" className="containerM">
                             <div className="headingM">
                                 <p>COSMIC CLASH</p>
-                                <Link to={"/events?event=cosmicclash"} >
+                                
                                     <img src={arrowR} alt="" id="b1" />
-                                </Link>
+                                
                             </div>
                             <div className="content">
                                 <p>The E-Sports Arena</p>
@@ -410,9 +428,12 @@ const MoreEvents2 = () => {
                                </p> 
                             </div>
                         </div>
-
+                        </Link>
                     </div>
-                    <div>
+                    <div id="eventsdummy">
+<img src={eventsdummy}/>
+                    </div>
+                    <div id="realevents">
                         {/* SINGLE EVENT */}
                         <div className="two">
                             <div className="box erbg" id="boxevent">
@@ -477,11 +498,12 @@ const MoreEvents2 = () => {
                         </div>
                     </div>
                     <div className="three">
+                        <Link to={"/events?event=dframe"} >
                         <div id="dframe" className="containerM">
                             <div className="headingM">
-                                <Link to={"/events?event=dframe"} >
+                                
                                     <img src={arrowL} alt="" id="b1" />
-                                </Link>
+                                
                                 <p>D-FRAME</p>
 
                             </div>
@@ -494,11 +516,13 @@ const MoreEvents2 = () => {
                                </p> 
                             </div>
                         </div>
+                        </Link>
+                        <Link to={"/events?event=encode"} >
                         <div id="encode" className="containerM">
                             <div className="headingM">
-                                <Link to={"/events?event=encode"} >
+                                
                                     <img src={arrowL} alt="" id="b1" />
-                                </Link>
+                                
                                 <p>ENCODE</p>
 
                             </div>
@@ -511,11 +535,13 @@ const MoreEvents2 = () => {
                                 </p>
                             </div>
                         </div>
+                        </Link>
+                        <Link to={"/events?event=funevents"} >
                         <div id="funevents" className="containerM">
                             <div className="headingM">
-                                <Link to={"/events?event=funevents"} >
+                                
                                     <img src={arrowL} alt="" id="b1" />
-                                </Link>
+                                
                                 <p>FUN EVENTS</p>
 
                             </div>
@@ -528,11 +554,13 @@ const MoreEvents2 = () => {
                                </p>
                             </div>
                         </div>
+                        </Link>
+                        <Link to={"/events?event=sparkle"} >
                         <div id="sparkle" className="containerM">
                             <div className="headingM">
-                                <Link to={"/events?event=sparkle"} >
+                                
                                     <img src={arrowL} alt="" id="b1" />
-                                </Link>
+                                
                                 <p>SPARKLE</p>
 
                             </div>
@@ -545,12 +573,14 @@ const MoreEvents2 = () => {
                                </p>
                             </div>
                         </div>
+                        </Link>
+                        <Link to={"/events?event=workshops"} >
                         <div id="workshops" className="containerM">
                             <div className="headingM">
-                                <Link to={"/events?event=workshops"} >
+                                
                                     <img src={arrowL} alt="" id="b1" />
-                                </Link>
-                                <p>WORKSHOPS</p>
+                                
+                                <p>WORKSHOP</p>
 
                             </div>
                             <div className="content contentright">
@@ -559,12 +589,11 @@ const MoreEvents2 = () => {
                             <div className="live2">
                                 <img src={live} alt="" />
                                 <p>
-
                                     {eventsdata[10].info == 0 ? <Countdown date={new Date(eventsdata[10].date).getTime()} renderer={renderer} /> : eventsdata[10].info == 1 ?"EXPIRED":"COMING SOON"}
-
                                 </p>
                             </div>
                         </div>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -5,6 +5,7 @@ import './BuyMerchButton.css'
 export default function BuyM() {
   return (
     <div className='body'>
+      <a href="/comingsoon">
      <div>
       <div className='back'>
       </div>
@@ -15,7 +16,7 @@ export default function BuyM() {
       </div>
       
     </div>
-
+    </a>
    </div>
   )
 }

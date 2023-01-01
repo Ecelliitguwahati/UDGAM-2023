@@ -22,7 +22,7 @@ function BuyMerch() {
   }}
   onMouseLeave={()=>{
       setimg(vauc);
-  }}><a>View All Merch <img src={img}/></a>
+  }}><a href="/comingsoon">View All Merch <img src={img}/></a>
       </button>
     </div>
     <div class="backimg">
