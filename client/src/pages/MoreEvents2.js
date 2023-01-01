@@ -541,7 +541,7 @@ const MoreEvents2 = () => {
                                 
                                     <img src={arrowL} alt="" id="b1" />
                                 
-                                <p>WORKSHOPS</p>
+                                <p>WORKSHOP</p>
 
                             </div>
                             <div className="content contentright">
@@ -550,9 +550,7 @@ const MoreEvents2 = () => {
                             <div className="live2">
                                 <img src={live} alt="" />
                                 <p>
-
                                     {eventsdata[10].info == 0 ? <Countdown date={new Date(eventsdata[10].date).getTime()} renderer={renderer} /> : eventsdata[10].info == 1 ?"EXPIRED":"COMING SOON"}
-
                                 </p>
                             </div>
                         </div>
