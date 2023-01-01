@@ -281,15 +281,15 @@ function Registration() {
               <p className="alpha">Udgam pass</p>
               <p className="beta">Total Price -</p>
               <p className="beta beta1">Udgam Pass -</p>
-              <p className="beta beta2">Merchkit Addon -</p>
-              <p className="beta beta3">Events List - Internfair, Pmx, Fun events  </p>
-              <p className="beta beta4">Exclusive Perks - Voiceflow thing, Discount</p>
+              <p className="beta beta2">Events List - Internfair, Lecture Series, Fun events </p>
+              <p className="beta beta3">Exclusive Perks - 15 Grabon coupons worth INR 1000+, Course worth INR 4000</p>
+              {/* <p className="beta beta4"></p> */}
 
-              <p className="beta beta4 beta5"><br />Coupons</p>
+              {/* <p className="beta beta4 beta5"><br />Coupons</p> */}
 
               <p className="gamma">₹199</p>
               <p className="gamma1">₹199</p>
-              <p className="gamma1 gamma2">₹199</p>
+              {/* <p className="gamma1 gamma2"></p> */}
               <div className="Checkout" type="submit"><Checkout title="CHECK OUT →" /></div>
             </div>
 

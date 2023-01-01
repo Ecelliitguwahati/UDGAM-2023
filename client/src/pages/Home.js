@@ -17,11 +17,14 @@ function Home() {
       {/*Events */}
       <Events />
       {/* Past Speakers*/}
+
       <PastSpeakers />
-      {/* <ComingSoon/> */}
-      <Sponsor/>
-      {/* Merch*/}
+
       <BuyMerch />
+      {/* <ComingSoon/> */}
+    
+      {/* Merch*/}
+      <Sponsor/>
       {/* Get Ticket*/}
       <GetTicket/>
       {/* Footer*/}

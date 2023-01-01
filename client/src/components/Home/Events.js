@@ -227,7 +227,7 @@ function Events() {
 
                     </div>
                     <div className='buttonwrappass'>
-                    {/* <Button
+                    <Button
                             variant="primary"
                             kind="elevated"
                             size="big"
@@ -235,16 +235,16 @@ function Events() {
                             colorConfig={{ backgroundColor: "#F0E266", borderColor: "black", edgeColors: { right: "#FC97D9", bottom: "#FC97D9" } }}
                             spacingConfig={{ height: "60px" }}
                             onClick={() => {
-                                console.log("I'm clicked");
+                                window.location.href="/registration"
                             }}
                         >
                             <div className="GetTkt" style={{ color: "black" }}>BUY PASS</div>
-                        </Button> */}
+                    </Button>
                     </div>
                     <div className="buyPass">
                         <div className="time">
                             <img src={live} alt="" />
-                            COMING SOON
+                            <Countdown date={new Date("Jan 22, 2023 23:59:59").getTime()} renderer={renderer} />
                         </div>
                     </div>
                     <div id="barcode">

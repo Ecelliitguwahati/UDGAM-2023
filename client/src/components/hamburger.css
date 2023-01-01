@@ -18,7 +18,9 @@
     margin:-20px 0;
 
 }
-
+.gon div a:hover{
+    color:#DDF140;
+}
 a :hover, Link:hover{
     text-decoration: none;
     color: #DDF140;

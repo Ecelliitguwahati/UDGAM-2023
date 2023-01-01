@@ -30,7 +30,7 @@ import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Home/footer';
 import ComingSoon from '../components/Home/ComingSoon';
-
+import eventsdummy from "./../PhotosPng/eventsdummy.svg";
 const MoreEvents2 = () => {
     const eventsdata = [
         // 0 for ongoing
@@ -214,8 +214,15 @@ const MoreEvents2 = () => {
 
         var event = eventsdata.find(o => o.tag === eventname);
         if (event == null) {
-            event = eventsdata[0]
+            document.getElementById("eventsdummy").style.display="block";
+            document.getElementById("realevents").style.display="none";
+
         }
+        else{
+            document.getElementById("eventsdummy").style.display="none";
+            document.getElementById("realevents").style.display="block";
+
+        
         document.getElementsByClassName("eventName")[0].innerHTML = event.eventName;
         document.getElementsByClassName("eventtext")[0].innerHTML = event.eventDesc;
         document.getElementsByClassName("imgevent")[0].src = event.image;
@@ -252,7 +259,7 @@ const MoreEvents2 = () => {
         }
         document.getElementById(event.tag).className = "containerMhigh"
         var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
-
+    }
     });
 
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -373,7 +380,10 @@ const MoreEvents2 = () => {
                         </div>
 
                     </div>
-                    <div>
+                    <div id="eventsdummy">
+<img src={eventsdummy}/>
+                    </div>
+                    <div id="realevents">
                         {/* SINGLE EVENT */}
                         <div className="two">
                             <div className="box erbg" id="boxevent">

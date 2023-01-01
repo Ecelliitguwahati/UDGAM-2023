@@ -91,6 +91,9 @@ body {
     color:#DDF140;
 }
 
+#open_nav,#close_nav{
+    cursor:pointer;
+}
 .second-container {
     display: flex;
     flex-direction: row;

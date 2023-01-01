@@ -2,18 +2,18 @@ import React from 'react'
 import { Button } from '@cred/neopop-web/lib/components';
 import './allspeaker.css'
 import Navbar from '../components/Navbar';
-import './ourteam.css';import charlie from "../PhotosPng/charlie.svg"
-import jimmy from "../PhotosPng/jimmy.svg"
-import pulkit from "../PhotosPng/pulkit.svg"
-import kevin from "../PhotosPng/kevin.svg"
-import michael from "../PhotosPng/michael.svg"
-import ankur from "../PhotosPng/ankur.svg"
-import amit from "../PhotosPng/amit.svg"
-import amod from "../PhotosPng/amod.svg"
-import ankit from "../PhotosPng/ankit.svg"
-import rohit from "../PhotosPng/rohit.svg"
-import kaushik from "../PhotosPng/kaushik.svg"
-import brijesh from "../PhotosPng/brijesh.svg"
+import './ourteam.css';import charlie from "../PhotosPng/charlie.png"
+import jimmy from "../PhotosPng/jimmy.png"
+import pulkit from "../PhotosPng/pulkit.png"
+import kevin from "../PhotosPng/kevin.png"
+import michael from "../PhotosPng/michael.png"
+import ankur from "../PhotosPng/ankur.png"
+import amit from "../PhotosPng/amit.png"
+import amod from "../PhotosPng/amod.png"
+import ankit from "../PhotosPng/ankit.png"
+import rohit from "../PhotosPng/rohit.png"
+import kaushik from "../PhotosPng/kaushik.png"
+import brijesh from "../PhotosPng/brijesh.png"
 import linkicon from "../icons/Frame 341665.png"
 import Footer from '../components/Home/footer';
 import bgy from "../photos/bgy.svg";

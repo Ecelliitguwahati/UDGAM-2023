@@ -19,6 +19,9 @@ function Footer() {
               edc@iitg.ac.in
             </p>
             <p className="company__description">
+              udgam@iitg.ac.in
+            </p>
+            <p className="company__description">
               +91 7637833974
             </p>
             <div className="brrr">
