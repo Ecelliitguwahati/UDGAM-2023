@@ -22,14 +22,14 @@
     font-family: Founders Grotesk ;
     margin-bottom: 50px;
     margin-top: 50px;
-    margin-left: 60px;
+    margin-left: 120px;
 }
 
 #eventmainContainer
 {
     display: flex;
     flex-direction: row;
-    margin:0 60px;
+    margin:0 12px;
 }
 .one,.three
 {
