@@ -459,11 +459,12 @@ const MoreEvents2 = () => {
                         </div>
                     </div>
                     <div className="three">
+                        <Link to={"/events?event=dframe"} >
                         <div id="dframe" className="containerM">
                             <div className="headingM">
-                                <Link to={"/events?event=dframe"} >
+                                
                                     <img src={arrowL} alt="" id="b1" />
-                                </Link>
+                                
                                 <p>D-FRAME</p>
 
                             </div>
@@ -476,11 +477,13 @@ const MoreEvents2 = () => {
                                </p> 
                             </div>
                         </div>
+                        </Link>
+                        <Link to={"/events?event=encode"} >
                         <div id="encode" className="containerM">
                             <div className="headingM">
-                                <Link to={"/events?event=encode"} >
+                                
                                     <img src={arrowL} alt="" id="b1" />
-                                </Link>
+                                
                                 <p>ENCODE</p>
 
                             </div>
@@ -493,11 +496,13 @@ const MoreEvents2 = () => {
                                 </p>
                             </div>
                         </div>
+                        </Link>
+                        <Link to={"/events?event=funevents"} >
                         <div id="funevents" className="containerM">
                             <div className="headingM">
-                                <Link to={"/events?event=funevents"} >
+                                
                                     <img src={arrowL} alt="" id="b1" />
-                                </Link>
+                                
                                 <p>FUN EVENTS</p>
 
                             </div>
@@ -510,11 +515,13 @@ const MoreEvents2 = () => {
                                </p>
                             </div>
                         </div>
+                        </Link>
+                        <Link to={"/events?event=sparkle"} >
                         <div id="sparkle" className="containerM">
                             <div className="headingM">
-                                <Link to={"/events?event=sparkle"} >
+                                
                                     <img src={arrowL} alt="" id="b1" />
-                                </Link>
+                                
                                 <p>SPARKLE</p>
 
                             </div>
@@ -527,11 +534,13 @@ const MoreEvents2 = () => {
                                </p>
                             </div>
                         </div>
+                        </Link>
+                        <Link to={"/events?event=workshops"} >
                         <div id="workshops" className="containerM">
                             <div className="headingM">
-                                <Link to={"/events?event=workshops"} >
+                                
                                     <img src={arrowL} alt="" id="b1" />
-                                </Link>
+                                
                                 <p>WORKSHOPS</p>
 
                             </div>
@@ -547,6 +556,7 @@ const MoreEvents2 = () => {
                                 </p>
                             </div>
                         </div>
+                        </Link>
                     </div>
                 </div>
             </div>
