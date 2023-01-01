@@ -87,7 +87,7 @@ const MoreEvents2 = () => {
             "tag": "disrupt",
             "id": "b4",
             "ori": "left",
-            "date": "Dec 30, 2022 23:59:59",
+            "date": "Jan 4, 2023 23:59:59",
             "image": disrupt,
             "info": 0,
             "prize": "10 Lakhs+",

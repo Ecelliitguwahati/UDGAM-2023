@@ -5,6 +5,7 @@ import './GetTicketButton.css'
 export default function GetTicketB() {
   return (
     <div className='body'>
+      <a href="/registration">
      <div>
       <div className='back'>
       </div>
@@ -15,6 +16,7 @@ export default function GetTicketB() {
       </div>
       
     </div>
+    </a>
 
    </div>
   )

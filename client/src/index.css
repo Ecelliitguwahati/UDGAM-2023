@@ -20,7 +20,7 @@ body {
 background-size: cover;
 }
 
-
+a:link { text-decoration: none; }
 input,textarea,select{
   font-size:15px!important;
 }

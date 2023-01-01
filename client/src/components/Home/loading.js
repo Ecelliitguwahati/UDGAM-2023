@@ -10,7 +10,6 @@ import suitcase from './../../icons/loadingPage/suitcase.svg'
 import udgam from './../../icons/loadingPage/udgam.svg'
 import { motion } from 'framer-motion';
 import "./loading.css";
-import CountIn from './LAnding_CountIn'
 function Loading() {
 
     return (

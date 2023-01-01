@@ -1,6 +1,7 @@
 
 .sponsorpage{
     height: fit-content;
+    overflow-x: hidden;
 }
 .getticketsponsor{
     margin:0;
