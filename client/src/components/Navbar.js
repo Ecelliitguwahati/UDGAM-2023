@@ -65,7 +65,7 @@ function Navbar() {
             <div className='yellowButtonParent'>
               <div className='yellow-button'>
                 <img src={Buy} alt='buy-ticket' />
-                <p>BUY NOW</p>
+                 <p style={{color:"black !important"}}>BUY PASS</p>
               </div>
             </div>
             </a>
