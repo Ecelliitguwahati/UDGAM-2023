@@ -16,6 +16,9 @@ import OurTeam from './pages/ourteam';
 import ResetPass from './pages/resetpass';
 import ResetPassDo from './pages/resetpassdo';
 import Toast3rd from './components/toast';
+import Terms from './pages/termsandconds';
+import Privacy from './pages/privacypolicy';
+import Refund from './pages/refund';
 function App() {
   return (
     <body style={{overscrollBehavior:'none'}} >
@@ -34,6 +37,9 @@ function App() {
       <Route exact path="/ourteam" element={<OurTeam/>} />
       <Route exact path="/resetpass" element={<ResetPass/>} />
       <Route exact path="/resetpass/do" element={<ResetPassDo/>} />
+      <Route exact path="/termsandconditions" element={<Terms/>} />
+      <Route exact path="/privacypolicy" element={<Privacy/>} />
+      <Route exact path="/refundpolicy" element={<Refund/>} />
       <Route exact path="*" element={<NotFound/>} />
       
     </Routes>

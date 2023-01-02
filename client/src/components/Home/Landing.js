@@ -11,8 +11,10 @@ import {motion} from 'framer-motion';
 
 function Landing() {
   useEffect(() => {
+    document.body.style.overflow = 'hidden';
     setTimeout(()=>{
-      document.getElementById("countinbuttondiv").style.display="block"
+      document.getElementById("countinbuttondiv").style.display="block";
+      document.body.style.overflow = 'unset';
      }, 3000)
     }, [])
   return (

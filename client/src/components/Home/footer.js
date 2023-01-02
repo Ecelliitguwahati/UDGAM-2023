@@ -134,9 +134,9 @@ function Footer() {
             </div>
 
           </div>
-          <div class="right_footer">
-            <p class="dontmissmagic">Don't miss the Magic</p>
-            <p href="" class="signup">Sign up to receive Event notification and Updates</p>
+          <div className="right_footer">
+            <p className="dontmissmagic">Don't miss the Magic</p>
+            <p href="" className="signup">Sign up to receive Event notification and Updates</p>
             <div><br /><input className="input_pass5" placeholder="Enter Your Mail..." /></div>
 
           </div>
@@ -145,23 +145,23 @@ function Footer() {
       </div>
           
     </footer>
-    <div class="beyond-footer">
+    <div className="beyond-footer">
 
-<div class="row justify-content-between">
-    <div class="col-lg-4 text-center">
-        <a class="beyond-footer-links" href="https://docs.google.com/document/u/0/d/1v7L-nSsN0WyLDo0HqlXcX5KIHVb54F0MD0rhH89xnfs/mobilebasic" target="_blank">
+<div className="row justify-content-between">
+    <div className="col-lg-4 text-center">
+        <a className="beyond-footer-links" href="/termsandconditions" target="_blank">
             Terms and conditions
 
         </a>
     </div>
-    <div class="col-lg-4 text-center">
-        <a class="beyond-footer-links" href="https://docs.google.com/document/u/0/d/1C0eJ5OcYg3JOod5DZ5nmvLSWkivE_fDUNY6jkM6fcY0/mobilebasic" target="_blank">
+    <div className="col-lg-4 text-center py-auto">
+        <a className="beyond-footer-links" href="/privacypolicy" target="_blank">
             Privacy policy
 
         </a>
     </div>
-    <div class="col-lg-4 text-center">
-        <a class="beyond-footer-links" href="https://docs.google.com/document/u/0/d/1j_zpxVRzhC-f8CACTvr3MZDz8L6TCztZX2EADxNYbnk/mobilebasic" target="_blank">
+    <div className="col-lg-4 text-center py-auto">
+        <a className="beyond-footer-links" href="/refundpolicy" target="_blank">
             Refund policy
 
         </a>
