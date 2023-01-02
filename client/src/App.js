@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import Home from "./pages/Home/Home.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -16,8 +18,20 @@ import ResetPass from "./pages/resetpass";
 import ResetPassDo from "./pages/resetpassdo";
 import Toast3rd from "./components/toast";
 function App() {
+	const [disableScroll, setDisableScroll] = useState(true);
+	useEffect(() => {
+		setTimeout(() => {
+			setDisableScroll(false);
+		}, 6000);
+	}, []);
+
 	return (
-		<body style={{ overscrollBehavior: "none" }}>
+		<body
+		// style={{
+		// 	overscrollBehavior: "none",
+		// 	overflowY: disableScroll ? "hidden" : "auto",
+		// }}
+		>
 			<Toast3rd />
 			<Router>
 				<Routes>

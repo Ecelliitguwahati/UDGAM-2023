@@ -1,4 +1,3 @@
-// import Events from '../../components/Home/Events'
 import Events from "../../components/Home/Events.js";
 import Navbar from "../../components/Navbar";
 import Landing from "../../components/Home/Landing";
@@ -8,10 +7,12 @@ import GetTicket from "../../components/Home/GetTicket";
 import Footer from "../../components/Home/footer";
 import ComingSoon from "../../components/Home/ComingSoon";
 import Sponsor from "../../components/Home/sponsors";
+import Loading from "../../components/Home/loading.js";
 
 function Home() {
 	return (
 		<>
+			<Loading />
 			{/* <Navbar /> */}
 			{/* Home */}
 			<Landing />
