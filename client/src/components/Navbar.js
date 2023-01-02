@@ -135,9 +135,13 @@ function Navbar() {
 							</div>
 						</a>
 					</div>
-					<span>open</span>
 				</section>
 			</div>
+			<div id="myNav" className="overlay">
+				{window.innerWidth > 700 ? <Hamburger /> : <Hamburgerph />}
+			</div>
+
+			<span>open</span>
 		</>
 	);
 }
