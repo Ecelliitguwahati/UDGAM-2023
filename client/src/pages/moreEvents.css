@@ -1,6 +1,12 @@
 
 .moreEvents{
     background-image: url(../icons/moreEventsBg.png);
+    background-size: cover;
+}
+
+#moreEvents{
+    height: fit-content;
+    margin-bottom: 60px;
 }
 
 #realevents{
@@ -155,6 +161,12 @@
     font-family: 'Space Grotesk';
 }
 
+#realevents{
+    height: fit-content;
+    position: sticky;
+    top:0;
+}
+
 #head
 {
     display: flex;
@@ -199,12 +211,12 @@
     border: 0;
 }
 
-#register:hover{
+/* #register:hover{
     background-color: transparent;
     color:#D4F34A;
     border:2px solid #D4F34A;
     margin: auto 0;
-}
+} */
 
 #register p{
     font-weight: 700;
@@ -241,7 +253,7 @@
 .box
 {
     height: 190px;
-    
+    transition: 0.5s;
     display: flex;
     flex-direction: row;
 }
