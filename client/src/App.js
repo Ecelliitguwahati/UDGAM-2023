@@ -16,30 +16,36 @@ import OurTeam from './pages/ourteam';
 import ResetPass from './pages/resetpass';
 import ResetPassDo from './pages/resetpassdo';
 import Toast3rd from './components/toast';
+import Terms from './pages/termsandconds';
+import Privacy from './pages/privacypolicy';
+import Refund from './pages/refund';
 function App() {
   return (
-    <body style={{overscrollBehavior:'none'}} >
-          <Toast3rd/>
-    <Router>
-    <Routes>
-      <Route exact path='/' element={<Home/>}/>
-      <Route exact path='/registration' element={<Registration/>}/>
-      <Route exact path='/registration/success' element={<RegSuc/>}/>
-      <Route exact path='/registration/failure' element={<RegFail/>}/>
-      <Route exact path="/contactus" element={<Contactus />} />
-      <Route exact path="/speakers" element={<AllSpeakers />} />
-      <Route exact path="/sponsors" element={<Sponsors />} />
-      <Route exact path="/comingsoon" element={<Schedule/>} />
-      <Route exact path="/events/" element={<MoreEvents2/>} />
-      <Route exact path="/ourteam" element={<OurTeam/>} />
-      <Route exact path="/resetpass" element={<ResetPass/>} />
-      <Route exact path="/resetpass/do" element={<ResetPassDo/>} />
-      <Route exact path="*" element={<NotFound/>} />
-      
-    </Routes>
+    <body style={{ overscrollBehavior: 'none' }} >
+      <Toast3rd />
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/registration' element={<Registration />} />
+          <Route exact path='/registration/success' element={<RegSuc />} />
+          <Route exact path='/registration/failure' element={<RegFail />} />
+          <Route exact path="/contactus" element={<Contactus />} />
+          <Route exact path="/speakers" element={<AllSpeakers />} />
+          <Route exact path="/sponsors" element={<Sponsors />} />
+          <Route exact path="/comingsoon" element={<Schedule />} />
+          <Route exact path="/events/" element={<MoreEvents2 />} />
+          <Route exact path="/ourteam" element={<OurTeam />} />
+          <Route exact path="/resetpass" element={<ResetPass />} />
+          <Route exact path="/resetpass/do" element={<ResetPassDo />} />
+          <Route exact path="/termsandconditions" element={<Terms />} />
+          <Route exact path="/privacypolicy" element={<Privacy />} />
+          <Route exact path="/refundpolicy" element={<Refund />} />
+          <Route exact path="*" element={<NotFound />} />
 
-    </Router>
-    
+        </Routes>
+
+      </Router>
+
     </body>
   );
 }

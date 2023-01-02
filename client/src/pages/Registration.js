@@ -23,9 +23,9 @@ function Registration() {
     firstName: "",
     lastName: "",
     email: "",
-    contact:"",
+    contact: "",
     outlook: "",
-    department:"",
+    department: "",
     rollno: "",
     password: "",
     confirmPassword: "",
@@ -46,15 +46,25 @@ function Registration() {
         return;
       }
       else {
-        let firstName = user.firstName; let lastName = user.lastName; let email = user.email; let outlook = user.outlook; let contact=user.contact; let department=user.department; let rollno = user.rollno; let password = user.password; let confirmPassword = user.confirmPassword;
+        let firstName = user.firstName; let lastName = user.lastName; let email = user.email; let outlook = user.outlook; let contact = user.contact; let department = user.department; let rollno = user.rollno; let password = user.password; let confirmPassword = user.confirmPassword;
+        //Check if outlook, rollno, department, there or nor
+        if(outlook || rollno || department){
+          if(outlook && rollno && department){
+
+          }
+          else{
+            toast("One or more details are empty if you are IIT Guwahati student");
+            return;
+          }
+        }
         // First check if he purchased pass
-        
+
         await axios.post('/checkifpurchased', { email }).then(
           (res) => {
             console.log(msg)
             msg = res.data.message;
           }).catch(function (error) {
-           console.log(error.toJSON());
+            console.log(error.toJSON());
             toast(error.message);
             return;
           });
@@ -65,31 +75,32 @@ function Registration() {
           await mailpass(user.email);
           navigate({
             pathname: '/registration/success',
-            search: `?payId=ABCD&text=DUPLICATE&name=${user.firstName+" "+user.lastName}&email=${user.email}`,
-          
+            search: `?payId=ABCD&text=DUPLICATE&name=${user.firstName + " " + user.lastName}&email=${user.email}`,
+
           });
           return;
         }
         // If he hasn't purchased, then check if iitg credentials match
+        if (outlook && rollno) {
+          await axios.post('/checkoutlook', { outlook, rollno }).then(
+            (res) => {
+              console.log(msg)
+              msg = res.data.message;
+            }).catch(function (error) {
+              console.log(error.toJSON());
+              toast(error.message);
+              return;
+            });
 
-        await axios.post('/checkoutlook', { outlook, rollno }).then(
-          (res) => {
-            console.log(msg)
-            msg = res.data.message;
-          }).catch(function (error) {
-           console.log(error.toJSON());
-            toast(error.message);
+          // IF they match return
+          if (msg == "ROLLNOSAME") {
+            toast("Roll no. already exists. Recheck")
             return;
-          });
-
-        // IF they match return
-        if(msg=="ROLLNOSAME"){
-          toast("Roll no. already exists. Recheck")
-          return;
-        }
-        if(msg=="OUTLOOKSAME"){
-          toast("Outlook already exists. Recheck")
-          return;
+          }
+          if (msg == "OUTLOOKSAME") {
+            toast("Outlook already exists. Recheck")
+            return;
+          }
         }
 
         //If they don't then start razorpay
@@ -124,7 +135,7 @@ function Registration() {
                 description: 'UDGAM 2023 transaction',
                 order_id: order_id,
                 handler: async function (response) {
-                  setpaymentID( response.razorpay_payment_id);
+                  setpaymentID(response.razorpay_payment_id);
                   const result = await axios.post('/pay-order', {
                     amount: amount,
                     razorpayPaymentId: response.razorpay_payment_id,
@@ -177,8 +188,8 @@ function Registration() {
     mailpass(user.email);
     navigate({
       pathname: '/registration/success',
-      search: `?payId=${paymentID}&text=SUCCESS&name=${user.firstName+" "+user.lastName}&email=${user.email}`,
-   
+      search: `?payId=${paymentID}&text=SUCCESS&name=${user.firstName + " " + user.lastName}&email=${user.email}`,
+
     });
   }
   // else{
@@ -217,7 +228,7 @@ function Registration() {
                 <div className="first_last_flex">
                   <input className='wid_text_Field_100' type="text" name="firstName" required={true} placeholder="First name... *"
                     onChange={handleChange} />
-                  <input className='wid_text_Field_100' type="text" name="lastName"  required={true} placeholder="Last name... *" onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="text" name="lastName" required={true} placeholder="Last name... *" onChange={handleChange} />
                 </div>
                 <br />
                 <div className="first_last_flex">
@@ -232,7 +243,7 @@ function Registration() {
 
 
                   <select className='wid_text_Field_100' id="department" name="department" placeholder="Department" onChange={handleChange}>
-                  <option value="" disabled selected>Your branch...</option>
+                    <option value="" disabled selected>Your branch...</option>
                     <option value="Biological and Bioscience Engineering">Biological and Bioscience Engineering</option>
                     <option value="Chemical Engineering">Chemical Engineering</option>
                     <option value="Chemical Science and Technology">Chemical Science and Technology</option>

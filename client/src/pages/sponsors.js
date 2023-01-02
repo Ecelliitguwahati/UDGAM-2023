@@ -191,7 +191,7 @@ function Sponsors() {
                     </div>
 
                     <div>
-                        <a href='' target="_blank"><img src={pmi} /></a>
+                        <a href='https://pminterviews.in/' target="_blank"><img src={pmi} /></a>
                         <p>InterviEW Preparations Partner</p>
                     </div>
 
