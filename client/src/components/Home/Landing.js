@@ -11,13 +11,15 @@ import { motion } from "framer-motion";
 
 function Landing() {
 	useEffect(() => {
+		document.body.style.overflow = "hidden";
 		setTimeout(() => {
 			document.getElementById("countinbuttondiv").style.display = "block";
+			document.body.style.overflow = "unset";
 		}, 3000);
 	}, []);
 	return (
 		<div className="landing">
-			{/* <Loading /> */}
+			<Loading />
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: [0, 0, 1] }}
@@ -95,9 +97,7 @@ function Landing() {
 					</svg>
 				</a>
 			</div>
-			<h3 className="taglineu" style={{ color: "#F0E266" }}>
-				VORTEX OF VENTURES
-			</h3>
+			<h3 className="taglineu">VORTEX OF VENTURES</h3>
 
 			<div className="Footerland">
 				<div>

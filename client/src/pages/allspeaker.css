@@ -4,6 +4,10 @@
     src: url(Fonts/Test\ Founders\ Grotesk\ Bold\ 700.otf);
 } */
 
+.row div{
+    height: fit-content;
+}
+
 .topallspeaker{
     display:flex; 
     align-items: center;
@@ -212,7 +216,7 @@ background-color: #09021C;
        line-height: 110%;
        letter-spacing: -0.02em;
        color: #6A6771;
-       height: 18px;
+      
    }
 
 @media(min-width: 470px) and (max-width: 600px){

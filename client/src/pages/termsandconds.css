@@ -1,0 +1,38 @@
+.containerterm{
+    color: white;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #1A074E 0%, #060213 100%);
+ font-family: Action Sans;
+background-size: cover;
+padding: 0 120px;
+}
+
+
+
+.termheading{
+    font-family: Founders Grotesk;
+    color: #FC97D9;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    padding-top: 130px;
+    padding-bottom: 80px;
+}
+
+.headingsection{
+    font-size: 32px;
+    color:#DDF140;
+    font-weight: 400;
+}
+
+@media (max-width:600px)
+{
+    .termheading{
+        font-size: xxx-large;
+    }
+.containerterm{
+    padding:0 10%;
+}
+}

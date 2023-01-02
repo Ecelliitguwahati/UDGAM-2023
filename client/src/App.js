@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import Home from "./pages/Home/Home.js";
+import Home from "./pages/Home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -17,6 +17,9 @@ import OurTeam from "./pages/ourteam";
 import ResetPass from "./pages/resetpass";
 import ResetPassDo from "./pages/resetpassdo";
 import Toast3rd from "./components/toast";
+import Terms from "./pages/termsandconds";
+import Privacy from "./pages/privacypolicy";
+import Refund from "./pages/refund";
 function App() {
 	const [disableScroll, setDisableScroll] = useState(true);
 	useEffect(() => {
