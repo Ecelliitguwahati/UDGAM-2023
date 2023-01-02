@@ -67,7 +67,11 @@ function App() {
 						element={<ResetPassDo />}
 					/>
 					<Route exact path="*" element={<NotFound />} />
+          <Route exact path="/termsandconditions" element={<Terms />} />
+          <Route exact path="/privacypolicy" element={<Privacy />} />
+          <Route exact path="/refundpolicy" element={<Refund />} />
 				</Routes>
+
 			</Router>
 		</body>
 	);
