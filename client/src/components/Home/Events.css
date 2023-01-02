@@ -48,6 +48,7 @@
 	position: sticky;
 	top: 0;
 	padding-top: calc(var(--index) * var(--card-top-offset));
+    border:1px solid #09021C ;
 } 
 
 @supports (animation-timeline: works) {

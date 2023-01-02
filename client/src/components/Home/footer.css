@@ -7,11 +7,27 @@
     src: url(./../../fonts/ActionSans-Medium.otf);
 }
 .footer{
-    margin-top: 60px;
+    padding-top: 60px;
     width: 100%;
 }
 
+.beyond-footer{
+    background-color: #3b3b3b;
+    overflow-x: hidden;
+    font-family: Action Sans;
+    padding: 10px 100px;
+    height:git-content;
+    
+}
+.beyond-footer-links{
+    font-size: 12px;
+    font-weight: 300;
 
+    color: #fff;
+}
+.beyond-footer-links:hover{
+    color:#F0E266;
+}
 .c2{
     display: flex;
     flex-direction: row;

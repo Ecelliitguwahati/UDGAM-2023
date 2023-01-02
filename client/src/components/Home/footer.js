@@ -4,6 +4,7 @@ import { Button } from '@cred/neopop-web/lib/components';
 import CompanyLogo from './CompanyLogo.svg';
 function Footer() {
   return (
+    <>
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__top">
@@ -17,6 +18,9 @@ function Footer() {
             <p className="footer__title2">E-Cell,IIT Guwahati<br></br> Assam-7810389</p>
             <p className="company__description">
               edc@iitg.ac.in
+            </p>
+            <p className="company__description">
+              udgam@iitg.ac.in
             </p>
             <p className="company__description">
               +91 7637833974
@@ -130,16 +134,41 @@ function Footer() {
             </div>
 
           </div>
-          <div class="right_footer">
-            <p class="dontmissmagic">Don't miss the Magic</p>
-            <p href="" class="signup">Sign up to receive Event notification and Updates</p>
+          <div className="right_footer">
+            <p className="dontmissmagic">Don't miss the Magic</p>
+            <p href="" className="signup">Sign up to receive Event notification and Updates</p>
             <div><br /><input className="input_pass5" placeholder="Enter Your Mail..." /></div>
 
           </div>
         </div>
 
       </div>
+          
     </footer>
+    <div className="beyond-footer">
+
+<div className="row justify-content-between">
+    <div className="col-lg-4 text-center">
+        <a className="beyond-footer-links" href="/termsandconditions" target="_blank">
+            Terms and conditions
+
+        </a>
+    </div>
+    <div className="col-lg-4 text-center py-auto">
+        <a className="beyond-footer-links" href="/privacypolicy" target="_blank">
+            Privacy policy
+
+        </a>
+    </div>
+    <div className="col-lg-4 text-center py-auto">
+        <a className="beyond-footer-links" href="/refundpolicy" target="_blank">
+            Refund policy
+
+        </a>
+    </div>
+</div>
+</div>
+    </>
   )
 }
 

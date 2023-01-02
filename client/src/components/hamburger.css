@@ -18,8 +18,10 @@
     margin:-20px 0;
 
 }
-
-a :hover, Link:hover{
+.gon div a:hover{
+    color:#DDF140;
+}
+.humburg a :hover, Link:hover{
     text-decoration: none;
     color: #DDF140;
 

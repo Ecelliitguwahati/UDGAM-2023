@@ -5,18 +5,19 @@ import './LandingCount.css'
 function CountIn() {
   return (
     <div className='body'>
-     <div>
-      <div className='back'>
-      </div>
-      
-      <div 
-      className='face'>
-        COUNT ME IN
-      </div>
-      
-    </div>
+      <a href="/registration">
+      <div >
+        <div className='back'>
+        </div>
 
-   </div>
+        <div
+          className='face'>
+          COUNT ME IN
+        </div>
+
+      </div>
+      </a>
+    </div>
   )
 }
 

@@ -7,18 +7,18 @@ import speak from "../icons/speaker.png"
 import linkicon from "../icons/Frame 34161.png"
 import Navbar from '../components/Navbar';
 
-import anushka from '../PhotosPng/ankusha.svg';
-import krish from '../PhotosPng/krish.svg';
-import krishna from '../PhotosPng/krishna.svg';
-import mohitp from '../PhotosPng/mohitp.svg';
-import raghav from '../PhotosPng/raghav.svg';
-import sahil from '../PhotosPng/sahil.svg';
-import shyam from '../PhotosPng/shyam.svg';
-import souma from '../PhotosPng/souma.svg';
-import bhoomika from '../PhotosPng/bhomika.svg';
-import umang from '../PhotosPng/umang.svg';
-import ved from '../PhotosPng/ved.svg';
-import soham from '../PhotosPng/soham.svg';
+import anushka from '../PhotosPng/ankusha.png';
+import krish from '../PhotosPng/krish.png';
+import krishna from '../PhotosPng/krishna.png';
+import mohitp from '../PhotosPng/mohitp.png';
+import raghav from '../PhotosPng/raghav.png';
+import sahil from '../PhotosPng/sahil.png';
+import shyam from '../PhotosPng/shyam.png';
+import souma from '../PhotosPng/souma.png';
+import bhoomika from '../PhotosPng/bhomika.png';
+import umang from '../PhotosPng/umang.png';
+import ved from '../PhotosPng/ved.png';
+import soham from '../PhotosPng/soham.png';
 import Footer from '../components/Home/footer';
 function OurTeam() {
     function myFunction() {
@@ -136,7 +136,7 @@ function OurTeam() {
                         <h4>Udgam</h4>
                     </div>
 
-                    <div className='memberteam col-lg-3'>
+                    <div className='memberteam col-lg-4'>
                     <div className='imgteam'>
                         <img src={souma} className='svg' />
                             <a href="https://www.linkedin.com/in/soumadip-das/"><img className='linkicon' src={linkicon} alt="" /></a>
