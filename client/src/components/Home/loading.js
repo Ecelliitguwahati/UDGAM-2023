@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import arrow from './../../icons/loadingPage/arrow.svg'
 import div from './../../icons/loadingPage/div.svg'
 import bulb from './../../icons/loadingPage/bulb.svg'
@@ -10,9 +10,25 @@ import suitcase from './../../icons/loadingPage/suitcase.svg'
 import udgam from './../../icons/loadingPage/udgam.svg'
 import { motion } from 'framer-motion';
 import "./loading.css";
-import CountIn from './LAnding_CountIn'
 function Loading() {
 
+    const quotes=[{
+        "text": "Simple is not easy",
+        "by": "-Carl Pei",
+    },{
+        "text": "Entrepreneur banne ke liye spelling nahi, spirit chahiye",
+        "by": "-TVF Pitchers",
+    },{
+        "text": "If you guys were the inventors of Facebook, you'd have invented Facebook.",
+        "by": "-The Social Network (2010)",
+    }
+];
+    
+var rndInt= randomIntFromInterval(0, quotes.length-1);
+
+    function randomIntFromInterval(min, max) { // min and max included 
+        return Math.floor(Math.random() * (max - min + 1) + min)
+    }
     return (
 
         <motion.div
@@ -73,8 +89,8 @@ function Loading() {
                 transition={{ duration: 8, ease: 'easeOut' }}>
                 <div id="text">
                     <img src={udgam} id="udgam" alt="" />
-                    <p id="one">Entrepreneur banne ke liye spelling nahi, spirit chahiye</p>
-                    <p id="two">-TVF Pitchers</p>
+                    <p id="one">{quotes[rndInt].text}</p>
+                    <p id="two">-{quotes[rndInt].by}</p>
                 </div>
                 <div id="loading">
                     LOADING...

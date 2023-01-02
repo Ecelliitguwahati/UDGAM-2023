@@ -3,6 +3,15 @@
     background-image: url(../icons/moreEventsBg.png);
 }
 
+#realevents{
+    display: none;
+}
+#eventsdummy{
+    width: 100%;
+}
+#eventsdummy img{
+    width: 100%;
+}
 
 
 #eventsListHeading{
@@ -13,14 +22,14 @@
     font-family: Founders Grotesk ;
     margin-bottom: 50px;
     margin-top: 50px;
-    margin-left: 60px;
+    margin-left: 120px;
 }
 
 #eventmainContainer
 {
     display: flex;
     flex-direction: row;
-    margin:0 60px;
+    margin:0 120px;
 }
 .one,.three
 {
@@ -246,6 +255,7 @@
 
     background-image: url(../icons/boxORBG.svg);
     background-size: cover;
+    flex-direction: row-reverse;
 }
 .elbg{
 
@@ -256,6 +266,7 @@
 
     background-image: url(../icons/boxERBG.svg);
     background-size: cover;
+    flex-direction: row-reverse;
 }
 
 
@@ -264,16 +275,24 @@
     margin-bottom: 8px;
 }
 
-.imgevent
+/* .imgevent
 {
-    margin: 21px 0 0 29px;
+    margin: auto;
+} */
+
+.imgC{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boxHeading
 {
     display: flex;
     flex-direction: row;
-    margin:40px 32px 32px 60px;
+    width: 50%;
+    margin:40px 20px;
 }
 
 .icon

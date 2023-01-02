@@ -1,6 +1,7 @@
 
 .sponsorpage{
     height: fit-content;
+    overflow-x: hidden;
 }
 .getticketsponsor{
     margin:0;
@@ -46,7 +47,9 @@ text-shadow: 0.1rem 0.5rem #fc97d9;
     text-transform: capitalize;
     text-align: center;
 }
-
+.title-sponsor a img{
+    width:100%;
+}
 .containersponsorbox {
     display: flex;
     align-items: center;
@@ -82,7 +85,9 @@ text-shadow: 0.1rem 0.5rem #fc97d9;
     align-items: center;
     justify-content: space-between
 }
-
+.imgtitle{
+    z-index: 2;
+}
 .media-partner {
     width: calc(100% - 105px);
     margin-bottom: 122px;
@@ -218,7 +223,7 @@ text-shadow: 0.1rem 0.5rem #fc97d9;
 .associateTitle{
     display: flex;
     flex-direction: row;
-    width:100%;
+
     margin: 0 40px 36px 120px;
     justify-content: center;
     align-items: center;
@@ -266,6 +271,7 @@ left:-14px;
 margin-right: 80px;
 }
 
+
 .out{
     width: 334.96px;
 height: 185.07px;
@@ -276,4 +282,35 @@ margin-right: 80px;
 margin-bottom: 50px;
 
 }
+.intitle{
+    background: #44C6B6;
+    padding:50px;
+    width: 442.96px;
+    height: 218.07px;
+    position:relative
+}
+.outtitle{
+    background: #fff;
+    width: 442.96px;
+    height: 218.07px;
+  
+}
 
+.svg1{
+    top:-45px;
+    left:410px;
+    position: absolute;
+    z-index: 0;
+}
+
+.svg2{
+    top: 180px;
+    left: -37px;
+    position: absolute;
+    z-index: 0;
+}
+
+
+.associateTitle{
+    margin: 0 auto;
+}

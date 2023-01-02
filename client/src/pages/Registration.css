@@ -201,7 +201,7 @@
 
 .Checkout {
     position: absolute;
-    top: 356.16px;
+    top: 316.16px;
     left: 120px;
 }
 .register-progressbar{
@@ -267,5 +267,8 @@
         }
     .beta{
         left:26px;
+    }
+    .Checkout{
+        top:292.16px;
     }
     }

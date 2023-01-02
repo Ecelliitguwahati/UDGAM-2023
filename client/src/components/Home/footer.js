@@ -4,6 +4,7 @@ import { Button } from '@cred/neopop-web/lib/components';
 import CompanyLogo from './CompanyLogo.svg';
 function Footer() {
   return (
+    <>
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__top">
@@ -17,6 +18,9 @@ function Footer() {
             <p className="footer__title2">E-Cell,IIT Guwahati<br></br> Assam-7810389</p>
             <p className="company__description">
               edc@iitg.ac.in
+            </p>
+            <p className="company__description">
+              udgam@iitg.ac.in
             </p>
             <p className="company__description">
               +91 7637833974
@@ -139,7 +143,32 @@ function Footer() {
         </div>
 
       </div>
+          
     </footer>
+    <div class="beyond-footer">
+
+<div class="row justify-content-between">
+    <div class="col-lg-4 text-center">
+        <a class="beyond-footer-links" href="https://docs.google.com/document/u/0/d/1v7L-nSsN0WyLDo0HqlXcX5KIHVb54F0MD0rhH89xnfs/mobilebasic" target="_blank">
+            Terms and conditions
+
+        </a>
+    </div>
+    <div class="col-lg-4 text-center">
+        <a class="beyond-footer-links" href="https://docs.google.com/document/u/0/d/1C0eJ5OcYg3JOod5DZ5nmvLSWkivE_fDUNY6jkM6fcY0/mobilebasic" target="_blank">
+            Privacy policy
+
+        </a>
+    </div>
+    <div class="col-lg-4 text-center">
+        <a class="beyond-footer-links" href="https://docs.google.com/document/u/0/d/1j_zpxVRzhC-f8CACTvr3MZDz8L6TCztZX2EADxNYbnk/mobilebasic" target="_blank">
+            Refund policy
+
+        </a>
+    </div>
+</div>
+</div>
+    </>
   )
 }
 
