@@ -4,6 +4,10 @@
     src: url(Fonts/Test\ Founders\ Grotesk\ Bold\ 700.otf);
 } */
 
+.row div{
+    height: fit-content;
+}
+
 .topallspeaker{
     display:flex; 
     align-items: center;

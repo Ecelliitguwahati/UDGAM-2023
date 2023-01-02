@@ -18,7 +18,7 @@ const Box =(props)=>{
                 setsc(1);
                 }}>
                 { isShown && <a href={props.link} style={{height:`fit-content`,width:`fit-content`, zIndex:`2`}} ><img src={props.in} style={{height:`34px`, position:`absolute`, top:`12px`, right:`12px`, zIndex:`2`}}/></a>}
-                <img src={props.img} alt="" style={{height:`300px`,width:`273px`,scale:`${sc}`,transition:`0.5s` , marginTop:``}}/>
+                <img src={props.img} alt="" style={{height:`258px`,width:`273px`,scale:`${sc}`,transition:`0.5s` , marginTop:``}}/>
             </div>
             <div className='textContainer' style={{display:`flex`,flexDirection:`column`,justifyContent:`space-between`,fontFamily:'sans-serif',alignItems:`flex-start`}} >
                 <p style={{fontSize:`32px`, color:`#44C6B6`, margin:`23px 0 -5px 0`}}>{props.name}</p>

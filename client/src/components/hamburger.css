@@ -21,7 +21,7 @@
 .gon div a:hover{
     color:#DDF140;
 }
-a :hover, Link:hover{
+.humburg a :hover, Link:hover{
     text-decoration: none;
     color: #DDF140;
 

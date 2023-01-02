@@ -47,7 +47,7 @@ const MoreEvents2 = () => {
             "eventName": "LECTURE SERIES",
             "payment": "Paid",
             "link": "https://www.fb.com",
-            "eventDesc": " “A person who has experienced something is almost always far more expert than the experts. “<br> <br>Lecture Series brings to you the words of the experienced, their wisdom, and their insights on entrepreneurship and the journey of building a startup from a mere idea to success. We aim to bring the greatest of the professionals to spark your minds and motivate your entrepreneurial self.<br><br>Some of our past speakers:<br><br>•Charlie Cheever - Cofounder, Quora<br>•Jimmy Wales - Founder, Wikipedia<br>•Pulkit Jain - Cofounder, Vedantu<br>•Kevin Harrington - Original Shark, SharkTank<br>•Amod Malviya - Cofounder, Udaan<br>and many more…<br>"
+            "eventDesc": " “The Lecture Series brings together the most seasoned and accomplished professionals to impart their wisdom, insights, and experiences on the journey to building a successful startup. Gives you a chance to learn from the best, grow as an entrepreneur, and turn your ideas into a thriving business. "
 
         },
         // 0 for ongoing
