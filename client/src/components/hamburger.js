@@ -22,16 +22,16 @@ function Hamburger() {
 	const [s1, sets1] = useState("hidden");
 	const [s2, sets2] = useState("hidden");
 	const [s3, sets3] = useState("hidden");
-	const [email, setEmail] = useState("");
+	const [emailhum, setEmail] = useState("");
 	const handleChange = (e) =>
 	setEmail(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
 	async function maillist(){
-		console.log(email.email)
-	  if(email.email){
+		console.log(emailhum.emailhum)
+	  if(emailhum.emailhum){
 
-	  await axios.post('/mailpass', { email:email.email }).then(()=>   toast("Mail has been sent if you have really purchased the pass"))
+	  await axios.post('/mailpass', { email:emailhum.emailhum }).then(()=>   toast("Mail has been sent if you have really purchased the pass"))
 	  .catch(function (error) {
-		//console.log(error.toJSON());
+		console.log(error.toJSON());
 	 toast("Some unknown error has occured");
 		return;
 	  });
@@ -174,7 +174,7 @@ function Hamburger() {
 								<input
 									className="input_pass"
 									placeholder="Enter Your Mail..."
-									name="email"
+									name="emailhum"
 									onChange={handleChange}
 								/>
 								

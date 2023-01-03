@@ -15,7 +15,7 @@ import { toast } from 'react-toastify';
 import CheckOut from '../components/Home/CheckOutButton';
 
 function Registration() {
-  const orderAmount = 2;
+  const orderAmount = 199;
   const navigate = useNavigate();
   const [resitered, setRegistered] = useState(false);
   const [paymentID, setpaymentID] = useState("");
