@@ -43,7 +43,10 @@
 /* #card_4 {
 	--index: 4;
 } */
-
+#udgamPass{
+    position: sticky;
+    top:0;
+}
  .containerevent {
 	position: sticky;
 	top: 0;

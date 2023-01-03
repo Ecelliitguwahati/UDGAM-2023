@@ -264,28 +264,7 @@ function Events() {
 						</div>
 					</div>
 					<div className="buttonwrappass">
-						{/* <Button
-							variant="primary"
-							kind="elevated"
-							size="big"
-							colorMode="light"
-							colorConfig={{
-								backgroundColor: "#F0E266",
-								borderColor: "black",
-								edgeColors: {
-									right: "#FC97D9",
-									bottom: "#FC97D9",
-								},
-							}}
-							spacingConfig={{ height: "60px" }}
-							onClick={() => {
-								window.location.href = "/registration";
-							}}
-						>
-							<div className="GetTkt" style={{ color: "black" }}>
-								BUY PASS
-							</div>
-						</Button> */}
+						
 						<BuyE/>
 					</div>
 					<div className="buyPass">
