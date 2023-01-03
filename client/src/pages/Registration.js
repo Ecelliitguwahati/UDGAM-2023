@@ -12,6 +12,7 @@ import axios from '../axios';
 import { useState } from 'react';
 import Footer from '../components/Home/footer';
 import { toast } from 'react-toastify';
+import CheckOut from '../components/Home/CheckOutButton';
 
 function Registration() {
   const orderAmount = 2;
@@ -301,7 +302,10 @@ function Registration() {
               <p className="gamma">₹199</p>
               <p className="gamma1">₹199</p>
               {/* <p className="gamma1 gamma2"></p> */}
-              <div className="Checkout" type="submit"><Checkout title="CHECK OUT →" /></div>
+              <div className="Checkout" type="submit">
+                {/* <Checkout title="CHECK OUT →" /> */}
+                <CheckOut/>
+                </div>
             </div>
 
             {/* <div className="vector">
