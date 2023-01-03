@@ -21,6 +21,7 @@ import WorkshopsHeading from "./../icons/WorkshopsHeading.svg";
 import DframeHeading from "./../icons/DframeHeading.svg";
 import InternfairHeading from "./../icons/InternfairHeading.svg";
 import CosmicClashHeading from "./../icons/CosmicClashHeading.svg";
+import Navbar from '../components/Navbar';
 import './MoreEvents3.css'
 import Line from "./../icons/Line.svg"
 import { useState } from 'react';
@@ -28,187 +29,148 @@ import { useState } from 'react';
 function MoreEvents3() {
     const [displayls, setDisplayls] = useState(false);
     const [displayif,setDisplayif] = useState(false);
-    const eventsdata = [
-        // 0 for ongoing
-        // 1 for expired
-        // 2 for coming ComingSoon
-        {
-            "tag": "ls",
-            "id": "b1",
-            "ori": "left",
-            "date": "Jan 20, 2023 16:37:25",
-            "info": 2,
-            "image": ls,
-            "prize": "NILL",
-            "eventName": "LECTURE SERIES",
-            "payment": "Paid",
-            "link": "https://www.fb.com",
-            "eventDesc": " “A person who has experienced something is almost always far more expert than the experts. “<br> <br>Lecture Series brings to you the words of the experienced, their wisdom, and their insights on entrepreneurship and the journey of building a startup from a mere idea to success. We aim to bring the greatest of the professionals to spark your minds and motivate your entrepreneurial self.<br><br>Some of our past speakers:<br><br>•Charlie Cheever - Cofounder, Quora<br>•Jimmy Wales - Founder, Wikipedia<br>•Pulkit Jain - Cofounder, Vedantu<br>•Kevin Harrington - Original Shark, SharkTank<br>•Amod Malviya - Cofounder, Udaan<br>and many more…<br>"
-
-        },
-        // 0 for ongoing
-        // 1 for expired
-        // 2 for coming ComingSoon
-        {
-            "tag": "internfair",
-            "id": "b2",
-            "ori": "left",
-            "date": "Jan 20, 2023 16:37:25",
-            "image": internfair,
-            "info": 2,
-            "prize": "Internship",
-            "eventName": "INTERNFAIR",
-            "payment": "Paid", "link": "https://www.fb.com",
-            "eventDesc": "An exclusive event for IIT Guwahati peeps, InternFair brings internship opportunities to students in various profiles like Software Development, Analytics, Product Management, and many more. This is a top-notch opportunity for the students to gain industry experience and also prepares them for the upcoming internship and placement processes."
-        },
-        // 0 for ongoing
-        // 1 for expired
-        // 2 for coming ComingSoon
-        {
-            "tag": "pmx",
-            "id": "b3",
-            "ori": "left",
-            "date": "Dec 20, 2022 16:37:25",
-            "image": pmx,
-            "info": 1,
-            "prize": "100K+",
-            "eventName": "PMx",
-            "payment": "Free", "link": "https://www.fb.com",
-            "eventDesc": "PMx is India’s largest* product case study competition. One has to bring out his observational, analytical, and researcher instinct and pour them out on the problem statement we provide. It is an item contextual analysis rivalry where you will encounter the adventure of chipping away at an item, rowing the product cycle, and making an incredible product that your clients will adore.            "
-        },
-        // 0 for ongoing
-        // 1 for expired
-        // 2 for coming ComingSoon
-        {
-            "tag": "disrupt",
-            "id": "b4",
-            "ori": "left",
-            "date": "Dec 30, 2022 23:59:59",
-            "image": disrupt,
-            "info": 0,
-            "prize": "10 Lakhs+",
-            "eventName": "DISRUPT",
-            "payment": "Free", "link": "https://rebrand.ly/Disrupt_Registration",
-            "eventDesc": "Disrupt is North East India’s Largest Pitching Battle where startups get a platform to pitch their idea to investors, Angel investors, and Venture Capitalists. In our previous editions, we had Michael Sibel, CEO of Y-Combinator as one of the panelists. Top finalists are provided with mentorship, incubation, and business tools alongside prizes and investment opportunities for winners."
-        },
-        // 0 for ongoing
-        // 1 for expired
-        // 2 for coming ComingSoon
-        {
-            "tag": "need",
-            "id": "b5",
-            "ori": "left",
-            "date": "Jan 20, 2022 16:37:25",
-            "prize": "1 Lakhs+",
-            "info": 1,
-            "image": need,
-            "eventName": "NEED",
-            "payment": "Free", "link": "https://www.fb.com",
-            "eventDesc": "Introducing our brand new event, North East Entrepreneurship Drive aka NEED where we aim to promote the entrepreneur environment and startup urge by helping institutes of North East India set up their own Entrepreneurship Cells in their institutes.  "
-        },
-        // 0 for ongoing
-        // 1 for expired
-        // 2 for coming ComingSoon
-        {
-            "tag": "cosmicclash",
-            "id": "b6",
-            "ori": "left",
-            "date": "Jan 10, 2023 23:59:59",
-            "prize": "10 Lakhs+",
-            "info": 0,
-            "image": cosmicClash,
-            "eventName": "COSMIC CLASH",
-            "payment": "Paid", "link": "https://linktr.ee/cosmic_clash",
-            "eventDesc": "Introducing our brand new event, North East Entrepreneurship Drive aka NEED where we aim to promote the entrepreneur environment and startup urge by helping institutes of North East India set up their own Entrepreneurship Cells in their institutes. "
-        },
-        // 0 for ongoing
-        // 1 for expired
-        // 2 for coming ComingSoon
-        {
-            "tag": "dframe",
-            "id": "b7",
-            "ori": "right",
-            "date": "Jan 9, 2023 23:59:59",
-            "info": 0,
-            "prize": "25 K+",
-            "image": Dframe,
-            "eventName": "D-FRAME",
-            "payment": "Free", "link": "https://unstop.com/competition/dframe-creative-branding-challenge-udgam-2023-indian-institute-of-technology-iit-guwahati-566698",
-            "eventDesc": "DFrame is a one of its kind UI/UX competition. Aimed to inculcate and enhance one's creativity with the business need of companies, DFrame tests the designer's innovative quotient by flexing their design muscle to find technical solutions while staying true to the human-centric approach."
-        },
-        // 0 for ongoing
-        // 1 for expired
-        // 2 for coming ComingSoon    
-        {
-            "tag": "encode",
-            "id": "b8",
-            "ori": "right",
-            "date": "Jan 2, 2023 16:37:25",
-            "info": 0,
-            "prize": "1.2 Lakhs+",
-            "image": encode,
-            "eventName": "ENCODE",
-            "payment": "Free", "link": "https://rebrand.ly/EnCode23",
-            "eventDesc": "An entrepreneur’s task is to solve real-life real-world problems by developing a feasible solution that caters to everyone's needs be it the users or the market. Focussing on this, Encode is a development hackathon where you will be provided with a real-life problem and you have to devise a solution for it."
-        },
-        // 0 for ongoing
-        // 1 for expired
-        // 2 for coming ComingSoon
-        {
-            "tag": "funevents",
-            "id": "b9",
-            "ori": "right",
-            "date": "Jan 20, 2023 16:37:25",
-            "info": 2,
-            "prize": "5K+",
-            "image": funEvents,
-            "eventName": "FUN EVENTS",
-            "payment": "Paid", "link": "https://www.fb.com",
-            "eventDesc": "UDGAM is not only about boring learning and teaching. We also organize various fun events such as Stonks 11, IPL Auction, Speed Dating, etc."
-        },
-
-        // 0 for ongoing
-        // 1 for expired
-        // 2 for coming ComingSoon
-        {
-            "tag": "sparkle",
-            "id": "b10",
-            "ori": "right",
-            "info": 2,
-            "prize": "NILL",
-            "date": "Jan 20, 2023 16:37:25",
-            "image": sparkle,
-            "eventName": "SPARKLE",
-            "payment": "Free", "link": "https://www.fb.com",
-            "eventDesc": "Minutes of the spotlight to showcase your entrepreneurship and pitching skills exclusive for young teenagers. Sparkle is a pitching ground for school students and an opportunity to show themselves under the unwavering attention of the whole panel, including various Angel Investors and Venture Capitalists, to put their startup idea. "
-        },
-        // 0 for ongoing
-        // 1 for expired
-        // 2 for coming ComingSoon
-        {
-            "tag": "workshops",
-            "id": "b11",
-            "ori": "right",
-            "info": 2,
-            "prize": "NILL",
-            "date": "Jan 20, 2023 16:37:25",
-            "image": workshops,
-            "eventName": "WORKSHOPS",
-            "payment": "Paid", "link": "https://www.fb.com",
-            "eventDesc": "The Start-up World is saturated with intricate concepts, all of which combined have near-infinite applications. This workshop series, endeavors to break these concepts down into a digestible yet comprehensive guide, via industry experts, and Q&A sessions on these interesting topics. "
-        }
-
-    ]
+    const [displaypm,setDisplaypm] = useState(false);
+    const [displayDis,setDisplayDis] = useState(false);
+    const [displayNe,setDisplayNe] = useState(false);
+    const [displaySpar,setDisplaySpar] = useState(false);
+    const [displayEn,setDisplayEn] = useState(false);
+    const [displayFune,setDisplayFune] = useState(false);
+    const [displayWorks,setDisplayWorks] = useState(false);
+    const [displayDf,setDisplayDf] = useState(false);
+    const [displayCosmic,setDisplayCosmic] = useState(false);
   
    const displayLectureSeries = () => {
       if(displayif){ setDisplayif(false)};
-      setDisplayls(!displayls);
+      if(displaypm){ setDisplaypm(false)};
+        if(displayDis){ setDisplayDis(false)};
+        if(displayNe){ setDisplayNe(false)};
+        if(displaySpar){ setDisplaySpar(false)};
+        if(displayEn){ setDisplayEn(false)};
+        if(displayFune){ setDisplayFune(false)};
+        if(displayWorks){ setDisplayWorks(false)};
+        if(displayDf){ setDisplayDf(false)};
+        if(displayCosmic){ setDisplayCosmic(false)};
+         setDisplayls(!displayls);
    }
    const displayInternfair = () => {
-    if(displayls){ setDisplayls(false)};
-    setDisplayif(!displayif);
+    if(displayif){ setDisplayif(false)};
+      if(displaypm){ setDisplaypm(false)};
+        if(displayDis){ setDisplayDis(false)};
+        if(displayNe){ setDisplayNe(false)};
+        if(displaySpar){ setDisplaySpar(false)};
+        if(displayEn){ setDisplayEn(false)};
+        if(displayFune){ setDisplayFune(false)};
+        if(displayWorks){ setDisplayWorks(false)};
+        if(displayDf){ setDisplayDf(false)};
+        if(displayCosmic){ setDisplayCosmic(false)};
+        if(displayls){ setDisplayls(false)};
+        setDisplayif(!displayif);
  }
+    const displayProduct= () => {
+        if(displayif){ setDisplayif(false)};
+       
+        if(displayDis){ setDisplayDis(false)};
+        if(displayNe){ setDisplayNe(false)};
+        if(displaySpar){ setDisplaySpar(false)};
+        if(displayEn){ setDisplayEn(false)};
+        if(displayFune){ setDisplayFune(false)};
+        if(displayWorks){ setDisplayWorks(false)};
+        if(displayDf){ setDisplayDf(false)};
+        if(displayCosmic){ setDisplayCosmic(false)};
+        setDisplaypm(!displaypm);
+    }
+
+    const displayDisrupt= () => {
+        if(displayif){ setDisplayif(false)};
+        if(displaypm){ setDisplaypm(false)};
+         
+          if(displayNe){ setDisplayNe(false)};
+          if(displaySpar){ setDisplaySpar(false)};
+          if(displayEn){ setDisplayEn(false)};
+          if(displayFune){ setDisplayFune(false)};
+          if(displayWorks){ setDisplayWorks(false)};
+          if(displayDf){ setDisplayDf(false)};
+          if(displayCosmic){ setDisplayCosmic(false)};
+            setDisplayDis(!displayDis);
+    }
+    const displayNeed= () => {
+        if(displayif){ setDisplayif(false)};
+        if(displaypm){ setDisplaypm(false)};
+        if(displayDis){ setDisplayDis(false)};
+       
+        if(displaySpar){ setDisplaySpar(false)};
+        if(displayEn){ setDisplayEn(false)};
+        if(displayFune){ setDisplayFune(false)};
+        if(displayWorks){ setDisplayWorks(false)};
+        if(displayDf){ setDisplayDf(false)};
+        if(displayCosmic){ setDisplayCosmic(false)};
+        setDisplayNe(!displayNe);
+    }
+    const displayCosmicClash=()=>{
+        if(displayif){ setDisplayif(false)};
+        if(displaypm){ setDisplaypm(false)};
+        if(displayDis){ setDisplayDis(false)};
+        if(displayNe){ setDisplayNe(false)};
+        if(displaySpar){ setDisplaySpar(false)};
+        if(displayEn){ setDisplayEn(false)};
+        if(displayFune){ setDisplayFune(false)};
+        if(displayWorks){ setDisplayWorks(false)};
+        if(displayDf){ setDisplayDf(false)};
+        
+        setDisplayCosmic(!displayCosmic);  
+    }
+
+    const displayEncode=()=>{
+        if(displayif){ setDisplayif(false)};
+        if(displaypm){ setDisplaypm(false)};
+        if(displayDis){ setDisplayDis(false)};
+        if(displayNe){ setDisplayNe(false)};
+        if(displaySpar){ setDisplaySpar(false)};
+        if(displayFune){ setDisplayFune(false)};
+        if(displayWorks){ setDisplayWorks(false)};
+        if(displayDf){ setDisplayDf(false)};
+        if(displayCosmic){ setDisplayCosmic(false)};
+        setDisplayEn(!displayEn);
+    }
+    const displayFunEvents=()=>{
+        if(displayif){ setDisplayif(false)};
+        if(displaypm){ setDisplaypm(false)};
+        if(displayDis){ setDisplayDis(false)};
+        if(displayNe){ setDisplayNe(false)};
+        if(displaySpar){ setDisplaySpar(false)};
+        if(displayEn){ setDisplayEn(false)};
+        if(displayWorks){ setDisplayWorks(false)};
+        if(displayDf){ setDisplayDf(false)};
+        if(displayCosmic){ setDisplayCosmic(false)};
+        setDisplayFune(!displayFune);
+    }
+    const displayWorkshops=()=>{
+        if(displayif){ setDisplayif(false)};
+        if(displaypm){ setDisplaypm(false)};
+        if(displayDis){ setDisplayDis(false)};
+        if(displayNe){ setDisplayNe(false)};
+        if(displaySpar){ setDisplaySpar(false)};
+        if(displayEn){ setDisplayEn(false)};
+        if(displayFune){ setDisplayFune(false)};
+        if(displayDf){ setDisplayDf(false)};
+        if(displayCosmic){ setDisplayCosmic(false)};
+        setDisplayWorks(!displayWorks);
+    }
+    const displayDframe=()=>{
+        if(displayif){ setDisplayif(false)};
+        if(displaypm){ setDisplaypm(false)};
+        if(displayDis){ setDisplayDis(false)};
+        if(displayNe){ setDisplayNe(false)};
+        if(displaySpar){ setDisplaySpar(false)};
+        if(displayEn){ setDisplayEn(false)};
+        if(displayFune){ setDisplayFune(false)};
+        if(displayWorks){ setDisplayWorks(false)};
+        if(displayCosmic){ setDisplayCosmic(false)};
+        setDisplayDf(!displayDf);
+    }
   return (
+    <div className='entirebody'>
+        <Navbar/>
     <div className='body'>
         <div className='lectureseries'>
             <div className='lectureseries__heading' onClick={displayLectureSeries}>
@@ -220,9 +182,9 @@ function MoreEvents3() {
                                         <p className="dateText">Date</p>
                                         <p className="date">19-22 Jan</p>
                                     </div>
-                                    <button id="register">
+                                    <a> <button id="register">
                                         <p>Register</p>
-                                    </button>
+                                    </button> </a>
                                 </div>
                                 <div className="eventtext">
                                     Are you an entrepreneur looking to start your journey into the outer world? or Are you a startup owner looking for some unique growth opportunities?
@@ -262,7 +224,7 @@ function MoreEvents3() {
                  )}
         </div>
 
-        <div className='lectureseries'>
+        <div className='lectureseries' style={{marginTop:'20px'}}>
             <div className='lectureseries__heading' onClick={displayInternfair}>
                 <img src={InternfairHeading} alt='lectureseries'/>
             </div>
@@ -314,11 +276,11 @@ function MoreEvents3() {
                  )}
         </div>
 
-        <div className='lectureseries'>
-            <div className='lectureseries__heading' onClick={displayInternfair}>
+        <div className='lectureseries' style={{marginTop:'20px'}} >
+            <div className='lectureseries__heading' onClick={displayProduct}>
                 <img src={ProducManagement} alt='lectureseries'/>
             </div>
-             { displayif && (<div className='description' style={{background: '#31165C'}} >
+             { displaypm && (<div className='description' style={{background: '#31165C'}} >
                                 <div id="head">
                                     <div id="date">
                                         <p className="dateText">Date</p>
@@ -366,19 +328,20 @@ function MoreEvents3() {
                  )}
         </div>
 
-        <div className='lectureseries'>
-            <div className='lectureseries__heading' onClick={displayInternfair}>
+        <div className='lectureseries' style={{marginTop:'20px'}}>
+            <div className='lectureseries__heading' onClick={displayDisrupt}>
                 <img src={DisruptHeading} alt=''/>
             </div>
-             { displayif && (<div className='description' style={{background: '#2D1373'}} >
+             { displayDis && (<div className='description' style={{background: '#2D1373'}} >
                                 <div id="head">
                                     <div id="date">
                                         <p className="dateText">Date</p>
                                         <p className="date">19-22 Jan</p>
                                     </div>
-                                    <button id="register">
+                                    <a href='https://rebrand.ly/Disrupt_Registration'><button id="register">
                                         <p>Register</p>
                                     </button>
+                                    </a>
                                 </div>
                                 <div className="eventtext">
                                     Are you an entrepreneur looking to start your journey into the outer world? or Are you a startup owner looking for some unique growth opportunities?
@@ -418,19 +381,20 @@ function MoreEvents3() {
                  )}
         </div>
 
-        <div className='lectureseries'>
-            <div className='lectureseries__heading' onClick={displayInternfair}>
+        <div className='lectureseries' style={{marginTop:'20px'}} >
+            <div className='lectureseries__heading' onClick={displayNeed}>
                 <img src={NeedHeading} alt='lectureseries'/>
             </div>
-             { displayif && (<div className='description' style={{background: '#192558'}} >
+             { displayNe && (<div className='description' style={{background: '#192558'}} >
                                 <div id="head">
                                     <div id="date">
                                         <p className="dateText">Date</p>
                                         <p className="date">19-22 Jan</p>
                                     </div>
-                                    <button id="register">
+                                    <a href='#'><button id="register">
                                         <p>Register</p>
                                     </button>
+                                    </a>
                                 </div>
                                 <div className="eventtext">
                                     Are you an entrepreneur looking to start your journey into the outer world? or Are you a startup owner looking for some unique growth opportunities?
@@ -470,19 +434,20 @@ function MoreEvents3() {
                  )}
         </div>
 
-        <div className='lectureseries'>
-            <div className='lectureseries__heading' onClick={displayInternfair}>
+        <div className='lectureseries' style={{marginTop:'20px'}}>
+            <div className='lectureseries__heading' onClick={displayCosmicClash}>
                 <img src={ CosmicClashHeading } alt='lectureseries'/>
             </div>
-             { displayif && (<div className='description' style={{background: '#31165C'}} >
+             { displayCosmic && (<div className='description' style={{background: '#31165C'}} >
                                 <div id="head">
                                     <div id="date">
                                         <p className="dateText">Date</p>
                                         <p className="date">19-22 Jan</p>
                                     </div>
-                                    <button id="register">
+                                   <a href='https://linktr.ee/cosmic_clash'> <button id="register">
                                         <p>Register</p>
                                     </button>
+                                    </a>
                                 </div>
                                 <div className="eventtext">
                                     Are you an entrepreneur looking to start your journey into the outer world? or Are you a startup owner looking for some unique growth opportunities?
@@ -522,19 +487,20 @@ function MoreEvents3() {
                  )}
         </div>
 
-        <div className='lectureseries'>
-            <div className='lectureseries__heading' onClick={displayInternfair}>
+        <div className='lectureseries' style={{marginTop:'20px'}}>
+            <div className='lectureseries__heading' onClick={displayEncode}>
                 <img src={EncodeHeading} alt='lectureseries'/>
             </div>
-             { displayif && (<div className='description' style={{background: '#192558'}} >
+             { displayEn && (<div className='description' style={{background: '#192558'}} >
                                 <div id="head">
                                     <div id="date">
                                         <p className="dateText">Date</p>
                                         <p className="date">19-22 Jan</p>
                                     </div>
-                                    <button id="register">
+                                    <a href='https://rebrand.ly/EnCode23'><button id="register">
                                         <p>Register</p>
                                     </button>
+                                    </a>
                                 </div>
                                 <div className="eventtext">
                                     Are you an entrepreneur looking to start your journey into the outer world? or Are you a startup owner looking for some unique growth opportunities?
@@ -574,11 +540,11 @@ function MoreEvents3() {
                  )}
         </div>
 
-        <div className='lectureseries'>
-            <div className='lectureseries__heading' onClick={displayInternfair}>
+        <div className='lectureseries' style={{marginTop:'20px'}}>
+            <div className='lectureseries__heading' onClick={displayFunEvents}>
                 <img src={FuneventsHeading} alt='lectureseries'/>
             </div>
-             { displayif && (<div className='description' style={{background: '#31165C'}} >
+             { displayFune && (<div className='description' style={{background: '#31165C'}} >
                                 <div id="head">
                                     <div id="date">
                                         <p className="dateText">Date</p>
@@ -626,11 +592,11 @@ function MoreEvents3() {
                  )}
         </div>
 
-        <div className='lectureseries'>
-            <div className='lectureseries__heading' onClick={displayInternfair}>
+        <div className='lectureseries' style={{marginTop:'20px'}}>
+            <div className='lectureseries__heading' onClick={displayWorkshops}>
                 <img src={WorkshopsHeading} alt='lectureseries'/>
             </div>
-             { displayif && (<div className='description' style={{background: '#192558'}} >
+             { displayWorks && (<div className='description' style={{background: '#192558'}} >
                                 <div id="head">
                                     <div id="date">
                                         <p className="dateText">Date</p>
@@ -678,19 +644,20 @@ function MoreEvents3() {
                  )}
         </div>
 
-        <div className='lectureseries'>
-            <div className='lectureseries__heading' onClick={displayInternfair}>
+        <div className='lectureseries' style={{marginTop:'20px'}}>
+            <div className='lectureseries__heading' onClick={displayDframe}>
                 <img src={DframeHeading} alt='lectureseries'/>
             </div>
-             { displayif && (<div className='description' style={{background: '#2D1373'}} >
+             { displayDf && (<div className='description' style={{background: '#2D1373'}} >
                                 <div id="head">
                                     <div id="date">
                                         <p className="dateText">Date</p>
                                         <p className="date">19-22 Jan</p>
                                     </div>
-                                    <button id="register">
+                                    <a href='https://unstop.com/competition/dframe-creative-branding-challenge-udgam-2023-indian-institute-of-technology-iit-guwahati-566698'><button id="register" >
                                         <p>Register</p>
                                     </button>
+                                    </a>
                                 </div>
                                 <div className="eventtext">
                                     Are you an entrepreneur looking to start your journey into the outer world? or Are you a startup owner looking for some unique growth opportunities?
@@ -731,6 +698,8 @@ function MoreEvents3() {
         </div>
 
         
+
+    </div>
 
     </div>
   )
