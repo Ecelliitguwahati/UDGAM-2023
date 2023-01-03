@@ -171,7 +171,7 @@ function MoreEvents3() {
   return (
     <div className='entirebody'>
         <Navbar/>
-    <div className='body'>
+    <div className='bodyeventphone'>
         <div className='lectureseries'>
             <div className='lectureseries__heading' onClick={displayLectureSeries}>
                 <img src={lectureseries} alt='lectureseries'/>
