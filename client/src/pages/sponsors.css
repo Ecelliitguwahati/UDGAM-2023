@@ -167,6 +167,116 @@ text-shadow: 0.1rem 0.5rem #fc97d9;
 
 
 
+
+/* new */
+
+.associateTitle{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width:100%;
+    margin: 0 auto auto auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.otherSponsors{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 70px 190px 120px;
+    justify-content: center;
+    
+}
+
+.otherSponsors div{
+    width: 180px;
+    margin: 0 50px 100px 0;
+}
+
+.otherSponsors p{
+    font-family: 'as';
+    color: #EAEA7C;
+    font-size: 20px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "as";
+    src:local('as'), url('../fonts/ActionSans-Regular.otf');
+}
+
+.in{
+    width: 334px;
+height: 185px;
+background: #192558;
+border: 2.03948px solid #A0A2B2;
+position: absolute;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+top:-12px;
+left:-14px;
+}
+
+.in2{
+    width:242px;
+    height:134px;
+}
+
+
+.out{
+    width: 334px;
+height: 185px;
+background: #3257F2;
+border: 2.03948px solid #A0A2B2;
+position: relative;
+margin: 0 41px;
+margin-bottom: 50px;
+
+}
+
+.out2{
+    width:242px;
+    height:134px;
+}
+.intitle{
+    background: #44C6B6;
+    padding:50px;
+    width: 442.96px;
+    height: 218.07px;
+    position:relative
+}
+.outtitle{
+    background: #fff;
+    width: 442.96px;
+    height: 218.07px;
+  
+}
+
+.svg1{
+    top:-45px;
+    left:410px;
+    position: absolute;
+    z-index: 0;
+}
+
+.svg2{
+    top: 180px;
+    left: -37px;
+    position: absolute;
+    z-index: 0;
+}
+
+.out a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width:600px)
 {
     .getticketsponsor h1{
@@ -215,102 +325,22 @@ text-shadow: 0.1rem 0.5rem #fc97d9;
     .lastsponsor,.individual-associate{
         padding-bottom: 30px;
     }
+    .out{
+        margin-right: 0;
+        width:242px;
+    height:134px;
+
+    }
+    .associateTitle{
+        margin: 10%;
+    }
+    .in{
+        margin-right: 0;
+        width:242px;
+    height:134px;
+    }
+    .out img{
+        width:80%;
+    }
     
-}
-
-/* new */
-
-.associateTitle{
-    display: flex;
-    flex-direction: row;
-
-    margin: 0 40px 36px 120px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.otherSponsors{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 70px 190px 120px;
-    justify-content: center;
-    
-}
-
-.otherSponsors div{
-    width: 180px;
-    margin: 0 50px 100px 0;
-}
-
-.otherSponsors p{
-    font-family: 'as';
-    color: #EAEA7C;
-    font-size: 20px;
-    text-align: center;
-}
-
-@font-face {
-    font-family: "as";
-    src:local('as'), url('../fonts/ActionSans-Regular.otf');
-}
-
-.in{
-    width: 334.96px;
-height: 185.07px;
-background: #192558;
-border: 2.03948px solid #A0A2B2;
-position: absolute;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-top:-12px;
-left:-14px;
-margin-right: 80px;
-}
-
-
-.out{
-    width: 334.96px;
-height: 185.07px;
-background: #3257F2;
-border: 2.03948px solid #A0A2B2;
-position: relative;
-margin-right: 80px;
-margin-bottom: 50px;
-
-}
-.intitle{
-    background: #44C6B6;
-    padding:50px;
-    width: 442.96px;
-    height: 218.07px;
-    position:relative
-}
-.outtitle{
-    background: #fff;
-    width: 442.96px;
-    height: 218.07px;
-  
-}
-
-.svg1{
-    top:-45px;
-    left:410px;
-    position: absolute;
-    z-index: 0;
-}
-
-.svg2{
-    top: 180px;
-    left: -37px;
-    position: absolute;
-    z-index: 0;
-}
-
-
-.associateTitle{
-    margin: 0 auto;
 }
