@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import dd from "../PhotosPng/dd.svg";
 import dx from "../PhotosPng/dx.svg";
 
 const Dropdown =(props)=>{
+    useEffect(() => {
+		console.log(props.text)
+	});
     const [img,setimg] = useState(dd);
     const [dis, setdis] = useState('none');
     return(
@@ -26,9 +29,9 @@ const Dropdown =(props)=>{
                     
                 }} style={{height:`36px`, width:`36px`, margin:'20px', transition:`0.5s`}} />
             </div>
-            <div className="teamInfo" style={{height:`fit-content`,backgroundColor:`#DDF140`, color:`#2E01D5`,display:`${dis}`,width:`100%`, fontSize:`36px`, padding:`39px 84px`, flexDirection:`row`, transition:`0.5s`}}>
-                <p style={{ width:`100%`}}>dummy text</p>
-                <img src={props.img} style={{}}/>
+            <div className="teamInfo" style={{height:`fit-content`,backgroundColor:`#DDF140`, color:`#2E01D5`,display:`${dis}`,width:`100%`, fontSize:`36px`, padding:`39px 30px`, flexDirection:`row`, transition:`0.5s`}}>
+                <p style={{ width:`100%`}}>{props.text}</p>
+                <div style={{width:"100%"}}><img src={props.img} style={{width:"100%", height:"auto"}}/></div>
             </div>
         </div>
         

@@ -48,36 +48,172 @@ function OurTeam() {
                     <h1>MEET THE TEAM</h1>
                 </div>
                 <div className='teamC' >
-                    <Member name="Umang Jain" pos="Convener" img={umang} link="https://www.linkedin.com/in/umang1821/"/>
+                    <Member name="Umang Jain" pos="Convener" img={umang} link="https://www.linkedin.com/in/umang1821/" />
                     <Member name="Krishna Khakholia" pos="Secretary" img={krishna} link="https://www.linkedin.com/in/kkhakholia841/" />
-                    <Member name="Sahil Nizam" pos="Coordinator" img={sahil} link="https://www.linkedin.com/in/sahilnizam12/"  />
+                    <Member name="Sahil Nizam" pos="Coordinator" img={sahil} link="https://www.linkedin.com/in/sahilnizam12/" />
                     <Member name="Vedaprakash Rajan" pos="Design Head" img={ved} link="https://www.linkedin.com/in/vedaprakashr/" />
                     <Member name="Anushka Gandhi" pos="Design Head" img={anushka} link="https://www.linkedin.com/in/anushka-gandhi-4b99b4217/" />
                     <Member name="Krish Rajpal" pos="Disrupt Head" img={krish} link="https://www.linkedin.com/in/krish-rajpal-b60310209/" />
                     <Member name="Raghav Mittal" pos="Initiatives Head" img={raghav} link="https://www.linkedin.com/in/raghavmittal123/" />
-                    <Member name="Shyam D" pos="Corporate Relations Head" img={shyam} link="https://www.linkedin.com/in/shyamd007/"/>
+                    <Member name="Shyam D" pos="Corporate Relations Head" img={shyam} link="https://www.linkedin.com/in/shyamd007/" />
                     <Member name="Soumadip Das" pos="DevOps Head" img={souma} link="https://www.linkedin.com/in/soumadip-das/" />
-                    <Member name="Mohit Pal" pos="PMx Head" img={mohitp} link="https://www.linkedin.com/in/mohitpal01/"/>
+                    <Member name="Mohit Pal" pos="PMx Head" img={mohitp} link="https://www.linkedin.com/in/mohitpal01/" />
                     <Member name="Soham Parundekar" pos="PR and Branding Head" img={soham} link="https://www.linkedin.com/in/sohamparundekar/" />
-                    <Member name="Bhoomika Dhaka" pos="GnS Head" img={bhoomika} link="https://www.linkedin.com/in/bhoomikdhaka12/"/>
+                    <Member name="Bhoomika Dhaka" pos="GnS Head" img={bhoomika} link="https://www.linkedin.com/in/bhoomikdhaka12/" />
                 </div>
 
                 <div id="teamD">
-                    <Dropdown team="DESIGN" img={teams}/>
-                    <Dropdown team="DISRUPT" img={teams}/>
-                    <Dropdown team="PMX" img={teams}/>
-                    <Dropdown team="GROWTH AND STRATEGY" img={teams}/>
-                    <Dropdown team="TEAM INITIATIVES" img={teams}/>
-                    <Dropdown team="INTERNFAIR" img={teams}/>
-                    <Dropdown team="LS AND WORKSHOPS" img={teams}/>
-                    <Dropdown team="MARKETING" img={teams}/>
-                    <Dropdown team="NEED" img={teams}/>
+                    <Dropdown team="DESIGN" img={teams} text={[
+                        <ul>
+                            <li>Amey Karekar</li>
+                            <li>Anubhab Sahoo</li>
+                            <li>Kavinas</li>
+                            <li>Manajit Saha</li>
+                            <li>Netra pujar</li>
+                            <li>Pratham</li>
+                            <li>Sanbarto Mondal</li>
+                            <li>Shantanu Chaudhari</li>
+                            <li>Susanna Joseph </li>
+                            <li>Vedhant Krishi S </li>
+                            <li>Yash chauhan</li>
+                        </ul>
+                    ]} />
+                    <Dropdown team="TEAM INITIATIVES" img={teams} text={[
+                        <ul>
+                            <li>Anshika Meshram</li>
+                            <li>Astha Gupta</li>
+                            <li>Chhandam Pal</li>
+                            <li>Dipit Patowari</li>
+                            <li>Hrushikesh Koppula</li>
+                            <li>Pallavi R Gowda</li>
+                            <li>Parth Sunilkumar Songire</li>
+                            <li>Raunit Singh</li>
+                            <li>Rishika Saria</li>
+                            <li>Shubhechha Mondal </li>
+                            <li>Shuvrajit Deb Roy</li>
+                        </ul>
+                    ]} />
+
+                    <Dropdown team="INTERNFAIR" img={teams} text={[
+                        <ul>
+                            <li>
+                                Ankit Kumar Mahanta
+                            </li>
+                            <li>
+                                Aryan Lath
+                            </li>
+                            <li>
+                                Aryan Solanki
+                            </li>
+                            <li>Disha Agarwal</li>
+                            <li>Harshal Joshi</li>
+                            <li>Kishlay Soni</li>
+                            <li>Navin Patwari</li>
+                            <li>Pratima Tomar</li>
+                            <li>Rakshit Dahiya</li>
+                            <li>Rashmi Bajaj</li>
+                            <li>Ravi Kumar Saini</li>
+                        </ul>
+
+                    ]} />
+
+                    <Dropdown team="LECTURE SERIES" img={teams} text={[
+
+                        <ul>
+                            <li>Ashish Motwani </li>
+                            <li>Divyesh Vankar</li>
+                            <li>Himanshi Gautam</li>
+                            <li>Isha kharkia </li>
+                            <li>Nandini Priya </li>
+                            <li>Priyansh Shrivastav</li>
+                            <li>Rahul Vivek</li>
+                            <li>Raj Borogaon</li>
+                            <li>Ronit Kumar Kaushik</li>
+                            <li>Suman Meena</li>
+                        </ul>
+                    ]} />
+
+
+                    <Dropdown team="MARKETING" img={teams} text={[
+                        <ul>
+                            <li>Abhishek Dwivedi</li>
+                            <li>Akhilesh Gupta</li>
+                            <li>Aman Raghuvanshi</li>
+                            <li>Dipanshu Goyal</li>
+                            <li>Govind Madhav Vyas</li>
+                            <li>Om Kumar Saini</li>
+                            <li>Priyanshu Sinha</li>
+                            <li>Ranjan Kumar</li>
+                            <li>Ravi Raj</li>
+                            <li>Rimjim Dewan</li>
+                            <li>Ritika Rege</li>
+                            <li>Swastik Swaroop</li>
+                        </ul>
+                    ]} />,
+
+                    <Dropdown team="NEED" img={teams} text={[
+                        <ul>
+                            <li>Balaji</li>
+                            <li>Dhushyanthan K</li>
+                            <li>G Adarsh Mani </li>
+                            <li>G.Meghana</li>
+                            <li>Harsh Diwaker</li>
+                            <li>Harshit garg </li>
+                            <li>Kayra Reying Pao</li>
+                            <li>Khushi Bothra</li>
+                            <li>Shikhar Sharma </li>
+                            <li>Shivam Gupta </li>
+                            <li>Suhani Kalra</li>
+                        </ul>
+                    ]} />
+
+                    <Dropdown team="PMx" img={teams} text={[
+                        <ul>
+                            <li>Amlan Biswal </li>
+                            <li>Kanike Uday</li>
+                            <li>Nityam Pareek</li>
+                            <li>Rajat Patodi</li>
+                            <li>Sistla gayatri</li>
+                            <li>Shivam Agrawal</li>
+                            <li>Sneha Singh </li>
+                        </ul>
+                    ]} />
+
+                    <Dropdown team="DISRUPT" img={teams} text={[
+                        <ul>
+                            <li>Aditya Gupta</li>
+                            <li>Aniba</li>
+                            <li>Anurag Kushwah</li>
+                            <li>Gargi goyal</li>
+                            <li>Lakshya patel</li>
+                            <li>Raveena Kumari</li>
+                            <li>Rohak Jain</li>
+                            <li>Shlok Agrawal</li>
+                            <li>Zainab Ali</li>
+                            <li>Tejas Tendulkar</li>
+                        </ul>
+                    ]} />
+
+                    <Dropdown team="GnS" img={teams} text={[
+                        <ul>
+                            <li>Anubrata Saha </li>
+                            <li>Bhaskar dev </li>
+                            <li>Drishti Agarwal</li>
+                            <li>Jash Muni </li>
+                            <li>Keerthana</li>
+                            <li>Naman Sethiya </li>
+                            <li>Piyush vaish</li>
+                            <li>Shruti Raj</li>
+                            <li>Sumit Nayan</li>
+                            <li>Yeshudan Bora </li>
+                        </ul>
+                    ]} />
 
                 </div>
 
 
 
-<Footer/>
+                <Footer />
             </div>
 
 
