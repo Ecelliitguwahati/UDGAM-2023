@@ -13,10 +13,13 @@
     display: none;
 }
 #eventsdummy{
-    width: 100%;
+    width: fit-content;
+
 }
 #eventsdummy img{
     width: 100%;
+    position: sticky;
+    top:0;
 }
 
 
