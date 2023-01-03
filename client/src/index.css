@@ -21,7 +21,13 @@ body {
 background-size: cover;
 }
 
-
+input{
+  padding-left: 10px;
+  
+}
+input:focus{
+  border: 0px;
+}
 
 a:link { text-decoration: none; }
 a:link:hover { text-decoration: none; }
