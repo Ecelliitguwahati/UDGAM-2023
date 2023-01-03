@@ -6,6 +6,12 @@
     font-family: Action Sans;
     src: url(./../../fonts/ActionSans-Medium.otf);
 }
+.bakwas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .footer{
     padding-top: 60px;
     width: 100%;
@@ -151,7 +157,7 @@ i {
     height: 60px;
     border-color: black ;
     box-shadow: 9px 9px 3px 2px black;
-    box-shadow: 8px 8px 2px 1px  #736B1F;
+    box-shadow: 8px 4px 2px 1px  rgba(115, 107, 31, 1);
     padding-left: 24px;
 }
 .brrr{

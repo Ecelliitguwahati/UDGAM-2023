@@ -20,6 +20,7 @@ import Toast3rd from "./components/toast";
 import Terms from "./pages/termsandconds";
 import Privacy from "./pages/privacypolicy";
 import Refund from "./pages/refund";
+import MoreEvents3 from "./pages/MoreEvents3";
 function App() {
 	const [disableScroll, setDisableScroll] = useState(true);
 	useEffect(() => {
@@ -61,6 +62,7 @@ function App() {
 					<Route exact path="/events/" element={<MoreEvents2 />} />
 					<Route exact path="/ourteam" element={<OurTeam />} />
 					<Route exact path="/resetpass" element={<ResetPass />} />
+					<Route exact path="/sus" element={<MoreEvents3 />} />
 					<Route
 						exact
 						path="/resetpass/do"
