@@ -4,7 +4,7 @@ import linkicon from "../icons/Frame 34161.png"
 
 const Member =(props)=>{
     return(
-        <div className="cont" style={{height:`315px`,width:`232px`,margin:`0 81px 81px 0`}}>
+        <div className="cont" style={{height:`315px`,width:`232px`}}>
             <div style={{position:`relative`, height:`fit-content`, width:`fit-content`}}>
                 <a href={props.link} target="_blank" ><img src={linkicon} style={{position:`absolute`, top:`178px`, left:`109px`}}/></a>
                 <img src={props.img} style={{height:`219px`, width:`213px`}}/>
