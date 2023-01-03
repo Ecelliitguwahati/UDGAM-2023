@@ -144,25 +144,8 @@ padding-bottom: 10px;
     float: right;
 }
 @media (max-width: 600px){
-    .topallmembers h1{
-        font-size: xx-large;
-    }
-    .memberteam h1{
-        font-family: Action Sans;
-        font-size: 32px;
-        color: white;
-    }
-    .memberteam h2{
-        font-size: 24px;
-        font-family: Action Sans;
-        color:  #DDF140;
-        ;
-    }
-    .memberteam h4{
-        font-family: Action Sans;
-        font-size: 16px;
-        color:#FC97D9;
-        ;
+    .topallmembers, .teamC, #teamD{
+        margin:5%;
     }
 }
 

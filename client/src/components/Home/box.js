@@ -59,7 +59,7 @@ const Box = (props) => {
 					src={props.img}
 					alt=""
 					style={{
-						height: `300px`,
+						height: `258px`,
 						width: `273px`,
 						scale: `${sc}`,
 						transition: `0.5s`,

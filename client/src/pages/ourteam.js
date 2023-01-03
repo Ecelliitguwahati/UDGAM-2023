@@ -21,6 +21,7 @@ import ved from '../PhotosPng/ved.png';
 import soham from '../PhotosPng/soham.png';
 import Footer from '../components/Home/footer';
 import Dropdown from './dropdown';
+import teams from '../PhotosPng/team.png';
 function OurTeam() {
     function myFunction() {
         console.log("Imrunning out");
@@ -48,7 +49,7 @@ function OurTeam() {
                 </div>
                 <div className='teamC' >
                     <Member name="Umang Jain" pos="Convener" img={umang} link="https://www.linkedin.com/in/umang1821/"/>
-                    <Member name="Krishna Khokhalia" pos="Secretary" img={krishna} link="https://www.linkedin.com/in/kkhakholia841/" />
+                    <Member name="Krishna Khakholia" pos="Secretary" img={krishna} link="https://www.linkedin.com/in/kkhakholia841/" />
                     <Member name="Sahil Nizam" pos="Coordinator" img={sahil} link="https://www.linkedin.com/in/sahilnizam12/"  />
                     <Member name="Vedaprakash Rajan" pos="Design Head" img={ved} link="https://www.linkedin.com/in/vedaprakashr/" />
                     <Member name="Anushka Gandhi" pos="Design Head" img={anushka} link="https://www.linkedin.com/in/anushka-gandhi-4b99b4217/" />
@@ -61,16 +62,16 @@ function OurTeam() {
                     <Member name="Bhoomika Dhaka" pos="GnS Head" img={bhoomika} link="https://www.linkedin.com/in/bhoomikdhaka12/"/>
                 </div>
 
-                <div>
-                    <Dropdown team="DESIGN"/>
-                    <Dropdown team="DISRUPT"/>
-                    <Dropdown team="PMX"/>
-                    <Dropdown team="GROWTH AND STRATEGY"/>
-                    <Dropdown team="TEAM INITIATIVES"/>
-                    <Dropdown team="INTERNFAIR"/>
-                    <Dropdown team="LS AND WORKSHOPS"/>
-                    <Dropdown team="MARKETING"/>
-                    <Dropdown team="NEED"/>
+                <div id="teamD">
+                    <Dropdown team="DESIGN" img={teams}/>
+                    <Dropdown team="DISRUPT" img={teams}/>
+                    <Dropdown team="PMX" img={teams}/>
+                    <Dropdown team="GROWTH AND STRATEGY" img={teams}/>
+                    <Dropdown team="TEAM INITIATIVES" img={teams}/>
+                    <Dropdown team="INTERNFAIR" img={teams}/>
+                    <Dropdown team="LS AND WORKSHOPS" img={teams}/>
+                    <Dropdown team="MARKETING" img={teams}/>
+                    <Dropdown team="NEED" img={teams}/>
 
                 </div>
 
