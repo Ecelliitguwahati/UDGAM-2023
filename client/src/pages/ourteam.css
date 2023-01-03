@@ -164,6 +164,9 @@ padding-bottom: 10px;
 .cont{
     margin:0 81px 81px 0;
 }
+.teamN img{
+    margin:20px;
+}
 @media (max-width: 600px){
     .topallmembers, .teamC, #teamD{
         margin:10%;
@@ -186,6 +189,7 @@ padding-bottom: 10px;
     .teamD{
         margin:0 10%;
     }
+
     
 }
 
@@ -195,6 +199,10 @@ padding-bottom: 10px;
     }
     .teamN img{
         scale:0.6;
+        margin:auto;
+    }
+    .teamInfo li{
+        font-size: 16px;
     }
 }
 

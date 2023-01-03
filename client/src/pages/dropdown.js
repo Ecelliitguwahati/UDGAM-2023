@@ -27,7 +27,7 @@ const Dropdown =(props)=>{
                         setdis('none');
                     }
                     
-                }} style={{height:`36px`, width:`36px`, margin:'20px', transition:`0.5s`}} />
+                }} style={{height:`36px`, width:`36px`, transition:`0.5s`}} />
             </div>
             <div className="teamInfo" style={{height:`fit-content`,backgroundColor:`#DDF140`, color:`#2E01D5`,display:`${dis}`,width:`100%`, fontSize:`36px`, padding:`39px 30px`, flexDirection:`row`, transition:`0.5s`}}>
                 <p style={{ width:`100%`}}>{props.text}</p>
