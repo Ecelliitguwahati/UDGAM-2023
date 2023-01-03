@@ -5,7 +5,7 @@ import './Insta.css'
 export default function Submit() {
   return (
     <div className='body' style={{marginButtom:'5px'}}>
-      <a href="/comingsoon">
+      
      <div>
       <div className='back' style={{width:'54.28px', height:'59px',marginBottom:'-3px', marginTop:'5px'}}>
       </div>
@@ -18,7 +18,7 @@ export default function Submit() {
 
       </div>    
     </div>
-    </a>
+    
    </div>
   )
 }

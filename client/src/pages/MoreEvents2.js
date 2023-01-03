@@ -74,7 +74,7 @@ const MoreEvents2 = () => {
             "ori": "left",
             "date": "Dec 20, 2022 16:37:25",
             "image": pmx,
-            "info": 2,
+            "info": 1,
             "prize": "100K+",
             "eventName": "PMx",
             "payment": "Free", "link": "https://www.fb.com",
@@ -89,7 +89,7 @@ const MoreEvents2 = () => {
             "ori": "left",
             "date": "Jan 4, 2023 23:59:59",
             "image": disrupt,
-            "info": 2,
+            "info": 0,
             "prize": "10 Lakhs+",
             "eventName": "DISRUPT",
             "payment": "Free", "link": "https://rebrand.ly/Disrupt_Registration",
@@ -119,7 +119,7 @@ const MoreEvents2 = () => {
             "ori": "left",
             "date": "Jan 10, 2023 23:59:59",
             "prize": "10 Lakhs+",
-            "info": 2,
+            "info": 0,
             "image": cosmicClash,
             "eventName": "COSMIC CLASH",
             "payment": "Paid", "link": "https://linktr.ee/cosmic_clash",
@@ -133,7 +133,7 @@ const MoreEvents2 = () => {
             "id": "b7",
             "ori": "right",
             "date": "Jan 9, 2023 23:59:59",
-            "info": 2,
+            "info": 0,
             "prize": "25 K+",
             "image": Dframe,
             "eventName": "D-FRAME",
@@ -148,7 +148,7 @@ const MoreEvents2 = () => {
             "id": "b8",
             "ori": "right",
             "date": "Jan 2, 2023 16:37:25",
-            "info": 2,
+            "info": 1,
             "prize": "1.2 Lakhs+",
             "image": encode,
             "eventName": "ENCODE",
@@ -178,7 +178,7 @@ const MoreEvents2 = () => {
             "tag": "sparkle",
             "id": "b10",
             "ori": "right",
-            "info": 2,
+            "info": 0,
             "prize": "40K+",
             "date": "Jan 7, 2023 23:59:59",
             "image": sparkle,
@@ -193,13 +193,14 @@ const MoreEvents2 = () => {
             "tag": "workshops",
             "id": "b11",
             "ori": "right",
-            "info": 2,
+            "info": 0,
             "prize": "NILL",
-            "date": "Jan 20, 2023 16:37:25",
+            "date": "Jan 5, 2023 16:37:25",
             "image": workshops,
-            "eventName": "WORKSHOPS",
-            "payment": "Paid", "link": "https://www.fb.com",
-            "eventDesc": "The Start-up World is saturated with intricate concepts, all of which combined have near-infinite applications. This workshop series, endeavors to break these concepts down into a digestible yet comprehensive guide, via industry experts, and Q&A sessions on these interesting topics. "
+            "eventName": "LINKEDIN WORKSHOP",
+            "payment": "Paid", "link": "http://rebrand.ly/linkedinworkshop12",
+            "eventDesc": "Boost your professional skills and network with top industry leaders at the LinkedIn workshop to get mentored from National and International LinkedIn Coaches and Strategist. Join us for a three-day workshop on 5-6-7th January from 6.30 pm onwards and learn the latest tips and tricks. It will be a Certified Workshop"
+            
         }
 
     ]
@@ -231,11 +232,11 @@ const MoreEvents2 = () => {
         document.getElementsByClassName("imgevent")[0].src = event.image;
         if(parseInt(event.id.slice(1))%2===0)
             {
-                document.getElementsByClassName("description")[0].style.backgroundColor = '#192558';
+                document.getElementsByClassName("description_Desktop")[0].style.backgroundColor = '#192558';
             }
             else
             {
-                document.getElementsByClassName("description")[0].style.backgroundColor = '#2D1373';
+                document.getElementsByClassName("description_Desktop")[0].style.backgroundColor = '#2D1373';
 
             }
         
@@ -450,7 +451,7 @@ const MoreEvents2 = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="description">
+                            <div className="description_Desktop">
                                 <div id="head">
                                     <div id="date">
                                         <p className="dateText">Date</p>
@@ -580,7 +581,7 @@ const MoreEvents2 = () => {
                                 
                                     <img src={arrowL} alt="" id="b1" />
                                 
-                                <p>WORKSHOP</p>
+                                <p>LINKEDIN WORKSHOP</p>
 
                             </div>
                             <div className="content contentright">

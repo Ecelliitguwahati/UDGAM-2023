@@ -65,7 +65,7 @@ function PastSpeakers() {
             <Box in={ing} bg={bgg} img={kevin} name="Kevin Harrington" comp="Shark Tank" desg="Original Shark" link="https://www.linkedin.com/in/thekevinharrington/"/>
           </div>
           <div className="img">
-            <Box in={iny} bg={bgy} img={michael} name="Michael Siebel" comp="Y-Combinator" desg="CEO" link="https://www.linkedin.com/in/thekevinharrington/"/>
+            <Box in={iny} bg={bgy} img={michael} name="Michael Siebel" comp="Y-Combinator" desg="CEO" link="https://www.linkedin.com/in/mwseibel/"/>
           </div>
           <div className="img">
             <Box in={ing} bg={bgg} img={ankur} name="Ankur Warikoo" comp="Nearbuy" desg="Founder" link="https://www.linkedin.com/in/warikoo/"/>
