@@ -5,7 +5,7 @@ import './Insta.css'
 export default function Insta() {
   return (
     <div className='body' style={{marginButtom:'5px'}}>
-      <a href="/comingsoon">
+      <a href="https://www.instagram.com/ecell_iitg/">
      <div>
       <div className='back' style={{width:'54.28px', height:'55.9px',marginBottom:'2px'}}>
       </div>

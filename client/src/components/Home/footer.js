@@ -1,4 +1,4 @@
-import React from 'react'
+import {useState,React} from 'react'
 import "./footer.css"
 import { Button } from '@cred/neopop-web/lib/components';
 import Insta from './Insta';
@@ -7,7 +7,26 @@ import Yout from './Yout';
 import Linke from './Linke';
 import Twit from './Twit';
 import Submit from './Submit';
+import axios from '../../axios';
+import { toast } from 'react-toastify';
 function Footer() {
+  const [email, setEmail] = useState("");
+  const handleChange = (e) =>
+  setEmail(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
+  async function maillist(){
+    if(email.email){
+
+    await axios.post('/addtolist', { email }).then(()=>   toast("You have been added to our mailing list"))
+    .catch(function (error) {
+      //console.log(error.toJSON());
+   toast("Some unknown error has occured");
+      return;
+    });
+  }
+  else{
+    toast("Field is empty")
+  }
+  }
   return (
     <>
     <footer className="footer">
@@ -143,12 +162,13 @@ function Footer() {
             </div>
 
           </div>
+          
           <div className="right_footer">
             <p className="dontmissmagic">Don't miss the Magic</p>
             <p href="" className="signup">Sign up to receive Event notification and Updates</p>
             <div className='bakwas'>
-            <div style={{marginTop:'-2px'}}><br /><input className="input_pass5" placeholder="Enter Your Mail..."  /></div>
-            <div style={{marginTop:'15px', marginLeft:'-2px'}}><Submit/></div>
+            <div style={{marginTop:'-2px'}}><br /><input className="input_pass5" placeholder="Enter Your Mail..." name="email" id="email" onChange={handleChange} /></div>
+            <div onClick={() => maillist()} style={{marginTop:'15px', marginLeft:'-2px',cursor:"pointer"}} ><Submit/></div>
             </div>
 
           </div>

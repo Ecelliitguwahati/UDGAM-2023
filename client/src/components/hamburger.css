@@ -13,6 +13,13 @@
     justify-content: space-between;
     margin-top: 80px;
 }
+
+.bakwas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .gon div, .gob div a p{
     height:fit-content;
     margin:-20px 0;
@@ -152,8 +159,8 @@
     height: 60px;
     border-color: black ;
     box-shadow: 9px 9px 3px 2px black;
-    box-shadow: 8px 8px 2px 1px  #736B1F;
-    padding-left: 24px;
+    box-shadow: 8px 4px 2px 1px  #736B1F;
+    padding-left: 24px; 
 }
 
 /* The Overlay (background) */
