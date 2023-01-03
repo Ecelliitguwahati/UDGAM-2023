@@ -1,0 +1,255 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+}
+
+.description
+{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    /* background-color: #2D1373; */
+    font-family: 'Space Grotesk';
+    width: 454px;
+}
+
+#realevents{
+    height: fit-content;
+    position: sticky;
+    top:0;
+}
+
+#head
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:36px 26px 30px 36px;
+}
+
+#date
+{
+    display:flex;
+    flex-direction: column;
+}
+
+.dateText
+{
+    font-weight: 500;
+    font-size: 16.8576px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.date
+{
+    font-weight: 500;
+    font-size: 28.0959px;
+    line-height: 33px;
+}
+
+#register
+{
+    background-color: #D4F34A;
+    color:#2A2A2A;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    width: 133px;
+    height: 40px;
+    border: 0;
+}
+
+/* #register:hover{
+    background-color: transparent;
+    color:#D4F34A;
+    border:2px solid #D4F34A;
+    margin: auto 0;
+} */
+
+#register p{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    font-family: sans-serif;
+    margin: auto 0;
+}
+
+#register img
+{
+    margin-left: 10px;
+}
+
+.eventtext
+{
+    margin: 0 26px;
+    font-size: 21px;
+}
+
+.descFooter
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:38px 26px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    font-family: Action Sans;
+}
+
+.box
+{
+    height: 190px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row;
+}
+
+.olbg{
+
+    background-image: url(../icons/boxOLBG.png);
+    background-size: cover;
+}
+.orbg{
+
+    background-image: url(../icons/boxORBG.svg);
+    background-size: cover;
+    flex-direction: row-reverse;
+}
+.elbg{
+
+    background-image: url(../icons/boxELBG.svg);
+    background-size: cover;
+}
+.erbg{
+
+    background-image: url(../icons/boxERBG.svg);
+    background-size: cover;
+    flex-direction: row-reverse;
+}
+
+
+.footerHeading
+{
+    margin-bottom: 8px;
+}
+
+/* .imgevent
+{
+    margin: auto;
+} */
+
+.imgC{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxHeading
+{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin:40px 20px;
+}
+
+.icon
+{
+    margin-right:9px;
+}
+.headingText
+{
+    display: flex;
+    flex-direction: column;
+    color:#FAF9FF;
+    font-family: 'Space Grotesk';
+}
+
+.boxHeading img
+{
+    margin-bottom: 9px;
+}
+
+.eventName
+{
+    font-weight: 700;
+    font-size: 36px;
+    /* line-height: 85.5%; */
+    margin-bottom: 9px;
+}
+
+
+.small
+{
+    font-size: 15px;
+}
+
+.big
+{
+    font-size: 18px;
+    letter-spacing: 1.5px;
+     font-family: Action Sans;;
+}
+#register{
+    font-family: Action Sans;
+}
+@media (max-width: 600px){
+    #eventmainContainer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .one,.three{
+        max-width: 100%;
+    }
+    .boxHeading{
+        margin:0;
+    }
+    .headingText{
+        font-size: xx-large;
+    }
+    #eventmainContainer{
+        margin: 0 0%;
+    }
+}
+.lec{
+    font-family: Founders Grotesk;
+}
+.eventName{
+    font-family: Founders Grotesk ;
+}
+.headingM{
+    font-family: Founders Grotesk ;
+}
+.eventtext{
+    font-family: Action Sans;
+}
+.date{
+    font-family: Action Sans;
+}
+.dateText{
+    font-family: Action Sans;
+}
+.small{
+    font-family: Action Sans;
+    
+}
+span{
+    font-family: Action Sans;
+}

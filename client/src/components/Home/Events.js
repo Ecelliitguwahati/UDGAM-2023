@@ -17,6 +17,7 @@ import meuc from "./../../icons/meuc.svg";
 import mec from "./../../icons/mec.svg";
 import ruc from "./../../icons/ruc.svg";
 import rc from "./../../icons/rc.svg";
+import BuyE from "./EventsBuyButton";
 
 function Events() {
 	const [img, setimg] = useState(meuc);
@@ -103,7 +104,7 @@ function Events() {
 								setimg(meuc);
 							}}
 						>
-							More Events <img src={img} />
+							More Events <img src={img}/>
 						</button>
 					</Link>
 				</div>
@@ -263,7 +264,7 @@ function Events() {
 						</div>
 					</div>
 					<div className="buttonwrappass">
-						<Button
+						{/* <Button
 							variant="primary"
 							kind="elevated"
 							size="big"
@@ -284,7 +285,8 @@ function Events() {
 							<div className="GetTkt" style={{ color: "black" }}>
 								BUY PASS
 							</div>
-						</Button>
+						</Button> */}
+						<BuyE/>
 					</div>
 					<div className="buyPass">
 						<div className="time">

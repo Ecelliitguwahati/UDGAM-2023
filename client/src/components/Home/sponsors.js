@@ -1,4 +1,9 @@
 import React, { useState } from 'react'
+import Bosh from '../../PhotosPng/BOSH.svg'
+import Timesofindia from '../../PhotosPng/Timesofindia.svg'
+import NRL from '../../PhotosPng/NRL.svg'
+import WEH from '../../PhotosPng/WEH.svg'
+import './sponsors.css'
 import './GetTicket_Spomsor.css'
 import { Button } from '@cred/neopop-web/lib/components';
 import { ToastContainer, toast } from 'react-toastify';

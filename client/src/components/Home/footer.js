@@ -1,7 +1,12 @@
 import React from 'react'
 import "./footer.css"
 import { Button } from '@cred/neopop-web/lib/components';
+import Insta from './Insta';
 import CompanyLogo from './CompanyLogo.svg';
+import Yout from './Yout';
+import Linke from './Linke';
+import Twit from './Twit';
+import Submit from './Submit';
 function Footer() {
   return (
     <>
@@ -26,7 +31,8 @@ function Footer() {
               +91 7637833974
             </p>
             <div className="brrr">
-              <div><Button
+              <div style={{marginRight:'-14px'}}>
+                {/* <Button
                 variant="primary"
                 kind="elevated"
                 size="big"
@@ -47,9 +53,11 @@ function Footer() {
 
 
 
-              </Button>
+              </Button> */}
+              <Insta/>
               </div>
-              <div><Button
+              <div style={{marginRight:'-14px'}}>
+                {/* <Button
                 variant="primary"
                 kind="elevated"
                 size="big"
@@ -72,13 +80,11 @@ function Footer() {
                     </clipPath>
                   </defs>
                 </svg>
-
-
-
-
-              </Button>
+              </Button> */}
+              <Yout/>
               </div>
-              <div><Button
+              <div style={{marginRight:'-14px'}}>
+                {/* <Button
                 variant="primary"
                 kind="elevated"
                 size="big"
@@ -102,9 +108,11 @@ function Footer() {
                 </svg>
 
 
-              </Button>
+              </Button> */}
+                <Linke/>
               </div>
-              <div><Button
+              <div>
+                 {/* <Button
                 variant="primary"
                 kind="elevated"
                 size="big"
@@ -128,7 +136,8 @@ function Footer() {
                 </svg>
 
 
-              </Button>
+              </Button> */}
+                <Twit/>
               </div>
             </div>
             </div>
@@ -137,7 +146,10 @@ function Footer() {
           <div className="right_footer">
             <p className="dontmissmagic">Don't miss the Magic</p>
             <p href="" className="signup">Sign up to receive Event notification and Updates</p>
-            <div><br /><input className="input_pass5" placeholder="Enter Your Mail..." /></div>
+            <div className='bakwas'>
+            <div style={{marginTop:'-2px'}}><br /><input className="input_pass5" placeholder="Enter Your Mail..."  /></div>
+            <div style={{marginTop:'15px', marginLeft:'-2px'}}><Submit/></div>
+            </div>
 
           </div>
         </div>
