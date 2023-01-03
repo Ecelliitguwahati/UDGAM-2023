@@ -14,7 +14,7 @@ import Footer from '../components/Home/footer';
 import { toast } from 'react-toastify';
 
 function Registration() {
-  const orderAmount = 199;
+  const orderAmount = 2;
   const navigate = useNavigate();
   const [resitered, setRegistered] = useState(false);
   const [paymentID, setpaymentID] = useState("");
@@ -204,7 +204,7 @@ function Registration() {
       });
   }
   return (
-    <body style={{ height: "150vh" }}>
+    <body style={{ height: "max-content" }}>
       <Navbar />
       <div>
         <form className='register_entire_page' onSubmit={handleSubmit}>
