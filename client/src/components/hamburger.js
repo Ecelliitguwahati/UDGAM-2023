@@ -14,11 +14,33 @@ import Linke from "./Home/Linke";
 import Yout from "./Home/Yout";
 import Twit from "./Home/Twit";
 import Submit from "./Home/Submit";
+import axios from '../axios';
+import { toast } from 'react-toastify';
 function Hamburger() {
+
 	const [s, sets] = useState("hidden");
 	const [s1, sets1] = useState("hidden");
 	const [s2, sets2] = useState("hidden");
 	const [s3, sets3] = useState("hidden");
+	const [email, setEmail] = useState("");
+	const handleChange = (e) =>
+	setEmail(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
+	async function maillist(){
+		console.log(email.email)
+	  if(email.email){
+
+	  await axios.post('/mailpass', { email:email.email }).then(()=>   toast("Mail has been sent if you have really purchased the pass"))
+	  .catch(function (error) {
+		//console.log(error.toJSON());
+	 toast("Some unknown error has occured");
+		return;
+	  });
+	}
+	else{
+	  toast("Field is empty")
+	}
+	window.location.reload()
+	}
 	return (
 		<>
 			<body className="humburg">
@@ -128,7 +150,7 @@ function Hamburger() {
 								href="https://www.ecelliitg.in"
 								style={{ textDecoration: `none` }}
 							>
-								{" "}
+								
 								<p className="Among_Us humnav">
 									<p className="font-face-asl">
 										About Us
@@ -152,9 +174,12 @@ function Hamburger() {
 								<input
 									className="input_pass"
 									placeholder="Enter Your Mail..."
+									name="email"
+									onChange={handleChange}
 								/>
+								
 							  </div>
-							    <div style={{marginTop:'16px', marginLeft:'-2px'}}><Submit/></div>
+							    <div onClick={() => maillist()} style={{marginTop:'16px', marginLeft:'-2px'}}><Submit/></div>
 							</div>
 						</div>
 

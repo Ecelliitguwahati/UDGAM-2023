@@ -149,7 +149,7 @@ function OurTeam() {
                             <li>Ritika Rege</li>
                             <li>Swastik Swaroop</li>
                         </ul>
-                    ]} />,
+                    ]} />
 
                     <Dropdown team="NEED" img={teams} text={[
                         <ul>

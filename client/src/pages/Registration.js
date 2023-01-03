@@ -302,10 +302,10 @@ function Registration() {
               <p className="gamma">₹199</p>
               <p className="gamma1">₹199</p>
               {/* <p className="gamma1 gamma2"></p> */}
-              <div className="Checkout" type="submit">
+              <button style={{backgroundColor:"black"}} className="Checkout" type="submit">
                 {/* <Checkout title="CHECK OUT →" /> */}
                 <CheckOut/>
-                </div>
+                </button>
             </div>
 
             {/* <div className="vector">
