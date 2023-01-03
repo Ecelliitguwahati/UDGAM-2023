@@ -156,7 +156,7 @@ function Sponsor() {
                                 }}
                                 style={{ top: `${t4}`, left: `${l4}` }}
                                 >
-                                    <a href='https://www.zaloni.com/' target="_blank"><img src={Timesofindia} /></a>
+                                    <a href='https://timesofindia.indiatimes.com/?from=mdr' target="_blank"><img src={Timesofindia} /></a>
                                 </div>
 
                             </div>
@@ -172,7 +172,7 @@ function Sponsor() {
                                 }}
                                 style={{ top: `${t5}`, left: `${l5}` }}
                                 >
-                                    <a href='https://www.zaloni.com/' target="_blank"><img src={Bosh} /></a>
+                                    <a href='https://www.bosch.com/' target="_blank"><img src={Bosh} /></a>
                                 </div>
 
                             </div>
@@ -188,7 +188,7 @@ function Sponsor() {
                                 }}
                                 style={{ top: `${t6}`, left: `${l6}` }}
                                 >
-                                    <a href='https://www.zaloni.com/' target="_blank"><img src={NRL} /></a>
+                                    <a href='https://www.nrl.co.in/' target="_blank"><img src={NRL} /></a>
                                 </div>
 
                             </div>
@@ -204,7 +204,7 @@ function Sponsor() {
                                 }}
                                 style={{ top: `${t7}`, left: `${l7}` }}
                                 >
-                                    <a href='https://www.zaloni.com/' target="_blank"><img src={WEH} /></a>
+                                    <a href='https://www.wehventures.com/' target="_blank"><img src={WEH} /></a>
                                 </div>
 
                             </div>
