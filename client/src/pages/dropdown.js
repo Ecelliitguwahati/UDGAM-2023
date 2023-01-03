@@ -7,9 +7,9 @@ const Dropdown =(props)=>{
     const [img,setimg] = useState(dd);
     const [dis, setdis] = useState('none');
     return(
-        <div style={{margin:`20px 120px`, height:`fit-content`}}>
-            <div className="teamN" style={{backgroundColor:`#FC97D9`, color:`#1A074E`,minHeight:`75px`,maxHeight:`fit-content`, width:`100%`, display:`flex`,flexDirection:`row`, justifyContent:`space-between`, marginBottom:`20px`}}>
-                <p style={{width:`100%`, textAlign:`center`, fontSize:`44px`}} >
+        <div style={{margin:`20px`, height:`fit-content`}}>
+            <div className="teamN" style={{backgroundColor:`#FC97D9`, color:`#1A074E`,minHeight:`75px`,maxHeight:`fit-content`, width:`100%`, display:`flex`,flexDirection:`row`, justifyContent:`space-between`,alignItems:`center`, marginBottom:`20px`}}>
+                <p style={{width:`100%`, textAlign:`center`}} >
                     <b>{props.team}</b>
                 </p>
                 <img src={img} onClick={()=>{
