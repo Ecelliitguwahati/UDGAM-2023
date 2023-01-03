@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
-import Bosh from '../../PhotosPng/BOSH.svg'
-import Timesofindia from '../../PhotosPng/Timesofindia.svg'
-import NRL from '../../PhotosPng/NRL.svg'
-import WEH from '../../PhotosPng/WEH.svg'
+import Bosh from '../../PhotosPng/bosch.png'
+import Timesofindia from '../../PhotosPng/toi.png'
+import NRL from '../../PhotosPng/nrl.png'
+import WEH from '../../PhotosPng/weh.png'
 import './sponsors.css'
 import './GetTicket_Spomsor.css'
 import { Button } from '@cred/neopop-web/lib/components';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+//   import './../../pages/sponsors.css'
 
   import va from "../../icons/va.svg"
   import meuc from '../../icons/meuc.svg'
@@ -30,6 +31,14 @@ function Sponsor() {
   const [l2, setl2] = useState('-14px');
   const [t3, sett3] = useState('-12px');
   const [l3, setl3] = useState('-14px');
+  const [t4, sett4] = useState('-12px');
+  const [l4, setl4] = useState('-14px');
+  const [t5, sett5] = useState('-12px');
+  const [l5, setl5] = useState('-14px');
+  const [t6, sett6] = useState('-12px');
+  const [l6, setl6] = useState('-14px');
+  const [t7, sett7] = useState('-12px');
+  const [l7, setl7] = useState('-14px');
   return (
     
 <div className='sponsorhome' style={{ backgroundColor: "#0c0227" }}>
@@ -53,7 +62,6 @@ function Sponsor() {
       </a>
       </button>
     </div>
-    <a href="/sponsors" className='sa'>
     {window.innerWidth > 700 ? (
                     <div class="title-sponsor">
                         <div className='out outtitle'>
@@ -135,7 +143,73 @@ function Sponsor() {
                         </div>
                     </div>
                 </div>
-    </a>
+                <div className='associateTitle' >
+                            <div className='out out2' >
+                                <div className='in in2'
+                                onMouseEnter={() => {
+                                    sett4('0');
+                                    setl4('0');
+                                }}
+                                onMouseLeave={() => {
+                                    sett4('-12px');
+                                    setl4('-14px');
+                                }}
+                                style={{ top: `${t4}`, left: `${l4}` }}
+                                >
+                                    <a href='https://www.zaloni.com/' target="_blank"><img src={Timesofindia} /></a>
+                                </div>
+
+                            </div>
+                            <div className='out out2' >
+                                <div className='in in2'
+                                onMouseEnter={() => {
+                                    sett5('0');
+                                    setl5('0');
+                                }}
+                                onMouseLeave={() => {
+                                    sett5('-12px');
+                                    setl5('-14px');
+                                }}
+                                style={{ top: `${t5}`, left: `${l5}` }}
+                                >
+                                    <a href='https://www.zaloni.com/' target="_blank"><img src={Bosh} /></a>
+                                </div>
+
+                            </div>
+                            <div className='out out2' >
+                                <div className='in in2'
+                                onMouseEnter={() => {
+                                    sett6('0');
+                                    setl6('0');
+                                }}
+                                onMouseLeave={() => {
+                                    sett6('-12px');
+                                    setl6('-14px');
+                                }}
+                                style={{ top: `${t6}`, left: `${l6}` }}
+                                >
+                                    <a href='https://www.zaloni.com/' target="_blank"><img src={NRL} /></a>
+                                </div>
+
+                            </div>
+                            <div className='out out2' >
+                                <div className='in in2'
+                                onMouseEnter={() => {
+                                    sett7('0');
+                                    setl7('0');
+                                }}
+                                onMouseLeave={() => {
+                                    sett7('-12px');
+                                    setl7('-14px');
+                                }}
+                                style={{ top: `${t7}`, left: `${l7}` }}
+                                >
+                                    <a href='https://www.zaloni.com/' target="_blank"><img src={WEH} /></a>
+                                </div>
+
+                            </div>
+                </div>
+    
 </div>
   )
 }

@@ -59,11 +59,13 @@ const Box = (props) => {
 					src={props.img}
 					alt=""
 					style={{
-						height: `258px`,
-						width: `273px`,
+						height: `257px`,
+						width: `286px`,
 						scale: `${sc}`,
 						transition: `0.5s`,
 						marginTop: ``,
+						position:`relative`,
+						top:`2px`
 					}}
 				/>
 			</div>
