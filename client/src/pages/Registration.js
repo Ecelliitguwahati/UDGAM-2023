@@ -32,7 +32,7 @@ function Registration() {
     confirmPassword: "",
     promocode:""
   });
-  const promocodeset1="EARLYBIRD2658P"
+  const promocodeset1="WEAREUDGAM"
   //console.log(user.firstName, user.lastName, user.email, user.outlook, user.rollno, user.password, user.confirmPassword);
 
   const handleChange = (e) =>{
