@@ -9,13 +9,13 @@ import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 import './Registration.css';
 import axios from '../axios';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Footer from '../components/Home/footer';
 import { toast } from 'react-toastify';
 import CheckOut from '../components/Home/CheckOutButton';
 
 function Registration() {
-  const orderAmount = 199;
+  const [orderAmount, setorderAmount] = useState(199);
   const navigate = useNavigate();
   const [resitered, setRegistered] = useState(false);
   const [paymentID, setpaymentID] = useState("");
@@ -30,11 +30,24 @@ function Registration() {
     rollno: "",
     password: "",
     confirmPassword: "",
+    promocode:""
   });
+  const promocodeset1="EARLYBIRD2658P"
   //console.log(user.firstName, user.lastName, user.email, user.outlook, user.rollno, user.password, user.confirmPassword);
 
-  const handleChange = (e) =>
+  const handleChange = (e) =>{
     setUser(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
+    
+    console.log(user.promocode)
+  }
+
+useEffect(() => {
+  // action on update of promo
+  if(user.promocode==promocodeset1)
+  setorderAmount(99)
+  else
+  setorderAmount(199)
+}, [user.promocode]);
 
   async function handleSubmit(e) {
     var msg;
@@ -62,8 +75,9 @@ function Registration() {
 
         await axios.post('/checkifpurchased', { email }).then(
           (res) => {
-            console.log(msg)
+        
             msg = res.data.message;
+            console.log(msg)
           }).catch(function (error) {
             console.log(error.toJSON());
             toast(error.message);
@@ -263,13 +277,17 @@ function Registration() {
                 </div>
                 <br />
                 <div className="first_last_flex">
-                  <input className='wid_text_Field_100' type="text" name="rollno" id='rollno' placeholder="Roll no..." onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="number" name="rollno" id='rollno' placeholder="Roll no..." onChange={handleChange} />
                 </div>
                 <br></br>
                 <p className="H21 info_reg_txt">Password shoud have at least 8 characters</p>
                 <div className="first_last_flex last_field_regg">
                   <input className='wid_text_Field_100' type="password" name="password" required={true} placeholder="Create Password... *" onChange={handleChange} />
                   <input className='wid_text_Field_100' type="password" name="confirmPassword" required={true} placeholder="Confirm Password... *" onChange={handleChange} />
+                </div>
+                <p className="H21 info_reg_txt">Discount Code</p>
+                <div className="first_last_flex last_field_regg">
+                  <input className='wid_text_Field_100' type="text" name="promocode" required={false} placeholder="Enter Discount Code" onChange={handleChange} />
                 </div>
               </div>
             </div>
@@ -299,8 +317,8 @@ function Registration() {
 
               {/* <p className="beta beta4 beta5"><br />Coupons</p> */}
 
-              <p className="gamma">₹199</p>
-              <p className="gamma1">₹199</p>
+              <p className="gamma">₹{orderAmount}</p>
+              <p className="gamma1">₹{orderAmount}</p>
               {/* <p className="gamma1 gamma2"></p> */}
               <button style={{backgroundColor:"black"}} className="Checkout" type="submit">
                 {/* <Checkout title="CHECK OUT →" /> */}

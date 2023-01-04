@@ -14,7 +14,7 @@ function BuyMerch() {
   const [img, setimg] = useState(vauc);
   return (
     <div className='merch' id='merch'  style={{backgroundColor:"#0c0227"}}>
-       <div class="top buy-merch">
+       <div class="top topmerch buy-merch">
     <h1>BUY OUR MERCH</h1>
     <button className='topbut' 
     onMouseEnter={()=>{

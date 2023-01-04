@@ -191,8 +191,8 @@ function Sponsors() {
                     </div>
 
                     <div>
-                        <a href='https://pminterviews.in/' target="_blank"><img src={pmi} /></a>
-                        <p>InterviEW Preparations Partner</p>
+                        <a href='https://pmi.dorik.io/' target="_blank"><img src={pmi} /></a>
+                        <p>Interview Preparations Partner</p>
                     </div>
 
                     <div>

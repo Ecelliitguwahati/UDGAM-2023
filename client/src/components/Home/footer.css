@@ -281,3 +281,38 @@ text-align: left;
         margin-top: -26px;
     }
 }
+
+@media (max-width: 600px){
+    .company__info_text{
+    
+        margin-left: 0px;
+    }
+    .company__logo img{
+        margin: 0px;
+    }
+    .dontmissmagic{
+        text-align: left;
+    }
+    .signup{
+        text-align: left;
+    }
+    .c2{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .right_footer{
+        width: 100%;
+    }
+    .bakwas {
+        width: 100%;
+    }
+    .bakwas1{
+        width: 80%;
+    }
+    .bakwas2{
+        width: 20%;
+    }
+    .input_pass5{
+        width: 100%;
+    }
+}

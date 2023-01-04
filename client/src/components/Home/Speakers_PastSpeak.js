@@ -28,11 +28,13 @@ const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 4
+    items: 4,
+    slidesToSlide: 4
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 4
+    items: 4,
+    slidesToSlide: 4
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -51,7 +53,10 @@ function PastSpeakers() {
         <div className="top">
           <h1>PAST SPEAKERS</h1>
         </div>
-        <Carousel responsive={responsive} className="car">
+        <Carousel responsive={responsive}
+           infinite={true}
+           autoPlay={true}
+         className="car">
           <div className="img">
             <Box in={iny} bg={bgy} img={charlie} name="Charlie Cheever" comp="Quora" desg="Co-Founder" link="https://www.linkedin.com/in/ccheever/" />
           </div>

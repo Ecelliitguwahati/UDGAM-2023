@@ -42,7 +42,7 @@ function Sponsor() {
   return (
     
 <div className='sponsorhome' style={{ backgroundColor: "#0c0227" }}>
-    <div className="top">
+    <div className="top topmerch">
     <div className='t'>
       <h1>SPONSORS</h1>
       <a href='/sponsors'className="va"><p>View all <img src={va} /></p></a>
