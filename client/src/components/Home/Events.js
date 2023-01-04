@@ -272,7 +272,7 @@ function Events() {
 							<img src={live} alt="" />
 							<Countdown
 								date={new Date(
-									"Jan 22, 2023 23:59:59"
+									"Jan 19, 2023 23:59:59"
 								).getTime()}
 								renderer={renderer}
 							/>
