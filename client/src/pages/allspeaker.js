@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "@cred/neopop-web/lib/components";
 import "./allspeaker.css";
 import Navbar from "../components/Navbar";
 import "./ourteam.css";
@@ -15,7 +14,6 @@ import ankit from "../PhotosPng/ankit.png";
 import rohit from "../PhotosPng/rohit.png";
 import kaushik from "../PhotosPng/kaushik.png";
 import brijesh from "../PhotosPng/brijesh.png";
-import linkicon from "../icons/Frame 341665.png";
 import Footer from "../components/Home/footer";
 import bgy from "../photos/bgy.svg";
 import bgg from "../photos/bgg.svg";

@@ -1,9 +1,5 @@
 import React from 'react';
 import Vector from '../icons/Vector007.svg'
-import Merch from '../components/Merch_Button';
-import Vector1 from '../icons/Icon.svg'
-import Vector2 from '../icons/arrow.svg'
-import Checkout from '../components/Checkout';
 import Vector3 from '../icons/udgam.svg';
 import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
@@ -295,15 +291,7 @@ useEffect(() => {
           <div className="pass_Card_register">
             {/* the submission design of the form has not decided yet , once it is complete i will continue from it */}
 
-            <p className='delta1'>Accepted Payments</p>
-            <div className="vector">
-              <img className=" img1" src={Vector} alt="img1" />
-              <img className="img1 img2" src={Vector} alt="img2" />
-              <img className="img1 img3" src={Vector} alt="img3" />
-              <img className="img1 img4" src={Vector} alt="img4" />
 
-            </div>
-            <br />
             <div className="card_of_pass_register">
               <img className='cardphoto' src={require("../icons/udgamPassBG.png")} alt="CardBG"></img>
               <img className="udgam7" src={Vector3} />

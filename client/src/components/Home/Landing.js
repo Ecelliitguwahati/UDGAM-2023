@@ -29,12 +29,11 @@ function Landing() {
 				<Navbar2 />
 			</motion.div>
 			<div className="titlesponsor">
-				<img
+				<img alt="altimg" 
 					className="Tata"
 					height="90px"
 					width="450px"
 					src={Bosch}
-					alt=""
 				/>
 			</div>
 			<div className="udgamland">
@@ -101,14 +100,14 @@ function Landing() {
 
 			<div className="Footerland">
 				<div>
-					<img
+					<img alt="altimg" 
 						className="imgfoot"
 						height="53px"
 						width="160px"
 						src={idfc}
 					/>
 				</div>
-				<img src={Line} className="line" alt="" />
+				<img  src={Line} className="line" alt="altimg"  />
 				<div>
 					<img
 						className="imgfoot"
@@ -116,6 +115,7 @@ function Landing() {
 						width="160px"
 						style={{ margin: `0 -12px` }}
 						src={havells}
+						alt="altimg" 
 					/>
 				</div>
 				<img src={Line} className="line" alt="" />
@@ -124,7 +124,7 @@ function Landing() {
 						className="imgfoot"
 						height="53px"
 						width="160px"
-						alt=""
+						alt="altimg" 
 						src={zaloni}
 					/>
 				</div>

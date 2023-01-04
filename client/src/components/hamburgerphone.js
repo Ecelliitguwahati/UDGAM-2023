@@ -1,9 +1,8 @@
 import React from 'react'
 import "./hamburger.css"
-import { Button } from '@cred/neopop-web/lib/components';
+
 import "./Home/navbar_landing.css";
-import Icon from "../icons/icon.png"
-import Buy from "../icons/Ticket.png"
+
 
 import Navbar from './Navbar';
 function Hamburgerph() {
@@ -12,7 +11,7 @@ function Hamburgerph() {
 
 
             <body className="humburgphone">
-            
+
 
                 <div className='navbarphone'>
                     <a href="/events">Events</a>

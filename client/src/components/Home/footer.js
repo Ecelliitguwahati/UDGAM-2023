@@ -1,6 +1,5 @@
 import { useState, React } from 'react'
 import "./footer.css"
-import { Button } from '@cred/neopop-web/lib/components';
 import Insta from './Insta';
 import CompanyLogo from './CompanyLogo.svg';
 import Yout from './Yout';
@@ -10,13 +9,13 @@ import Submit from './Submit';
 import axios from '../../axios';
 import { toast } from 'react-toastify';
 function Footer() {
-  const [email, setEmail] = useState("");
+  const [listmail, setEmail] = useState("");
   const handleChange = (e) =>
     setEmail(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
   async function maillist() {
-    if (email.email) {
+    if (listmail.listmail) {
 
-      await axios.post('/addtolist', { email }).then(() => toast("You have been added to our mailing list"))
+      await axios.post('/addtolist', {email: listmail }).then(() => toast("You have been added to our mailing list"))
         .catch(function (error) {
           //console.log(error.toJSON());
           toast("Some unknown error has occured");
@@ -167,7 +166,7 @@ function Footer() {
               <p className="dontmissmagic">Don't miss the Magic</p>
               <p href="" className="signup">Sign up to receive Event notification and Updates</p>
               <div className='bakwas'>
-                <div className="bakwas1" style={{ marginTop: '-2px' }}><br /><input className="input_pass5" placeholder="Enter Your Mail..." name="email" id="email" onChange={handleChange} /></div>
+                <div className="bakwas1" style={{ marginTop: '-2px' }}><br /><input className="input_pass5" placeholder="Enter Your Mail..." name="listmail" id="listmail" onChange={handleChange} /></div>
                 <div className="bakwas2" onClick={() => maillist()} style={{ marginTop: '15px', marginLeft: '-2px', cursor: "pointer" }} ><Submit /></div>
               </div>
 

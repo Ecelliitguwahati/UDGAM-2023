@@ -1,12 +1,12 @@
 import React from "react";
 import udgamLogoPink from "../../icons/udgamLogoPink.svg";
-import Vector2 from "../../icons/Vector2.png";
+//import Vector2 from "../../icons/Vector2.png";
 import check from "../../icons/check.png";
 import live from "../../icons/live.png";
 import barcode from "../../icons/barcode.svg";
 import "./Events.css";
 import { Link } from "react-router-dom";
-import { Button } from "@cred/neopop-web/lib/components";
+// import { Button } from "@cred/neopop-web/lib/components";
 import "./../../fonts/ActionSans-Light.otf";
 import Countdown from "react-countdown";
 import disrupt from "../../icons/disrupt.svg";
@@ -104,7 +104,7 @@ function Events() {
 								setimg(meuc);
 							}}
 						>
-							More Events <img src={img}/>
+							More Events <img alt="altimg" src={img}/>
 						</button>
 					</Link>
 				</div>

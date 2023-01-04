@@ -1,10 +1,7 @@
 import React from 'react'
-import { Button } from '@cred/neopop-web/lib/components';
 import './ourteam.css';
 import Downicon from '../icons/Down.svg'
 import Closeicon from '../icons/Close.svg'
-import speak from "../icons/speaker.png"
-import linkicon from "../icons/Frame 34161.png"
 import Navbar from '../components/Navbar';
 import Member from './member';
 import anushka from '../PhotosPng/ankusha.png';

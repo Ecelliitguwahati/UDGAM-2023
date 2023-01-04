@@ -92,6 +92,7 @@
 }
 .pass_Card_register{
     margin: 10px;
+    position: sticky;
 }
 
 .alpha {
