@@ -23,13 +23,11 @@ import ls from "./../icons/ls.svg";
 import need from "./../icons/need.svg";
 import pmx from "./../icons/pmx.svg";
 import sparkle from "./../icons/sparkle.svg";
-import Vector3 from "./../icons/Vector3.svg";
 import workshops from "./../icons/workshops.svg";
 import "./moreEvents.css";
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Home/footer';
-import ComingSoon from '../components/Home/ComingSoon';
 import eventsdummy from "./../PhotosPng/eventsdummy.svg";
 const MoreEvents2 = () => {
     const eventsdata = [
@@ -87,7 +85,7 @@ const MoreEvents2 = () => {
             "tag": "disrupt",
             "id": "b4",
             "ori": "left",
-            "date": "Jan 4, 2023 23:59:59",
+            "date": "Jan 5, 2023 23:59:59",
             "image": disrupt,
             "info": 0,
             "prize": "10 Lakhs+",
@@ -147,7 +145,7 @@ const MoreEvents2 = () => {
             "tag": "encode",
             "id": "b8",
             "ori": "right",
-            "date": "Jan 2, 2023 16:37:25",
+            "date": "Jan 6, 2023 16:37:25",
             "info": 1,
             "prize": "1.2 Lakhs+",
             "image": encode,
