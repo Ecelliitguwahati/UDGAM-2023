@@ -219,7 +219,7 @@ background-color: #09021C;
    }
 
 @media(min-width: 470px) and (max-width: 600px){
-  
+
     .speakerOdd{
     width: 296px;
     height: 369px;}
@@ -331,8 +331,14 @@ background-color: #09021C;
    }
    .speaker{
    }
-   
-   
+   .pasts{
+    margin:0;
+    text-align: center;
+  }
+
+.row div {
+    margin: 0 auto;
+}
     .top button{
      
         height:fit-content;

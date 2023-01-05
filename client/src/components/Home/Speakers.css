@@ -65,6 +65,21 @@ background-color: #09021C;
 
 
 }
+.rowspeak {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: 60px 207px 60px 288px; */
+    height: max-content;
+    padding: 30px 0;
+}
+
+.contspeak{
+    
+    margin:0 40px;
+}
 
 @font-face {
     font-family: 'ActionSansR';
@@ -430,6 +445,13 @@ background-color: #09021C;
         .car{
             padding: 10%;
         }
+        .contspeak{
+    
+            margin:0;
+        }
 }
 
 
+.currentspeaktit{
+    color:#FC97D9;
+}

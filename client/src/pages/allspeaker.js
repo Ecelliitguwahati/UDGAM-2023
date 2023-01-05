@@ -20,6 +20,11 @@ import bgg from "../photos/bgg.svg";
 import iny from "../icons/inY.svg";
 import ing from "../icons/inG.svg";
 import Box from "./../components/Home/box";
+import ankush from "../PhotosPng/ankush.png"
+import krishnan from "../PhotosPng/krishnan.png"
+import ashneer from "../PhotosPng/ashneer.png"
+
+import Speakercomp from '../components/Home/speakercomp';
 function AllSpeakers() {
 	return (
 		<body
@@ -30,6 +35,16 @@ function AllSpeakers() {
 			}}
 		>
 			<Navbar />
+			<div className='pastSpeaker' style={{ backgroundColor: "#0c0227" }}>
+        <div className="top">
+          <h1>UDGAM SPOTLIGHT</h1>
+        </div>
+        <div className='rowspeak'>
+          <Speakercomp name="Ankush Singla" pos="Co-Founder" comp="Coding Ninjas" img={ankush} link="https://www.linkedin.com/in/umang1821/" />
+          <Speakercomp name="Ashneer Grover" pos="Founder" comp="BharatPe" img={ashneer} link="https://www.linkedin.com/in/umang1821/" />
+          <Speakercomp name="Krishnan V" pos="Co-Founder" comp="Justdial" img={krishnan} link="https://www.linkedin.com/in/umang1821/" />
+        </div>
+      </div>
 			<div className="pasts">
 				<h1 className="pastspeakerstitle">PAST SPEAKERS</h1>
 
