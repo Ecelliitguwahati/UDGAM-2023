@@ -44,7 +44,7 @@ function Events() {
 
 		{
 				date: "Jan 19, 2023 23:59:59",
-				link:"https://rebrand.ly/Startup-Expo-Brochure"
+				link:"https://docs.google.com/forms/d/e/1FAIpQLScDWXOjVcdGvI2yANeCvqvAiNfQbvSACb2RKVUxcoEnhBeVNA/viewform"
 		},
 	];
 	const renderer = ({ days, hours, minutes, seconds, completed }) => {

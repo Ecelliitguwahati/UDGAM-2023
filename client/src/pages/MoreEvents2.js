@@ -75,7 +75,7 @@ const MoreEvents2 = () => {
             "info": 0,
             "prize": "NILL",
             "eventName": "STARTUP EXPO",
-            "payment": "Free", "link": "https://rebrand.ly/Startup-Expo-Brochure",
+            "payment": "Free", "link": "https://docs.google.com/forms/d/e/1FAIpQLScDWXOjVcdGvI2yANeCvqvAiNfQbvSACb2RKVUxcoEnhBeVNA/viewform",
             "eventDesc": "Startup Expo is a unique opportunity for startups to showcase their products or services, receive valuable customer feedback, and connect with potential investors. It is being organised with the goal of promoting innovation and entrepreneurship and providing a platform for startups to exchange ideas and explore research and development opportunities."
         },
         {
@@ -99,7 +99,7 @@ const MoreEvents2 = () => {
             "ori": "left",
             "date": "Jan 5, 2023 23:59:59",
             "image": disrupt,
-            "info": 0,
+            "info": 1,
             "prize": "10 Lakhs+",
             "eventName": "DISRUPT",
             "payment": "Free", "link": "https://rebrand.ly/Disrupt_Registration",
@@ -203,7 +203,7 @@ const MoreEvents2 = () => {
             "tag": "workshops",
             "id": "b12",
             "ori": "right",
-            "info": 0,
+            "info": 1,
             "prize": "NILL",
             "date": "Jan 5, 2023 23:59:59",
             "image": workshops,
