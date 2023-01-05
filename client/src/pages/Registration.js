@@ -281,7 +281,7 @@ useEffect(() => {
                   <input className='wid_text_Field_100' type="password" name="password" required={true} placeholder="Create Password... *" onChange={handleChange} />
                   <input className='wid_text_Field_100' type="password" name="confirmPassword" required={true} placeholder="Confirm Password... *" onChange={handleChange} />
                 </div>
-                <p className="H21 info_reg_txt">Discount Code</p>
+                <p className="H21 info_reg_txt">Discount Code (Use code DECACORN to get flat ₹200 discount)</p>
                 <div className="first_last_flex last_field_regg">
                   <input className='wid_text_Field_100' type="text" name="promocode" required={false} placeholder="Enter Discount Code" onChange={handleChange} />
                 </div>
