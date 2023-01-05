@@ -253,9 +253,11 @@
             flex-direction: column;
             justify-content: center;
         }
-      
+      .pass_Card_register{
+        overflow: hidden;
+      }
         .cardphoto{
-            width:100%;
+
             height: 100%;
             
         }
@@ -275,6 +277,7 @@
         left:26px;
     }
     .Checkout{
-        top:292.16px;
+        top:77%;
+        left:-41px;
     }
     }

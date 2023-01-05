@@ -11,7 +11,7 @@ import { toast } from 'react-toastify';
 import CheckOut from '../components/Home/CheckOutButton';
 
 function Registration() {
-  const [orderAmount, setorderAmount] = useState(199);
+  const [orderAmount, setorderAmount] = useState(399);
   const navigate = useNavigate();
   const [resitered, setRegistered] = useState(false);
   const [paymentID, setpaymentID] = useState("");
@@ -28,7 +28,7 @@ function Registration() {
     confirmPassword: "",
     promocode:""
   });
-  const promocodeset1="WEAREUDGAM"
+  const promocodeset1="DECACORN"
   //console.log(user.firstName, user.lastName, user.email, user.outlook, user.rollno, user.password, user.confirmPassword);
 
   const handleChange = (e) =>{
@@ -39,10 +39,10 @@ function Registration() {
 
 useEffect(() => {
   // action on update of promo
-  if(user.promocode==promocodeset1)
-  setorderAmount(99)
-  else
+  if(user.promocode===promocodeset1)
   setorderAmount(199)
+  else
+  setorderAmount(399)
 }, [user.promocode]);
 
   async function handleSubmit(e) {
@@ -300,7 +300,7 @@ useEffect(() => {
               <p className="beta">Total Price -</p>
               <p className="beta beta1">Udgam Pass -</p>
               <p className="beta beta2">Events List - Internfair, Lecture Series, Fun events </p>
-              <p className="beta beta3">Exclusive Perks - 15 Grabon coupons worth INR 1000+, Course worth INR 4000</p>
+              <p className="beta beta3">Exclusive Perks - 15 Grabon coupons worth INR 1000+, Course worth INR 4000, Voiceflow subscription worth INR 4000</p>
               {/* <p className="beta beta4"></p> */}
 
               {/* <p className="beta beta4 beta5"><br />Coupons</p> */}

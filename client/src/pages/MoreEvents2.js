@@ -135,7 +135,7 @@ const MoreEvents2 = () => {
             "prize": "25 K+",
             "image": Dframe,
             "eventName": "D-FRAME",
-            "payment": "Free", "link": "https://unstop.com/competition/dframe-creative-branding-challenge-udgam-2023-indian-institute-of-technology-iit-guwahati-566698",
+            "payment": "Free", "link": "https://linktr.ee/dframe",
             "eventDesc": "DFrame is a one of its kind UI/UX competition. Aimed to inculcate and enhance one's creativity with the business need of companies, DFrame tests the designer's innovative quotient by flexing their design muscle to find technical solutions while staying true to the human-centric approach."
         },
         // 0 for ongoing

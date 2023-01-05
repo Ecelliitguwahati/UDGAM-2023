@@ -256,7 +256,7 @@ function Events() {
 					<div id="priceDate">
 						<div id="price">
 							<p className="pdHeading">Price</p>
-							<p className="price">₹199</p>
+							<p className="price">₹399</p>
 						</div>
 						<div id="date">
 							<p className="pdHeading">Date</p>
