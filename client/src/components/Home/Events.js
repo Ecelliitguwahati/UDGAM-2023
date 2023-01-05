@@ -43,8 +43,8 @@ function Events() {
 		// 2 for coming ComingSoon
 
 		{
-				date: "Jan 6, 2023 16:37:25",
-				link:"https://rebrand.ly/EnCode23"
+				date: "Jan 19, 2023 23:59:59",
+				link:"https://rebrand.ly/Startup-Expo-Brochure"
 		},
 	];
 	const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -118,6 +118,7 @@ function Events() {
 								<a
 									href={eventsdata[0].link}
 									style={{ textDecoration: `none` }}
+									target="_blank"
 								>
 									<button className="reg">
 										Register
@@ -162,6 +163,7 @@ function Events() {
 								<a
 									href={eventsdata[0].link}
 									style={{ textDecoration: `none` }}
+									target="_blank"
 								>
 									<button className="reg">
 										Register
@@ -186,19 +188,19 @@ function Events() {
 						</div>
 						<div className="content2">
 							<div className="heading">
-								<p>ENCODE</p>
+								<p>STARTUP EXPO</p>
 								<div className="check">
 									<img src={check} alt="" />
 								</div>
 							</div>
 							<div className="text">
-								An entrepreneur’s task is to solve real-life
-								real-world problems by developing a feasible
-								solution that caters to everyone's needs be it
-								the users or the market. Focussing on this,
-								Encode is a development hackathon where you will
-								be provided with a real-life problem and you
-								have to devise a solution for it.
+							Startup Expo is a unique opportunity for startups to
+showcase their products or services, receive valuable
+customer feedback, and connect with potential investors. It
+is being organised with the goal of promoting innovation and
+entrepreneurship and providing a platform for startups to
+exchange ideas and explore research and development
+opportunities.
 							</div>
 							<div
 								className="register"
@@ -210,6 +212,7 @@ function Events() {
 								}}
 							>
 								<a
+								target="_blank"
 									href={eventsdata[2].link}
 									style={{ textDecoration: `none` }}
 								>

@@ -67,8 +67,20 @@ const MoreEvents2 = () => {
         // 1 for expired
         // 2 for coming ComingSoon
         {
-            "tag": "pmx",
+            "tag": "startupexpo",
             "id": "b3",
+            "ori": "left",
+            "date": "Jan 19, 2023 23:59:59",
+            "image": pmx,
+            "info": 0,
+            "prize": "NILL",
+            "eventName": "STARTUP EXPO",
+            "payment": "Free", "link": "https://rebrand.ly/Startup-Expo-Brochure",
+            "eventDesc": "Startup Expo is a unique opportunity for startups to showcase their products or services, receive valuable customer feedback, and connect with potential investors. It is being organised with the goal of promoting innovation and entrepreneurship and providing a platform for startups to exchange ideas and explore research and development opportunities."
+        },
+        {
+            "tag": "pmx",
+            "id": "b4",
             "ori": "left",
             "date": "Dec 20, 2022 16:37:25",
             "image": pmx,
@@ -83,7 +95,7 @@ const MoreEvents2 = () => {
         // 2 for coming ComingSoon
         {
             "tag": "disrupt",
-            "id": "b4",
+            "id": "b5",
             "ori": "left",
             "date": "Jan 5, 2023 23:59:59",
             "image": disrupt,
@@ -98,7 +110,7 @@ const MoreEvents2 = () => {
         // 2 for coming ComingSoon
         {
             "tag": "need",
-            "id": "b5",
+            "id": "b6",
             "ori": "left",
             "date": "Jan 20, 2022 16:37:25",
             "prize": "1 Lakhs+",
@@ -113,7 +125,7 @@ const MoreEvents2 = () => {
         // 2 for coming ComingSoon
         {
             "tag": "cosmicclash",
-            "id": "b6",
+            "id": "b7",
             "ori": "left",
             "date": "Jan 10, 2023 23:59:59",
             "prize": "10 Lakhs+",
@@ -128,7 +140,7 @@ const MoreEvents2 = () => {
         // 2 for coming ComingSoon
         {
             "tag": "dframe",
-            "id": "b7",
+            "id": "b8",
             "ori": "right",
             "date": "Jan 9, 2023 23:59:59",
             "info": 0,
@@ -143,7 +155,7 @@ const MoreEvents2 = () => {
         // 2 for coming ComingSoon    
         {
             "tag": "encode",
-            "id": "b8",
+            "id": "b9",
             "ori": "right",
             "date": "Jan 6, 2023 16:37:25",
             "info": 0,
@@ -158,7 +170,7 @@ const MoreEvents2 = () => {
         // 2 for coming ComingSoon
         {
             "tag": "funevents",
-            "id": "b9",
+            "id": "b10",
             "ori": "right",
             "date": "Jan 20, 2023 16:37:25",
             "info": 2,
@@ -174,7 +186,7 @@ const MoreEvents2 = () => {
         // 2 for coming ComingSoon
         {
             "tag": "sparkle",
-            "id": "b10",
+            "id": "b11",
             "ori": "right",
             "info": 0,
             "prize": "40K+",
@@ -189,7 +201,7 @@ const MoreEvents2 = () => {
         // 2 for coming ComingSoon
         {
             "tag": "workshops",
-            "id": "b11",
+            "id": "b12",
             "ori": "right",
             "info": 0,
             "prize": "NILL",
@@ -206,7 +218,7 @@ const MoreEvents2 = () => {
         ,
         {
             "tag": "stonks",
-            "id": "b12",
+            "id": "b13",
             "ori": "right",
             "info": 0,
             "prize": "15K+",
@@ -364,12 +376,30 @@ const MoreEvents2 = () => {
                                 </div>
                             </div>
                         </Link>
+                        <Link to={"/events?event=startupexpo"}>
+                            <div id="startupexpo" className="containerM">
+                                <div className="headingM">
+                                    <p>STARTUP EXPO</p>
+
+                                    <img src={arrowR} alt="" id="b1" />
+
+                                </div>
+                                <div className="content">
+                                    <p>Connect, Collaborate, and Innovate</p>
+                                </div>
+                                <div className="live2">
+                                    <img src={live} alt="" />
+                                    <p> {eventsdata[2].info == 0 ? <Countdown date={new Date(eventsdata[2].date).getTime()} renderer={renderer} /> : eventsdata[2].info == 1 ? "Registration Closed" : "COMING SOON"}
+                                    </p>
+                                </div>
+                            </div>
+                        </Link>
                         <Link to={"/events?event=pmx"}>
                             <div id="pmx" className="containerM">
                                 <div className="headingM">
                                     <p>PMx</p>
 
-                                    <img src={arrowR} alt="" id="b3" />
+                                    <img src={arrowR} alt="" id="b1" />
 
                                 </div>
                                 <div className="content">
@@ -377,7 +407,7 @@ const MoreEvents2 = () => {
                                 </div>
                                 <div className="live2">
                                     <img src={live} alt="" />
-                                    <p> {eventsdata[2].info == 0 ? <Countdown date={new Date(eventsdata[2].date).getTime()} renderer={renderer} /> : eventsdata[2].info == 1 ? "Registration Closed" : "COMING SOON"}
+                                    <p> {eventsdata[3].info == 0 ? <Countdown date={new Date(eventsdata[3].date).getTime()} renderer={renderer} /> : eventsdata[3].info == 1 ? "Registration Closed" : "COMING SOON"}
                                     </p>
                                 </div>
                             </div>
@@ -395,7 +425,7 @@ const MoreEvents2 = () => {
                                 </div>
                                 <div className="live2">
                                     <img src={live} alt="" />
-                                    <p> {eventsdata[3].info == 0 ? <Countdown date={new Date(eventsdata[3].date).getTime()} renderer={renderer} /> : eventsdata[3].info == 1 ? "Registration Closed" : "COMING SOON"}
+                                    <p> {eventsdata[4].info == 0 ? <Countdown date={new Date(eventsdata[4].date).getTime()} renderer={renderer} /> : eventsdata[4].info == 1 ? "Registration Closed" : "COMING SOON"}
                                     </p>
                                 </div>
                             </div>
@@ -413,7 +443,7 @@ const MoreEvents2 = () => {
                                 </div>
                                 <div className="live2">
                                     <img src={live} alt="" />
-                                    <p>{eventsdata[4].info == 0 ? <Countdown date={new Date(eventsdata[4].date).getTime()} renderer={renderer} /> : eventsdata[4].info == 1 ? "Registration Closed" : "COMING SOON"}
+                                    <p>{eventsdata[5].info == 0 ? <Countdown date={new Date(eventsdata[5].date).getTime()} renderer={renderer} /> : eventsdata[5].info == 1 ? "Registration Closed" : "COMING SOON"}
                                     </p>
                                 </div>
                             </div>
@@ -431,7 +461,7 @@ const MoreEvents2 = () => {
                                 </div>
                                 <div className="live2">
                                     <img src={live} alt="" />
-                                    <p>{eventsdata[5].info == 0 ? <Countdown date={new Date(eventsdata[5].date).getTime()} renderer={renderer} /> : eventsdata[5].info == 1 ? "Registration Closed" : "COMING SOON"}
+                                    <p>{eventsdata[6].info == 0 ? <Countdown date={new Date(eventsdata[6].date).getTime()} renderer={renderer} /> : eventsdata[6].info == 1 ? "Registration Closed" : "COMING SOON"}
                                     </p>
                                 </div>
                             </div>
@@ -519,7 +549,7 @@ const MoreEvents2 = () => {
                                 </div>
                                 <div className="live2">
                                     <img src={live} alt="" />
-                                    <p>{eventsdata[6].info == 0 ? <Countdown date={new Date(eventsdata[6].date).getTime()} renderer={renderer} /> : eventsdata[6].info == 1 ? "Registration Closed" : "COMING SOON"}
+                                    <p>{eventsdata[7].info == 0 ? <Countdown date={new Date(eventsdata[7].date).getTime()} renderer={renderer} /> : eventsdata[7].info == 1 ? "Registration Closed" : "COMING SOON"}
                                     </p>
                                 </div>
                             </div>
@@ -538,7 +568,7 @@ const MoreEvents2 = () => {
                                 </div>
                                 <div className="live2">
                                     <img src={live} alt="" />
-                                    <p>{eventsdata[7].info == 0 ? <Countdown date={new Date(eventsdata[7].date).getTime()} renderer={renderer} /> : eventsdata[7].info == 1 ? "Registration Closed" : "COMING SOON"}
+                                    <p>{eventsdata[8].info == 0 ? <Countdown date={new Date(eventsdata[8].date).getTime()} renderer={renderer} /> : eventsdata[8].info == 1 ? "Registration Closed" : "COMING SOON"}
                                     </p>
                                 </div>
                             </div>
@@ -557,7 +587,7 @@ const MoreEvents2 = () => {
                                 </div>
                                 <div className="live2">
                                     <img src={live} alt="" />
-                                    <p> {eventsdata[8].info == 0 ? <Countdown date={new Date(eventsdata[8].date).getTime()} renderer={renderer} /> : eventsdata[8].info == 1 ? "Registration Closed" : "COMING SOON"}
+                                    <p> {eventsdata[9].info == 0 ? <Countdown date={new Date(eventsdata[9].date).getTime()} renderer={renderer} /> : eventsdata[9].info == 1 ? "Registration Closed" : "COMING SOON"}
                                     </p>
                                 </div>
                             </div>
@@ -576,7 +606,7 @@ const MoreEvents2 = () => {
                                 </div>
                                 <div className="live2">
                                     <img src={live} alt="" />
-                                    <p> {eventsdata[9].info == 0 ? <Countdown date={new Date(eventsdata[9].date).getTime()} renderer={renderer} /> : eventsdata[9].info == 1 ? "Registration Closed" : "COMING SOON"}
+                                    <p> {eventsdata[10].info == 0 ? <Countdown date={new Date(eventsdata[10].date).getTime()} renderer={renderer} /> : eventsdata[10].info == 1 ? "Registration Closed" : "COMING SOON"}
                                     </p>
                                 </div>
                             </div>
@@ -596,7 +626,7 @@ const MoreEvents2 = () => {
                                 <div className="live2">
                                     <img src={live} alt="" />
                                     <p>
-                                        {eventsdata[10].info == 0 ? <Countdown date={new Date(eventsdata[10].date).getTime()} renderer={renderer} /> : eventsdata[10].info == 1 ? "Registration Closed" : "COMING SOON"}
+                                        {eventsdata[11].info == 0 ? <Countdown date={new Date(eventsdata[11].date).getTime()} renderer={renderer} /> : eventsdata[11].info == 1 ? "Registration Closed" : "COMING SOON"}
                                     </p>
                                 </div>
                             </div>
@@ -616,7 +646,7 @@ const MoreEvents2 = () => {
                                 <div className="live2">
                                     <img src={live} alt="" />
                                     <p>
-                                        {eventsdata[11].info == 0 ? <Countdown date={new Date(eventsdata[11].date).getTime()} renderer={renderer} /> : eventsdata[11].info == 1 ? "Registration Closed" : "COMING SOON"}
+                                        {eventsdata[12].info == 0 ? <Countdown date={new Date(eventsdata[12].date).getTime()} renderer={renderer} /> : eventsdata[12].info == 1 ? "Registration Closed" : "COMING SOON"}
                                     </p>
                                 </div>
                             </div>
