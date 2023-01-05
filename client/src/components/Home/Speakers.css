@@ -455,12 +455,12 @@ background-color: #09021C;
             margin:0;
         }
     }
-        @media (max-width:800px) {
+        @media (max-width:1112px) {
         .contspeak{
             width:50%;
         }
 }
-@media (max-width:500px) {
+@media (max-width:600px) {
     .contspeak{
         width:100%;
         margin: 5%;

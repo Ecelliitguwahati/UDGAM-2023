@@ -64,7 +64,7 @@ function PastSpeakers() {
       </div>
       <div className='pastSpeaker' style={{ backgroundColor: "#0c0227" }}>
         <div className="top">
-          <h1>PAST SPEAKERS</h1>
+          <h1 style={{color:"#44C6B6"}}>PAST SPEAKERS</h1>
         </div>
         <Carousel responsive={responsive}
           infinite={true}
