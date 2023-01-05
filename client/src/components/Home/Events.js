@@ -25,53 +25,26 @@ function Events() {
 	const [ig2, setig2] = useState(ruc);
 	const eventsdata = [
 		{
-			tag: "disrupt",
-			id: "b4",
-			ori: "left",
+			
 			date: "Jan 5, 2023 23:59:59",
-			image: disrupt,
-			info: 1,
-			prize: "10 Lakhs+",
-			eventName: "DISRUPT",
-			payment: "Free",
-			link: "https://rebrand.ly/Disrupt_Registration",
-			eventDesc:
-				"Disrupt is North East India’s Largest Pitching Battle where startups get a platform to pitch their idea to investors, Angel investors, and Venture Capitalists. In our previous editions, we had Michael Sibel, CEO of Y-Combinator as one of the panelists. Top finalists are provided with mentorship, incubation, and business tools alongside prizes and investment opportunities for winners.",
-		},
+			link:"https://rebrand.ly/Disrupt_Registration"
+					},
 		// 0 for ongoing
 		// 1 for expired
 		// 2 for coming ComingSoon
 		{
-			tag: "need",
-			id: "b5",
-			ori: "left",
-			date: "Jan 20, 2022 16:37:25",
-			prize: "1 Lakhs+",
-			info: 1,
-			image: need,
-			eventName: "NEED",
-			payment: "Free",
-			link: "https://www.fb.com",
-			eventDesc:
-				"Introducing our brand new event, North East Entrepreneurship Drive aka NEED where we aim to promote the entrepreneur environment and startup urge by helping institutes of North East India set up their own Entrepreneurship Cells in their institutes.  ",
-		},
+					
+			date: "Jan 7, 2023 23:59:59",
+			link: "https://docs.google.com/forms/d/e/1FAIpQLSeMH92AxnP5V8EEHzbGmTXl0VZS9BtBQRPh4xPqU77tWsdYKw/viewform",
+           
+				},
 		// 0 for ongoing
 		// 1 for expired
 		// 2 for coming ComingSoon
 
 		{
-			tag: "encode",
-			id: "b8",
-			ori: "right",
-			date: "Jan 6, 2023 16:37:25",
-			info: 0,
-			prize: "1.2 Lakhs+",
-			image: encode,
-			eventName: "ENCODE",
-			payment: "Free",
-			link: "https://rebrand.ly/EnCode23",
-			eventDesc:
-				"An entrepreneur’s task is to solve real-life real-world problems by developing a feasible solution that caters to everyone's needs be it the users or the market. Focussing on this, Encode is a development hackathon where you will be provided with a real-life problem and you have to devise a solution for it.",
+				date: "Jan 6, 2023 16:37:25",
+				link:"https://rebrand.ly/EnCode23"
 		},
 	];
 	const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -169,26 +142,40 @@ function Events() {
 						</div>
 						<div className="content2">
 							<div className="heading">
-								<p>NEED</p>
+								<p>SPARKLE</p>
 								<div className="check">
 									<img src={check} alt="" />
 								</div>
 							</div>
 							<div className="text">
-								Introducing our brand new event, North East
-								Entrepreneurship Drive aka NEED where we aim to
-								promote the entrepreneur environment and startup
-								urge by helping institutes of North East India
-								set up their own Entrepreneurship Cells in their
-								institutes.
+							Minutes of the spotlight to showcase your entrepreneurship and pitching skills exclusive for young teenagers. Sparkle is a pitching ground for school students and an opportunity to show themselves under the unwavering attention of the whole panel, including various Angel Investors and Venture Capitalists, to put their startup idea.
 							</div>
-							<div className="register">
-								<button className="reg">
-									{/* Register
-                                    <img src={Vector2} alt="" color="#3A10AD" /> */}
-								</button>
-								<button className="closed">
-									Registration closed
+							<div
+								className="register"
+								onMouseEnter={() => {
+									setig(rc);
+								}}
+								onMouseLeave={() => {
+									setig(ruc);
+								}}
+							>
+								<a
+									href={eventsdata[0].link}
+									style={{ textDecoration: `none` }}
+								>
+									<button className="reg">
+										Register
+										<img src={ig} alt="" color="#3A10AD" />
+									</button>
+								</a>
+								<button className="live1">
+									<img src={live} alt="" />
+									<Countdown
+										date={new Date(
+											eventsdata[1].date
+										).getTime()}
+										renderer={renderer}
+									/>
 								</button>
 							</div>
 						</div>
