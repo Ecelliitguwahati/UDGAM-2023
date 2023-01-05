@@ -53,13 +53,23 @@ function OurTeam() {
                     <Member name="Krish Rajpal" pos="Disrupt Head" img={krish} link="https://www.linkedin.com/in/krish-rajpal-b60310209/" />
                     <Member name="Raghav Mittal" pos="Initiatives Head" img={raghav} link="https://www.linkedin.com/in/raghavmittal123/" />
                     <Member name="Shyam D" pos="Corporate Relations Head" img={shyam} link="https://www.linkedin.com/in/shyamd007/" />
-                    <Member name="Soumadip Das" pos="DevOps Head" img={souma} link="https://www.linkedin.com/in/soumadip-das/" />
+                    <Member name="Soumadip Das" pos="WebOps Head" img={souma} link="https://www.linkedin.com/in/soumadip-das/" />
                     <Member name="Mohit Pal" pos="PMx Head" img={mohitp} link="https://www.linkedin.com/in/mohitpal01/" />
                     <Member name="Soham Parundekar" pos="PR and Branding Head" img={soham} link="https://www.linkedin.com/in/sohamparundekar/" />
                     <Member name="Bhoomika Dhaka" pos="GnS Head" img={bhoomika} link="https://www.linkedin.com/in/bhoomikdhaka12/" />
                 </div>
 
                 <div id="teamD">
+
+                <Dropdown team="DEVELOPERS" img={teams} text={[
+                        <ul>
+                            <li> <a href='https://www.linkedin.com/in/iks1r/' target='_blank'> Raj Borogaon</a></li>
+                            <li><a href='https://www.linkedin.com/in/himanshi-g/' target='_blank'> Himanshi Gautam</a></li>
+                            <li><a href='https://www.linkedin.com/in/priyansh-shrivastav/?trk=public_profile_samename-profile&originalSubdomain=in' target='_blank'> Priyansh Shrivastav</a></li>
+                            <li><a href='https://www.linkedin.com/in/divyesh-vankar/' target='_blank'>Divyesh Vankar</a></li>
+                           
+                        </ul>
+                    ]} />
                     <Dropdown team="DESIGN" img={teams} text={[
                         <ul>
                             <li>Amey Karekar</li>
