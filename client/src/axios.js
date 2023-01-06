@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-	baseURL: "/backend",
+	baseURL: "https://udgamiitg.com/backend",
 //baseURL:"http://localhost:5000/backend/"
 });
 

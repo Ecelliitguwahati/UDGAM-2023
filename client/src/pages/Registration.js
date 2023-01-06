@@ -148,12 +148,12 @@ useEffect(() => {
                 order_id: order_id,
                 handler: async function (response) {
                   setpaymentID(response.razorpay_payment_id);
-                  const result = await axios.post('/pay-order', {
-                    amount: amount,
-                    razorpayPaymentId: response.razorpay_payment_id,
-                    razorpayOrderId: response.razorpay_order_id,
-                    razorpaySignature: response.razorpay_signature,
-                  });
+                  // const result = await axios.post('/pay-order', {
+                  //   amount: amount,
+                  //   razorpayPaymentId: response.razorpay_payment_id,
+                  //   razorpayOrderId: response.razorpay_order_id,
+                  //   razorpaySignature: response.razorpay_signature,
+                  // });
                   // Now Payment is completed
                   document.getElementById("warningg").innerText="Payment successful, please hang on!!"
                   setPaid(true);
