@@ -1,6 +1,7 @@
 
 .moreEvents{
-    background-image: url(../icons/moreEventsBg.png);
+    background: linear-gradient(to bottom, #1A074E 0%, #060213 100%);
+ 
     background-size: cover;
 }
 

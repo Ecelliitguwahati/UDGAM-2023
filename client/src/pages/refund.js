@@ -1,5 +1,4 @@
 import React from "react";
-import di from "./../icons/downloadIMG.svg"
 
 
 import './termsandconds.css'

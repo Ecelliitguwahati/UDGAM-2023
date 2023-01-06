@@ -1,21 +1,17 @@
 import React from 'react';
 import Vector from '../icons/Vector007.svg'
-import Merch from '../components/Merch_Button';
-import Vector1 from '../icons/Icon.svg'
-import Vector2 from '../icons/arrow.svg'
-import Checkout from '../components/Checkout';
 import Vector3 from '../icons/udgam.svg';
 import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 import './Registration.css';
 import axios from '../axios';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Footer from '../components/Home/footer';
 import { toast } from 'react-toastify';
 import CheckOut from '../components/Home/CheckOutButton';
 
 function Registration() {
-  const orderAmount = 2;
+  const [orderAmount, setorderAmount] = useState(399);
   const navigate = useNavigate();
   const [resitered, setRegistered] = useState(false);
   const [paymentID, setpaymentID] = useState("");
@@ -30,22 +26,36 @@ function Registration() {
     rollno: "",
     password: "",
     confirmPassword: "",
+    promocode:""
   });
+  const promocodeset1="DECACORN"
   //console.log(user.firstName, user.lastName, user.email, user.outlook, user.rollno, user.password, user.confirmPassword);
 
-  const handleChange = (e) =>
+  const handleChange = (e) =>{
     setUser(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
+    
+    console.log(user.promocode)
+  }
+
+useEffect(() => {
+  // action on update of promo
+  if(user.promocode===promocodeset1)
+  setorderAmount(199)
+  else
+  setorderAmount(399)
+}, [user.promocode]);
 
   async function handleSubmit(e) {
     var msg;
     e.preventDefault();
     try {
-
+      
       if (user.password !== user.confirmPassword) {
 
         toast('Passwords do not match');
         return;
       }
+      
       else {
         let firstName = user.firstName; let lastName = user.lastName; let email = user.email; let outlook = user.outlook; let contact = user.contact; let department = user.department; let rollno = user.rollno; let password = user.password; let confirmPassword = user.confirmPassword;
         //Check if outlook, rollno, department, there or nor
@@ -59,11 +69,12 @@ function Registration() {
           }
         }
         // First check if he purchased pass
-
+        document.getElementById("warningg").style.display="block"
         await axios.post('/checkifpurchased', { email }).then(
           (res) => {
-            console.log(msg)
+        
             msg = res.data.message;
+            console.log(msg)
           }).catch(function (error) {
             console.log(error.toJSON());
             toast(error.message);
@@ -137,13 +148,14 @@ function Registration() {
                 order_id: order_id,
                 handler: async function (response) {
                   setpaymentID(response.razorpay_payment_id);
-                  const result = await axios.post('/pay-order', {
-                    amount: amount,
-                    razorpayPaymentId: response.razorpay_payment_id,
-                    razorpayOrderId: response.razorpay_order_id,
-                    razorpaySignature: response.razorpay_signature,
-                  });
+                  // const result = await axios.post('/pay-order', {
+                  //   amount: amount,
+                  //   razorpayPaymentId: response.razorpay_payment_id,
+                  //   razorpayOrderId: response.razorpay_order_id,
+                  //   razorpaySignature: response.razorpay_signature,
+                  // });
                   // Now Payment is completed
+                  document.getElementById("warningg").innerText="Payment successful, please hang on!!"
                   setPaid(true);
                   await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword }).then(
                     (res) => {
@@ -208,8 +220,11 @@ function Registration() {
     <body style={{ height: "max-content" }}>
       <Navbar />
       <div>
+      
         <form className='register_entire_page' onSubmit={handleSubmit}>
+          
           <div className="register_dabba">
+            
             <div className='register-progressbar'>
               <div className='c1_reg'>
                 PERSONAL DETAILS
@@ -221,6 +236,7 @@ function Registration() {
 
             </div>
             <div className="registerform" >
+              
               <h1 className="Pinfo">PERSONAL INFORMATION</h1>
               <p className="H21 info_reg_txt">
                 * Indicates required field
@@ -263,7 +279,7 @@ function Registration() {
                 </div>
                 <br />
                 <div className="first_last_flex">
-                  <input className='wid_text_Field_100' type="text" name="rollno" id='rollno' placeholder="Roll no..." onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="number" name="rollno" id='rollno' placeholder="Roll no..." onChange={handleChange} />
                 </div>
                 <br></br>
                 <p className="H21 info_reg_txt">Password shoud have at least 8 characters</p>
@@ -271,21 +287,17 @@ function Registration() {
                   <input className='wid_text_Field_100' type="password" name="password" required={true} placeholder="Create Password... *" onChange={handleChange} />
                   <input className='wid_text_Field_100' type="password" name="confirmPassword" required={true} placeholder="Confirm Password... *" onChange={handleChange} />
                 </div>
+                <p className="H21 info_reg_txt">Discount Code (Use code DECACORN to get flat ₹200 discount)</p>
+                <div className="first_last_flex last_field_regg">
+                  <input className='wid_text_Field_100' type="text" name="promocode" required={false} placeholder="Enter Discount Code" onChange={handleChange} />
+                </div>
               </div>
             </div>
           </div>
           <div className="pass_Card_register">
             {/* the submission design of the form has not decided yet , once it is complete i will continue from it */}
 
-            <p className='delta1'>Accepted Payments</p>
-            <div className="vector">
-              <img className=" img1" src={Vector} alt="img1" />
-              <img className="img1 img2" src={Vector} alt="img2" />
-              <img className="img1 img3" src={Vector} alt="img3" />
-              <img className="img1 img4" src={Vector} alt="img4" />
 
-            </div>
-            <br />
             <div className="card_of_pass_register">
               <img className='cardphoto' src={require("../icons/udgamPassBG.png")} alt="CardBG"></img>
               <img className="udgam7" src={Vector3} />
@@ -294,18 +306,21 @@ function Registration() {
               <p className="beta">Total Price -</p>
               <p className="beta beta1">Udgam Pass -</p>
               <p className="beta beta2">Events List - Internfair, Lecture Series, Fun events </p>
-              <p className="beta beta3">Exclusive Perks - 15 Grabon coupons worth INR 1000+, Course worth INR 4000</p>
+              <p className="beta beta3">Exclusive Perks - 15 Grabon coupons worth INR 1000+, Course worth INR 4000, Voiceflow subscription worth INR 4000</p>
               {/* <p className="beta beta4"></p> */}
 
               {/* <p className="beta beta4 beta5"><br />Coupons</p> */}
 
-              <p className="gamma">₹199</p>
-              <p className="gamma1">₹199</p>
+              <p className="gamma">₹{orderAmount}</p>
+              <p className="gamma1">₹{orderAmount}</p>
               {/* <p className="gamma1 gamma2"></p> */}
               <button style={{backgroundColor:"black"}} className="Checkout" type="submit">
                 {/* <Checkout title="CHECK OUT →" /> */}
                 <CheckOut/>
                 </button>
+                <p className="H21 info_reg_txt" id="warningg">
+                Please wait, do not refresh
+              </p>
             </div>
 
             {/* <div className="vector">

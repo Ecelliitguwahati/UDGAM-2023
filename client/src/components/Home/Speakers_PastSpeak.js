@@ -16,23 +16,28 @@ import amod from "../../PhotosPng/amod.png"
 import ankit from "../../PhotosPng/ankit.png"
 import rohit from "../../PhotosPng/rohit.png"
 import kaushik from "../../PhotosPng/kaushik.png"
+import ankush from "../../PhotosPng/ankush.png"
+import krishnan from "../../PhotosPng/krishnan.png"
+import ashneer from "../../PhotosPng/ashneer.png"
 import brijesh from "../../PhotosPng/brijesh.png"
 import bgy from "../../photos/bgy.svg";
 import bgg from "../../photos/bgg.svg";
 import iny from "../../icons/inY.svg";
 import ing from "../../icons/inG.svg";
-
+import Speakercomp from './speakercomp';
 import '../../pages/ourteam.css';
-import Box from './box'
+import Box from './box';
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 4
+    items: 4,
+    slidesToSlide: 4
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 4
+    items: 4,
+    slidesToSlide: 4
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -48,10 +53,23 @@ function PastSpeakers() {
   return (
     <>
       <div className='pastSpeaker' style={{ backgroundColor: "#0c0227" }}>
-        <div className="top">
-          <h1>PAST SPEAKERS</h1>
+        <div className="top currentspeaktit">
+          <h1>UDGAM SPOTLIGHT</h1>
         </div>
-        <Carousel responsive={responsive} className="car">
+        <div className='rowspeak'>
+          <Speakercomp name="Ankush Singla" pos="Co-Founder" comp="Coding Ninjas" img={ankush} link="https://www.linkedin.com/in/umang1821/" />
+          <Speakercomp name="Ashneer Grover" pos="Founder" comp="BharatPe" img={ashneer} link="https://www.linkedin.com/in/umang1821/" />
+          <Speakercomp name="Krishnan V" pos="Co-Founder" comp="Justdial" img={krishnan} link="https://www.linkedin.com/in/umang1821/" />
+        </div>
+      </div>
+      <div className='pastSpeaker' style={{ backgroundColor: "#0c0227" }}>
+        <div className="top">
+          <h1 style={{color:"#44C6B6"}}>PAST SPEAKERS</h1>
+        </div>
+        <Carousel responsive={responsive}
+          infinite={true}
+          autoPlay={true}
+          className="car">
           <div className="img">
             <Box in={iny} bg={bgy} img={charlie} name="Charlie Cheever" comp="Quora" desg="Co-Founder" link="https://www.linkedin.com/in/ccheever/" />
           </div>
@@ -62,27 +80,27 @@ function PastSpeakers() {
             <Box in={iny} bg={bgy} img={pulkit} name="Pulkit Jain" comp="Vedantu" desg="Co-Founder" link="https://www.linkedin.com/in/jainpulkit/" />
           </div>
           <div className="img">
-            <Box in={ing} bg={bgg} img={kevin} name="Kevin Harrington" comp="Shark Tank" desg="Original Shark" link="https://www.linkedin.com/in/thekevinharrington/"/>
+            <Box in={ing} bg={bgg} img={kevin} name="Kevin Harrington" comp="Shark Tank" desg="Original Shark" link="https://www.linkedin.com/in/thekevinharrington/" />
           </div>
           <div className="img">
-            <Box in={iny} bg={bgy} img={michael} name="Michael Siebel" comp="Y-Combinator" desg="CEO" link="https://www.linkedin.com/in/mwseibel/"/>
+            <Box in={iny} bg={bgy} img={michael} name="Michael Siebel" comp="Y-Combinator" desg="CEO" link="https://www.linkedin.com/in/mwseibel/" />
           </div>
           <div className="img">
-            <Box in={ing} bg={bgg} img={ankur} name="Ankur Warikoo" comp="Nearbuy" desg="Founder" link="https://www.linkedin.com/in/warikoo/"/>
+            <Box in={ing} bg={bgg} img={ankur} name="Ankur Warikoo" comp="Nearbuy" desg="Founder" link="https://www.linkedin.com/in/warikoo/" />
           </div>
           <div className="img">
-            <Box in={iny} bg={bgy} img={amit} name="Amit Agarwal" comp="No Broker" desg="CEO & Founder" link="https://www.linkedin.com/in/amit-kumar-agarwal-5b30301/"/>
+            <Box in={iny} bg={bgy} img={amit} name="Amit Agarwal" comp="No Broker" desg="CEO & Founder" link="https://www.linkedin.com/in/amit-kumar-agarwal-5b30301/" />
           </div>
           <div className="img">
-            <Box in={ing} bg={bgg} img={amod} name="Amod Malviya" comp="Udaan" desg="Co-Founder" link="https://www.linkedin.com/in/amodm/"/>
+            <Box in={ing} bg={bgg} img={amod} name="Amod Malviya" comp="Udaan" desg="Co-Founder" link="https://www.linkedin.com/in/amodm/" />
           </div><div className="img">
-            <Box in={iny} bg={bgy} img={ankit} name="Ankit Nagori" comp="Cure.Fit" desg="Founder" link="https://www.linkedin.com/in/ankitnagori/"/>
+            <Box in={iny} bg={bgy} img={ankit} name="Ankit Nagori" comp="Cure.Fit" desg="Founder" link="https://www.linkedin.com/in/ankitnagori/" />
           </div><div className="img">
-            <Box in={ing} bg={bgg} img={rohit} name="Rohit Kapoor" comp="Swiggy" desg="CEO" link="https://in.linkedin.com/in/rohit-kapoor-99a30436"/>
+            <Box in={ing} bg={bgg} img={rohit} name="Rohit Kapoor" comp="Swiggy" desg="CEO" link="https://in.linkedin.com/in/rohit-kapoor-99a30436" />
           </div><div className="img">
-            <Box in={iny} bg={bgy} img={kaushik} name="Kaushik Mitra" comp="Pepsico India" desg="CEO & VP" link="https://in.linkedin.com/in/kmitra"/>
+            <Box in={iny} bg={bgy} img={kaushik} name="Kaushik Mitra" comp="Pepsico India" desg="CEO & VP" link="https://in.linkedin.com/in/kmitra" />
           </div><div className="img">
-            <Box in={ing} bg={bgg} img={brijesh} name="Brijesh Agarwal" comp="Indiamart" desg="Co-Founder & Director" link="https://www.linkedin.com/in/brijeshagrawal"/>
+            <Box in={ing} bg={bgg} img={brijesh} name="Brijesh Agarwal" comp="Indiamart" desg="Co-Founder & Director" link="https://www.linkedin.com/in/brijeshagrawal" />
           </div>
         </Carousel>;
 

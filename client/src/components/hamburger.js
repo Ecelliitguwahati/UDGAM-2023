@@ -1,9 +1,8 @@
 import React from "react";
 import "./hamburger.css";
-import { Button } from "@cred/neopop-web/lib/components";
+//import { Button } from "@cred/neopop-web/lib/components";
 import "./Home/navbar_landing.css";
-import Icon from "../icons/icon.png";
-import Buy from "../icons/Ticket.png";
+
 import contact from "./../icons/contact.svg";
 import aboutUs from "./../icons/aboutUs.svg";
 import { useState } from "react";
@@ -22,24 +21,24 @@ function Hamburger() {
 	const [s1, sets1] = useState("hidden");
 	const [s2, sets2] = useState("hidden");
 	const [s3, sets3] = useState("hidden");
-	const [email, setEmail] = useState("");
+	const [emailhum, setEmail] = useState("");
 	const handleChange = (e) =>
-	setEmail(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
-	async function maillist(){
-		console.log(email.email)
-	  if(email.email){
+		setEmail(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
+	async function maillist() {
+		console.log(emailhum.emailhum)
+		if (emailhum.emailhum) {
 
-	  await axios.post('/mailpass', { email:email.email }).then(()=>   toast("Mail has been sent if you have really purchased the pass"))
-	  .catch(function (error) {
-		//console.log(error.toJSON());
-	 toast("Some unknown error has occured");
-		return;
-	  });
-	}
-	else{
-	  toast("Field is empty")
-	}
-	window.location.reload()
+			await axios.post('/mailpass', { email: emailhum.emailhum }).then(() => toast("Mail has been sent if you have really purchased the pass"))
+				.catch(function (error) {
+					console.log(error.toJSON());
+					toast("Some unknown error has occured");
+					return;
+				});
+		}
+		else {
+			toast("Field is empty")
+		}
+		window.location.reload()
 	}
 	return (
 		<>
@@ -71,7 +70,7 @@ function Hamburger() {
 									<p
 										className="font-face-asl"
 										onMouseEnter={() => {
-									    	sets("visible");
+											sets("visible");
 										}}
 										onMouseLeave={() => {
 											sets("hidden");
@@ -150,7 +149,7 @@ function Hamburger() {
 								href="https://www.ecelliitg.in"
 								style={{ textDecoration: `none` }}
 							>
-								
+
 								<p className="Among_Us humnav">
 									<p className="font-face-asl">
 										About Us
@@ -169,36 +168,36 @@ function Hamburger() {
 								</p>
 							</div>
 							<div className="bakwas">
-							<div>
-								<br />
-								<input
-									className="input_pass"
-									placeholder="Enter Your Mail..."
-									name="email"
-									onChange={handleChange}
-								/>
-								
-							  </div>
-							    <div onClick={() => maillist()} style={{marginTop:'16px', marginLeft:'-2px'}}><Submit/></div>
+								<div>
+									<br />
+									<input
+										className="input_pass"
+										placeholder="Enter Your Mail..."
+										name="emailhum"
+										onChange={handleChange}
+									/>
+
+								</div>
+								<div onClick={() => maillist()} style={{ marginTop: '16px', marginLeft: '-2px' }}><Submit /></div>
 							</div>
 						</div>
 
-						<div className="brrr" style={{marginRight:'10px'}}>
-							<div style={{marginRight:'-15px'}}>
-								
-								<Insta/>
+						<div className="brrr" style={{ marginRight: '10px' }}>
+							<div style={{ marginRight: '-15px' }}>
+
+								<Insta />
 							</div>
-							<div style={{marginRight:'-15px'}}>
-								
-								<Yout/>
+							<div style={{ marginRight: '-15px' }}>
+
+								<Yout />
 							</div>
-							<div style={{marginRight:'-15px'}}>
-								
-								<Linke/>
+							<div style={{ marginRight: '-15px' }}>
+
+								<Linke />
 							</div>
 							<div>
-								
-								<Twit/>
+
+								<Twit />
 							</div>
 						</div>
 					</div>

@@ -65,6 +65,26 @@ background-color: #09021C;
 
 
 }
+.rowspeak {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: 60px 207px 60px 288px; */
+    height: max-content;
+    padding: 30px 0;
+}
+
+.contspeak{
+    width: 33.33%;
+}
+.contspeak div{
+    margin: 0 auto;
+  }
+.contspeak div img{
+  text-align: center;
+}
 
 @font-face {
     font-family: 'ActionSansR';
@@ -430,6 +450,25 @@ background-color: #09021C;
         .car{
             padding: 10%;
         }
+        .contspeak{
+    
+            margin:0;
+        }
+    }
+        @media (max-width:1112px) {
+        .contspeak{
+            width:50%;
+        }
+}
+@media (max-width:600px) {
+    .contspeak{
+        width:100%;
+        margin: 5%;
+    }
+
 }
 
 
+.currentspeaktit h1{
+    color:#FC97D9 !important;
+}

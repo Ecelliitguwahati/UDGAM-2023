@@ -1,6 +1,5 @@
-import {useState,React} from 'react'
+import { useState, React } from 'react'
 import "./footer.css"
-import { Button } from '@cred/neopop-web/lib/components';
 import Insta from './Insta';
 import CompanyLogo from './CompanyLogo.svg';
 import Yout from './Yout';
@@ -10,48 +9,48 @@ import Submit from './Submit';
 import axios from '../../axios';
 import { toast } from 'react-toastify';
 function Footer() {
-  const [email, setEmail] = useState("");
+  const [listmail, setEmail] = useState("");
   const handleChange = (e) =>
-  setEmail(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
-  async function maillist(){
-    if(email.email){
+    setEmail(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
+  async function maillist() {
+    if (listmail.listmail) {
 
-    await axios.post('/addtolist', { email }).then(()=>   toast("You have been added to our mailing list"))
-    .catch(function (error) {
-      //console.log(error.toJSON());
-   toast("Some unknown error has occured");
-      return;
-    });
-  }
-  else{
-    toast("Field is empty")
-  }
+      await axios.post('/addtolist', {email: listmail }).then(() => toast("You have been added to our mailing list"))
+        .catch(function (error) {
+          //console.log(error.toJSON());
+          toast("Some unknown error has occured");
+          return;
+        });
+    }
+    else {
+      toast("Field is empty")
+    }
   }
   return (
     <>
-    <footer className="footer">
-      <div className="footer__container">
-        <div className="footer__top">
-          <div className='c2'>
-          <div className="company__info">
-            <div className="company__logo" >
-              <img src={CompanyLogo} alt='company logo'/>
-            </div>
-          </div>
-          <div className="company__info_text">
-            <p className="footer__title2">E-Cell,IIT Guwahati<br></br> Assam-7810389</p>
-            <p className="company__description">
-              edc@iitg.ac.in
-            </p>
-            <p className="company__description">
-              udgam@iitg.ac.in
-            </p>
-            <p className="company__description">
-              +91 7637833974
-            </p>
-            <div className="brrr">
-              <div style={{marginRight:'-14px'}}>
-                {/* <Button
+      <footer className="footer">
+        <div className="footer__container">
+          <div className="footer__top">
+            <div className='c2'>
+              <div className="company__info">
+                <div className="company__logo" >
+                  <img src={CompanyLogo} alt='company logo' />
+                </div>
+              </div>
+              <div className="company__info_text">
+                <p className="footer__title2">E-Cell,IIT Guwahati<br></br> Assam-7810389</p>
+                <p className="company__description">
+                  edc@iitg.ac.in
+                </p>
+                <p className="company__description">
+                  udgam@iitg.ac.in
+                </p>
+                <p className="company__description">
+                  +91 7637833974
+                </p>
+                <div className="brrr">
+                  <div style={{ marginRight: '-14px' }}>
+                    {/* <Button
                 variant="primary"
                 kind="elevated"
                 size="big"
@@ -73,10 +72,10 @@ function Footer() {
 
 
               </Button> */}
-              <Insta/>
-              </div>
-              <div style={{marginRight:'-14px'}}>
-                {/* <Button
+                    <Insta />
+                  </div>
+                  <div style={{ marginRight: '-14px' }}>
+                    {/* <Button
                 variant="primary"
                 kind="elevated"
                 size="big"
@@ -100,10 +99,10 @@ function Footer() {
                   </defs>
                 </svg>
               </Button> */}
-              <Yout/>
-              </div>
-              <div style={{marginRight:'-14px'}}>
-                {/* <Button
+                    <Yout />
+                  </div>
+                  <div style={{ marginRight: '-14px' }}>
+                    {/* <Button
                 variant="primary"
                 kind="elevated"
                 size="big"
@@ -128,10 +127,10 @@ function Footer() {
 
 
               </Button> */}
-                <Linke/>
-              </div>
-              <div>
-                 {/* <Button
+                    <Linke />
+                  </div>
+                  <div>
+                    {/* <Button
                 variant="primary"
                 kind="elevated"
                 size="big"
@@ -156,50 +155,50 @@ function Footer() {
 
 
               </Button> */}
-                <Twit/>
+                    <Twit />
+                  </div>
+                </div>
               </div>
-            </div>
+
             </div>
 
-          </div>
-          
-          <div className="right_footer">
-            <p className="dontmissmagic">Don't miss the Magic</p>
-            <p href="" className="signup">Sign up to receive Event notification and Updates</p>
-            <div className='bakwas'>
-            <div style={{marginTop:'-2px'}}><br /><input className="input_pass5" placeholder="Enter Your Mail..." name="email" id="email" onChange={handleChange} /></div>
-            <div onClick={() => maillist()} style={{marginTop:'15px', marginLeft:'-2px',cursor:"pointer"}} ><Submit/></div>
-            </div>
+            <div className="right_footer">
+              <p className="dontmissmagic">Don't miss the Magic</p>
+              <p href="" className="signup">Sign up to receive Event notification and Updates</p>
+              <div className='bakwas'>
+                <div className="bakwas1" style={{ marginTop: '-2px' }}><br /><input className="input_pass5" placeholder="Enter Your Mail..." name="listmail" id="listmail" onChange={handleChange} /></div>
+                <div className="bakwas2" onClick={() => maillist()} style={{ marginTop: '15px', marginLeft: '-2px', cursor: "pointer" }} ><Submit /></div>
+              </div>
 
+            </div>
           </div>
+
         </div>
 
+      </footer>
+      <div className="beyond-footer">
+
+        <div className="row justify-content-between">
+          <div className="col-lg-4 text-center">
+            <a className="beyond-footer-links" href="/termsandconditions" target="_blank">
+              Terms and conditions
+
+            </a>
+          </div>
+          <div className="col-lg-4 text-center py-auto">
+            <a className="beyond-footer-links" href="/privacypolicy" target="_blank">
+              Privacy policy
+
+            </a>
+          </div>
+          <div className="col-lg-4 text-center py-auto">
+            <a className="beyond-footer-links" href="/refundpolicy" target="_blank">
+              Refund policy
+
+            </a>
+          </div>
+        </div>
       </div>
-          
-    </footer>
-    <div className="beyond-footer">
-
-<div className="row justify-content-between">
-    <div className="col-lg-4 text-center">
-        <a className="beyond-footer-links" href="/termsandconditions" target="_blank">
-            Terms and conditions
-
-        </a>
-    </div>
-    <div className="col-lg-4 text-center py-auto">
-        <a className="beyond-footer-links" href="/privacypolicy" target="_blank">
-            Privacy policy
-
-        </a>
-    </div>
-    <div className="col-lg-4 text-center py-auto">
-        <a className="beyond-footer-links" href="/refundpolicy" target="_blank">
-            Refund policy
-
-        </a>
-    </div>
-</div>
-</div>
     </>
   )
 }

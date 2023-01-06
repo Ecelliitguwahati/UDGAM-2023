@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import arrow from "./../../icons/loadingPage/arrow.svg";
 import div from "./../../icons/loadingPage/div.svg";
 import bulb from "./../../icons/loadingPage/bulb.svg";
@@ -66,7 +66,7 @@ function Loading() {
 					animate={{
 						x: [100, -50],
 						y: [20, -10],
-						rotate: [-26.5, 23.5],
+					//	rotate: [-26.5, 23.5],
 						opacity: [0.4, 0.6, 0.8, 1, 5],
 						rotate: [-31.74, -45],
 					}}
@@ -81,7 +81,7 @@ function Loading() {
 					animate={{
 						x: [0, 20],
 						y: [0, -30],
-						rotate: [-26.5, 23.5],
+					//	rotate: [-26.5, 23.5],
 						opacity: [0.4, 0.6, 0.8, 1, 5],
 						rotate: [-31.74, 50],
 						scale: 1.05,

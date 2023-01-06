@@ -1,56 +1,44 @@
 import React from 'react'
 import { Button } from '@cred/neopop-web/lib/components';
 import './sponsors.css'
-import sponsordemo from '../icons/sponsordemo.png'
 import Navbar from '../components/Navbar';
 import Tata from '../sponsors/TATA.png';
-import Tata2 from '../sponsors/TATA.svg';
-import lt from '../sponsors/lt.svg';
-import gfg from '../sponsors/gfg.svg';
-import ghaskhabar from '../sponsors/ghaskhabar.svg';
-import INA from '../sponsors/INA.svg';
-import INB from '../sponsors/INB.svg';
-import jordan from '../sponsors/jordan.svg';
-import kota from '../sponsors/kota.svg';
-import startuplab from '../sponsors/startuplab.svg';
-import technalogy from '../sponsors/technalogy.svg';
-import UIV from '../sponsors/UIV.svg';
-import venture from '../sponsors/venture.svg';
-import whev from '../sponsors/whev.svg';
+import Tata2 from '../sponsors/TATA2.png';
+import gfg from '../sponsors/gfg.png';
+import jordan from '../sponsors/jordan.png';
+import kota from '../sponsors/kota.png';
 import Footer from '../components/Home/footer';
-import idfc from '../sponsors/idfc.svg'
-import havells from '../sponsors/havells.svg';
-import zaloni from '../sponsors/zaloni.svg';
-import weh from '../sponsors/weh.svg'
-import bosch from '../sponsors/bosch.svg'
-import nrl from '../sponsors/nrl.svg'
-import tsl from '../sponsors/tsl.svg'
-import uiv from '../sponsors/UIV.svg'
-import khaask from '../sponsors/khaask.svg'
-import ss from '../sponsors/ss.svg'
-import ia from '../sponsors/ia.svg'
-import ve from '../sponsors/ve.svg'
-import ib from '../sponsors/ib.svg'
-import ta from '../sponsors/ta.svg'
-import lwt from '../sponsors/lwt.svg'
-import toi from '../sponsors/toi.svg'
-import jb from '../sponsors/jb.svg'
-import tpf from '../sponsors/tpf.svg'
-import airt from '../sponsors/airt.svg'
-import pmi from '../sponsors/pmi.svg'
-import why from '../sponsors/why.svg'
-import ep from '../sponsors/ep.svg'
-import tnm from '../sponsors/tnm.svg'
-import youthi from '../sponsors/youthi.svg'
+
+import idfc from '../sponsors/idfc.png'
+import havells from '../sponsors/havells.png';
+import zaloni from '../sponsors/zaloni.png';
+import weh from '../sponsors/weh.png'
+import bosch from '../sponsors/bosch.png'
+import nrl from '../sponsors/nrl.png'
+import tsl from '../sponsors/tsl.png'
+import uiv from '../sponsors/UIV.png'
+import khaask from '../sponsors/khaask.png'
+import ss from '../sponsors/ss.png'
+import ia from '../sponsors/ia.png'
+import ve from '../sponsors/ve.png'
+import ib from '../sponsors/ib.png'
+import ta from '../sponsors/ta.png'
+import lwt from '../sponsors/lwt.png'
+import toi from '../sponsors/toi.png'
+import jb from '../sponsors/jb.png'
+import tpf from '../sponsors/tpf.png'
+import airt from '../sponsors/airt.png'
+import pmi from '../sponsors/pmi.png'
+import why from '../sponsors/why.png'
+import ep from '../sponsors/ep.png'
+import tnm from '../sponsors/tnm.png'
+import youthi from '../sponsors/youthi.png'
 import cb from '../sponsors/cb.svg'
 import sn from '../sponsors/sn.svg'
-import bl from '../sponsors/bl.svg'
 import ideap from '../sponsors/ideap.svg'
+import bl from '../sponsors/bl.svg'
 import gt from '../sponsors/gt.svg'
 import tnec from '../sponsors/tnec.svg'
-
-
-
 import { useState } from 'react';
 
 
@@ -199,8 +187,8 @@ function Sponsors() {
                     </div>
 
                     <div>
-                        <a href='https://pminterviews.in/' target="_blank"><img src={pmi} /></a>
-                        <p>InterviEW Preparations Partner</p>
+                        <a href='https://pmi.dorik.io/' target="_blank"><img src={pmi} /></a>
+                        <p>Interview Preparations Partner</p>
                     </div>
 
                     <div>

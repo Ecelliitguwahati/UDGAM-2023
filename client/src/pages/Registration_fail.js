@@ -1,8 +1,6 @@
 
 
 import './Registration_fail.css'
-import dummyQR from "../icons/dummyQR.png"
-import final1 from "../icons/final1.png"
 import errorpng from "../icons/Error 1.svg"
 import Navbar from '../components/Navbar';
 function RegFail() {

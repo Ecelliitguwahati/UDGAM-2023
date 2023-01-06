@@ -32,9 +32,9 @@ function Contactus() {
     if(contact.firstName && contact.lastName && contact.email && contact.reason && contact.message){
       await axios.post('/contact', { firstName, lastName, email, reason, message }).then(
         (res) => {
-          const success = res.status === 201;
-          toast ("Your message is received");
           navigate("/contactus");
+          toast ("Your message is received");
+          
         }).catch(function (error) {
           //console.log(error.toJSON());
           toast(error.message)

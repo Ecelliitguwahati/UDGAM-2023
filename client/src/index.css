@@ -21,14 +21,24 @@ body {
 background-size: cover;
 }
 
-input{
+input,textarea{
   padding-left: 10px;
   
 }
-input:focus{
-  border: 0px;
+textarea:focus, input:focus{
+  outline: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
 a:link { text-decoration: none; }
 a:link:hover { text-decoration: none; }
 input,textarea,select{
