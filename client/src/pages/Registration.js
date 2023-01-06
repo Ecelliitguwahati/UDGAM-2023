@@ -49,12 +49,13 @@ useEffect(() => {
     var msg;
     e.preventDefault();
     try {
-
+      
       if (user.password !== user.confirmPassword) {
 
         toast('Passwords do not match');
         return;
       }
+      
       else {
         let firstName = user.firstName; let lastName = user.lastName; let email = user.email; let outlook = user.outlook; let contact = user.contact; let department = user.department; let rollno = user.rollno; let password = user.password; let confirmPassword = user.confirmPassword;
         //Check if outlook, rollno, department, there or nor
@@ -68,7 +69,7 @@ useEffect(() => {
           }
         }
         // First check if he purchased pass
-
+        document.getElementById("warningg").style.display="block"
         await axios.post('/checkifpurchased', { email }).then(
           (res) => {
         
@@ -154,6 +155,7 @@ useEffect(() => {
                     razorpaySignature: response.razorpay_signature,
                   });
                   // Now Payment is completed
+                  document.getElementById("warningg").innerText="Payment successful, please hang on!!"
                   setPaid(true);
                   await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword }).then(
                     (res) => {
@@ -218,8 +220,11 @@ useEffect(() => {
     <body style={{ height: "max-content" }}>
       <Navbar />
       <div>
+      
         <form className='register_entire_page' onSubmit={handleSubmit}>
+          
           <div className="register_dabba">
+            
             <div className='register-progressbar'>
               <div className='c1_reg'>
                 PERSONAL DETAILS
@@ -231,6 +236,7 @@ useEffect(() => {
 
             </div>
             <div className="registerform" >
+              
               <h1 className="Pinfo">PERSONAL INFORMATION</h1>
               <p className="H21 info_reg_txt">
                 * Indicates required field
@@ -312,6 +318,9 @@ useEffect(() => {
                 {/* <Checkout title="CHECK OUT →" /> */}
                 <CheckOut/>
                 </button>
+                <p className="H21 info_reg_txt" id="warningg">
+                Please wait, do not refresh
+              </p>
             </div>
 
             {/* <div className="vector">

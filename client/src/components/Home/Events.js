@@ -246,7 +246,7 @@ opportunities.
 					<div id="priceDate">
 						<div id="price">
 							<p className="pdHeading">Price</p>
-							<p className="price">₹399</p>
+							<p className="price">₹399 --> ₹199</p>
 						</div>
 						<div id="date">
 							<p className="pdHeading">Date</p>

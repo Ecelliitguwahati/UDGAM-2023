@@ -218,7 +218,16 @@
     border-style: solid;
     border-color: #DDF140;
 }
-
+#warningg{
+    margin: 0 6%;
+    font-size: 20px;
+    color:red;
+    display:none;
+    line-height: 26px;
+    text-align: center;
+    font-family: Action Sans;
+    margin-top: 2px;
+}
 .c1_reg{
     display: flex;
     background: #D4F34A;
