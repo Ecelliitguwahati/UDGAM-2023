@@ -8,6 +8,7 @@ import gfg from '../sponsors/gfg.png';
 import jordan from '../sponsors/jordan.png';
 import kota from '../sponsors/kota.png';
 import Footer from '../components/Home/footer';
+
 import idfc from '../sponsors/idfc.png'
 import havells from '../sponsors/havells.png';
 import zaloni from '../sponsors/zaloni.png';
@@ -24,7 +25,7 @@ import ib from '../sponsors/ib.png'
 import ta from '../sponsors/ta.png'
 import lwt from '../sponsors/lwt.png'
 import toi from '../sponsors/toi.png'
-import jb from '../sponsors/jb.png'
+import jb from '../sponsors/jb.svg'
 import tpf from '../sponsors/tpf.png'
 import airt from '../sponsors/airt.png'
 import pmi from '../sponsors/pmi.png'
@@ -32,7 +33,12 @@ import why from '../sponsors/why.png'
 import ep from '../sponsors/ep.png'
 import tnm from '../sponsors/tnm.png'
 import youthi from '../sponsors/youthi.png'
-
+import cb from '../sponsors/cb.svg'
+import sn from '../sponsors/sn.svg'
+import ideap from '../sponsors/ideap.svg'
+import bl from '../sponsors/bl.svg'
+import gt from '../sponsors/gt.svg'
+import tnec from '../sponsors/tnec.svg'
 import { useState } from 'react';
 
 
@@ -191,6 +197,11 @@ function Sponsors() {
                     </div>
 
                     <div>
+                        <a href='https://coolberg.in/' target="_blank"><img src={cb} /></a>
+                        <p>Beverage Partner</p>
+                    </div>
+
+                    <div>
                         <a href='https://www.geeksforgeeks.org/' target="_blank"><img src={gfg} /></a>
                         <p>Campus Ambassador Partner</p>
                     </div>
@@ -216,6 +227,11 @@ function Sponsors() {
                     </div>
 
                     <div>
+                        <a href='https://burgeon.co.in/' target="_blank"><img src={bl} /></a>
+                        <p>Legal Partner</p>
+                    </div>
+
+                    <div>
                         <a href='https://interviewbuddy.in/' target="_blank"><img src={ib} /></a>
                         <p>Learning Partner - CAP</p>
                     </div>
@@ -223,11 +239,6 @@ function Sponsors() {
                     <div>
                         <a href='https://techanalogy.org/' target="_blank"><img src={ta} /></a>
                         <p>Knowledge Partner - CAP</p>
-                    </div>
-
-                    <div>
-                        <a href='https://learningwhiletravelling.com/home' target="_blank"><img src={lwt} /></a>
-                        <p>Ecosystem Partner</p>
                     </div>
 
                     <div>
@@ -254,11 +265,39 @@ function Sponsors() {
                         <a href='https://www.khaskhabar.com/' target="_blank"><img src={khaask} /></a>
                         <p>Media Partner</p>
                     </div>
+                    
+
+                    <div>
+                        <a href='https://www.startupnews.fyi/' target="_blank"><img src={sn} /></a>
+                        <p>Media Partner</p>
+                    </div>
 
                     <div>
                         <a href='https://thenewsmill.com/' target="_blank"><img src={tnm} /></a>
                         <p>Media Partner</p>
                     </div>
+
+                    <div>
+                        <a href='https://www.ideapreneurindia.com/' target="_blank"><img src={ideap} /></a>
+                        <p>Media Partner</p>
+                    </div>
+
+                    <div>
+                        <a href='https://guwahatitimes.com/' target="_blank"><img src={gt} /></a>
+                        <p>Media Partner</p>
+                    </div>
+
+                    <div>
+                        <a href='https://www.northeasternchronicle.in/' target="_blank"><img src={tnec} /></a>
+                        <p>Media Partner</p>
+                    </div>
+
+                    
+                    <div>
+                        <a href='https://learningwhiletravelling.com/home' target="_blank"><img src={lwt} /></a>
+                        <p>Ecosystem Partner</p>
+                    </div>
+
                 </div>
 
 
