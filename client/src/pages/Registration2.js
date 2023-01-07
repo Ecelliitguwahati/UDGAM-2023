@@ -161,16 +161,7 @@ navigate({pathname: '/registration/failure'});
           
           <div className="register_dabba">
             
-            <div className='register-progressbar'>
-              <div className='c1_reg'>
-                PERSONAL DETAILS
-              </div>
-              <div className='c2_reg'>
-                PAYMENT
-              </div>
-
-
-            </div>
+            
             <div className="registerform" >
               
               <h1 className="Pinfo">PERSONAL INFORMATION</h1>
