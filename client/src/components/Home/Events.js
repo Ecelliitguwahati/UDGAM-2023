@@ -23,6 +23,7 @@ function Events() {
 	const [img, setimg] = useState(meuc);
 	const [ig, setig] = useState(ruc);
 	const [ig2, setig2] = useState(ruc);
+	const [ig3, setig3] = useState(ruc);
 	const eventsdata = [
 		{
 			
@@ -154,20 +155,20 @@ function Events() {
 							<div
 								className="register"
 								onMouseEnter={() => {
-									setig(rc);
+									setig3(rc);
 								}}
 								onMouseLeave={() => {
-									setig(ruc);
+									setig3(ruc);
 								}}
 							>
 								<a
-									href={eventsdata[0].link}
+									href={eventsdata[1].link}
 									style={{ textDecoration: `none` }}
 									target="_blank"
 								>
 									<button className="reg">
 										Register
-										<img src={ig} alt="" color="#3A10AD" />
+										<img src={ig3} alt="" color="#3A10AD" />
 									</button>
 								</a>
 								<button className="live1">

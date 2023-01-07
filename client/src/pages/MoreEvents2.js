@@ -228,6 +228,7 @@ const MoreEvents2 = () => {
             "payment": "Free", "link": "https://unstop.com/competition/stonks-11-virtual-stock-market-udgam-2023-indian-institute-of-technology-iit-guwahati-578073",
             "eventDesc": "Stonks 11 is a Four Day Stock Market Simulation game that’ll test and challenge the trader within you. Use your stock market knowledge without actually investing. Experience investing in the most risk-free way possible!"
         }
+        
 
     ]
 
