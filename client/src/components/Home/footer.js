@@ -13,9 +13,10 @@ function Footer() {
   const handleChange = (e) =>
     setEmail(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
   async function maillist() {
-    if (listmail.listmail) {
+   const mailid=listmail.listmail;
+    if (mailid) {
 
-      await axios.post('/addtolist', {email: listmail }).then(() => toast("You have been added to our mailing list"))
+      await axios.post('/addtolist', {email: mailid.trim() }).then(() => toast("You have been added to our mailing list"))
         .catch(function (error) {
           //console.log(error.toJSON());
           toast("Some unknown error has occured");

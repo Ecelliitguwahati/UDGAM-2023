@@ -16,10 +16,10 @@ function ResetPass() {
         setUser(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
     async function handleSubmit(e){
          e.preventDefault();
-         let email=user.email;
+         let email=user.email.trim();
          await axios.post('/resetpasswordreq', { email}).then((res)=>{
             console.log(res.data.message)
-            if(res.data.message=="YES"){
+            if(res.data.message==="YES"){
             toast("Request successfully generated. Please check mail")
             navigate("/resetpass")
             }
@@ -33,11 +33,11 @@ function ResetPass() {
           });
     }
   return (
-    <div style={{ height: "100%" }}>
+    <div style={{ height: "100vh", background: "linear-gradient(to bottom, #1A074E 0%, #060213 100%)" }}>
     <form onSubmit={handleSubmit}>
         <h1 className="Pinfo">RESET YOUR PASSWORD REQUEST</h1>
         <div className="first_last_flex last_field_regg">
-            <input className='wid_text_Field_100' type="email" name="email" required={true} placeholder="Email with which you purchased pass (not OUTLOOK) *" onChange={handleChange} />
+            <input className='wid_text_Field_100' type="email" name="email" required={true} placeholder="Email ID or Outlook ID with which you purchased pass *" onChange={handleChange} />
         </div>
         <div className="RESETPWD" type="submit"><Button
             variant="primary"

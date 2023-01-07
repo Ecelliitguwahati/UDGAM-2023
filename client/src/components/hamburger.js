@@ -25,10 +25,9 @@ function Hamburger() {
 	const handleChange = (e) =>
 		setEmail(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
 	async function maillist() {
-		console.log(emailhum.emailhum)
-		if (emailhum.emailhum) {
+		if (emailhum.emailhum.trim()) {
 
-			await axios.post('/mailpass', { email: emailhum.emailhum }).then(() => toast("Mail has been sent if you have really purchased the pass"))
+			await axios.post('/mailpass', { email: emailhum.emailhum.trim() }).then(() => toast("Mail has been sent if you have really purchased the pass"))
 				.catch(function (error) {
 					console.log(error.toJSON());
 					toast("Some unknown error has occured");

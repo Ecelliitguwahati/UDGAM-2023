@@ -9,8 +9,8 @@ import axios from '../axios';
 
 function ResetPassDo() { const navigate=useNavigate();
     const queryParameters = new URLSearchParams(window.location.search)
-    const token = queryParameters.get("token")
-    const email = queryParameters.get("email")
+    const token = queryParameters.get("token").trim()
+    const email = queryParameters.get("email").trim()
     const [user, setUser] = useState({
         newpwd: "",
         confirmPassword: "",
@@ -23,7 +23,7 @@ function ResetPassDo() { const navigate=useNavigate();
             toast("Passwords doesnt match");
             return;
         }
-        let newpwd=user.newpwd;
+        let newpwd=user.newpwd.trim();
         await axios.post('/resetpassword', { email, newpwd, token }).then((res)=>{
             console.log(res.data.message)
             if(res.data.message=="YES"){
@@ -41,7 +41,7 @@ function ResetPassDo() { const navigate=useNavigate();
      
     }
     return (
-        <div style={{ height: "100%" }}>
+        <div style={{ height: "100vh", background: "linear-gradient(to bottom, #1A074E 0%, #060213 100%)" }}>
             <form onSubmit={handleSubmit}>
                 <h1 className="Pinfo">RESET YOUR PASSWORD</h1>
                 <div className="first_last_flex last_field_regg">
