@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Schedule from "./pages/schedule";
 import Contactus from "./pages/contactus";
 import Registration from "./pages/Registration";
+import Registration2 from "./pages/Registration2";
 import RegSuc from "./pages/Registration_success";
 import RegFail from "./pages/Registration_fail";
 import NotFound from "./pages/notFound";
@@ -70,10 +71,12 @@ function App() {
 						path="/resetpass/do"
 						element={<ResetPassDo />}
 					/>
-					<Route exact path="*" element={<NotFound />} />
+					
 					<Route exact path="/termsandconditions" element={<Terms />} />
 					<Route exact path="/privacypolicy" element={<Privacy />} />
 					<Route exact path="/refundpolicy" element={<Refund />} />
+					<Route exact path="/buy" element={<Registration2 />} />
+					<Route exact path="*" element={<NotFound />} />
 				</Routes>
 
 			</Router>
