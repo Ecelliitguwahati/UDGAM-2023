@@ -82,7 +82,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 50px;
-    line-height: 20px;
+    line-height: 52px;
     /* identical to box height, or 42% */
 
     display: flex;
@@ -103,7 +103,7 @@
     padding-bottom: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .paymentFailBoxLeft{
@@ -115,17 +115,35 @@
 
 .FacedOtherIssueBox{
     display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+flex-direction: column;
+justify-content: start;
+
 padding: 50px 0;
 gap: 10px;
 isolation: isolate;
 
 }
+.FacedOtherIssueBoxarrow{
+    display: flex;
+    /* top: 50px; */
+    /* padding: 18px 4px; */
+    color: #D4F34A;
+    justify-content: start;
+    width: 100%;
+    font-family:Action Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-decoration: none;
+}
 .FacedOtherIssueBox p{
-    width: 198px;
-height: 24px;
+    /* width: 198px;
+height: 24px; */
 
 font-family: 'Action Sans';
 font-style: normal;
@@ -552,4 +570,18 @@ background-image: url("../icons/back1.png");
         width: 100%;
         
     }
+}
+@media (max-width: 600px ){
+
+    .paymentFailBoxLeft {
+         padding: 0 ;
+
+    }
+    .paymentFailBoxRight{
+        padding-left: 10%;
+    }
+    .paymentFailEntireBox{
+        padding-top:  0px;
+}
+
 }

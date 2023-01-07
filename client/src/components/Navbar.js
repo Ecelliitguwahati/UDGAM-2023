@@ -141,7 +141,6 @@ function Navbar() {
 				{window.innerWidth > 700 ? <Hamburger /> : <Hamburgerph />}
 			</div>
 
-			<span>open</span>
 		</>
 	);
 }

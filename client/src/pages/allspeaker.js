@@ -49,7 +49,7 @@ function AllSpeakers() {
 				<h1 className="pastspeakerstitle">PAST SPEAKERS</h1>
 
 				<div class="sliderspeak row">
-					<div className="row">
+					<div className="row row-speaks">
 						<div className="img col-lg-3 col-sm-12">
 							<Box
 								in={iny}

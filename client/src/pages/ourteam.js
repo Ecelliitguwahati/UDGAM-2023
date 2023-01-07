@@ -87,6 +87,7 @@ function OurTeam() {
                     ]} />
                     <Dropdown team="TEAM INITIATIVES" img={teams} text={[
                         <ul>
+                            <li>Akshita Swarnkar</li>
                             <li>Anshika Meshram</li>
                             <li>Astha Gupta</li>
                             <li>Chhandam Pal</li>
@@ -96,6 +97,7 @@ function OurTeam() {
                             <li>Parth Sunilkumar Songire</li>
                             <li>Raunit Singh</li>
                             <li>Rishika Saria</li>
+                            <li>Sakshi Mahesh Sakhare </li>
                             <li>Shubhechha Mondal </li>
                             <li>Shuvrajit Deb Roy</li>
                         </ul>

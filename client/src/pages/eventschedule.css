@@ -1,0 +1,107 @@
+.schedulebody{
+    background: linear-gradient(to bottom, #1A074E 0%, #060213 100%);
+    height: max-content;
+    padding: 0 120px ;
+}
+.containerschedule{
+    width: 100%;
+    color: white;
+}
+
+.headingschedule{
+    font-family: Action Sans;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 100%;
+/* identical to box height, or 36px */
+
+display: flex;
+align-items: flex-end;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+border: 2px solid #7E51FF;
+
+padding: 20px 0;
+}
+.headingschedule span{
+    margin: 0 auto;
+}
+
+.datebox{
+    margin: 0;
+}
+.activebox{
+    padding: 20px 0;
+    border-bottom: 0px;
+}
+
+.schedule2nd{
+    display: flex;
+    flex-direction: row;
+}
+
+.timescheule{
+    width: 10%;
+}
+.schedulebox{
+    width: 90%;
+}
+
+.timescheule{
+    display: flex;
+    flex-direction: column;
+    
+}
+.timescheule div{
+    padding-bottom: 100px;
+}
+
+.schedule2nd{
+    border: 2px solid #7E51FF;
+    border-top: 0px;
+}
+
+.timescheule{
+    margin: 40px 0;
+    padding-left: 40px;
+    padding-right: 20px;
+    border-right:1px solid #FFFFFF;
+    
+}
+
+.timess{
+    text-align: right;
+    font-family: Action Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 100%;
+/* identical to box height, or 20px */
+
+display: flex;
+align-items: flex-end;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.eventbox{
+    height: 120px ;
+    border: 1px dashed #FFFFFF;
+    border-left: 0px;
+    border-right:0px;
+}
+.schedulebox{
+    margin: 40px 0;
+}
+.eventcont{
+    position: relative;
+}
+.trueeventbox{
+    position: absolute;
+    height: 240px;
+    width: 100%;
+    background-color: #2D1373;
+}

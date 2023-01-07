@@ -21,6 +21,7 @@ import Terms from "./pages/termsandconds";
 import Privacy from "./pages/privacypolicy";
 import Refund from "./pages/refund";
 import MoreEvents3 from "./pages/MoreEvents3";
+import EventSchedule from "./pages/eventschedule";
 function App() {
 	const [disableScroll, setDisableScroll] = useState(true);
 	useEffect(() => {
@@ -59,6 +60,7 @@ function App() {
 					<Route exact path="/speakers" element={<AllSpeakers />} />
 					<Route exact path="/sponsors" element={<Sponsors />} />
 					<Route exact path="/comingsoon" element={<Schedule />} />
+					<Route exact path="/schedule2" element={<EventSchedule />} />
 					<Route exact path="/events/" element={<MoreEvents2 />} />
 					<Route exact path="/ourteam" element={<OurTeam />} />
 					<Route exact path="/resetpass" element={<ResetPass />} />
@@ -69,9 +71,9 @@ function App() {
 						element={<ResetPassDo />}
 					/>
 					<Route exact path="*" element={<NotFound />} />
-          <Route exact path="/termsandconditions" element={<Terms />} />
-          <Route exact path="/privacypolicy" element={<Privacy />} />
-          <Route exact path="/refundpolicy" element={<Refund />} />
+					<Route exact path="/termsandconditions" element={<Terms />} />
+					<Route exact path="/privacypolicy" element={<Privacy />} />
+					<Route exact path="/refundpolicy" element={<Refund />} />
 				</Routes>
 
 			</Router>

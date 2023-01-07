@@ -78,6 +78,7 @@ useEffect(() => {
           }).catch(function (error) {
             console.log(error.toJSON());
             toast(error.message);
+            navigate({pathname: '/registration/failure'});
             return;
           });
         // If he has purchased pass, we send him mail again
@@ -101,6 +102,7 @@ useEffect(() => {
             }).catch(function (error) {
               console.log(error.toJSON());
               toast(error.message);
+              navigate({pathname: '/registration/failure'});
               return;
             });
 
@@ -123,6 +125,7 @@ useEffect(() => {
           script.src = 'https://checkout.razorpay.com/v1/checkout.js';
           script.onerror = () => {
             toast('Razorpay SDK failed to load. Are you online?');
+            navigate({pathname: '/registration/failure'});
           };
           //Onload Razorpay
           script.onload = async () => {
@@ -133,6 +136,7 @@ useEffect(() => {
               }).catch(function (error) {
                 //console.log(error.toJSON());
                 toast(error.message);
+                navigate({pathname: '/registration/failure'});
                 return;
               });
               const { amount, id: order_id, currency } = result.data;
@@ -164,7 +168,7 @@ useEffect(() => {
                         setRegistered(true);
                       }
                     }).catch(function (error) {
-                      //console.log(error.toJSON());
+                      navigate({pathname: '/registration/failure'});
                       toast(error.message)
                     });
                 },
@@ -183,7 +187,9 @@ useEffect(() => {
               const paymentObject = new window.Razorpay(options);
               paymentObject.open();
             } catch (err) {
+
               toast(err);
+              navigate({pathname: '/registration/failure'});
               return;
             }
           };
@@ -193,7 +199,9 @@ useEffect(() => {
 
     }
     catch (error) {
+
       toast(error);
+navigate({pathname: '/registration/failure'});
     }
   }
 

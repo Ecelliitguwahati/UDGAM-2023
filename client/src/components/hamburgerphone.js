@@ -17,10 +17,13 @@ function Hamburgerph() {
                     <a href="/events">Events</a>
                 </div>
                 <div className='navbarphone'>
-                    <a href="/">Schedule</a>
+                    <a href="/comingsoon">Schedule</a>
                 </div>
                 <div className='navbarphone'>
                     <a href="/#merch">Merch</a>
+                </div>
+                <div className='navbarphone'>
+                    <a href="/speakers">Speakers</a>
                 </div>
                 <div className='navbarphone'>
                     <a href="/contactus">Contact us</a>
