@@ -90,19 +90,19 @@ function Registration() {
         .catch(async function (error) {
           setErrortimesmail(errortimesmail + 1);
           toast("Failed, trying again")
-          await mailpass();         
+          await mailpass();
           if (errortimesmail >= 5) {
-            toast("We are unable to send mails right now. Please contact us immediately"); 
+            toast("We are unable to send mails right now. Please contact us immediately");
             navigate({
               pathname: '/registration/success',
               search: `?payId=${paymentID}&text=SUCCESS&name=${user.firstName + " " + user.lastName}&email=${user.email}`,
-            }); 
+            });
           }
-      });
+        });
 
-       
-      }
-    
+
+    }
+
     if (resitered)
       mailpass(user.email);
   }, [resitered]);

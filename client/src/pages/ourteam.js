@@ -61,13 +61,13 @@ function OurTeam() {
 
                 <div id="teamD">
 
-                <Dropdown team="DEVELOPERS" img={teams} text={[
+                    <Dropdown team="DEVELOPERS" img={teams} text={[
                         <ul>
-                            <li> <a href='https://www.linkedin.com/in/iks1r/' target='_blank'> Raj Borogaon</a></li>
+                            <li> <a href='https://www.linkedin.com/in/anurag85/' target='_blank'> Anurag Kushwah</a></li>
+                            <li><a href='https://www.linkedin.com/in/divyesh-vankar/' target='_blank'>Divyesh Vankar</a></li>
                             <li><a href='https://www.linkedin.com/in/himanshi-g/' target='_blank'> Himanshi Gautam</a></li>
                             <li><a href='https://www.linkedin.com/in/priyansh-shrivastav/?trk=public_profile_samename-profile&originalSubdomain=in' target='_blank'> Priyansh Shrivastav</a></li>
-                            <li><a href='https://www.linkedin.com/in/divyesh-vankar/' target='_blank'>Divyesh Vankar</a></li>
-                           
+                            <li> <a href='https://www.linkedin.com/in/iks1r/' target='_blank'> Raj Borogaon</a></li>
                         </ul>
                     ]} />
                     <Dropdown team="DESIGN" img={teams} text={[
