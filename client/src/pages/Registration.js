@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 import './Registration.css';
 import axios from '../axios';
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Footer from '../components/Home/footer';
 import { toast } from 'react-toastify';
 import CheckOut from '../components/Home/CheckOutButton';
@@ -16,6 +16,8 @@ function Registration() {
   const [resitered, setRegistered] = useState(false);
   const [paymentID, setpaymentID] = useState("");
   const [paid, setPaid] = useState(false);
+  const [errortimes, setErrortimes] = useState(0);
+  const [errortimesmail, setErrortimesmail] = useState(0);
   const [user, setUser] = useState({
     firstName: "",
     lastName: "",
@@ -26,71 +28,127 @@ function Registration() {
     rollno: "",
     password: "",
     confirmPassword: "",
-    promocode:""
+    promocode: ""
   });
-  const promocodeset1="DECACORN"
+  const promocodeset1 = "DECACORN"
   //console.log(user.firstName, user.lastName, user.email, user.outlook, user.rollno, user.password, user.confirmPassword);
 
-  const handleChange = (e) =>{
+  const handleChange = (e) => {
     setUser(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
-    
+
     console.log(user.promocode)
   }
 
-useEffect(() => {
-  // action on update of promo
-  if(user.promocode===promocodeset1)
-  setorderAmount(199)
-  else
-  setorderAmount(399)
-}, [user.promocode]);
+  // TRIGGERED WHEN PROMO CODE ENTERED
+  useEffect(() => {
+    // action on update of promo
+    if (user.promocode === promocodeset1)
+      setorderAmount(199)
+    else
+      setorderAmount(399)
+  }, [user.promocode]);
+
+  // TRIGEERED WHEN USER PAYS
+  useEffect(() => {
+    const registeruser = async () => {
+      let firstName = user.firstName.trim(); let lastName = user.lastName.trim(); let email = user.email.trim(); let outlook = user.outlook.trim(); let contact = user.contact.trim(); let department = user.department.trim(); let rollno = user.rollno.trim(); let password = user.password.trim(); let confirmPassword = user.confirmPassword.trim();
+      await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword }).then(
+        (res) => {
+          const success = res.status === 201;
+          if (success) {
+            setRegistered(true);
+            return;
+          }
+        }).catch(async function (error) {
+          setErrortimes(errortimes + 1);
+          toast("Error occured, trying again !")
+          await registeruser();
+          if (errortimes >= 5) {
+            toast(error.message);
+            navigate({ pathname: '/registration/failure' });
+          }
+        });
+    }
+    if (paid)
+      registeruser();
+  }, [paid]);
+
+  //TRIGGERED WHEN USER REGISTERS
+  useEffect(() => {
+    const mailpass = async (email) => {
+      await axios.post('/mailpass', { email }).then(
+        (res) => {
+          const success = res.data.message === "YES";
+          if (success) {
+            navigate({
+              pathname: '/registration/success',
+              search: `?payId=${paymentID}&text=SUCCESS&name=${user.firstName + " " + user.lastName}&email=${user.email}`,
+            });
+            return;
+          }
+        })
+        .catch(async function (error) {
+          setErrortimesmail(errortimesmail + 1);
+          toast("Failed, trying again")
+          await mailpass();         
+          if (errortimesmail >= 5) {
+            toast("We are unable to send mails right now. Please contact us immediately"); 
+            navigate({
+              pathname: '/registration/success',
+              search: `?payId=${paymentID}&text=SUCCESS&name=${user.firstName + " " + user.lastName}&email=${user.email}`,
+            }); 
+          }
+      });
+
+       
+      }
+    
+    if (resitered)
+      mailpass(user.email);
+  }, [resitered]);
 
   async function handleSubmit(e) {
     var msg;
     e.preventDefault();
     try {
-      
+
       if (user.password !== user.confirmPassword) {
 
         toast('Passwords do not match');
         return;
       }
-      
+
       else {
         let firstName = user.firstName; let lastName = user.lastName; let email = user.email; let outlook = user.outlook; let contact = user.contact; let department = user.department; let rollno = user.rollno; let password = user.password; let confirmPassword = user.confirmPassword;
         //Check if outlook, rollno, department, there or nor
-        if(outlook || rollno || department){
-          if(outlook && rollno && department){
+        if (outlook || rollno || department) {
+          if (outlook && rollno && department) {
 
           }
-          else{
+          else {
             toast("One or more details are empty if you are IIT Guwahati student");
             return;
           }
         }
         // First check if he purchased pass
-        document.getElementById("warningg").style.display="block"
+        document.getElementById("warningg").style.display = "block"
         await axios.post('/checkifpurchased', { email }).then(
           (res) => {
-        
+
             msg = res.data.message;
             console.log(msg)
           }).catch(function (error) {
             console.log(error.toJSON());
             toast(error.message);
-            navigate({pathname: '/registration/failure'});
+            navigate({ pathname: '/registration/failure' });
             return;
           });
         // If he has purchased pass, we send him mail again
 
         if (msg == "YES") {
           toast("You had already purchased the UDGAM Pass. However we will still mail you the credentials");
-          await mailpass(user.email);
-          navigate({
-            pathname: '/registration/success',
-            search: `?payId=ABCD&text=DUPLICATE&name=${user.firstName + " " + user.lastName}&email=${user.email}`,
+          setRegistered(true);
 
-          });
           return;
         }
         // If he hasn't purchased, then check if iitg credentials match
@@ -102,7 +160,7 @@ useEffect(() => {
             }).catch(function (error) {
               console.log(error.toJSON());
               toast(error.message);
-              navigate({pathname: '/registration/failure'});
+              navigate({ pathname: '/registration/failure' });
               return;
             });
 
@@ -125,7 +183,7 @@ useEffect(() => {
           script.src = 'https://checkout.razorpay.com/v1/checkout.js';
           script.onerror = () => {
             toast('Razorpay SDK failed to load. Are you online?');
-            navigate({pathname: '/registration/failure'});
+            navigate({ pathname: '/registration/failure' });
           };
           //Onload Razorpay
           script.onload = async () => {
@@ -136,7 +194,7 @@ useEffect(() => {
               }).catch(function (error) {
                 //console.log(error.toJSON());
                 toast(error.message);
-                navigate({pathname: '/registration/failure'});
+                navigate({ pathname: '/registration/failure' });
                 return;
               });
               const { amount, id: order_id, currency } = result.data;
@@ -152,25 +210,9 @@ useEffect(() => {
                 order_id: order_id,
                 handler: async function (response) {
                   setpaymentID(response.razorpay_payment_id);
-                  // const result = await axios.post('/pay-order', {
-                  //   amount: amount,
-                  //   razorpayPaymentId: response.razorpay_payment_id,
-                  //   razorpayOrderId: response.razorpay_order_id,
-                  //   razorpaySignature: response.razorpay_signature,
-                  // });
                   // Now Payment is completed
-                  document.getElementById("warningg").innerText="Payment successful, please hang on!!"
+                  document.getElementById("warningg").innerText = "Paid, please wait for pass!!"
                   setPaid(true);
-                  await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword }).then(
-                    (res) => {
-                      const success = res.status === 201;
-                      if (success) {
-                        setRegistered(true);
-                      }
-                    }).catch(function (error) {
-                      navigate({pathname: '/registration/failure'});
-                      toast(error.message)
-                    });
                 },
                 prefill: {
                   name: user.firstName + " " + user.lastName,
@@ -184,12 +226,11 @@ useEffect(() => {
                   color: '#2D1373',
                 },
               };
-              const paymentObject = new window.Razorpay(options);
-              paymentObject.open();
+              const paymentObject = await new window.Razorpay(options);
+              await paymentObject.open();
             } catch (err) {
-
               toast(err);
-              navigate({pathname: '/registration/failure'});
+              navigate({ pathname: '/registration/failure' });
               return;
             }
           };
@@ -199,40 +240,23 @@ useEffect(() => {
 
     }
     catch (error) {
-
       toast(error);
-navigate({pathname: '/registration/failure'});
+      navigate({ pathname: '/registration/failure' });
     }
   }
 
-  if (resitered && paid) {
-    mailpass(user.email);
-    navigate({
-      pathname: '/registration/success',
-      search: `?payId=${paymentID}&text=SUCCESS&name=${user.firstName + " " + user.lastName}&email=${user.email}`,
 
-    });
-  }
-  // else{
-  //   navigate('/registration/failure');
-  // }
-  async function mailpass(email) {
-    await axios.post('/mailpass', { email })
-      .catch(function (error) {
-        //console.log(error.toJSON());
-        toast(error.message);
-        return;
-      });
-  }
+
+
   return (
     <body style={{ height: "max-content" }}>
       <Navbar />
       <div>
-      
+
         <form className='register_entire_page' onSubmit={handleSubmit}>
-          
+
           <div className="register_dabba">
-            
+
             <div className='register-progressbar'>
               <div className='c1_reg'>
                 PERSONAL DETAILS
@@ -244,7 +268,7 @@ navigate({pathname: '/registration/failure'});
 
             </div>
             <div className="registerform" >
-              
+
               <h1 className="Pinfo">PERSONAL INFORMATION</h1>
               <p className="H21 info_reg_txt">
                 * Indicates required field
@@ -322,11 +346,11 @@ navigate({pathname: '/registration/failure'});
               <p className="gamma">₹{orderAmount}</p>
               <p className="gamma1">₹{orderAmount}</p>
               {/* <p className="gamma1 gamma2"></p> */}
-              <button style={{backgroundColor:"black"}} className="Checkout" type="submit">
+              <button style={{ backgroundColor: "black" }} className="Checkout" type="submit">
                 {/* <Checkout title="CHECK OUT →" /> */}
-                <CheckOut/>
-                </button>
-                <p className="H21 info_reg_txt" id="warningg">
+                <CheckOut />
+              </button>
+              <p className="H21 info_reg_txt" id="warningg">
                 Please wait, do not refresh
               </p>
             </div>

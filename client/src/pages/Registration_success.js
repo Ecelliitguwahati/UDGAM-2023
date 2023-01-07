@@ -34,7 +34,7 @@ function RegSuc(props) {
         <div className="col1btnsuccess">
           <div className="passbtnsuccess">
             <p className="para1btnsuccess">
-              {text=="SUCCESS"?"Your Udgam Pass is Ready, You will recieve a mail confirming the payment and your tickets will be attached along !":text=="DUPLICATE"?"You had already purchased the pass. However, we still mailed you incase you lost the crdentials":"UNAUTHORIZED"}
+              {text=="SUCCESS"?"Your Udgam Pass is Ready, You will receive a mail confirming the payment and your pass will be attached along !":text=="DUPLICATE"?"You had already purchased the pass. However, we still mailed you incase you lost the crdentials":"UNAUTHORIZED"}
             
               <br/>
             <p className='transactionidtext'>{text=="SUCCESS"?`Your Transaction ID is ${payId}. Please store it for further references`:""}</p>
