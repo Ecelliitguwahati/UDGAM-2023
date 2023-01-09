@@ -39,6 +39,7 @@ import ideap from '../sponsors/ideap.png'
 import bl from '../sponsors/bl.png'
 import gt from '../sponsors/gt.png'
 import tnec from '../sponsors/tnec.png'
+import mystartuptv from '../sponsors/mystartuptv.png'
 import { useState } from 'react';
 
 
@@ -291,7 +292,11 @@ function Sponsors() {
                         <a href='https://www.northeasternchronicle.in/' target="_blank"><img src={tnec} /></a>
                         <p>Media Partner</p>
                     </div>
-
+                    
+                    <div>
+                        <a href= 'https://mystartuptv.in/' target="_blank"><img src={mystartuptv} /></a>
+                        <p>Media Partner</p>
+                    </div>
                     
                     <div>
                         <a href='https://learningwhiletravelling.com/home' target="_blank"><img src={lwt} /></a>
