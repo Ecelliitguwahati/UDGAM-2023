@@ -27,8 +27,8 @@ function Events() {
 	const eventsdata = [
 		{
 			
-			date: "Jan 5, 2023 23:59:59",
-			link:"https://rebrand.ly/Disrupt_Registration"
+			date: "Jan 17, 2023 23:59:59",
+			link:"https://www.internfair.udgamiitg.com"
 					},
 		// 0 for ongoing
 		// 1 for expired
@@ -91,21 +91,13 @@ function Events() {
 						</div>
 						<div className="content2">
 							<div className="heading">
-								<p>DISRUPT</p>
+								<p>INTERNFAIR</p>
 								<div className="check">
 									<img src={check} alt="" />
 								</div>
 							</div>
 							<div className="text">
-								Disrupt is North East India’s Largest Pitching
-								Battle where startups get a platform to pitch
-								their idea to investors, Angel investors, and
-								Venture Capitalists. In our previous editions,
-								we had Michael Sibel, CEO of Y-Combinator as one
-								of the panelists. Top finalists are provided
-								with mentorship, incubation, and business tools
-								alongside prizes and investment opportunities
-								for winners.
+							An exclusive event for IIT Guwahati peeps, InternFair brings internship opportunities to students in various profiles like Software Development, Analytics, Product Management, and many more. This is a top-notch opportunity for the students to gain industry experience and also prepares them for the upcoming internship and placement processes.
 							</div>
 							<div
 								className="register"

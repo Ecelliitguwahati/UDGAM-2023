@@ -39,12 +39,12 @@ const MoreEvents2 = () => {
             "id": "b1",
             "ori": "left",
             "date": "Jan 20, 2023 16:37:25",
-            "info": 2,
+            "info": 0,
             "image": ls,
             "prize": "NILL",
             "eventName": "LECTURE SERIES",
             "payment": "Paid",
-            "link": "https://www.fb.com",
+            "link": "/registration",
             "eventDesc": " “The Lecture Series brings together the most seasoned and accomplished professionals to impart their wisdom, insights, and experiences on the journey to building a successful startup. Gives you a chance to learn from the best, grow as an entrepreneur, and turn your ideas into a thriving business. "
 
         },
@@ -55,12 +55,12 @@ const MoreEvents2 = () => {
             "tag": "internfair",
             "id": "b2",
             "ori": "left",
-            "date": "Jan 20, 2023 16:37:25",
+            "date": "Jan 17, 2023 16:37:25",
             "image": internfair,
-            "info": 2,
+            "info": 0,
             "prize": "Internship",
             "eventName": "INTERNFAIR",
-            "payment": "Paid", "link": "https://www.fb.com",
+            "payment": "Paid", "link": "https://www.internfair.udgamiitg.com",
             "eventDesc": "An exclusive event for IIT Guwahati peeps, InternFair brings internship opportunities to students in various profiles like Software Development, Analytics, Product Management, and many more. This is a top-notch opportunity for the students to gain industry experience and also prepares them for the upcoming internship and placement processes."
         },
         // 0 for ongoing
