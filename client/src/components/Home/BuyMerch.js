@@ -42,6 +42,9 @@ function BuyMerch() {
         </div>
       </div> */}
       <div className='merchImages'>
+      <div class="but_merch">
+          <BuyM />
+      </div>
           <div className='columnOne'>
              <div className='imageOne'>
               
@@ -83,9 +86,7 @@ function BuyMerch() {
           </div>
           
       </div>
-      <div class="but_merch">
-          <BuyM />
-        </div>
+      
     </div>
 
   )
