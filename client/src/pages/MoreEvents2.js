@@ -60,7 +60,7 @@ const MoreEvents2 = () => {
             "info": 0,
             "prize": "Internship",
             "eventName": "INTERNFAIR",
-            "payment": "Paid", "link": "https://www.internfair.udgamiitg.com",
+            "payment": "Paid", "link": "https://internfair.udgamiitg.com/",
             "eventDesc": "An exclusive event for IIT Guwahati peeps, InternFair brings internship opportunities to students in various profiles like Software Development, Analytics, Product Management, and many more. This is a top-notch opportunity for the students to gain industry experience and also prepares them for the upcoming internship and placement processes."
         },
         // 0 for ongoing
@@ -190,7 +190,7 @@ const MoreEvents2 = () => {
             "ori": "right",
             "info": 0,
             "prize": "40K+",
-            "date": "Jan 7, 2023 23:59:59",
+            "date": "Jan 13, 2023 23:59:59",
             "image": sparkle,
             "eventName": "SPARKLE",
             "payment": "Free", "link": "https://docs.google.com/forms/d/e/1FAIpQLSeMH92AxnP5V8EEHzbGmTXl0VZS9BtBQRPh4xPqU77tWsdYKw/viewform",

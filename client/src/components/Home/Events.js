@@ -28,14 +28,14 @@ function Events() {
 		{
 			
 			date: "Jan 17, 2023 23:59:59",
-			link:"https://www.internfair.udgamiitg.com"
+			link:"https://internfair.udgamiitg.com"
 					},
 		// 0 for ongoing
 		// 1 for expired
 		// 2 for coming ComingSoon
 		{
 					
-			date: "Jan 7, 2023 23:59:59",
+			date: "Jan 13, 2023 23:59:59",
 			link: "https://docs.google.com/forms/d/e/1FAIpQLSeMH92AxnP5V8EEHzbGmTXl0VZS9BtBQRPh4xPqU77tWsdYKw/viewform",
            
 				},
@@ -239,7 +239,7 @@ opportunities.
 					<div id="priceDate">
 						<div id="price">
 							<p className="pdHeading">Price</p>
-							<p className="price">₹399</p>
+							<p className="price"><span class="strikethrough">₹399</span>&nbsp;₹199</p>
 						</div>
 						<div id="date">
 							<p className="pdHeading">Date</p>
