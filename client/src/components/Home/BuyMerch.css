@@ -114,161 +114,221 @@ body{
 }
 .imageTwo{
     background-color: aquamarine;
+    position: relative;
+    overflow: hidden;
     width: 100%;
     display: flex;
     justify-content: center ;
-    -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+    -webkit-filter: grayscale(55%);
+	filter: grayscale(55%);
 	-webkit-transition: 0.5s ease-in-out;
 	transition: 0.5s ease-in-out;
 }
+.imageTwo img{
+    -webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+
 .imageTwo:hover {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
-    scale: 1.1;
-    z-index: 99;
-
-
+}
+.imageTwo:hover img{
+    transform:scale(1.1) ;
+     
 }
 .imageOne{
     background-color:  rgba(240, 226, 102, 1);
-    -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+    position: relative;
+    overflow: hidden;
+    -webkit-filter: grayscale(55%);
+	filter: grayscale(55%);
 	-webkit-transition: 0.5s ease-in-out;
 	transition: 0.5s ease-in-out;
 }
 .imageOne:hover{
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
-    scale: 1.1;
-    z-index: 99;
+}
 
+.imageOne img{
+    -webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
 
+.imageOne:hover img{
+    transform:scale(1.1) ;
+   
+    
 }
 .ThirdOne {
     background-color: aquamarine;
+    position: relative;
+    overflow: hidden;
     
     display: flex;
     justify-content: center ;
     width: 339px;
     height: 339px;
-    -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+    -webkit-filter: grayscale(55%);
+	filter: grayscale(55%);
     -webkit-transition: 0.5s ease-in-out;
 	transition: 0.5s ease-in-out;
     
     
 }
+.ThirdOne img{
+    -webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+
 .ThirdOne:hover {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
-    scale: 1.1;
-    z-index: 99;
-
- 
-  
+}
+.ThirdOne:hover img{
+    transform:scale(1.1) ;
+   
+    
 }
 .ThirdTwo {
     background-color:  rgba(240, 226, 102, 1);
+    position: relative;
+    overflow: hidden;
     width: 359px;
    height: 339px;
-   -webkit-filter: grayscale(100%);
-   filter: grayscale(100%);
+   -webkit-filter: grayscale(55%);
+   filter: grayscale(55%);
    -webkit-transition: 0.5s ease-in-out;
    transition: 0.5s ease-in-out;
 }
+.ThirdTwo img{
+    -webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+
 .ThirdTwo:hover {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
-    scale: 1.1;
-    z-index: 99;
-
+}
+.ThirdTwo:hover img{
+    transform:scale(1.1) ;
+   
+    
 }
 .FourOne{
     background-color:  rgba(240, 226, 102, 1);
+    position: relative;
+    overflow: hidden;
     height:209px;
     width:440px;
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-filter: grayscale(100%);
-   filter: grayscale(100%);
+    -webkit-filter: grayscale(55%);
+   filter: grayscale(55%);
    -webkit-transition: 0.5s ease-in-out;
    transition: 0.5s ease-in-out;
 }
-.FourOne:hover{
+.FourOne img{
+    -webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+
+.FourOne:hover {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
-    scale: 1.1;
-    z-index: 99;
-
-  
+}
+.FourOne:hover img{
+    transform:scale(1.1) ;
+   
+    
 }
 
 .FourTwo{
     background-color: aquamarine;
+    position: relative;
+    overflow: hidden;
     height:209px;
     width: 258px;
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(55%);
+    filter: grayscale(55%);
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
-.FourTwo:hover{
+.FourTwo img{
+    -webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+
+.FourTwo:hover {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
-    scale: 1.1;
-    z-index: 99;
-
-  
+}
+.FourTwo:hover img{
+    transform:scale(1.1) ;
+   
+    
 }
 .imageFive{
     background-color: aquamarine;
+    position: relative;
+    overflow: hidden;
     width: 100%;
     display: flex;
     justify-content: center ;
     width: 403px;
     height:209px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(55%);
+    filter: grayscale(55%);
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
-.imageFive:hover{
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-    scale: 1.1;
-    z-index: 99;
+.imageFive img{
+    -webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
 
- 
-  
+.imageFive:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+.imageFive:hover img{
+    transform:scale(1.1) ;
+   
+    
 }
 .imageSix{
     background-color:  rgba(240, 226, 102, 1);
+    position: relative;
+    overflow: hidden;
     width: 100%;
     display: flex;
     justify-content: center ;
     height:339px;
     margin-top: -4.2px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(55%);
+    filter: grayscale(55%);
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
-.imageSix:hover{
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-    scale: 1.1;
-    z-index: 99;
-
- 
-  
+.imageSix img{
+    -webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
 }
 
-
+.imageSix:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+.imageSix:hover img{
+    transform:scale(1.1) ;
+   
+    
+}
 /* flex: 1 1 auto */
 
 
