@@ -1,7 +1,7 @@
-
-.RESETPWD{
+.RESETPWD {
     text-align: center;
 }
+
 .first_last_flex {
     display: flex;
     width: 100%;
@@ -17,9 +17,11 @@
     margin-left: 1%;
     margin-right: 1%;
 }
-.last_field_regg{
+
+.last_field_regg {
     margin-bottom: 20px;
 }
+
 .info_reg_txt {
     margin-left: 20px;
     margin-right: 20px;
@@ -75,22 +77,26 @@
     color: rgba(151, 151, 151, 0.77);
 
 }
+
 .Pinfo {
     margin: 20px;
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;/*Sizing*/
-     color: #DDF140;
+    font-size: 48px;
+    /*Sizing*/
+    color: #DDF140;
     display: flex;
     letter-spacing: 0.2px;
-  text-transform: uppercase;
+    text-transform: uppercase;
 
-  }
+}
+
 .card_of_pass_register {
     position: relative;
 
 }
-.pass_Card_register{
+
+.pass_Card_register {
     margin: 10px;
     position: sticky;
 }
@@ -116,7 +122,7 @@
     position: absolute;
     top: 121.5px;
     left: 42px;
-    font-family: 'Action Sans';
+    font-family: Action Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -127,6 +133,13 @@
 
     color: rgba(255, 255, 255, 0.39);
 
+}
+
+.beta0 {
+    position: absolute;
+    top: 78px;
+    
+    color: rgb(209, 106, 106);
 }
 
 .beta1 {
@@ -207,10 +220,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left:69px;
+    margin-left: 69px;
     margin-top: 8px;
 }
-.register-progressbar{
+
+.register-progressbar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -218,17 +232,19 @@
     border-style: solid;
     border-color: #DDF140;
 }
-#warningg{
+
+#warningg {
     margin: 0 6%;
     font-size: 20px;
-    color:red;
-    display:none;
+    color: red;
+    display: none;
     line-height: 26px;
     text-align: center;
     font-family: Action Sans;
     margin-top: 2px;
 }
-.c1_reg{
+
+.c1_reg {
     display: flex;
     background: #D4F34A;
     justify-content: center;
@@ -242,8 +258,9 @@
     letter-spacing: 0.02em;
     width: 100%;
     height: 40px;
-    }
-    .c2_reg{
+}
+
+.c2_reg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,38 +272,60 @@
     color: #DDF140;
     width: 100%;
     height: 40px;
+}
+
+@media (max-width: 900px) {
+    .register_entire_page {
+        flex-direction: column;
+        justify-content: center;
     }
 
-    @media (max-width: 900px){
-        .register_entire_page {
-            flex-direction: column;
-            justify-content: center;
-        }
-      .pass_Card_register{
+    .pass_Card_register {
         overflow: hidden;
-      }
-        .cardphoto{
+    }
 
-            height: 100%;
-            
-        }
-        .udgam7{
-            position: absolute;
-            left: 250px;
-        }
-        .Pinfo{
-            font-size: 30px;
-        }
-        .alpha{
-            position: absolute;
-            left: 38px;
-            top:21px;
-        }
-    .beta{
-        left:26px;
+    .cardphoto {
+
+        height: 100%;
+
     }
-    .Checkout{
-        top:77%;
-        left:-41px;
+
+    .udgam7 {
+        position: absolute;
+        left: 250px;
     }
+
+    .Pinfo {
+        font-size: 30px;
     }
+
+    .alpha {
+        position: absolute;
+        left: 38px;
+        top: 21px;
+    }
+
+    .beta {
+        left: 26px;
+    }
+
+    .Checkout {
+        top: 77%;
+        left: -41px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .register_dabba {
+        margin: 0;
+    }
+
+    .register_entire_page {
+        margin: 0 5%;
+    }
+
+    .pass_Card_register {
+        margin: 0;
+    }
+}

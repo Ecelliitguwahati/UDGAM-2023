@@ -39,6 +39,12 @@ import ideap from '../sponsors/ideap.png'
 import bl from '../sponsors/bl.png'
 import gt from '../sponsors/gt.png'
 import tnec from '../sponsors/tnec.png'
+import mystartuptv from '../sponsors/mystartuptv.png'
+import gplus from '../sponsors/gplus.png'
+import tat from '../sponsors/assamtr.png'
+import tbh from '../sponsors/tbh.png'
+import silicon from '../sponsors/silicon.png'
+import evnt from '../sponsors/evnt.png'
 import { useState } from 'react';
 
 
@@ -172,6 +178,12 @@ function Sponsors() {
                     </div>
 
                     <div>
+                        <a href='https://guwahatiplus.com/' target="_blank" ><img src={gplus} /></a>
+                        <p>Silver Sponsor</p>
+                    </div>
+
+
+                    <div>
                         <a href='https://www.jetbrains.com/' target="_blank" ><img src={jb} /></a>
                         <p>Development Partner</p>
                     </div>
@@ -193,6 +205,11 @@ function Sponsors() {
 
                     <div>
                         <a href='https://thestartuplab.in/' target="_blank"><img src={tsl} /></a>
+                        <p>Events Partner</p>
+                    </div>
+
+                    <div>
+                        <a href='https://www.evntorg.com/' target="_blank"><img src={evnt} /></a>
                         <p>Events Partner</p>
                     </div>
 
@@ -219,6 +236,11 @@ function Sponsors() {
                     <div>
                         <a href='https://expertpoint.in/' target="_blank"><img src={ep} /></a>
                         <p>Mentorship Partner</p>
+                    </div>
+
+                    <div>
+                        <a href='https://www.tobehonest.in/' target="_blank"><img src={tbh} /></a>
+                        <p>Crunchies Partner</p>
                     </div>
 
                     <div>
@@ -273,6 +295,17 @@ function Sponsors() {
                     </div>
 
                     <div>
+                        <a href='https://www.siliconindia.com/' target="_blank"><img src={silicon} /></a>
+                        <p>Media Partner</p>
+                    </div>
+
+                    <div>
+                        <a href= 'https://mystartuptv.in/' target="_blank"><img src={mystartuptv} /></a>
+                        <p>Media Partner</p>
+                    </div>
+                    
+
+                    <div>
                         <a href='https://thenewsmill.com/' target="_blank"><img src={tnm} /></a>
                         <p>Media Partner</p>
                     </div>
@@ -291,11 +324,16 @@ function Sponsors() {
                         <a href='https://www.northeasternchronicle.in/' target="_blank"><img src={tnec} /></a>
                         <p>Media Partner</p>
                     </div>
-
+                    
                     
                     <div>
                         <a href='https://learningwhiletravelling.com/home' target="_blank"><img src={lwt} /></a>
                         <p>Ecosystem Partner</p>
+                    </div>
+
+                    <div>
+                        <a href='https://assamtribune.com/' target="_blank"><img src={tat} /></a>
+                        <p>Media Partner</p>
                     </div>
 
                 </div>

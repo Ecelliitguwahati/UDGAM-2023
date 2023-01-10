@@ -317,7 +317,7 @@
 .price{
     font-family: 'ActionSans-Medium';
     font-weight: 500;
-    font-size: 44.9535px;
+    font-size: 34.9535px;
     line-height: 53px;
     color:#DDF140;
 }
@@ -383,15 +383,35 @@
 {
     margin: 16px 102px;
 }
-
+.strikethrough {
+    position: relative;
+  }
+  .strikethrough:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 4px solid;
+    border-color: inherit;
+    
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+  }
 @media (max-width: 600px){
+    #down{
+        flex-direction: column;
+    }
     .containerevent
     {
 height: max-content;
         width:100%;
     }
     #containerevent{
-        padding: 0 10%;
+        padding: 0 5%;
     }
     #up{
         flex-direction: column;
@@ -476,8 +496,8 @@ height: max-content;
 }
 
 #priceDate {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .price,.date{
     font-size: xx-large;

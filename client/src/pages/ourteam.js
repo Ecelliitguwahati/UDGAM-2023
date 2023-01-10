@@ -181,6 +181,7 @@ function OurTeam() {
                             <li>Amlan Biswal </li>
                             <li>Kanike Uday</li>
                             <li>Nityam Pareek</li>
+                            <li>Poorva Upman</li>
                             <li>Rajat Patodi</li>
                             <li>Sistla gayatri</li>
                             <li>Shivam Agrawal</li>
