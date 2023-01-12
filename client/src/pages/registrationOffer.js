@@ -9,9 +9,9 @@ import { useState, useEffect } from 'react';
 import Footer from '../components/Home/footer';
 import { toast } from 'react-toastify';
 import CheckOut from '../components/Home/CheckOutButton';
-import {Link} from 'react-router-dom'
-function Registration() {
-  const [orderAmount, setorderAmount] = useState(399);
+
+function RegistrationOffer() {
+  const [orderAmount, setorderAmount] = useState(299);
   const navigate = useNavigate();
   const [resitered, setRegistered] = useState(false);
   const [paymentID, setpaymentID] = useState("");
@@ -45,7 +45,7 @@ function Registration() {
     if (user.promocode === promocodeset1)
       setorderAmount(199)
     else
-      setorderAmount(399)
+      setorderAmount(299)
   }, [user.promocode]);
 
   // TRIGEERED WHEN USER PAYS
@@ -270,12 +270,10 @@ function Registration() {
             <div className="registerform" >
 
               <h1 className="Pinfo">PERSONAL INFORMATION</h1>
-              <a href='/offer'><p className="offer">
-                Click here for date with Yash offer
-              </p></a>
               <p className="H21 info_reg_txt">
                 * Indicates required field
               </p>
+              <h1 className="Pinfo">PERSON 1</h1>
               <div className='registerform_div'>
                 <div className="first_last_flex">
                   <input className='wid_text_Field_100' type="text" name="firstName" required={true} placeholder="First name... *"
@@ -322,10 +320,65 @@ function Registration() {
                   <input className='wid_text_Field_100' type="password" name="password" required={true} placeholder="Create Password... *" onChange={handleChange} />
                   <input className='wid_text_Field_100' type="password" name="confirmPassword" required={true} placeholder="Confirm Password... *" onChange={handleChange} />
                 </div>
-                <p className="H21 info_reg_txt">Discount Code (Use code DECACORN to get flat ₹200 discount)</p>
+                {/* <p className="H21 info_reg_txt">Discount Code (Use code DECACORN to get flat ₹200 discount)</p>
                 <div className="first_last_flex last_field_regg">
                   <input className='wid_text_Field_100' type="text" name="promocode" required={false} placeholder="Enter Discount Code" onChange={handleChange} />
+                </div> */}
+              </div>
+            </div>
+            <div className="registerform" >
+
+              <h1 className="Pinfo">PERSON 2</h1>
+              <div className='registerform_div'>
+                <div className="first_last_flex">
+                  <input className='wid_text_Field_100' type="text" name="firstName" required={true} placeholder="First name... *"
+                    onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="text" name="lastName" required={true} placeholder="Last name... *" onChange={handleChange} />
                 </div>
+                <br />
+                <div className="first_last_flex">
+                  <input className='wid_text_Field_100' type="number" name="contact" pattern="[0-9]{10}" required={true} placeholder="Contact number... *" onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="email" id='email' name="email" required={true} placeholder="Type your Email... *" onChange={handleChange} />
+                </div>
+                <br></br>
+                <p className="H21 info_reg_txt">Only for IIT Guwahati Students (Important for Intern Fair)</p>
+                <div className="first_last_flex">
+                  <input className='wid_text_Field_100' type="email" name="outlook" id='outlookid' placeholder="Outlook mail id..." onChange={handleChange} />
+
+
+
+                  <select className='wid_text_Field_100' id="department" name="department" placeholder="Department" onChange={handleChange}>
+                    <option value="" disabled selected>Your branch...</option>
+                    <option value="Biological and Bioscience Engineering">Biological and Bioscience Engineering</option>
+                    <option value="Chemical Engineering">Chemical Engineering</option>
+                    <option value="Chemical Science and Technology">Chemical Science and Technology</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Computer Science Engineering">Computer Science Engineering</option>
+                    <option value="Data Science and AI">Data Science and AI</option>
+                    <option value="Design">Design</option>
+                    <option value="Electronics and Communications Engineering">Electronics and Communications Engineering</option>
+                    <option value="Engineering Physics">Engineering Physics</option>
+                    <option value="Energy Engineering">Energy Engineering</option>
+                    <option value="Electronics and Electrical Engineering">Electronics and Electrical Engineering</option>
+                    <option value="Mathematics and Computing">Mathematics and Computing</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                  </select>
+
+                </div>
+                <br />
+                <div className="first_last_flex">
+                  <input className='wid_text_Field_100' type="number" name="rollno" id='rollno' placeholder="Roll no..." onChange={handleChange} />
+                </div>
+                <br></br>
+                <p className="H21 info_reg_txt">Password shoud have at least 8 characters</p>
+                <div className="first_last_flex last_field_regg">
+                  <input className='wid_text_Field_100' type="password" name="password" required={true} placeholder="Create Password... *" onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="password" name="confirmPassword" required={true} placeholder="Confirm Password... *" onChange={handleChange} />
+                </div>
+                {/* <p className="H21 info_reg_txt">Discount Code (Use code DECACORN to get flat ₹200 discount)</p>
+                <div className="first_last_flex last_field_regg">
+                  <input className='wid_text_Field_100' type="text" name="promocode" required={false} placeholder="Enter Discount Code" onChange={handleChange} />
+                </div> */}
               </div>
             </div>
           </div>
@@ -376,4 +429,4 @@ function Registration() {
 
 }
 
-export default Registration;
+export default RegistrationOffer;

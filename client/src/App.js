@@ -23,6 +23,7 @@ import Privacy from "./pages/privacypolicy";
 import Refund from "./pages/refund";
 import MoreEvents3 from "./pages/MoreEvents3";
 import EventSchedule from "./pages/eventschedule";
+import RegistrationOffer from "./pages/registrationOffer";
 function App() {
 	const [disableScroll, setDisableScroll] = useState(true);
 	useEffect(() => {
@@ -46,6 +47,11 @@ function App() {
 						exact
 						path="/registration"
 						element={<Registration />}
+					/>
+					<Route
+						exact
+						path="/offer"
+						element={<RegistrationOffer />}
 					/>
 					<Route
 						exact
