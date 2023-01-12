@@ -336,7 +336,7 @@ function Registration() {
             <div className="card_of_pass_register">
               <img className='cardphoto' src={require("../icons/udgamPassBG.png")} alt="CardBG"></img>
               <img className="udgam7" src={Vector3} />
-
+              <p className="beta beta0">Use code DECACORN to get flat ₹200 off.</p>
               <p className="alpha">Udgam pass</p>
               <p className="beta">Total Price -</p>
               <p className="beta beta1">Udgam Pass -</p>
