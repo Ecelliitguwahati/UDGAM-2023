@@ -7,6 +7,14 @@
     width: 100%;
 }
 
+.offer
+{
+    font-family: inherit;
+    font-size: 36px;
+    color: #DDF140;
+    margin-left: 1%;
+}
+
 .wid_text_Field_50 {
     width: 50%;
 }
