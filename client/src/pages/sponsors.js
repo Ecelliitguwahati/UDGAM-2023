@@ -209,18 +209,13 @@ function Sponsors() {
                     </div>
 
                     <div>
-                        <a href='https://www.evntorg.com/' target="_blank"><img src={evnt} /></a>
-                        <p>Events Partner</p>
-                    </div>
-
-                    <div>
-                        <a href='https://coolberg.in/' target="_blank"><img src={cb} /></a>
-                        <p>Beverage Partner</p>
-                    </div>
-
-                    <div>
                         <a href='https://www.geeksforgeeks.org/' target="_blank"><img src={gfg} /></a>
                         <p>Campus Ambassador Partner</p>
+                    </div>
+
+                    <div>
+                        <a href='https://www.evntorg.com/' target="_blank"><img src={evnt} /></a>
+                        <p>Events Partner</p>
                     </div>
 
                     <div>
@@ -239,18 +234,13 @@ function Sponsors() {
                     </div>
 
                     <div>
-                        <a href='https://www.tobehonest.in/' target="_blank"><img src={tbh} /></a>
-                        <p>Crunchies Partner</p>
+                        <a href='https://coolberg.in/' target="_blank"><img src={cb} /></a>
+                        <p>Beverage Partner</p>
                     </div>
 
                     <div>
                         <a href='https://www.jordensky.com/' target="_blank"><img src={jordan} /></a>
                         <p>Disrupt Law Sponsor</p>
-                    </div>
-
-                    <div>
-                        <a href='https://burgeon.co.in/' target="_blank"><img src={bl} /></a>
-                        <p>Legal Partner</p>
                     </div>
 
                     <div>
@@ -263,31 +253,47 @@ function Sponsors() {
                         <p>Knowledge Partner - CAP</p>
                     </div>
 
+
+                    <div>
+                        <a href='https://www.tobehonest.in/' target="_blank"><img src={tbh} /></a>
+                        <p>Crunchies Partner</p>
+                    </div>
+
+                    <div>
+                        <a href='https://burgeon.co.in/' target="_blank"><img src={bl} /></a>
+                        <p>Legal Partner</p>
+                    </div>
+                      
+                    <div>
+                        <a href='https://learningwhiletravelling.com/home' target="_blank"><img src={lwt} /></a>
+                        <p>Ecosystem Partner</p>
+                    </div>
+
+                    <div>
+                        <a href='https://assamtribune.com/' target="_blank"><img src={tat} /></a>
+                        <p>Media Partner</p>
+                    </div>
+
+                    
                     <div>
                         <a href='https://youthincmag.com/' target="_blank"><img src={youthi} /></a>
                         <p>Youth Media Partner</p>
                     </div>
 
                     <div>
-                        <a href='https://www.ihoik.com/' target="_blank"><img src={kota} /></a>
+                        <a href='https://www.northeasternchronicle.in/' target="_blank"><img src={tnec} /></a>
                         <p>Media Partner</p>
                     </div>
 
                     <div>
-                        <a href='' target="_blank"><img src={why} /></a>
+                        <a href='https://guwahatitimes.com/' target="_blank"><img src={gt} /></a>
                         <p>Media Partner</p>
                     </div>
 
                     <div>
-                        <a href='https://startupstorymedia.com/' target="_blank"><img src={ss} /></a>
+                        <a href='https://www.ideapreneurindia.com/' target="_blank"><img src={ideap} /></a>
                         <p>Media Partner</p>
                     </div>
-
-                    <div>
-                        <a href='https://www.khaskhabar.com/' target="_blank"><img src={khaask} /></a>
-                        <p>Media Partner</p>
-                    </div>
-                    
 
                     <div>
                         <a href='https://www.startupnews.fyi/' target="_blank"><img src={sn} /></a>
@@ -304,6 +310,20 @@ function Sponsors() {
                         <p>Media Partner</p>
                     </div>
                     
+                    <div>
+                        <a href='https://www.ihoik.com/' target="_blank"><img src={kota} /></a>
+                        <p>Media Partner</p>
+                    </div>
+
+                    <div>
+                        <a href='https://www.khaskhabar.com/' target="_blank"><img src={khaask} /></a>
+                        <p>Media Partner</p>
+                    </div>
+
+                    <div>
+                        <a href='https://startupstorymedia.com/' target="_blank"><img src={ss} /></a>
+                        <p>Media Partner</p>
+                    </div>
 
                     <div>
                         <a href='https://thenewsmill.com/' target="_blank"><img src={tnm} /></a>
@@ -311,32 +331,11 @@ function Sponsors() {
                     </div>
 
                     <div>
-                        <a href='https://www.ideapreneurindia.com/' target="_blank"><img src={ideap} /></a>
+                        <a href='' target="_blank"><img src={why} /></a>
                         <p>Media Partner</p>
                     </div>
-
-                    <div>
-                        <a href='https://guwahatitimes.com/' target="_blank"><img src={gt} /></a>
-                        <p>Media Partner</p>
-                    </div>
-
-                    <div>
-                        <a href='https://www.northeasternchronicle.in/' target="_blank"><img src={tnec} /></a>
-                        <p>Media Partner</p>
-                    </div>
-                    
-                    
-                    <div>
-                        <a href='https://learningwhiletravelling.com/home' target="_blank"><img src={lwt} /></a>
-                        <p>Ecosystem Partner</p>
-                    </div>
-
-                    <div>
-                        <a href='https://assamtribune.com/' target="_blank"><img src={tat} /></a>
-                        <p>Media Partner</p>
-                    </div>
-
                 </div>
+                 
 
 
 
