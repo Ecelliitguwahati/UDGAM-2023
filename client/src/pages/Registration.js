@@ -65,7 +65,7 @@ function Registration() {
           await registeruser();
           if (errortimes >= 5) {
             toast(error.message);
-            navigate({ pathname: '/registration/failure' });
+            //  navigate({ pathname: '/registration/failure' });
           }
         });
     }
@@ -140,7 +140,7 @@ function Registration() {
           }).catch(function (error) {
             console.log(error.toJSON());
             toast(error.message);
-            navigate({ pathname: '/registration/failure' });
+            //  navigate({ pathname: '/registration/failure' });
             return;
           });
         // If he has purchased pass, we send him mail again
@@ -160,7 +160,7 @@ function Registration() {
             }).catch(function (error) {
               console.log(error.toJSON());
               toast(error.message);
-              navigate({ pathname: '/registration/failure' });
+              //  navigate({ pathname: '/registration/failure' });
               return;
             });
 
@@ -183,7 +183,7 @@ function Registration() {
           script.src = 'https://checkout.razorpay.com/v1/checkout.js';
           script.onerror = () => {
             toast('Razorpay SDK failed to load. Are you online?');
-            navigate({ pathname: '/registration/failure' });
+            //  navigate({ pathname: '/registration/failure' });
           };
           //Onload Razorpay
           script.onload = async () => {
@@ -194,7 +194,7 @@ function Registration() {
               }).catch(function (error) {
                 //console.log(error.toJSON());
                 toast(error.message);
-                navigate({ pathname: '/registration/failure' });
+                //  navigate({ pathname: '/registration/failure' });
                 return;
               });
               const { amount, id: order_id, currency } = result.data;
@@ -230,7 +230,7 @@ function Registration() {
               await paymentObject.open();
             } catch (err) {
               toast(err);
-              navigate({ pathname: '/registration/failure' });
+              //  navigate({ pathname: '/registration/failure' });
               return;
             }
           };
@@ -241,7 +241,7 @@ function Registration() {
     }
     catch (error) {
       toast(error);
-      navigate({ pathname: '/registration/failure' });
+      //  navigate({ pathname: '/registration/failure' });
     }
   }
 
@@ -270,9 +270,9 @@ function Registration() {
             <div className="registerform" >
 
               <h1 className="Pinfo">PERSONAL INFORMATION</h1>
-              <a href='/offer'><p className="offer">
-                Click here for date with Yash offer
-              </p></a>
+              <a  className="offer" href='registration/offer'>
+                Get 2 passes at ₹299 !! Click here
+              </a><div style={{height:"20px"}}></div>
               <p className="H21 info_reg_txt">
                 * Indicates required field
               </p>

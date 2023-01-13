@@ -7,13 +7,7 @@
     width: 100%;
 }
 
-.offer
-{
-    font-family: inherit;
-    font-size: 36px;
-    color: #DDF140;
-    margin-left: 1%;
-}
+
 
 .wid_text_Field_50 {
     width: 50%;
@@ -96,7 +90,8 @@
     display: flex;
     letter-spacing: 0.2px;
     text-transform: uppercase;
-
+font-family: Action Sans;
+margin-bottom: 0;
 }
 
 .card_of_pass_register {
@@ -281,7 +276,24 @@
     width: 100%;
     height: 40px;
 }
+.offer
+{
+    font-family: Action Sans;
+    font-size: 27px;
+    color: #DDF140;
+    padding-left: 20px;
 
+}
+
+.offer:hover
+{
+    color: #DDF140;
+}
+
+.person{
+    font-size: 27px;
+    padding-bottom: 10px;
+}
 @media (max-width: 900px) {
     .register_entire_page {
         flex-direction: column;

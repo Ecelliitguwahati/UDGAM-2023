@@ -50,7 +50,7 @@ function App() {
 					/>
 					<Route
 						exact
-						path="/offer"
+						path="/registration/offer"
 						element={<RegistrationOffer />}
 					/>
 					<Route

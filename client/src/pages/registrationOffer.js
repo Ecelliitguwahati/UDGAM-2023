@@ -14,6 +14,7 @@ function RegistrationOffer() {
   const [orderAmount, setorderAmount] = useState(299);
   const navigate = useNavigate();
   const [resitered, setRegistered] = useState(false);
+  const [resitered2, setRegistered2] = useState(false);
   const [paymentID, setpaymentID] = useState("");
   const [paid, setPaid] = useState(false);
   const [errortimes, setErrortimes] = useState(0);
@@ -28,30 +29,32 @@ function RegistrationOffer() {
     rollno: "",
     password: "",
     confirmPassword: "",
-    promocode: ""
+    
   });
-  const promocodeset1 = "DECACORN"
-  //console.log(user.firstName, user.lastName, user.email, user.outlook, user.rollno, user.password, user.confirmPassword);
-
+  const [user2, setUser2] = useState({
+    firstName2: "",
+    lastName2: "",
+    email2: "",
+    contact2: "",
+    outlook2: "",
+    department2: "",
+    rollno2: "",
+    password2: "",
+    confirmPassword2: "",
+    
+  });
   const handleChange = (e) => {
     setUser(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
-
-    console.log(user.promocode)
+    setUser2(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
+    
   }
-
-  // TRIGGERED WHEN PROMO CODE ENTERED
-  useEffect(() => {
-    // action on update of promo
-    if (user.promocode === promocodeset1)
-      setorderAmount(199)
-    else
-      setorderAmount(299)
-  }, [user.promocode]);
 
   // TRIGEERED WHEN USER PAYS
   useEffect(() => {
     const registeruser = async () => {
       let firstName = user.firstName.trim(); let lastName = user.lastName.trim(); let email = user.email.trim(); let outlook = user.outlook.trim(); let contact = user.contact.trim(); let department = user.department.trim(); let rollno = user.rollno.trim(); let password = user.password.trim(); let confirmPassword = user.confirmPassword.trim();
+      let firstName2 = user2.firstName2.trim(); let lastName2 = user2.lastName2.trim(); let email2 = user2.email2.trim(); let outlook2 = user2.outlook2.trim(); let contact2 = user2.contact2.trim(); let department2 = user2.department2.trim(); let rollno2 = user2.rollno2.trim(); let password2 = user2.password2.trim(); let confirmPassword2 = user2.confirmPassword2.trim();
+      console.log(user);console.log(user2)
       await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword }).then(
         (res) => {
           const success = res.status === 201;
@@ -68,6 +71,23 @@ function RegistrationOffer() {
             navigate({ pathname: '/registration/failure' });
           }
         });
+        console.log("Registering 2")
+        await axios.post('/registersave', { "firstName":firstName2, "lastName":lastName2, "email":email2, "outlook":outlook2, "department":department2, "contact":contact2, "rollno":rollno2, "password":password2, "confirmPassword":confirmPassword2 }).then(
+          (res) => {
+            const success = res.status === 201;
+            if (success) {
+              setRegistered2(true);
+              return;
+            }
+          }).catch(async function (error) {
+            setErrortimes(errortimes + 1);
+            toast("Error occured, trying again !")
+            await registeruser();
+            if (errortimes >= 5) {
+              toast(error.message);
+              navigate({ pathname: '/registration/failure' });
+            }
+          });
     }
     if (paid)
       registeruser();
@@ -75,16 +95,12 @@ function RegistrationOffer() {
 
   //TRIGGERED WHEN USER REGISTERS
   useEffect(() => {
-    const mailpass = async (email) => {
+    const mailpass = async (email,email2) => {
+      console.log("mailing 1")
       await axios.post('/mailpass', { email }).then(
         (res) => {
           const success = res.data.message === "YES";
           if (success) {
-            navigate({
-              pathname: '/registration/success',
-              search: `?payId=${paymentID}&text=SUCCESS&name=${user.firstName + " " + user.lastName}&email=${user.email}`,
-            });
-            return;
           }
         })
         .catch(async function (error) {
@@ -95,38 +111,89 @@ function RegistrationOffer() {
             toast("We are unable to send mails right now. Please contact us immediately");
             navigate({
               pathname: '/registration/success',
-              search: `?payId=${paymentID}&text=SUCCESS&name=${user.firstName + " " + user.lastName}&email=${user.email}`,
+              search: `?payId=${paymentID}&text=SUCCESS&name=${user.firstName + " " + user.lastName + ", " + user2.firstName2 + " " + user2.lastName}&email=${user.email+", "+user2.email2}`,
             });
           }
         });
+        console.log("mailing 2")
+        await axios.post('/mailpass', { "email":email2 }).then(
+          (res) => {
+            const success = res.data.message === "YES";
+            if (success) {
+              navigate({
+                pathname: '/registration/success',
+                search: `?payId=${paymentID}&text=SUCCESS&name=${user.firstName + " " + user.lastName + ", " + user2.firstName2 + " " + user2.lastName2}&email=${user.email+", "+user2.email2}`,
+              });
+              return;
+            }
+          })
+          .catch(async function (error) {
+            setErrortimesmail(errortimesmail + 1);
+            toast("Failed, trying again")
+            await mailpass();
+            if (errortimesmail >= 5) {
+              toast("We are unable to send mails right now. Please contact us immediately");
+              navigate({
+                pathname: '/registration/success',
+                search: `?payId=${paymentID}&text=SUCCESS&name=${user.firstName + " " + user.lastName + ", " + user2.firstName2 + " " + user2.lastName2}&email=${user.email+" & "+user2.email2}`,
+              });
+            }
+          });
 
 
     }
 
-    if (resitered)
-      mailpass(user.email);
-  }, [resitered]);
+    if (resitered && resitered2)
+      mailpass(user.email.trim(),user2.email2.trim());
+  }, [resitered2]);
 
   async function handleSubmit(e) {
     var msg;
     e.preventDefault();
     try {
-
-      if (user.password !== user.confirmPassword) {
+      let firstName = user.firstName.trim(); let lastName = user.lastName.trim(); let email = user.email.trim(); let outlook = user.outlook.trim(); let contact = user.contact.trim(); let department = user.department.trim(); let rollno = user.rollno.trim(); let password = user.password.trim(); let confirmPassword = user.confirmPassword.trim();
+      let firstName2 = user2.firstName2.trim(); let lastName2 = user2.lastName2.trim(); let email2 = user2.email2.trim(); let outlook2 = user2.outlook2.trim(); let contact2 = user2.contact2.trim(); let department2 = user2.department2.trim(); let rollno2 = user2.rollno2.trim(); let password2 = user2.password2.trim(); let confirmPassword2 = user2.confirmPassword2.trim();
+      console.log(email);
+      console.log(email2);
+      if (user.password !== user.confirmPassword || user2.password2!==user2.confirmPassword2) {
 
         toast('Passwords do not match');
         return;
       }
+      
+      else if (email==email2 || contact==contact2){
+        toast('Deatails of 2 persons must be unique 1');
+        return;
+      }
+
+      else if ((outlook==outlook2) && (outlook !=='') && (outlook2 !=='')){
+        toast('Deatails of 2 persons must be unique 2');
+        return;
+      }
+
+      else if ((rollno==rollno2) && (rollno !=='') && (rollno2 !=='')){
+        toast('Deatails of 2 persons must be unique 3');
+        return;
+      }
+
 
       else {
-        let firstName = user.firstName; let lastName = user.lastName; let email = user.email; let outlook = user.outlook; let contact = user.contact; let department = user.department; let rollno = user.rollno; let password = user.password; let confirmPassword = user.confirmPassword;
         //Check if outlook, rollno, department, there or nor
         if (outlook || rollno || department) {
           if (outlook && rollno && department) {
 
           }
           else {
-            toast("One or more details are empty if you are IIT Guwahati student");
+            toast("One or more details are empty if Person 1 is IIT Guwahati student");
+            return;
+          }
+        }
+        if (outlook2 || rollno2 || department2) {
+          if (outlook2 && rollno2 && department2) {
+
+          }
+          else {
+            toast("One or more details are empty if Person 2 is IIT Guwahati student");
             return;
           }
         }
@@ -136,6 +203,7 @@ function RegistrationOffer() {
           (res) => {
 
             msg = res.data.message;
+        
             console.log(msg)
           }).catch(function (error) {
             console.log(error.toJSON());
@@ -143,14 +211,32 @@ function RegistrationOffer() {
             navigate({ pathname: '/registration/failure' });
             return;
           });
+          if (msg === "YES") {
+            toast("One of the person has either purchased the pass or his email id exists");
+            
+            return;
+            
+          }
+          await axios.post('/checkifpurchased', {"email": email2 }).then(
+            (res) => {
+  
+              msg = res.data.message;
+            
+              console.log(msg)
+            }).catch(function (error) {
+              console.log(error.toJSON());
+              toast(error.message);
+              navigate({ pathname: '/registration/failure' });
+              return;
+            });
         // If he has purchased pass, we send him mail again
-
-        if (msg == "YES") {
-          toast("You had already purchased the UDGAM Pass. However we will still mail you the credentials");
-          setRegistered(true);
-
+        if (msg === "YES") {
+          toast("One of the person has either purchased the pass or his email id exists");
+          
           return;
+          
         }
+        
         // If he hasn't purchased, then check if iitg credentials match
         if (outlook && rollno) {
           await axios.post('/checkoutlook', { outlook, rollno }).then(
@@ -165,18 +251,41 @@ function RegistrationOffer() {
             });
 
           // IF they match return
+          if (msg === "ROLLNOSAME") {
+            toast("Person 1 Roll no. already exists. Recheck")
+            return;
+          }
+          if (msg === "OUTLOOKSAME") {
+            toast("Person 1 Outlook already exists. Recheck")
+            return;
+          }
+        }
+        console.log(outlook2)
+        if (outlook2 && rollno2) {
+          await axios.post('/checkoutlook', { "outlook":outlook2,"rollno": rollno2 }).then(
+            (res) => {
+              console.log(msg)
+              msg = res.data.message;
+            }).catch(function (error) {
+              console.log(error.toJSON());
+              toast(error.message);
+              navigate({ pathname: '/registration/failure' });
+              return;
+            });
+
+          // IF they match return
           if (msg == "ROLLNOSAME") {
-            toast("Roll no. already exists. Recheck")
+            toast("Person 2 Roll no. already exists. Recheck")
             return;
           }
           if (msg == "OUTLOOKSAME") {
-            toast("Outlook already exists. Recheck")
+            toast("Person 2 Outlook already exists. Recheck")
             return;
           }
         }
 
         //If they don't then start razorpay
-        if (msg == "NO") {
+        if (msg === "NO") {
           console.log("RAZOR START")
           //Open Razorpay
           const script = document.createElement('script');
@@ -205,7 +314,7 @@ function RegistrationOffer() {
                 key: razorpayKey,
                 amount: amount.toString(),
                 currency: currency,
-                name: user.firstName + " " + user.lastName,
+                name: user.firstName + " " + user.lastName + " and "+user2.firstName2 + " " + user2.lastName2,
                 description: 'UDGAM 2023 transaction',
                 order_id: order_id,
                 handler: async function (response) {
@@ -215,8 +324,8 @@ function RegistrationOffer() {
                   setPaid(true);
                 },
                 prefill: {
-                  name: user.firstName + " " + user.lastName,
-                  email: user.email,
+                  name:  user.firstName + " " + user.lastName +" and "+user2.firstName2 + " " + user2.lastName2,
+                  email: user.email+", "+user2.email2,
                   contact: user.contact,
                 },
                 notes: {
@@ -241,7 +350,8 @@ function RegistrationOffer() {
     }
     catch (error) {
       toast(error);
-      navigate({ pathname: '/registration/failure' });
+      console.log(error)
+     // navigate({ pathname: '/registration/failure' });
     }
   }
 
@@ -273,7 +383,7 @@ function RegistrationOffer() {
               <p className="H21 info_reg_txt">
                 * Indicates required field
               </p>
-              <h1 className="Pinfo">PERSON 1</h1>
+              <h1 className="Pinfo person">PERSON 1</h1>
               <div className='registerform_div'>
                 <div className="first_last_flex">
                   <input className='wid_text_Field_100' type="text" name="firstName" required={true} placeholder="First name... *"
@@ -328,26 +438,26 @@ function RegistrationOffer() {
             </div>
             <div className="registerform" >
 
-              <h1 className="Pinfo">PERSON 2</h1>
+              <h1 className="Pinfo person">PERSON 2</h1>
               <div className='registerform_div'>
                 <div className="first_last_flex">
-                  <input className='wid_text_Field_100' type="text" name="firstName" required={true} placeholder="First name... *"
+                  <input className='wid_text_Field_100' type="text" name="firstName2" required={true} placeholder="First name... *"
                     onChange={handleChange} />
-                  <input className='wid_text_Field_100' type="text" name="lastName" required={true} placeholder="Last name... *" onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="text" name="lastName2" required={true} placeholder="Last name... *" onChange={handleChange} />
                 </div>
                 <br />
                 <div className="first_last_flex">
-                  <input className='wid_text_Field_100' type="number" name="contact" pattern="[0-9]{10}" required={true} placeholder="Contact number... *" onChange={handleChange} />
-                  <input className='wid_text_Field_100' type="email" id='email' name="email" required={true} placeholder="Type your Email... *" onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="number" name="contact2" pattern="[0-9]{10}" required={true} placeholder="Contact number... *" onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="email" name="email2" required={true} placeholder="Type your Email... *" onChange={handleChange} />
                 </div>
                 <br></br>
                 <p className="H21 info_reg_txt">Only for IIT Guwahati Students (Important for Intern Fair)</p>
                 <div className="first_last_flex">
-                  <input className='wid_text_Field_100' type="email" name="outlook" id='outlookid' placeholder="Outlook mail id..." onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="email" name="outlook2"  placeholder="Outlook mail id..." onChange={handleChange} />
 
 
 
-                  <select className='wid_text_Field_100' id="department" name="department" placeholder="Department" onChange={handleChange}>
+                  <select className='wid_text_Field_100' id="department2" name="department2" placeholder="Department" onChange={handleChange}>
                     <option value="" disabled selected>Your branch...</option>
                     <option value="Biological and Bioscience Engineering">Biological and Bioscience Engineering</option>
                     <option value="Chemical Engineering">Chemical Engineering</option>
@@ -367,13 +477,13 @@ function RegistrationOffer() {
                 </div>
                 <br />
                 <div className="first_last_flex">
-                  <input className='wid_text_Field_100' type="number" name="rollno" id='rollno' placeholder="Roll no..." onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="number" name="rollno2" placeholder="Roll no..." onChange={handleChange} />
                 </div>
                 <br></br>
                 <p className="H21 info_reg_txt">Password shoud have at least 8 characters</p>
                 <div className="first_last_flex last_field_regg">
-                  <input className='wid_text_Field_100' type="password" name="password" required={true} placeholder="Create Password... *" onChange={handleChange} />
-                  <input className='wid_text_Field_100' type="password" name="confirmPassword" required={true} placeholder="Confirm Password... *" onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="password" name="password2" required={true} placeholder="Create Password... *" onChange={handleChange} />
+                  <input className='wid_text_Field_100' type="password" name="confirmPassword2" required={true} placeholder="Confirm Password... *" onChange={handleChange} />
                 </div>
                 {/* <p className="H21 info_reg_txt">Discount Code (Use code DECACORN to get flat ₹200 discount)</p>
                 <div className="first_last_flex last_field_regg">

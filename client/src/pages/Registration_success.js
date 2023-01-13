@@ -12,16 +12,24 @@ function RegSuc(props) {
   const payId = queryParameters.get("payId")
   const name = queryParameters.get("name")
   const email = queryParameters.get("email")
+  const emailarray = email.split(",");
   useEffect(() => {
   console.log(props)
     }, []);
     async function sendmailagain(){
-      await axios.post('/mailpass', { email }).then((res)=>toast("Mail sent. Please check spam folder"))
-      .catch(function (error) {
-        //console.log(error.toJSON());
-        toast(error.message);
-        return;
+      console.log(emailarray)
+      emailarray.forEach(async(singemail)=>  {
+        console.log(singemail);
+         await axios.post('/mailpass', { "email":singemail.trim() }).then((res)=>toast("Mail sent. Please check spam folder"))
+        .catch(function (error) {
+          //console.log(error.toJSON());
+          toast(error.message);
+          return;
+        });
       });
+
+
+      
     }
     function merch(){
       toast("COMING SOON")
