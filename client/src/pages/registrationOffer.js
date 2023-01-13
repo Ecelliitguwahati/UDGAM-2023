@@ -351,7 +351,7 @@ function RegistrationOffer() {
     catch (error) {
       toast(error);
       console.log(error)
-     // navigate({ pathname: '/registration/failure' });
+     navigate({ pathname: '/registration/failure' });
     }
   }
 
