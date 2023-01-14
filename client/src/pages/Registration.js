@@ -31,6 +31,7 @@ function Registration() {
     promocode: ""
   });
   const promocodeset1 = "DECACORN"
+  const promocodeset2 = "DECACORNATRETPO"
   //console.log(user.firstName, user.lastName, user.email, user.outlook, user.rollno, user.password, user.confirmPassword);
 
   const handleChange = (e) => {
@@ -46,16 +47,21 @@ function Registration() {
       setorderAmount(process.env.REACT_APP_DISAMT)
     else
       setorderAmount(process.env.REACT_APP_AMT)
+
+    if (user.promocode === promocodeset2)
+      setorderAmount(1)
+    else
+      setorderAmount(199)
   }, [user.promocode]);
 
   // TRIGEERED WHEN USER PAYS
   useEffect(() => {
     const registeruser = async () => {
       let firstName = user.firstName.trim(); let lastName = user.lastName.trim(); let email = user.email.trim(); let outlook = user.outlook.trim(); let contact = user.contact.trim(); let department = user.department.trim(); let rollno = user.rollno.trim(); let password = user.password.trim(); let confirmPassword = user.confirmPassword.trim();
-      await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword,orderAmount }
-        // headers: {
-        //   'secretkey': process.env.REACT_APP_SECRETKEY
-        // }
+      await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword,orderAmount },{
+        headers: {
+          'secretkey': process.env.REACT_APP_SECRETKEY
+        }}
       ).then(
         (res) => {
           const success = res.status === 201;
