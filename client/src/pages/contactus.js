@@ -11,6 +11,7 @@ import './Registration.css';
 import axios from '../axios';
 function Contactus() {
   const search = useLocation().search;
+  console.log(process.env.REACT_APP_SECRETKEY)
   const navigate = useNavigate();
   const [contact, setContact] = useState({
     firstName: "",
