@@ -11,7 +11,7 @@ import { toast } from 'react-toastify';
 import CheckOut from '../components/Home/CheckOutButton';
 
 function RegistrationOffer() {
-  const [orderAmount, setorderAmount] = useState(299);
+  const [orderAmount, setorderAmount] = useState(process.env.REACT_APP_2AMT);
   const navigate = useNavigate();
   const [resitered, setRegistered] = useState(false);
   const [resitered2, setRegistered2] = useState(false);
@@ -425,6 +425,7 @@ function RegistrationOffer() {
                     <option value="Electronics and Electrical Engineering">Electronics and Electrical Engineering</option>
                     <option value="Mathematics and Computing">Mathematics and Computing</option>
                     <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="MBA">MBA</option>
                   </select>
 
                 </div>

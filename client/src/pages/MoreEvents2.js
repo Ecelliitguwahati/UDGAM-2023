@@ -55,7 +55,7 @@ const MoreEvents2 = () => {
             "tag": "internfair",
             "id": "b2",
             "ori": "left",
-            "date": "Jan 17, 2023 16:37:25",
+            "date": "Jan 14, 2023 16:37:25",
             "image": internfair,
             "info": 0,
             "prize": "Internship",

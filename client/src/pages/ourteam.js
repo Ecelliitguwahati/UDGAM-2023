@@ -191,6 +191,7 @@ function OurTeam() {
 
                     <Dropdown team="DISRUPT" img={teams} text={[
                         <ul>
+                            <li>Abhishek Gupta</li>
                             <li>Aditya Gupta</li>
                             <li>Aniba</li>
                             <li>Anurag Kushwah</li>

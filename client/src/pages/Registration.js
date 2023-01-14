@@ -11,7 +11,7 @@ import { toast } from 'react-toastify';
 import CheckOut from '../components/Home/CheckOutButton';
 import {Link} from 'react-router-dom'
 function Registration() {
-  const [orderAmount, setorderAmount] = useState(399);
+  const [orderAmount, setorderAmount] = useState(process.env.REACT_APP_AMT);
   const navigate = useNavigate();
   const [resitered, setRegistered] = useState(false);
   const [paymentID, setpaymentID] = useState("");
@@ -43,9 +43,9 @@ function Registration() {
   useEffect(() => {
     // action on update of promo
     if (user.promocode === promocodeset1)
-      setorderAmount(199)
+      setorderAmount(process.env.REACT_APP_DISAMT)
     else
-      setorderAmount(399)
+      setorderAmount(process.env.REACT_APP_AMT)
   }, [user.promocode]);
 
   // TRIGEERED WHEN USER PAYS
@@ -315,6 +315,7 @@ function Registration() {
                     <option value="Electronics and Electrical Engineering">Electronics and Electrical Engineering</option>
                     <option value="Mathematics and Computing">Mathematics and Computing</option>
                     <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="MBA">MBA</option>
                   </select>
 
                 </div>

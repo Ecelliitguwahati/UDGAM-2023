@@ -27,7 +27,7 @@ function Events() {
 	const eventsdata = [
 		{
 			
-			date: "Jan 17, 2023 23:59:59",
+			date: "Jan 14, 2023 23:59:59",
 			link:"https://internfair.udgamiitg.com"
 					},
 		// 0 for ongoing
