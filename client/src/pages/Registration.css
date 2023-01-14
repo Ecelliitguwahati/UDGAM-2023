@@ -281,10 +281,13 @@ margin-bottom: 0;
     font-family: Action Sans;
     font-size: 27px;
     color: #DDF140;
-    padding-left: 20px;
+    
 
 }
 
+.offerbox{
+    padding-left: 20px;
+}
 .offer:hover
 {
     color: #DDF140;
@@ -347,5 +350,8 @@ margin-bottom: 0;
 
     .pass_Card_register {
         margin: 0;
+    }
+    .offer{
+        font-size:20px;
     }
 }

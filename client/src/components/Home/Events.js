@@ -35,7 +35,7 @@ function Events() {
 		// 2 for coming ComingSoon
 		{
 					
-			date: "Jan 13, 2023 23:59:59",
+			date: "Jan 17, 2023 23:59:59",
 			link: "https://docs.google.com/forms/d/e/1FAIpQLSeMH92AxnP5V8EEHzbGmTXl0VZS9BtBQRPh4xPqU77tWsdYKw/viewform",
            
 				},

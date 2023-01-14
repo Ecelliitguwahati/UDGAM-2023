@@ -52,7 +52,11 @@ function Registration() {
   useEffect(() => {
     const registeruser = async () => {
       let firstName = user.firstName.trim(); let lastName = user.lastName.trim(); let email = user.email.trim(); let outlook = user.outlook.trim(); let contact = user.contact.trim(); let department = user.department.trim(); let rollno = user.rollno.trim(); let password = user.password.trim(); let confirmPassword = user.confirmPassword.trim();
-      await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword }).then(
+      await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword },{
+        headers: {
+          'secretkey': process.env.REACT_APP_SECRETKEY
+        }
+      }).then(
         (res) => {
           const success = res.status === 201;
           if (success) {
@@ -270,9 +274,11 @@ function Registration() {
             <div className="registerform" >
 
               <h1 className="Pinfo">PERSONAL INFORMATION</h1>
-              <a  className="offer" href='registration/offer'>
+              <div className='offerbox'><a  className="offer" href='registration/offer'>
                 Get 2 passes at ₹299 !! Click here
-              </a><div style={{height:"20px"}}></div>
+              </a>
+              </div>
+              <div style={{height:"20px"}}></div>
               <p className="H21 info_reg_txt">
                 * Indicates required field
               </p>

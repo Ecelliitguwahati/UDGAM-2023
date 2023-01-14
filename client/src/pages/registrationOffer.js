@@ -55,7 +55,11 @@ function RegistrationOffer() {
       let firstName = user.firstName.trim(); let lastName = user.lastName.trim(); let email = user.email.trim(); let outlook = user.outlook.trim(); let contact = user.contact.trim(); let department = user.department.trim(); let rollno = user.rollno.trim(); let password = user.password.trim(); let confirmPassword = user.confirmPassword.trim();
       let firstName2 = user2.firstName2.trim(); let lastName2 = user2.lastName2.trim(); let email2 = user2.email2.trim(); let outlook2 = user2.outlook2.trim(); let contact2 = user2.contact2.trim(); let department2 = user2.department2.trim(); let rollno2 = user2.rollno2.trim(); let password2 = user2.password2.trim(); let confirmPassword2 = user2.confirmPassword2.trim();
       console.log(user);console.log(user2)
-      await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword }).then(
+      await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword },{
+        headers: {
+          'secretkey': process.env.REACT_APP_SECRETKEY
+        }
+      }).then(
         (res) => {
           const success = res.status === 201;
           if (success) {
@@ -72,7 +76,11 @@ function RegistrationOffer() {
           }
         });
         console.log("Registering 2")
-        await axios.post('/registersave', { "firstName":firstName2, "lastName":lastName2, "email":email2, "outlook":outlook2, "department":department2, "contact":contact2, "rollno":rollno2, "password":password2, "confirmPassword":confirmPassword2 }).then(
+        await axios.post('/registersave', { "firstName":firstName2, "lastName":lastName2, "email":email2, "outlook":outlook2, "department":department2, "contact":contact2, "rollno":rollno2, "password":password2, "confirmPassword":confirmPassword2 },{
+          headers: {
+            'secretkey': process.env.REACT_APP_SECRETKEY
+          }
+        }).then(
           (res) => {
             const success = res.status === 201;
             if (success) {

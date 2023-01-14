@@ -190,7 +190,7 @@ const MoreEvents2 = () => {
             "ori": "right",
             "info": 0,
             "prize": "40K+",
-            "date": "Jan 13, 2023 23:59:59",
+            "date": "Jan 17, 2023 23:59:59",
             "image": sparkle,
             "eventName": "SPARKLE",
             "payment": "Free", "link": "https://docs.google.com/forms/d/e/1FAIpQLSeMH92AxnP5V8EEHzbGmTXl0VZS9BtBQRPh4xPqU77tWsdYKw/viewform",
