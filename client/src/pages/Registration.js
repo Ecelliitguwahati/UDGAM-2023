@@ -49,7 +49,7 @@ function Registration() {
       setorderAmount(process.env.REACT_APP_AMT)
 
     if (user.promocode === promocodeset2)
-      setorderAmount(0.4)
+      setorderAmount(1)
     else
       setorderAmount(199)
   }, [user.promocode]);
