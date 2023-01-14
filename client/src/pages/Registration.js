@@ -36,8 +36,6 @@ function Registration() {
 
   const handleChange = (e) => {
     setUser(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
-
-    console.log(user.promocode)
   }
 
   // TRIGGERED WHEN PROMO CODE ENTERED
@@ -48,17 +46,12 @@ function Registration() {
     else
       setorderAmount(process.env.REACT_APP_AMT)
 
-    if (user.promocode === promocodeset2)
-      setorderAmount(1)
-    else
-      setorderAmount(199)
   }, [user.promocode]);
 
   // TRIGEERED WHEN USER PAYS
   useEffect(() => {
     const registeruser = async () => {
       let firstName = user.firstName.trim(); let lastName = user.lastName.trim(); let email = user.email.trim(); let outlook = user.outlook.trim(); let contact = user.contact.trim(); let department = user.department.trim(); let rollno = user.rollno.trim(); let password = user.password.trim(); let confirmPassword = user.confirmPassword.trim();
-      console.log( process.env.REACT_APP_SECRETKEY)
       await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword,orderAmount },{
         headers: {
           'secretkey': process.env.REACT_APP_SECRETKEY
@@ -72,7 +65,6 @@ function Registration() {
           }
         }).catch(async function (error) {
           setErrortimes(errortimes + 1);
-          console.log(error.message)
           toast("Error occured, trying again !")
           await registeruser();
           if (errortimes >= 5) {
@@ -148,9 +140,7 @@ function Registration() {
           (res) => {
 
             msg = res.data.message;
-            console.log(msg)
           }).catch(function (error) {
-            console.log(error.toJSON());
             toast(error.message);
             //  navigate({ pathname: '/registration/failure' });
             return;
@@ -167,10 +157,8 @@ function Registration() {
         if (outlook && rollno) {
           await axios.post('/checkoutlook', { outlook, rollno }).then(
             (res) => {
-              console.log(msg)
               msg = res.data.message;
             }).catch(function (error) {
-              console.log(error.toJSON());
               toast(error.message);
               //  navigate({ pathname: '/registration/failure' });
               return;
@@ -189,7 +177,6 @@ function Registration() {
 
         //If they don't then start razorpay
         if (msg == "NO") {
-          console.log("RAZOR START")
           //Open Razorpay
           const script = document.createElement('script');
           script.src = 'https://checkout.razorpay.com/v1/checkout.js';
