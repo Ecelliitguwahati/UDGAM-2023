@@ -71,6 +71,7 @@ function Registration() {
           }
         }).catch(async function (error) {
           setErrortimes(errortimes + 1);
+          console.log(error.message)
           toast("Error occured, trying again !")
           await registeruser();
           if (errortimes >= 5) {
