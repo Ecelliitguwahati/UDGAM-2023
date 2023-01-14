@@ -48,11 +48,11 @@ function App() {
 						path="/registration"
 						element={<Registration />}
 					/>
-					<Route
+							{/* <Route
 						exact
 						path="/registration/offer"
 						element={<RegistrationOffer />}
-					/>
+					/> */}
 					<Route
 						exact
 						path="/registration/success"
