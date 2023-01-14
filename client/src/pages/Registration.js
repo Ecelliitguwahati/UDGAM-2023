@@ -52,11 +52,11 @@ function Registration() {
   useEffect(() => {
     const registeruser = async () => {
       let firstName = user.firstName.trim(); let lastName = user.lastName.trim(); let email = user.email.trim(); let outlook = user.outlook.trim(); let contact = user.contact.trim(); let department = user.department.trim(); let rollno = user.rollno.trim(); let password = user.password.trim(); let confirmPassword = user.confirmPassword.trim();
-      await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword,orderAmount },{
-        headers: {
-          'secretkey': process.env.REACT_APP_SECRETKEY
-        }
-      }).then(
+      await axios.post('/registersave', { firstName, lastName, email, outlook, department, contact, rollno, password, confirmPassword,orderAmount }
+        // headers: {
+        //   'secretkey': process.env.REACT_APP_SECRETKEY
+        // }
+      ).then(
         (res) => {
           const success = res.status === 201;
           if (success) {
