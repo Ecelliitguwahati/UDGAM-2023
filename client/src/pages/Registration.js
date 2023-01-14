@@ -269,10 +269,10 @@ function Registration() {
             <div className="registerform" >
 
               <h1 className="Pinfo">PERSONAL INFORMATION</h1>
-              <div className='offerbox'><a  className="offer" href='registration/offer'>
+{/* <div className='offerbox'><a  className="offer" href='registration/offer'>
                 Get 2 passes at ₹299 !! Click here
               </a>
-              </div>
+              </div> */}
               <div style={{height:"20px"}}></div>
               <p className="H21 info_reg_txt">
                 * Indicates required field
