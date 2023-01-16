@@ -89,8 +89,7 @@ function Sponsors() {
                             </div>
 
                         </div>
-                        {/* <a href='https://www.tataprojects.com/' target="_blank" ><img src={Tata} className="tatalogo"></img></a>
-          <h3>Title Sponsor</h3> */}
+                        <h3>Title Sponsor</h3> 
                     </div>
                 ) : (
                     <div class="title-sponsor">

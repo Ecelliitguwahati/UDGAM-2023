@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import Bosch from "../../sponsors/tataland.svg";
+import Bosch from "../../sponsors/tata_land.png";
 import CountIn from "./LandingCount";
 import Navbar2 from "../Navbar2";
 import Loading from "./loading";
-import idfc from "../../icons/idfcbank.svg";
+import idfc from "../../sponsors/idfcbank.png";
 import havells from "../../icons/havells.svg";
 import zaloni from "../../icons/zaloni.svg";
 import Line from "../../icons/Line.svg";
@@ -31,8 +31,8 @@ function Landing() {
 			<div className="titlesponsor">
 				<img alt="altimg" 
 					className="Tata"
-					height="90px"
-					width="450px"
+					height="auto"
+					width="330px"
 					src={Bosch}
 				/>
 			</div>
@@ -102,8 +102,8 @@ function Landing() {
 				<div>
 					<img alt="altimg" 
 						className="imgfoot"
-						height="53px"
-						width="160px"
+						height="auto"
+						width="100%"
 						src={idfc}
 					/>
 				</div>
@@ -111,8 +111,8 @@ function Landing() {
 				<div>
 					<img
 						className="imgfoot"
-						height="53px"
-						width="160px"
+						height="auto"
+						width="100%"
 						style={{ margin: `0 -12px` }}
 						src={havells}
 						alt="altimg" 
@@ -122,8 +122,8 @@ function Landing() {
 				<div>
 					<img
 						className="imgfoot"
-						height="53px"
-						width="160px"
+						height="auto"
+						width="100%"
 						alt="altimg" 
 						src={zaloni}
 					/>

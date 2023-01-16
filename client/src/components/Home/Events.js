@@ -239,7 +239,7 @@ opportunities.
 					<div id="priceDate">
 						<div id="price">
 							<p className="pdHeading">Price</p>
-							<p className="price"><span class="strikethrough">₹399</span>&nbsp;₹199</p>
+							<p className="price">₹399</p>
 						</div>
 						<div id="date">
 							<p className="pdHeading">Date</p>

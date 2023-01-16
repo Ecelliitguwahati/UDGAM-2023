@@ -94,7 +94,7 @@ function Sponsor() {
                 <div class="title-sponsor">
 
                     <a href='https://www.tataprojects.com/' target="_blank" ><img src={Tata2} alt="altimg" className="tatalogo"></img></a>
-                    <h3>Title Sponsor</h3>
+                    {/* <h3>Title Sponsor</h3> */}
                 </div>
             )
             }

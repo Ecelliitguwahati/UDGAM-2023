@@ -30,23 +30,22 @@ function Registration() {
     confirmPassword: "",
     promocode: ""
   });
-  const promocodeset1 = "DECACORN"
-  const promocodeset2 = "DECACORNATRETPO"
+
   //console.log(user.firstName, user.lastName, user.email, user.outlook, user.rollno, user.password, user.confirmPassword);
 
   const handleChange = (e) => {
     setUser(prevState => ({ ...prevState, [e.target.name]: e.target.value }))
   }
 
-  // TRIGGERED WHEN PROMO CODE ENTERED
-  useEffect(() => {
-    // action on update of promo
-    if (user.promocode === promocodeset1)
-      setorderAmount(process.env.REACT_APP_DISAMT)
-    else
-      setorderAmount(process.env.REACT_APP_AMT)
+  // // TRIGGERED WHEN PROMO CODE ENTERED
+  // useEffect(() => {
+  //   // action on update of promo
+  //   if (user.promocode === promocodeset1)
+  //     setorderAmount(process.env.REACT_APP_DISAMT)
+  //   else
+   //    setorderAmount(process.env.REACT_APP_AMT)
 
-  }, [user.promocode]);
+  // }, [user.promocode]);
 
   // TRIGEERED WHEN USER PAYS
   useEffect(() => {
@@ -324,10 +323,10 @@ function Registration() {
                   <input className='wid_text_Field_100' type="password" name="password" required={true} placeholder="Create Password... *" onChange={handleChange} />
                   <input className='wid_text_Field_100' type="password" name="confirmPassword" required={true} placeholder="Confirm Password... *" onChange={handleChange} />
                 </div>
-                <p className="H21 info_reg_txt">Discount Code (Use code DECACORN to get flat ₹200 discount)</p>
+                {/* <p className="H21 info_reg_txt">Discount Code (Use code DECACORN to get flat ₹200 discount)</p>
                 <div className="first_last_flex last_field_regg">
                   <input className='wid_text_Field_100' type="text" name="promocode" required={false} placeholder="Enter Discount Code" onChange={handleChange} />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -338,7 +337,7 @@ function Registration() {
             <div className="card_of_pass_register">
               <img className='cardphoto' src={require("../icons/udgamPassBG.png")} alt="CardBG"></img>
               <img className="udgam7" src={Vector3} />
-              <p className="beta beta0">Use code DECACORN to get flat ₹200 off.</p>
+              {/* <p className="beta beta0">Use code DECACORN to get flat ₹200 off.</p> */}
               <p className="alpha">Udgam pass</p>
               <p className="beta">Total Price -</p>
               <p className="beta beta1">Udgam Pass -</p>
