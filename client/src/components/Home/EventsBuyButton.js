@@ -10,7 +10,7 @@ export default function BuyE() {
 
   return (
     <div className='body'>
-      <a href="/registration">
+    
      <div>
       <div className='back' style={{backgroundColor:'#FC97D9'}}>
       </div>
@@ -23,12 +23,12 @@ export default function BuyE() {
         setarrowImage(ruc); 
     }}
         style={{backgroundColor:'#D4F34A'}} >
-        BUY NOW
-        <img src={arrowImage} alt='arrow' />
+        ALL PASSES SOLD !!
+        
       </div>
       
     </div>
-    </a>
+   
    </div>
   )
 }

@@ -130,7 +130,7 @@ function Landing() {
 				</div>
 			</div>
 			<div id="countinbuttondiv">
-				<CountIn />
+				
 			</div>
 		</div>
 	);

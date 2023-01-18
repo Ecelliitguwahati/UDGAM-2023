@@ -67,7 +67,7 @@ function Navbar2() {
 							</a>
 						</div>
 
-						<a className="yellobuttonlink" href="/registration">
+						{/* <a className="yellobuttonlink" href="/registration">
 							<div className="yellowButtonParent">
 								<div className="yellow-button">
 									<img src={Buy} alt="buy-ticket" />
@@ -76,7 +76,7 @@ function Navbar2() {
 									</p>
 								</div>
 							</div>
-						</a>
+						</a> */}
 					</div>
 				</section>
 			</div>

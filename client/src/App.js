@@ -42,11 +42,11 @@ function App() {
 			<Router>
 				<Routes>
 					<Route exact path="/" element={<Home />} />
-					<Route
+					{/* <Route
 						exact
 						path="/registration"
 						element={<Registration />}
-					/>
+					/> */}
 							{/* <Route
 						exact
 						path="/registration/offer"
@@ -80,7 +80,7 @@ function App() {
 					<Route exact path="/termsandconditions" element={<Terms />} />
 					<Route exact path="/privacypolicy" element={<Privacy />} />
 					<Route exact path="/refundpolicy" element={<Refund />} />
-					<Route exact path="/buy" element={<Registration2 />} />
+					
 					<Route exact path="*" element={<NotFound />} />
 				</Routes>
 
