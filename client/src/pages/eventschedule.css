@@ -1,13 +1,15 @@
 .schedulebody{
     background: linear-gradient(to bottom, #1A074E 0%, #060213 100%);
     height: max-content;
-    padding: 0 120px ;
+    /* padding: 0 120px ; */
 }
 .containerschedule{
     width: 100%;
     color: white;
 }
-
+.schedulefile{
+    padding: 0 120px;
+}
 .headingschedule{
     font-family: Action Sans;
 font-style: normal;
@@ -104,4 +106,17 @@ color: #FFFFFF;
     height: 240px;
     width: 100%;
     background-color: #2D1373;
+}
+
+
+iframe {
+padding: 0 120px;     /* Reset default border */
+
+}
+@media (max-width: 600px){
+    
+iframe {
+    padding: 0 ;     /* Reset default border */
+    
+    }
 }

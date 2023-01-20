@@ -53,7 +53,7 @@ function OurTeam() {
                     <Member name="Krish Rajpal" pos="Disrupt Head" img={krish} link="https://www.linkedin.com/in/krish-rajpal-b60310209/" />
                     <Member name="Raghav Mittal" pos="Initiatives Head" img={raghav} link="https://www.linkedin.com/in/raghavmittal123/" />
                     <Member name="Shyam D" pos="Corporate Relations Head" img={shyam} link="https://www.linkedin.com/in/shyamd007/" />
-                    <Member name="Soumadip Das" pos="WebOps Head" img={souma} link="https://www.linkedin.com/in/soumadip-das/" />
+                    {/* <Member name="Soumadip Das" pos="WebOps Head" img={souma} link="https://www.linkedin.com/in/soumadip-das/" /> */}
                     <Member name="Mohit Pal" pos="PMx Head" img={mohitp} link="https://www.linkedin.com/in/mohitpal01/" />
                     <Member name="Soham Parundekar" pos="PR and Branding Head" img={soham} link="https://www.linkedin.com/in/sohamparundekar/" />
                     <Member name="Bhoomika Dhaka" pos="GnS Head" img={bhoomika} link="https://www.linkedin.com/in/bhoomikdhaka12/" />
@@ -85,6 +85,24 @@ function OurTeam() {
                             <li>Yash chauhan</li>
                         </ul>
                     ]} />
+
+<Dropdown team="DISRUPT" img={teams} text={[
+                        <ul>
+                            <li>Abhishek Gupta</li>
+                            <li>Aditya Gupta</li>
+                            <li>Aniba</li>
+                            <li>Anurag Kushwah</li>
+                            <li>Gargi goyal</li>
+                            <li>Lakshya patel</li>
+                            <li>Raveena Kumari</li>
+                            <li>Rohak Jain</li>
+                            <li>Shlok Agrawal</li>
+                            <li>Shubhankit Acharya</li>
+                            <li>Zainab Ali</li>
+                            <li>Tejas Tendulkar</li>
+                        </ul>
+                    ]} />
+
                     <Dropdown team="TEAM INITIATIVES" img={teams} text={[
                         <ul>
                             <li>Akshita Swarnkar</li>
@@ -189,21 +207,7 @@ function OurTeam() {
                         </ul>
                     ]} />
 
-                    <Dropdown team="DISRUPT" img={teams} text={[
-                        <ul>
-                            <li>Abhishek Gupta</li>
-                            <li>Aditya Gupta</li>
-                            <li>Aniba</li>
-                            <li>Anurag Kushwah</li>
-                            <li>Gargi goyal</li>
-                            <li>Lakshya patel</li>
-                            <li>Raveena Kumari</li>
-                            <li>Rohak Jain</li>
-                            <li>Shlok Agrawal</li>
-                            <li>Zainab Ali</li>
-                            <li>Tejas Tendulkar</li>
-                        </ul>
-                    ]} />
+                   
 
                     <Dropdown team="GnS" img={teams} text={[
                         <ul>

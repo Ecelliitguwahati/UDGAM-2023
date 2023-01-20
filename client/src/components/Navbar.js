@@ -101,7 +101,7 @@ function Navbar() {
 								<a href="/events">Events</a>
 							</li>
 							<li className="nav-item" id="bignav2">
-								<a href="/comingsoon">Schedule</a>
+								<a href="/schedule">Schedule</a>
 							</li>
 							<li className="nav-item" id="bignav3">
 								<a href="/comingsoon">Merch</a>

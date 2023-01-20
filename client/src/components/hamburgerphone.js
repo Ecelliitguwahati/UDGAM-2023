@@ -17,7 +17,7 @@ function Hamburgerph() {
                     <a href="/events">Events</a>
                 </div>
                 <div className='navbarphone'>
-                    <a href="/comingsoon">Schedule</a>
+                    <a href="/schedule">Schedule</a>
                 </div>
                 <div className='navbarphone'>
                     <a href="/#merch">Merch</a>

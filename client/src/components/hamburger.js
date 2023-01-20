@@ -53,7 +53,7 @@ function Hamburger() {
 							</div>
 							<div>
 								{" "}
-								<a href="/events" className="humnav">
+								<a href="/schedule" className="humnav">
 									Schedule{" "}
 								</a>
 							</div>
