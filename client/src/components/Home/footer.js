@@ -39,7 +39,7 @@ function Footer() {
                 </div>
               </div>
               <div className="company__info_text">
-                <p className="footer__title2">E-Cell,IIT Guwahati<br></br> Assam-7810389</p>
+                <p className="footer__title2">E-Cell,IIT Guwahati<br></br> Assam-781039</p>
                 <p className="company__description">
                   edc@iitg.ac.in
                 </p>
