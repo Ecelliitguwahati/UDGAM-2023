@@ -83,6 +83,7 @@ function OurTeam() {
                             <li>Susanna Joseph </li>
                             <li>Vedhant Krishi S </li>
                             <li>Yash chauhan</li>
+                            <li>Viknesh Surya SS</li>
                         </ul>
                     ]} />
 

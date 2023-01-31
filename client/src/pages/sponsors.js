@@ -44,7 +44,9 @@ import gplus from '../sponsors/gplus.png'
 import tat from '../sponsors/assamtr.png'
 import tbh from '../sponsors/tbh.png'
 import silicon from '../sponsors/silicon.png'
+import mirchi from '../sponsors/mirchi.png'
 import evnt from '../sponsors/evnt.png'
+import gupsup from '../sponsors/gupsup.png'
 import { useState } from 'react';
 
 
@@ -152,6 +154,12 @@ function Sponsors() {
                 </div>
 
                 <div className='otherSponsors'>
+
+                    <div>
+                        <a href='#' target="_blank"><img src={mirchi} /></a>
+                        <p>Tuned by</p>
+                    </div>
+
                     <div>
                         <a href='https://timesofindia.indiatimes.com/?from=mdr' target="_blank"><img src={toi} /></a>
                         <p>Powered by</p>
@@ -266,6 +274,11 @@ function Sponsors() {
                     <div>
                         <a href='https://learningwhiletravelling.com/home' target="_blank"><img src={lwt} /></a>
                         <p>Ecosystem Partner</p>
+                    </div>
+
+                    <div>
+                        <a href='#' target="_blank"><img src={gupsup} /></a>
+                        <p>Media Partner</p>
                     </div>
 
                     <div>
