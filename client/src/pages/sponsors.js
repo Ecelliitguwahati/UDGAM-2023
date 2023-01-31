@@ -155,6 +155,12 @@ function Sponsors() {
                 </div>
 
                 <div className='otherSponsors'>
+
+                    <div>
+                        <a href='#' target="_blank"><img src={mirchi} /></a>
+                        <p>Tuned by</p>
+                    </div>
+
                     <div>
                         <a href='https://timesofindia.indiatimes.com/?from=mdr' target="_blank"><img src={toi} /></a>
                         <p>Powered by</p>
@@ -272,12 +278,7 @@ function Sponsors() {
                     </div>
 
                     <div>
-                        <a href='https://assamtribune.com/' target="_blank"><img src={gupsup} /></a>
-                        <p>Media Partner</p>
-                    </div>
-
-                    <div>
-                        <a href='https://assamtribune.com/' target="_blank"><img src={mirchi} /></a>
+                        <a href='#' target="_blank"><img src={gupsup} /></a>
                         <p>Media Partner</p>
                     </div>
 
